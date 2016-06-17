@@ -325,9 +325,11 @@ html{
 		letter-spacing: 0;
 		text-align: center;
 		@include ellipsis;
+		color: #fff;
 
 		@include respond-to(handhelds) {
 			padding: 0;
+			color: $color-font;
 			font-size: calculateRem(16px);
 			font-family: 'Montserrat',sans-serif;
 			font-weight: normal;
@@ -356,6 +358,7 @@ html{
 		font-size: calculateRem(25px);
 
 		@include respond-to(handhelds) {
+			color: $color-font;
 			margin-top: 0;
 			text-align: left;
 			font-size: calculateRem(12px);
