@@ -122,8 +122,12 @@
 
 	<script src="js/jquery-1.12.3.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.js"></script>
 
 	<script>
+
+
 
 		$('.intro h1').typeIt({
 		    strings: 'Hello, My name is <strong>Jihe Im</strong>.<br>I do Web Design for a living and I love it.',
@@ -137,6 +141,26 @@
     		autoStart: false,
     		startDelay:5700,
     		cursor: false
+		});
+
+		$(".headroom").headroom({
+		    offset : 0,
+		    tolerance : 0,
+		    tolerance : {
+		        up : 5,
+		        down : 100
+		    },
+		    classes : {
+		        // when element is initialised
+		        initial : "headroom",
+		        // when scrolling up
+		        pinned : "headroom--pinned",
+		        // when scrolling down
+		        unpinned : "headroom--unpinned",
+		        // when above offset
+		        top : "headroom--top"
+		    }
+
 		});
 
 	</script>

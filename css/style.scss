@@ -165,8 +165,7 @@ html{
 	bottom: 6%;
 
 	@include respond-to(handhelds) { 
-		top: 0;
-		left: 0;
+		
 		width: 100%;
 		transform: none;
 		background: $color-point;
@@ -194,11 +193,40 @@ html{
 	}
 }
 
+.headroom{
+	@include respond-to(handhelds) {
+		top: -55px;
+		left: 0;
+		@include transition(all, 0.4s, ease);
+	}
+}
+
+/* scrolling up */
+.headroom--pinned{
+	@include respond-to(handhelds) {
+		top: 0;
+	}
+}
+
+/* scrolling down */ 
+.headroom--unpinned{
+	@include respond-to(handhelds) {
+		left: 0;
+		top: -55px;
+	}	
+}
+
+/* on top */
+.headroom--top{
+	@include respond-to(handhelds) {
+		top: -55px !important;
+	}
+}
+
 .back{
 	display: none;
 
 	@include respond-to(handhelds) {
-		position: fixed;
     	display: block;
 		top: 0;
     	left: 0;
@@ -263,6 +291,7 @@ html{
 
 		img{
 			display: block;
+			width: 100%;
 		}
 	}
 
@@ -275,7 +304,7 @@ html{
 	top: 0;
 	left: 0;
 	font-family: 'Roboto',sans-serif;
-	color: #333;
+	color: #fff;
 
 	background: rgba(0,0,0,0.5);
 	width: 100%;
@@ -363,7 +392,7 @@ html{
 	padding-top: 120px;
 
 	@include respond-to(handhelds) {
-		padding-top: 75px;
+		padding-top: 5%;
 	}
 }
 
