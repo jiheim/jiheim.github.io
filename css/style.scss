@@ -227,9 +227,9 @@ html{
 	display: none;
 
 	@include respond-to(handhelds) {
+		position: relative;
     	display: block;
-		top: 0;
-    	left: 0;
+    	left: -8px;
 		padding: 0 20px;
 		font-size: calculateRem(25px);
 		margin: 0 !important;
