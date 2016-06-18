@@ -326,6 +326,7 @@ html{
 		text-align: center;
 		@include ellipsis;
 		color: #fff;
+		line-height: 1.5rem;
 
 		@include respond-to(handhelds) {
 			padding: 0;
@@ -395,7 +396,7 @@ html{
 	padding-top: 120px;
 
 	@include respond-to(handhelds) {
-		padding-top: 5%;
+		padding: 0 !important;
 	}
 }
 
@@ -404,6 +405,7 @@ html{
 
 	@include respond-to(handhelds) {
 		margin-top: 15px;
+		padding: 5%;
 	}	
 
 	dl{
@@ -470,6 +472,10 @@ html{
 }
 
 .work-content-list{
+
+	@include respond-to(handhelds) {
+		padding: 0 5% 5%;
+	}
 
 	li{
 		margin-bottom: calculateRem(12px);
