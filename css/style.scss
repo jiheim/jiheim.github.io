@@ -401,10 +401,10 @@ html{
 }
 
 .work-desc{	
-	margin-top: 38px;
+	margin: 38px 0;
 
 	@include respond-to(handhelds) {
-		margin-top: 15px;
+		margin: 15px 0;
 		padding: 5%;
 	}	
 
@@ -422,6 +422,7 @@ html{
 		font-size: calculateRem(12px);
 		line-height: calculateRem(24px);
 
+
 		@include respond-to(handhelds) {
 			display: block;
 			margin-right: 0;
@@ -430,16 +431,43 @@ html{
 
 	dd{
 		display: inline-block;
+
 	}
 }
 
 .work-desc-title{
 	h2{
 		font-size: calculateRem(50px);
+		display: inline-block;
+		vertical-align: middle;
 
 		@include respond-to(handhelds) {
 			font-size: calculateRem(30px);
 		}
+	}
+}
+
+.work-desc-link{
+	background: lighten($color-font, 25%);
+	color: #fff;
+	display: inline-block;
+	margin-left: 10px;
+	width: calculateRem(38px);
+	height: calculateRem(38px);
+	line-height: calculateRem(38px);
+	text-align: center;
+	border-radius: 50%;
+	font-size: calculateRem(18px);
+	vertical-align: middle;
+
+	&:hover{
+		background: $color-font;
+	}
+
+	@include respond-to(handhelds) {
+		width: calculateRem(28px);
+		height: calculateRem(28px);
+		line-height: calculateRem(28px);
 	}
 }
 
@@ -479,6 +507,7 @@ html{
 
 	li{
 		margin-bottom: calculateRem(12px);
+		text-align: center;
 	}
 	
 }
