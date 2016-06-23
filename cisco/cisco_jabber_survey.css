@@ -1,0 +1,114 @@
+/* 0.8em=10px;0.9em=11px;1em=12px=75%;1.2em=14px;1.3em=16px;1.5em=18px;1.7em=20px; 2em=24px; 3em=36px; */
+
+* { margin:0; padding:0; }
+
+/* 0.8em=10px;0.9em=11px;1em=12px=75%;1.2em=14px;1.3em=16px;1.5em=18px;1.7em=20px; 2em=24px; 3em=36px; */
+
+body,section,header,footer,article,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,table,th,td			{ margin:0; padding:0; }
+
+body													{ font-size:75%; font-family:Malgun Gothic,Apple Gothic,Gulim,Dotum,Arial,Verdana,Helvetica,sans-serif; position:relative; background:#FFF; margin:0; padding:0; }
+a:link													{ font-family:Malgun Gothic,Apple 
+Gothic,Gulim,Dotum,Arial,Verdana,Helvetica,sans-serif; color:#333; text-decoration:none; }
+a:visited												{ font-family:Malgun Gothic,Apple Gothic,Gulim,Dotum,Arial,Verdana,Helvetica,sans-serif; color:#333; text-decoration:none; }
+a:active												{ font-family:Malgun Gothic,Apple Gothic,Gulim,Dotum,Arial,Verdana,Helvetica,sans-serif; color:#333; text-decoration:none; }
+a:hover													{ font-family:Malgun Gothic,Apple Gothic,Gulim,Dotum,Arial,Verdana,Helvetica,sans-serif; color:#3b5998; text-decoration:underline; }
+
+a														{ cursor:pointer; outline:none; }
+img														{ border:0 none; }
+textarea												{ font-family:Malgun Gothic,Apple Gothic,Gulim,Dotum,Arial,Verdana,Helvetica,sans-serif; font-size:1em; color:#666; border:solid 1px #ccc; padding:3px 5px; }
+input													{ font-family:Malgun Gothic,Apple Gothic,Gulim,Dotum,Arial,Verdana,Helvetica,sans-serif; font-size:1em; color:#666; border:solid 1px #ccc; vertical-align:middle; padding:1px 5px 2px 5px;  outline:none; }
+input[type="checkBox"]	            					{ border:0 none; width:auto; height:auto; }
+select													{ font-family:Malgun Gothic,Apple Gothic,Gulim,Dotum,Arial,Verdana,Helvetica,sans-serif; font-size:1em; color:#666; border:solid 1px #ccc; vertical-align:middle; }
+button													{ font-family:Malgun Gothic,Apple Gothic,Gulim,Dotum,Arial,Verdana,Helvetica,sans-serif; font-size:1em; vertical-align:middle; text-align:center; text-decoration:none; font-weight:bold; cursor:pointer; border:none 0; }
+ul														{ list-style:none outside; }
+h1,h2,h3,h4,h5,h6										{ width:810px; font-size:1em; }
+
+
+/****** Main page ******/
+#container{ width:100%; }
+#container #wrapper{ position:relative; width:810px; height:1676px; background:url(imgs/bg_main.jpg) no-repeat; margin:0 auto;  }
+
+/* 버튼 */
+button{ display:inline-block; width:135px; height:35px; font-weight:600; }
+button.confirm{ background:url('imgs/okay_button.png') no-repeat 0 0; color:#fff; margin:0 10px 0 35px; }
+button.cancel{ background:url('imgs/cancel_button.png') no-repeat 0 0; color:#fff; }
+
+
+/***** 폰 메인 *****/
+#wrapper .phone{ position:absolute; width:388px; height:693px; top:817px; left:211px; }
+#wrapper .phone>div{ position:relative; width:388px; height:693px;}
+
+#wrapper .phone .pMain{ background:url('imgs/bg_phone_main.jpg') no-repeat 0 0; }
+#wrapper .phone .pMain p{ position:absolute; width:184px; height:122px; top:340px; left:-70px; text-indent:-9999px; background:url('imgs/main_ballon.png') no-repeat 0 0; }
+#wrapper .phone .pMain .join{ position:absolute; display:block; width:76px; height:77px; top:458px; left:17px; background:url('imgs/join.gif') no-repeat 0 0; text-indent:-9999px; }
+
+#wrapper .phone .loading{ background:url('imgs/bg_phone_loading.jpg') no-repeat 0 0; }
+#wrapper .phone .loading img{ position:absolute; top:399px; left:27px; }
+
+
+#wrapper .phone .survey{ background:#fff; overflow:auto; }
+/* 스테이터스바 */
+#wrapper .phone .survey div.topBar{ width:388px; height:53px; background:url('imgs/bg_phone_top_bar.jpg') no-repeat 0 0; }
+#wrapper .phone .survey div.topBar p{ max-width:190px; margin-left:117px; color:#fff; text-shadow:0 -1px 0 #000; }
+#wrapper .phone .survey div.topBar p.username{ font-size:1.3em; font-weight:600; padding-top:5px; }
+
+
+/* 대화말풍선 */
+#wrapper .phone .survey .conversation{ position:relative; overflow:hidden; padding:5px; padding-bottom:18px; margin-bottom:5px; }
+#wrapper .phone .survey .conversation img.profilePic{ position:absolute; right:10px; bottom:0; width:40px; height:40px; }
+#wrapper .phone .survey .conversation img.jabberPic{ position:absolute; left:5px; bottom:0; width:40px; height:40px; }
+
+/* 질문측 */
+#wrapper .phone .survey .conversation div.questionBaloon{ position:relative; display:inline-block; max-width:280px; max-height:292px; background:url('imgs/bg_q_ballon_tr.jpg') no-repeat top right; padding:10px 15px 0 0; margin-left:75px; margin-top:20px; }
+#wrapper .phone .survey .conversation div.questionBaloon p{ color:#0a5bbd; font-weight:600; }
+#wrapper .phone .survey .conversation div.questionBaloon span{ position:absolute; }
+#wrapper .phone .survey .conversation div.questionBaloon span.tl{  width:21px; height:100%; left:-21px; top:0; background:url('imgs/bg_q_ballon_tl.jpg') no-repeat 0 0; }
+#wrapper .phone .survey .conversation div.questionBaloon span.bl{ width:34px; height:18px; bottom:-18px; left:-34px; background:url('imgs/bg_q_ballon_bl.jpg') no-repeat 0 0; }
+#wrapper .phone .survey .conversation div.questionBaloon span.br{ width:100%; height:18px; bottom:-18px; right:0; background:url('imgs/bg_q_ballon_br.jpg') no-repeat top right; }
+
+
+/* 대답측 */
+#wrapper .phone .survey .conversation div.answerBaloon{ position:relative; display:inline-block; max-width:290px; max-height:292px; padding:10px 0 0 15px; background:url('imgs/bg_ballon_tl.jpg') no-repeat 0 0; float:right; margin-right:90px; }
+#wrapper .phone .survey .conversation div.answerBaloon p{ color:#084e17; font-weight:600; font-size:1.3em; }
+#wrapper .phone .survey .conversation div.answerBaloon span{ position:absolute; }
+#wrapper .phone .survey .conversation div.answerBaloon span.tr{ width:21px; height:100%; right:-21px; top:0; background:url('imgs/bg_ballon_tr.jpg') no-repeat 0 0; }
+#wrapper .phone .survey .conversation div.answerBaloon span.bl{ width:100%; height:18px; bottom:-18px; left:0; background:url('imgs/bg_ballon_bl.jpg') no-repeat 0 0; }
+#wrapper .phone .survey .conversation div.answerBaloon span.br{ width:34px; height:18px; bottom:-18px; right:-34px; background:url('imgs/bg_ballon_br.jpg') no-repeat 0 0; }
+
+/* 설문목록 */
+#wrapper .phone .survey .suvCon{ /*background:#f1f1f1;  margin:10px auto; border-top:2px solid #8fc2ff; border-bottom:1px solid #e5e5e5; padding:10px; */ margin-top:3px; }
+#wrapper .phone .survey .suvCon ul{  }
+#wrapper .phone .survey .suvCon ul li{ display:block; padding:5px 0; }
+#wrapper .phone .survey .suvCon ul li label input{ margin-right:5px; }
+
+/* 응모하기 */
+#wrapper .phone .survey .surveyDone{ width:100%; background:#f1f1f1; width:354px; margin:20px auto 10px; border-bottom:1px solid #e5e5e5; padding:10px; margin-top:30px; }
+
+#wrapper .phone .survey .surveyDone p{ text-align:center; color:#4c4c4c; font-weight:600; margin-bottom:15px; }
+
+#wrapper .phone .survey .confirm{ display: block; margin: 20px auto 0; }
+
+
+/* 정보입력 */
+#wrapper .phone .entry{ background:#fff; position:relative; z-index:10; }
+#wrapper .phone .entry h1{ width:388px; height:136px; background:#f3f3f3 url('imgs/entry_h1.png') no-repeat center; border-bottom:1px solid #999; text-indent: -9999px; }
+#wrapper .phone .entry p{ width:279px; height:31px; margin:15px auto 20px; background:url('imgs/entry_p.jpg') no-repeat 0 0; text-indent:-9999px; }
+
+#wrapper .phone .entry dl{ width:336px; margin:0 auto; *overflow:hidden;/* for IE7 */ }
+#wrapper .phone .entry dl dt,
+#wrapper .phone .entry dl dd{ display:inline-block; *float:left; *margin-bottom:30px;/* for IE7 */ }
+#wrapper .phone .entry dl dt { width:59px; color:#333; font-size:1.3em; margin-bottom:22px; text-align:right; padding-right:10px; }
+#wrapper .phone .entry dl dd input[type="text"]{ width:230px; padding:10px; border:1px solid #bfbfbf; }
+#wrapper .phone .entry dl.email dd input[type="text"]{ width:94px; }
+#wrapper .phone .entry dl.privacy dt{ width:327px !important; text-align:left; margin:0 0 12px 0; }
+#wrapper .phone .entry dl.privacy dd textarea{ width:312px; height:150px; }
+#wrapper .phone .entry dl.privacy dd label{ display:block; margin:8px 0; }
+#wrapper .phone .entry button{ margin:10px 0 0 122px; }
+
+#wrapper .entryDone{ position:absolute;width:388px; height:693px;  background:url('imgs/entry_done_bg.png'); z-index:20; }
+#wrapper .entryDone>div{ position:absolute; width:362px; height:174px; top:270px; left:13px; background:url('imgs/entry_done_layer.png') no-repeat 0 0; }
+#wrapper .entryDone>div.sDone{ background:url('imgs/survey_done_layer.png') no-repeat 0 0;  }
+#wrapper .entryDone>div button{ margin-top:115px !important; }
+
+
+
