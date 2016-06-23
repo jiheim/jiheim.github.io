@@ -192,6 +192,7 @@ html{
 			@include respond-to(handhelds) {
 				margin: 0 10px;
 				color: #fff;
+				font-size: calculateRem(30px);
 			}
 		}
 	}
@@ -203,10 +204,10 @@ html{
 
 	@include respond-to(handhelds) {
 		display: block !important;
-		position: fixed;
+		position: absolute;
 		font-size: calculateRem(24px);
-		top: calculateRem(5px);
-		left: calculateRem(5px);
+		top: 2%;
+		left: 2%;
 		display: inline-block;
 		width: 50px;
 		height: 50px;
@@ -220,8 +221,8 @@ html{
 .mobile-gnb-close{
 	position: fixed;
 	font-size: calculateRem(24px);
-	top: calculateRem(5px);
-	right: calculateRem(5px);
+	top: 2%;
+	right: 2%;
 	border: 0;
 	background: none;
 	color: #fff;

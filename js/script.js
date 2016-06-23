@@ -12,7 +12,7 @@ $(window).resize(function() {
 if(winWidth < 767){
 	$('.mobile-gnb-open').click(function(){
 
-		$('.intro-menu').prepend('<button class="mobile-gnb-close"><i class="fa fa-times" aria-hidden="true"></i></button>');
+		$('.intro-menu').prepend('<button class="mobile-gnb-close"><img src="img/close.svg" alt="" /></button>');
 
 		$('.intro-menu-list').animate({
 			top : "0"
