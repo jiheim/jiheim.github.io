@@ -1,0 +1,1041 @@
+@charset "utf-8";
+/* CSS Document */
+
+*:focus{ outline:none; }
+
+html,body{ 
+    font-family: 'Malgun Gothic','맑은 고딕',Dotum, sans-serif;  
+    width:100%; 
+	height:100%;    
+}
+
+a{ text-decoration:none; }
+
+.ellipsis{
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+/* 상단 메뉴 */
+.top{ 
+	position:fixed;
+	z-index:1000;
+	top:0;
+	left:50%;
+	margin-left:-484px;
+	background:#fff;
+	width:1084px;
+	
+}
+
+.top>a{
+	position:absolute;
+	left:-116px;
+	display:block;
+	width:116px;
+	height:78px;
+	background:url('../images/top_logo_social.png') no-repeat 0 0;
+	text-indent:-9999px;
+	cursor:pointer;
+}
+.navigation{
+	float:right;
+}
+.navigation li{
+	color:#515151;
+	display:block;
+	float:left;
+	padding: 20px 10px;
+	line-height:30px;
+	font-weight:bold;
+	-webkit-transition: all .2s ease-in-out;
+	text-align:center;
+	width:124px;
+	height:38px;
+	cursor:pointer;
+}
+
+.navigation li.service:hover, 
+.navigation li.service.active{
+	background:#ffbb50;
+	color:#fff;
+}
+
+.navigation li.cases:hover, 
+.navigation li.cases.active{
+	background:#ff8b8b;
+	color:#fff;
+}
+
+.navigation li.functions:hover, 
+.navigation li.functions.active{
+	background:#54708b;
+	color:#fff;
+}
+
+.navigation li.howto:hover, 
+.navigation li.howto.active{
+	background:#50d1e6;
+	color:#fff;
+}
+
+
+/* 사이드 바 */
+ul.sidebar{
+	position:fixed;
+	left:0;
+	top:225px;
+	z-index:10;
+	display:table;
+	font-size:0.9em;
+}
+
+ul.sidebar li a{
+	width:71px;
+	height:71px;
+	display:table-cell;
+	vertical-align:middle;
+	background:#4f4f4f;
+	color:#fff;
+	text-align:center;
+	border-bottom:1px solid #646464;
+}
+
+ul.sidebar li:last-child a{
+	border:0 none;
+}
+
+ul.sidebar li.join a:hover{ background:#bf72c6; }
+ul.sidebar li.login a:hover{ background:#9acc52; }
+ul.sidebar li.mypage a:hover{ background:#ff8c59; }
+
+
+/* 슬라이드 */
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+}
+.wrapper{
+	width:1200px;
+	margin:0 auto;
+	position:relative;
+}
+.slideno{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	font-size:100px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.3);
+}
+.button{
+	display:block;
+	width:74px;
+	height:59px;
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	margin-left:-37px;
+	background:#4f4f4f url(../images/arrow.png) no-repeat center top;
+}
+.button:hover{
+	background-color:#494949;
+	cursor:pointer;
+}
+
+#slide1 .button{
+	background-position:center 19px;
+}
+
+#slide2 .button{
+	background-position:center -42px;
+}
+
+#slide3 .button{
+	background-position:center -106px;
+}
+
+#slide4 .button{
+	background-position:center -166px;
+}
+
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1{
+	background-color:#57cadd;
+	position:relative;
+	height:1000px;
+}
+
+#slide1 .wrapper .imgs{ 
+	width:1200px;
+	height:500px;
+	position:relative;
+	top:90px;
+	z-index:1;
+}
+
+#slide1 .wrapper .imgs img{
+	position:absolute;
+}
+
+#slide1 .wrapper .imgs img:nth-child(1){
+	
+}
+
+#slide1 .wrapper .imgs img:nth-child(2){
+	
+}
+
+#slide1 .wrapper .imgs img:nth-child(3){
+}
+
+#slide1 .wrapper .imgs img:nth-child(4){
+}
+
+#slide1 .wrapper .imgs img:nth-child(5){
+	top:15px;
+	left:130px;
+}
+
+
+#slide1 .wrapper div.slogan{
+	overflow:hidden;
+	margin-top:30px;
+}
+
+#slide1 .wrapper div.slogan h2{
+	width:831px;
+	height:63px;
+	margin:0 auto 25px;
+	background:url('../images/main/ribbon.png') no-repeat 0 0;
+	text-indent:-9999px;
+} 
+
+#slide1 .wrapper div.slogan p{
+	margin-left:12px;
+	font-size:1.3em;
+	letter-spacing:-1px;
+	color:#fff;
+	float:left;
+}
+
+#slide1 .wrapper div.slogan button{
+	display:block;
+	background:#fff;
+	border:0 none;
+	border-radius:5px;
+	padding:20px 30px;
+	float:right;
+	margin-right:30px;
+	font:600 1.5em 'Malgun Gothic','맑은 고딕',Dotum, sans-serif;
+	color:#666;
+	letter-spacing:-1px;
+	cursor:pointer;
+}
+
+#slide1 .wrapper div.appStore{ 
+	position:relative;
+	text-align:center;
+	z-index:10;
+}
+
+#slide1 .wrapper div.appStore button{
+	display:inline-block;
+	border:0 none;
+	width:232px;
+	height:64px;
+	border-radius:5px;
+	margin:30px 5px 0;
+	background:rgba(255,255,255,0.5) url('../images/main/main_appstore_btn.png') no-repeat 30px 7px;
+	background:#fff url('../images/main/main_appstore_btn.png') no-repeat 30px 7px\9;
+	text-indent:-9999px;
+	cursor:pointer;
+}
+
+#slide1 .wrapper div.appStore button.googlePlay{
+	background-position:20px -88px;
+}
+
+
+/******************************
+ SLIDE 2 
+*******************************/
+#slide2{
+	background:#6cdace url('../images/slide2/top_bg.jpg') repeat-x 0 0 !important;
+	height:1000px;
+}
+#slide2 .wrapper>p{
+	padding-top:120px;
+	width:90%;
+	margin:0 auto;
+	font-size:1.5em;
+	color:#fff;
+	letter-spacing:-1px;
+}
+
+#slide2 .wrapper>div{
+	width:1050px;
+	margin:20px auto;
+}
+
+#slide2 .wrapper>div img{
+	margin-right:40px;
+}
+
+#slide2 .wrapper>div img:last-child{
+	margin:0;
+}
+
+#slide2 .wrapper>ul{
+	width:1100px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#slide2 .wrapper>ul li{
+	width:318px;
+	float:left;
+	margin-right:60px;
+	margin-bottom:20px;
+	color:#3a3a3a;
+	font-size:0.9em;
+	line-height:1.6;
+}
+
+#slide2 .wrapper>ul li:nth-child(3),
+#slide2 .wrapper>ul li:nth-child(6){
+	margin:0;
+}
+
+#slide2 .wrapper>ul li h4{
+	color:#fff;
+	font-weight:bold;
+	font-size:1.1em;
+	margin-bottom:5px;
+}
+
+/******************************
+ SLIDE 3 
+*******************************/
+#slide3{
+	background-color:#5c81a3;
+	height:1000px;
+}
+
+#slide3 .wrapper{
+	padding-top:100px;
+}
+
+#slide3 .wrapper h2{
+	font-size:2em;
+	font-weight:bold;
+	letter-spacing:-1px;
+	text-align:center;
+	color:#fff;
+}
+
+#slide3 .wrapper>div.casesSlide{
+	width:1279px;
+	overflow:hidden;
+	margin-top:30px;
+	margin-left:-40px;
+}
+
+
+#slide3 .wrapper>div.casesSlide>ul{
+	overflow:hidden;
+	width:2400px;
+	left:-40px;
+	top:180px;
+}
+
+#slide3 .wrapper div.casesSlide>ul>li{
+	width:405px;
+	border-radius:5px;
+	overflow:hidden;
+	float:left;
+	margin-right:32px;
+}
+
+
+#slide3 .wrapper>div.casesSlide>ul>li div:first-child{
+	background:#f3f3f3;
+	padding:16px 27px;
+	overflow:hidden;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li div:first-child img{
+	display:block;
+	width:158px;
+	height:158px;
+	float:left;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li div:first-child h3,
+#slide3 .wrapper>div.casesSlide>ul>li div:first-child ul{
+	margin-left:175px;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li div:first-child h3{
+	color:#3a5d7e;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li div:first-child button{
+	float:right;
+	padding:0px 25px 5px;
+	margin-top:15px;
+	background:#ff8b8b;
+	color:#fff;
+	font-family: 'Malgun Gothic','맑은 고딕',Dotum, sans-serif; 
+	font-size:1.1em;
+	border:0 none;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li div:nth-child(2){
+	background:#fff;
+	padding:16px 27px;
+	font-size:1em;
+	color:#333;
+	line-height:1.5;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li>ul{
+	background:#fff;	
+	font-size:0.9em;
+	color:#333;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li>ul>li {
+	border-top:1px solid #c2c2c2;
+	padding:16px 27px;
+	overflow:hidden;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li>ul>li img{
+	float:left;
+	display:block;
+	border-radius:54px;
+	box-shadow:0 1px 0 #d6d3d7;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li>ul>li p{
+	margin-left:70px;
+}
+
+
+/******************************
+ SLIDE 4 
+*******************************/
+
+#slide4{
+	background:#eb8a8a;
+	height:1000px;
+}
+
+#slide4 .wrapper{
+	width:1200px;
+	overflow:hidden;
+}
+
+#slide4 .wrapper .mask{
+	position:relative;
+	width:2400px;
+}
+
+.func1{
+	position:relative;
+	width:1200px;
+}
+
+.func2{
+	width:1200px;
+	position:absolute;
+	left:1200px;
+	top:0;
+}
+
+
+
+#slide4 .wrapper .mask .func1 img{
+	position:absolute;
+}
+
+#slide4 .wrapper .mask .func1 img:first-child{
+	position:relative;
+	margin-top:162px;
+	margin-left:452px;
+}
+
+#slide4 .wrapper .mask .func1 img.first{
+	top:156px;
+	left:157px;
+}
+
+#slide4 .wrapper .mask .func1 img.second{
+	top:312px;
+	left:111px;
+}
+
+#slide4 .wrapper .mask .func1 img.third{
+	top:475px;
+	left:150px;
+}
+
+#slide4 .wrapper .mask .func1 img.fourth{
+	top:646px;
+	left:116px;
+}
+
+#slide4 .wrapper .mask .func1 img.fifth{
+	top:132px;
+	left:772px;
+}
+
+#slide4 .wrapper .mask .func1 img.sixth{
+	top:284px;
+	left:786px;
+}
+
+#slide4 .wrapper .mask .func1 img.seventh{
+	top:467px;
+	left:776px;
+}
+
+#slide4 .wrapper .mask .func1 img.eighth{
+	top:643px;
+	left:762px;
+}
+
+#slide4 .wrapper .mask .func1 a,
+#slide4 .wrapper .mask .func2 a{
+	position:absolute;
+	top:444px;
+	display:block;
+	width:35px;
+	height:57px;
+	text-indent:-9999px;
+}
+
+#slide4 .wrapper .mask .func1 a{
+	background:url('../images/slide4/next.png') no-repeat 0 0;
+	right:0;
+}
+
+
+
+#slide4 .wrapper .mask .func2 ul{
+	width:960px;
+	margin-left:120px;
+	overflow:hidden;
+	margin-top:186px;
+	background:#fff;
+}
+
+#slide4 .wrapper .mask .func2 ul li{
+	float:left;
+	width:172px;
+	height:172px;
+	padding:10px;
+	font-size:0.8em;
+	text-align:center;
+	letter-spacing:-1px;
+}
+
+#slide4 .wrapper .mask .func2 ul li:nth-child(even){
+	background:#f3f3f3;
+}
+
+#slide4 .wrapper .mask .func2 ul li img{
+	margin-top:3px;
+}
+
+#slide4 .wrapper .mask .func2 ul li h3{
+	margin-top:5px;
+	font-weight:bold;
+	color:#617f9b;
+}
+
+#slide4 .wrapper .mask .func2 ul li p{
+	margin-top:5px;
+	font-size:0.9em;
+	color:#333;
+}
+
+#slide4 .wrapper .mask .func2 a{
+	background:url('../images/slide4/prev.png') no-repeat 0 0;
+	left:0;
+}
+
+
+
+/******************************
+ SLIDE 5
+*******************************/
+
+#slide5{
+	background:#facf75;
+	height:1100px;
+}
+
+#slide5 .wrapper{
+	text-align:center;
+	padding-top:90px;
+}
+
+#slide5 .wrapper h2{
+	color:#fff;
+	font-size:2em;
+	font-weight:bold;
+	letter-spacing:-1px;
+	margin-bottom:20px;
+	padding-top:50px;
+}
+
+#slide5 .wrapper h2:first-child{
+	padding-top:120px;
+}
+
+#slide5 footer{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	background:#fff;
+	color:#666;
+	font-size:0.8em;
+}
+
+#slide5 footer div{
+	width:1200px;
+	margin:0 auto;
+	padding:20px 10px;
+	overflow:hidden;
+}
+
+#slide5 footer div p:first-child{
+	float:left;
+	width:600px;
+}
+
+#slide5 footer div p:first-child img{
+	float:left;
+}
+
+#slide5 footer div p:first-child span{
+	display:block;
+	margin-left:80px;
+	margin-top:3px;
+}
+
+#slide5 footer div p:last-child{
+	float:right;
+	margin-top:10px;
+}
+
+#slide5 footer div p:last-child span{
+	display:inline-block;
+	margin-left:20px;
+}
+
+/******************************
+로그인
+*******************************/
+
+button.loginJoin{
+	position:fixed;
+	bottom:10px;
+	left:10px;
+	background:rgba(0,0,0,0.5);
+	width:150px;
+	padding:15px;
+	border:0 none;
+	border-radius:3px;
+	color:#fff;
+	font-weight:bold;
+	font-family:'Malgun Gothic',Dotum, sans-serif;
+	cursor:pointer;
+}
+
+.loginContent{
+	display:table;
+	width:100%;
+	height:100%;
+	background:#57cadd;
+}
+
+.loginContent .loginWrap{
+	display:table-cell;
+	vertical-align:middle;
+	width:333px;	
+}
+
+.loginContent .loginWrap div.login,
+.loginContent .loginWrap div.findId,
+.loginContent .loginWrap div.findPw{
+	width:333px;
+	margin:0 auto;
+	position:relative;
+	margin-bottom:10px;
+	background:#fff;
+	padding-top:20px;
+	border-radius:3px;
+	border-bottom:1px solid #47aabb;
+	box-shadow:0 0 3px rgba(0,0,0,0.15);
+}
+
+.loginContent .loginWrap div.findPw{
+	margin-bottom:0;	
+}
+
+
+
+.loginContent .loginWrap div button.close{
+	position:absolute;
+	display:block;
+	top:10px;
+	right:10px;
+	width:23px;
+	height:23px;
+	background:url('../images/join/close.png') no-repeat center center;
+	border:0 none;
+	text-indent:-9999px;
+	cursor:pointer;
+}
+
+.loginContent .loginWrap div input[type="text"],
+.loginContent .loginWrap div input[type="password"]{
+	width:303px;
+	border:0 none;
+	border-top:1px solid #ddd;
+	height:45px;
+	padding:0 15px;
+}
+
+.loginContent .loginWrap div input.pswd,
+.loginContent .loginWrap div input.mailAdrs{
+	border-bottom:1px solid #ddd;
+}
+
+.loginContent .loginWrap div button.confirm{
+	display:block;
+	width:100%;
+	padding:13px 0;
+	border:0 none;
+	background:#eee;
+	margin:0;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:1em;
+	font-family:'Malgun Gothic',Dotum,sans-serif;
+	color:#626262;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+
+
+.loginContent .loginWrap div.login h1 a{
+	display:block;
+	width:145px;
+	height:81px;
+	background:url('../images/join/join_logo.png') no-repeat 0 0;
+	text-indent:-9999px;
+	margin:0 auto 20px;
+}
+
+.loginContent .loginWrap div.login ul{
+	text-align:right;
+	margin:10px 0;
+}
+
+.loginContent .loginWrap div.login ul li{
+	display:inline-block;
+	font-size:0.8em;
+}
+
+.loginContent .loginWrap div.login ul li:last-child{
+	border:0 none;
+	margin-right:10px !important;
+}
+
+.loginContent .loginWrap div.login ul li a,
+.loginContent .loginWrap div.login ul li label{
+	margin:0 5px;	
+}
+
+.loginContent .loginWrap div.login ul li a{
+	color:#888;
+	margin-left:5px;
+	transition:all 0.5s ease;
+}
+
+.loginContent .loginWrap div.login ul li label{
+	cursor:pointer;
+}
+
+.loginContent .loginWrap div.login ul li label input{
+	vertical-align:middle;
+}
+
+.loginContent .loginWrap h2{
+	font-size:1.2em;
+	font-weight:bold;
+	color:#545454;
+	margin-left:10px;
+	margin-top:-7px;
+}
+
+.loginContent .loginWrap p{
+	color:#888;
+	font-size:0.8em;
+	margin:5px 10px 15px;
+}
+
+.loginContent footer{
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	font-size:0.8em;
+	color:#fff;
+}
+
+
+/******************************
+회원가입
+*******************************/
+.joinContent{
+	width:100%;
+	padding:20px 0;
+	background:#57cadd;
+}
+
+.joinContent .joinWrap{
+	width:800px;
+	background:#fff;
+	margin:0 auto;
+	padding:40px;
+	border-radius:3px;
+	border-radius:3px;
+	border-bottom:1px solid #47aabb;
+	box-shadow:0 0 3px rgba(0,0,0,0.15);
+	font-size:0.8em;
+}
+
+.joinContent .joinWrap input[type="text"],
+.joinContent .joinWrap input[type="password"]{
+	padding:5px;
+	border:1px solid #bbb;
+}
+
+.joinContent .joinWrap input[type="text"]:focus,
+.joinContent .joinWrap input[type="password"]:focus{
+	padding:4px;
+	border:2px solid #ff8b8b;
+}
+
+.joinContent .joinWrap div.topTitle{
+	padding-bottom:10px;
+	margin-bottom:10px;
+	border-bottom:1px solid #ddd;
+}
+
+.joinContent .joinWrap div.topTitle h1 a{
+	display:block;
+	width:145px;
+	height:81px;
+	background:url('../images/join/join_logo.png') no-repeat 0 0;
+	text-indent:-9999px;
+	margin:0 auto 20px;
+}
+
+.joinContent .joinWrap h2{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#545454;
+	margin-top:-7px;
+}
+
+.joinContent .joinWrap div.topTitle p{
+	margin-top:5px;
+	color:#888;
+}
+
+
+.joinContent .joinWrap div.joinForm dl:nth-child(even){
+	background:#eee;
+}
+
+.joinContent .joinWrap div.joinForm dl dt,
+.joinContent .joinWrap div.joinForm dl dd{
+	display:inline-block;
+	padding:10px;
+}
+
+.joinContent .joinWrap div.joinForm dl dt{
+	width:150px;
+	font-weight:bold;
+	color:#444;
+}
+
+.joinContent .joinWrap div.joinForm dl dt strong{
+	color:#ff5151;
+}
+
+.joinContent .joinWrap div.joinForm dl dd{
+	width:600px;
+}
+
+.joinContent .joinWrap button{
+	border:0 none;
+	background:#5c81a3;
+	padding:5px 10px;
+	font-weight:bold;
+	font-family:'Malgun Gothic',Dotum,sans-serif;
+	color:#fff;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+.joinContent .joinWrap input[type="checkbox"]{
+	vertical-align:middle;
+}
+
+.joinContent .joinWrap label{
+	cursor:pointer;
+}
+
+
+.joinContent .joinWrap div.joinForm dl.userId dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.userName dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.userPw dd input[type="password"],
+.joinContent .joinWrap div.joinForm dl.userPwAgain dd input[type="password"],
+.joinContent .joinWrap div.joinForm dl.ceoName dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.companySort dd input[type="text"]{
+	width:180px;
+}
+
+.joinContent .joinWrap div.joinForm dl.userPw dd span{
+	font-size:0.9em;
+	color:#f00;
+	margin-left:10px;
+}
+
+.joinContent .joinWrap div.joinForm dl.userMail dd input[type="text"]{
+	width:130px;
+}
+
+.joinContent .joinWrap div.joinForm dl.userMail dd select{
+	padding:5px;
+	width:150px;
+}
+
+.joinContent .joinWrap div.joinForm dl.userMail dd label{
+	margin-left:10px;
+}
+
+.joinContent .joinWrap div.joinForm dl.userPhone dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.userMobile dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.userFax dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.companyNum dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.userPhone dd select,
+.joinContent .joinWrap div.joinForm dl.userMobile dd select,
+.joinContent .joinWrap div.joinForm dl.userFax dd select{
+	width:100px;
+}
+
+.joinContent .joinWrap div.joinForm dl.companyAdrs dt{
+	vertical-align:top;
+}
+
+.joinContent .joinWrap div.joinForm dl.companyAdrs dd>input[type="text"]{
+	width:400px;
+	margin-top:5px;
+}
+
+.joinContent .joinWrap div.joinForm dl.companyAdrs dd>div input[type="text"]{
+	width:80px;
+}
+
+.joinContent .joinWrap div.joinForm dl.companyName dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.fbAdrs dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.twtAdrs dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.pinAdrs dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.linkedinAdrs dd input[type="text"],
+.joinContent .joinWrap div.joinForm dl.otherAdrs dd input[type="text"]{
+	width:300px;
+}
+
+.joinContent .joinWrap div.privacyCheck{
+	padding:30px 0;
+	text-align:center;
+}
+
+.joinContent .joinWrap div.privacyCheck p{
+	display:inline-block;
+	margin:0 20px;
+	font-weight:bold;
+}
+
+.joinContent .joinWrap div.privacyCheck p label{
+	margin-right:5px;
+}
+
+.joinContent .joinWrap div.privacyCheck p label input{
+	margin-right:5px;
+}
+
+.joinContent .joinWrap div.privacyCheck p a{
+	color:#ff8b8b;	
+}
+
+.joinContent .joinWrap div.confirmBtn{
+	margin-top:20px;
+	text-align:center;
+}
+
+.joinContent .joinWrap div.confirmBtn button{
+	width:180px;
+	padding:15px;
+	margin:0 10px;
+	font-size:1.3em;
+}
+
+.joinContent .joinWrap div.confirmBtn button.confirm{
+	background:#ff8b8b;
+}
+
+.joinContent .joinWrap div.confirmBtn button.cancel{
+	background:#aaa;
+}
+
+.joinContent .joinWrap div.privacyCon{
+	margin:30px 0;
+}
+
+.joinContent .joinWrap div.privacyCon div{
+	overflow:auto;
+	height:150px;
+	margin-top:10px;
+	border:1px solid #ddd;
+}
+
+.joinContent footer{
+	font-size:0.8em;
+	text-align:center;
+	color:#fff;
+	margin:20px 0;
+}
+
+
+

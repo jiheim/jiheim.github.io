@@ -1,0 +1,23 @@
+div.board.boardList table tbody tr{
+	border-bottom:1px solid #ddd;
+}
+
+ul.appList li{
+	margin:0 10px 10px 0 !important;
+}
+
+ul.appList li a:hover{
+	background:#fe9595;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl{
+	border-bottom:1px solid #ddd;
+}
+
+#service.wrapper div.content div.howto ul li{
+	width:150px;
+}
+
+#service.wrapper div.content div.howto ul li{
+	width:150px;
+}

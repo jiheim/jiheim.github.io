@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slide2 .wrapper>div img{
+	margin-right:20px;
+}
+
+#slide2 .wrapper>ul li{
+	height:180px;
+	margin-right:40px;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li div{
+	background:#fff;
+	padding:16px 27px;
+	font-size:1em;
+	color:#333;
+	line-height:1.5;
+}
+
+button.loginJoin{
+	background:#888;
+}
+
+.joinContent .joinWrap div.joinForm dl{
+	border-bottom:1px solid #ddd;
+}

@@ -1,0 +1,1757 @@
+*:focus{ outline:1px solid #f86765; }
+html{ background:#f7f7f7; }
+body{ 
+	width:100%; 
+	font-family:"malgun gothic","맑은 고딕","돋움",Dotum,Sans-serif;
+	font-size:0.8em;
+	color:#444;
+}
+a{
+	text-decoration:none;
+	color:#515151;
+}
+
+button{
+	border:0 none;
+	padding:0;
+	cursor:pointer;
+	font-family:"malgun gothic","맑은 고딕","돋움",Dotum,Sans-serif;
+	line-height:1.2;
+}
+
+input[type="text"]{
+	border:1px solid #bbb;
+	padding:5px;
+}
+
+input[type="text"]:focus{
+	border:2px solid #ff8b8b;
+	padding:4px;
+}
+
+
+/**************************** basic ****************************/
+
+.ellipsis{
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+/* stars */
+div.star{
+	width:92px;
+	height:15px;
+	background:#bbb url('../imgs/star.png') repeat-x;
+}
+div.star p{
+	height:15px;
+	background:#f86765 url('../imgs/star.png') repeat-x;
+}
+
+/* more button */
+button.moreResult{
+	display:block;
+	width:918px;
+	padding:8px 0;
+	text-align:center;
+	background:#fff;
+	border:1px solid #eee;
+	margin-top:-5px;
+	font-weight:bold;
+}
+button.moreResult:hover{
+	background:#eee;
+}
+
+
+.matchedApp{
+	margin-top: 15px;
+}
+
+/* selectbox */
+.customSelect {  
+	width:95px;
+	padding:9px;
+	border-radius:3px;
+	background:#eee url('../imgs/select_inner.png') repeat-y top right;
+	font-weight:bold;
+}
+
+.customSelectInner{
+	text-align:center;
+}
+
+.customSelect.customSelectHover,
+.customSelect.customSelectOpen,
+.customSelect.customSelectFocus{
+	background-color:#e5e5e5;
+}
+
+
+/* ordinary button */
+button.btn{
+	padding:8px;
+	border-radius:3px;
+	background:#ff7777;
+	color:#fff;
+	font-weight:bold;
+}
+
+button.btn:hover{
+	background:#ff8989;
+}
+
+button.btn:active{
+	background:#ff6a6a;
+}
+
+button.btn.disabled{
+	background:#a7a7a7;
+}
+
+/* white button */
+button.btn.white{
+	background:#fff;
+	color:#666;
+	border:1px solid #ccc;
+}
+
+
+
+/* big button */
+button.bigBtn{
+	padding:13px 35px;
+	border-radius:3px;
+	background:#ff7777;
+	color:#fff;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+/* big grey button */
+button.bigBtn.grey{
+	background:#D1D1D1;
+}
+
+
+/* download button */
+button.download{
+	width:90px;
+	color:#fff;
+	padding:8px;
+	border-radius:3px;
+	padding-left:23px;
+	background:#617f9b url('../imgs/btn_bg.png') no-repeat 5px 9px;
+}
+
+button.download.loading{
+	background:#ababab url('../imgs/btn_download_loadng.gif') no-repeat 5px 9px;
+}
+
+button.download.done{
+	background:#a3d41f url('../imgs/btn_bg.png') no-repeat 5px -20px;
+}
+
+
+/* app download button */
+
+button.btnAppDownload{
+	width:232px;
+	height:64px;
+	margin-top:10px;
+	background:#fff url('../imgs/app_btns.png') no-repeat 19px 10px;
+	border-radius:5px;
+	border-bottom:3px solid #e0e0e0;
+	text-indent:-9999px;
+}
+
+button.btnAppDownload.appstore{
+	background-position:-208px 8px;
+}
+
+
+/* searchbox */
+div.searchBox{
+	position:relative;
+	margin:20px;
+	margin-bottom:10px;
+	text-align:right;
+	height:49px;
+	min-width:300px;
+}
+
+div.searchBox input{
+	border:6px solid #f86765;
+	padding:10px;
+	min-width:300px;
+}
+
+div.searchBox input:focus{
+	border:6px solid #f86765;
+	padding:10px;	
+}
+
+div.searchBox button{
+	position:absolute;
+	bottom:13px;
+	right:13px;
+	width:23px;
+	height:23px;
+	background:url('../imgs/btn_search.png') no-repeat 0 0;
+	text-indent:-9999px;
+}
+
+
+/* category */
+ul.category{
+	overflow:hidden;
+}
+
+ul.category li{
+	width:100px;
+	height:100px;
+	float:left;
+}
+
+ul.category li:hover,
+ul.category li:focus{
+	background-color:#fff;
+	border-radius:100px;
+}
+
+
+ul.category li a{
+	display:block;
+	width:100px;
+	height:100px;
+	background:url('../imgs/menu_category.png') no-repeat 21px 11px;
+	text-indent:-9999px;
+}
+
+ul.category li.chicken a{ 
+	background-position:-86px 11px; 
+}
+ul.category li.delivery a{ 
+	background-position:-190px 11px; 
+}
+ul.category li.restaurant a{ 
+	background-position:-294px 11px; 
+}
+ul.category li.bakery a{ 
+	background-position:-396px 11px; 
+}			
+ul.category li.store a{ 
+	background-position:-502px 11px; 
+}
+ul.category li.hair a{ 
+	background-position:-606px 11px; 
+}
+ul.category li.edu a{ 
+	background-position:-712px 11px; 
+}
+ul.category li.health a{ 
+	background-position:21px -88px; 
+}
+ul.category li.estate a{ 
+	background-position:-86px -88px; 
+}
+ul.category li.leisure a{ 
+	background-position:-187px -88px; 
+}
+ul.category li.kids a{ 
+	background-position:-292px -88px; 
+}
+ul.category li.fashion a{ 
+	background-position:-396px -88px; 
+}
+ul.category li.mobile a{ 
+	background-position:-502px -88px; 
+}
+ul.category li.wedding a{ 
+	background-position:-606px -88px;
+}
+ul.category li.etc a{ 
+	background-position:-712px -88px; 
+}
+
+ul.category li.coffee a:hover,
+ul.category li.coffee a:focus{ 
+	background-position:21px -213px; 
+}
+
+ul.category li.chicken a:hover,
+ul.category li.chicken a:focus{ 
+	background-position:-86px -213px; 
+}
+ul.category li.delivery a:hover,
+ul.category li.delivery a:focus{ 
+	background-position:-190px -213px; 
+}
+ul.category li.restaurant a:hover,
+ul.category li.restaurant a:focus{ 
+	background-position:-294px -213px; 
+}
+ul.category li.bakery a:hover,
+ul.category li.bakery a:focus{ 
+	background-position:-396px -213px; 
+}
+ul.category li.store a:hover,
+ul.category li.store a:focus{ 
+	background-position:-502px -213px; 
+}
+ul.category li.hair a:hover,
+ul.category li.hair a:focus{ 
+	background-position:-606px -213px; 
+}
+ul.category li.edu a:hover,
+ul.category li.edu a:focus{ 
+	background-position:-712px -213px; 
+}
+ul.category li.health a:hover,
+ul.category li.health a:focus{ 
+	background-position:21px -312px; 
+}
+ul.category li.estate a:hover,
+ul.category li.estate a:focus{ 
+	background-position:-86px -312px; 
+}
+ul.category li.leisure a:hover,
+ul.category li.leisure a:focus{ 
+	background-position:-187px -312px; 
+}
+ul.category li.kids a:hover,
+ul.category li.kids a:focus{ 
+	background-position:-292px -312px; 
+}
+ul.category li.fashion a:hover,
+ul.category li.fashion a:focus{ 
+	background-position:-396px -312px; 
+}
+ul.category li.mobile a:hover,
+ul.category li.mobile a:focus{ 
+	background-position:-502px -312px; 
+}
+ul.category li.wedding a:hover,
+ul.category li.wedding a:focus{ 
+	background-position:-606px -312px; 
+}
+ul.category li.etc a:hover,
+ul.category li.etc a:focus{ 
+	background-position:-712px -312px; 
+}
+
+/* accordion menu */
+#marketplace.wrapper div.masthead ul.category,
+#myInfo.wrapper div.masthead ul.category{
+	width:900px;
+	margin:0 auto;
+	height:100px;
+	-webkit-transition:height 0.5s ease;
+    transition:height 0.5s ease;
+}
+
+#marketplace.wrapper div.masthead ul.category:hover,
+#myInfo.wrapper div.masthead ul.category:hover{
+	height:200px;
+}
+
+
+/* board */
+div.board table{
+	width:880px;
+}
+
+div.board table th,
+div.board table td{
+	padding:10px;
+}
+
+div.board.boardList caption{
+	visibility:hidden;
+}
+
+/* list */
+div.board table th{
+	font-weight:bold;
+	background:#7293b2;
+	color:#fff;
+}
+
+div.board.boardList table thead th.number,
+div.board.boardList table tbody td.number{
+	width:55px;
+	text-align:center;
+}
+
+div.board.boardList table thead th.releaseDate,
+div.board.boardList table tbody td.releaseDate{
+	width:85px;
+	text-align:center;
+}
+
+div.board.boardList table thead th.sort,
+div.board.boardList table tbody td.sort{
+	width:100px;
+	text-align:center;
+	font-weight:bold;
+}
+
+div.board.boardList table tbody td.releaseDate{
+	color:#888;
+}
+
+div.board.boardList table thead th.qState,
+div.board.boardList table tbody td.qState{
+	width:85px;
+	text-align:center;
+}
+
+div.board.boardList table tbody td.qState span{
+	display:block;
+	width:60px;
+	padding:3px;
+	background:#bbb;
+	color:#fff;
+	font-size:0.9em;
+	margin:0 auto;
+	border-radius:3px;
+}
+
+div.board.boardList table tbody td.qState span.qDone{
+	background:#FF9898;
+}
+
+
+div.board.boardList table tbody tr:nth-child(even){
+	background:#f5f5f5;
+	
+}
+
+div.board.boardList table tbody td.title a{
+	display:inline-block;
+	max-width:680px;
+} 
+
+div.board.boardList table tbody td.title a:hover{
+	color:#7293b2;
+}
+
+/* view */
+
+div.board.boardLView{
+	margin-bottom:20px;
+}
+
+div.board.boardLView table thead th{
+	overflow:hidden;
+}
+div.board.boardLView table thead th.title{
+	width:720px;
+}
+
+div.board.boardLView table thead th strong{
+	display:inline-block;
+	font-weight:bold;
+}
+
+div.board.boardLView table thead th p{
+	display:inline-block;
+
+	margin-left:10px;
+	font-weight:400;
+}
+
+div.board.boardLView table thead th.title p{
+	width:600px;
+	vertical-align:bottom;
+	font-size:1.2em;
+}
+
+div.board.boardLView table tbody td.article{
+	border-bottom:1px solid #ddd;
+}
+
+div.board.boardLView table tbody td.article div{
+	padding:10px 5px;
+}
+
+/* 1 to 1 */
+div.board.oneToOne table{
+	background:#eee;
+} 
+
+div.board.oneToOne table tr{
+	border-bottom:1px solid #ddd;
+}
+
+div.board.oneToOne table tr:last-child{
+	border:0 none;
+}
+
+div.board.oneToOne table td input{
+	width:300px;
+}
+
+div.board.oneToOne table td.authorName,
+div.board.oneToOne table td.authorMail,
+div.board.oneToOne table td.authorPhone,
+div.board.oneToOne table td.authorArticle{
+	width:110px;
+	text-align:center;
+	font-weight:bold;
+}
+
+div.board.oneToOne table td.nameField input{
+	width:200px;
+}
+
+div.board.oneToOne table td textarea{
+	width:650px;
+	height:300px;
+}
+
+div.board.oneToOne div{
+	text-align:center;
+}
+
+div.board.oneToOne button{
+	display:inline-block;
+	width:200px;
+	height:50px;
+	margin:20px 5px;
+	padding:10px 20px !important;
+	background-image:none !important;
+}
+
+div.board.boardLView table tbody td.answerView{
+	
+}
+
+div.board.boardLView table tbody td.answerView div.aTitle{
+	margin-top:10px;
+	padding:10px 20px;
+	background:#ddd;
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+div.board.boardLView table tbody td.answerView div.aContent{
+	background:#eee;
+	padding:20px;
+	
+}
+
+/* board button */
+div.board button.btn{
+	background:#858585 url('../imgs/btn_bg.png') no-repeat 9px -80px;
+	padding-left:30px;
+	padding-right:15px;
+}
+
+div.board button.btn:hover{
+	background-color:#9a9a9a;
+}
+
+div.board button.btn:active{
+	background-color:#777;
+}
+
+div.board button.btn.nextArticle{
+	background-position:9px -108px;
+}
+
+div.board div.listButtonWrap{
+	overflow:hidden;
+}
+
+div.board div.listButtonWrap button.nextArticle{
+	float:right;
+}
+
+div.board button.btn.writeArticle{
+	display:block;
+	background-position:9px -137px;
+	float:right;
+	margin-top:-50px;
+	background-color:#ff7777;
+}
+
+
+/* pagination */
+ul.pagination{
+	margin:20px 0;
+	text-align:center;
+}
+
+ul.pagination li{
+	display:inline-block;
+}
+
+ul.pagination li a,
+ul.pagination li.pointup{
+	display:block;
+	padding:5px 10px;
+	font-weight:bold;
+	background:#f5f5f5;
+	border:1px solid #eee;
+}
+
+ul.pagination li.pointup{
+	display:inline-block !important;
+	background:#7293b2;
+	color:#fff;
+	border-color:#546A7E;
+}
+
+ul.pagination li.prev a,
+ul.pagination li.next a{
+	background:#eee url('../imgs/board_arrow.png') no-repeat 9px 7px;
+	border:1px solid #ddd;
+	text-indent:-9999px;
+	width:8px;
+}
+
+ul.pagination li.next a{
+	background-position:-16px 7px;
+}
+
+/**************************** header ****************************/
+header{
+	width:100%;
+	background:#fff;
+	height:50px;
+	padding:15px 0;
+}
+
+header div{
+	position:relative;
+	width:960px;
+	margin:0 auto;
+}
+header div h1 a{
+	display:block;
+	width:88px;
+	height:50px;
+	background:url('../imgs/logo_nav.png') no-repeat 0 0;
+	text-indent:-9999px;
+}
+header div ul li{
+	display:inline-block;
+}
+header div ul li a{
+	font-weight:bold;
+	letter-spacing:-1px;
+}
+header div>nav,
+header div>ul{
+	position:absolute;
+}
+header div ul li a:hover{
+	color:#888;
+}
+/* Login */
+header div>ul{
+	top:13px;
+	right:10px;
+}
+header div>ul li{
+	margin-left:10px;
+}
+header div>ul li.fb a{
+	color:#3b5998;
+}
+
+/* GNB */
+header div>nav{
+	top:10px;
+	left:145px;
+}
+header div>nav ul li{
+	margin:0 20px;
+}
+header div>nav ul li:first-child{
+	margin-left:0;
+}
+header div>nav ul li a{
+	font-size:1.4em;
+}
+
+
+/**************************** wrapper ****************************/
+.wrapper{ 
+	
+}
+
+/* masthead */
+.wrapper div.masthead{
+	width:100%;
+}
+
+
+.wrapper div.masthead>div{
+	width:930px;
+	margin:0 auto;
+	padding:15px;
+	background:rgba(255,255,255,0.1);
+}
+
+/* content */
+.wrapper div.content{
+	position:relative;
+	width:960px;
+	margin:0 auto;
+	background:#fff;
+	min-height:800px;
+}
+
+.wrapper div.content h2{
+	font-size:1.8em;
+	font-weight:bold;
+	letter-spacing:-1px;
+	margin-bottom:20px;
+}
+
+/**************************** Apps ****************************/
+/* applist */
+ul.appList{
+	overflow:hidden;
+}
+
+ul.appList li{
+	position:relative;
+	float:left;
+	width:274px;
+	padding:11px;
+	background:#eee;
+	margin:0 15px 15px 0;
+}
+
+
+ul.appList li:nth-child(3n){
+	margin-right:0;
+}
+
+ul.appList li a{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:296px;
+	height:142px;
+}
+ul.appList li a span{
+	display:none;
+}
+ul.appList li:hover,
+ul.appList li:focus{
+	background:#fff;
+}
+ul.appList li a:hover,
+ul.appList li a:focus{
+	background:rgba(255,139,139,0.9);
+}
+ul.appList li a:hover span,
+ul.appList li a:focus span{
+	display:block;
+	margin:55px 0 0 56px;
+	padding-left:35px;
+	font-size:1.5em;
+	font-weight:bold;
+	background:url('../imgs/app_arrow.png') no-repeat left center;
+	color:#fff;
+}
+
+
+ul.appList li img{
+	width:117px;
+	height:117px;
+	display:block;
+	float:left;
+	border-radius:10px;
+	border-bottom:3px solid #c8c8c8;
+}
+
+ul.appList li h3,
+ul.appList li div.star,
+ul.appList li>p{
+	margin:0 0 5px 130px;
+	letter-spacing:-1px;
+}
+
+ul.appList li h3,
+ul.appList li>p{
+	min-width:150px;
+}
+
+ul.appList li h3{
+	margin-top:3px;
+	font-weight:bold;
+	font-size:1.3em;
+	color:#244a6e;
+}
+
+
+/**************************** Index ****************************/
+
+#index.wrapper div.masthead{
+	background:#5fd0e3;
+	border-top:1px solid #56bdcf;
+}
+
+#index.wrapper div.masthead div{
+	position:relative;
+	overflow:hidden;
+}
+
+#index.wrapper div.masthead div div.explore{
+	float:right;
+	width:600px;
+}
+
+#index.wrapper div.masthead div div.explore ul{
+}
+
+#index.wrapper div.masthead div div.explore div.searchBox{
+	width:556px;
+	height:84px;
+}
+
+#index.wrapper div.masthead div div.explore div.searchBox input{
+	width:524px;
+}
+
+#index.wrapper div.masthead div div.explore div.searchBox button{
+	bottom:13px;
+	right:16px;	
+}
+
+#index.wrapper div.masthead div div.explore div.searchBox label{
+	display:block;
+	text-align:center;
+	margin-bottom:10px;
+	font-size:1.4em;
+	font-weight:bold;
+	letter-spacing:-1px;
+	color:#555;	
+}
+
+#index.wrapper div.masthead div div.explore p,
+#index.wrapper div.masthead div div.appDownload p{
+	text-align:center;
+	margin-bottom:10px;
+	font-size:1.4em;
+	font-weight:bold;
+	letter-spacing:-1px;
+	color:#555;
+}
+
+#index.wrapper div.masthead div.appDownload{
+	position:absolute;
+	width:330px;
+	height:480px;
+	top:0;
+	left:0;
+	background:rgba(255,255,255,0.2);
+}
+
+#index.wrapper div.masthead div.appDownload:after{
+	display:block;
+	position:absolute;
+	width:144px;
+	height:175px;
+	top:147px;
+	left:86px;
+	content:"";
+	background:url('../imgs/app_downlad_pic.png') no-repeat 0 0;
+}
+
+#index.wrapper div.masthead div div.appDownload p{
+	margin:15px 38px;
+	font-size:1.7em;
+	text-align:left;
+}
+
+#index.wrapper div.masthead div.appDownload div{
+	position:absolute;
+	bottom:20px;
+	left:49px;
+}
+
+#index.wrapper div.masthead div.appDownload div button{
+	width:232px;
+	height:64px;
+	margin-top:10px;
+	background:#fff url('../imgs/app_btns.png') no-repeat 19px 10px;
+	border-radius:5px;
+	border-bottom:3px solid #e0e0e0;
+	text-indent:-9999px;
+}
+
+#index.wrapper div.masthead div.appDownload div button.appstore{
+	background-position:-208px 8px;
+}
+
+
+#index.wrapper div.content{
+	width:920px;
+	padding:26px 20px;
+}
+
+
+#index.wrapper div.event{
+	position:relative;
+}
+
+#index.wrapper div.event div{
+	position:relative;
+	width:843px;
+	overflow:hidden;
+	margin-left:38px;
+}
+
+#index.wrapper div.event div ul{	
+	overflow:hidden;	
+}
+
+#index.wrapper div.event div ul li{
+	float:left;
+}
+
+#index.wrapper div.event button{
+	position:absolute;
+	display:block;
+	bottom:4px;
+	width:30px;
+	height:90px;
+	background:url('../imgs/event_arrow.png') no-repeat 0 center;
+	text-indent:-9999px;
+}
+
+#index.wrapper div.event button.prev{
+	left:0;
+	background-position:-57px center;
+}
+
+#index.wrapper div.event button.next{
+	background-position:6px center;
+	right:0;
+}
+
+/**************************** myInfo ****************************/
+#myInfo.wrapper div.masthead{
+	background:#5fd0e3;
+	border-top:1px solid #56bdcf;
+}
+
+#myInfo.wrapper div.masthead div p{
+	font-family: 'Roboto', sans-serif;
+	font-size:3em;
+	color:#fff;
+	text-align:right;
+	margin-right:10px;
+}
+
+#myInfo.wrapper div.content{
+	width:900px;
+	padding:26px 30px;
+}
+
+#myInfo.wrapper div.content div{
+	margin-top:0;	
+}
+
+#myInfo.wrapper div.content form>div ul{
+	width:900px;
+	overflow:hidden;
+	background:#FFD270;
+}
+
+#myInfo.wrapper div.content form>div ul li{
+	float:left;
+	width:300px;	
+
+}
+
+#myInfo.wrapper div.content form>div ul li a{
+	display:block;
+	padding:15px 0;
+	margin:5px;
+	margin-bottom:0;
+	text-align:center;
+	font-size:1.3em;
+	font-weight:bold;
+	color:#666;
+}
+
+#myInfo.wrapper div.content form>div ul li a.selected{
+	background:#fff;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color:#444;
+	border-right:1px solid #ffc955;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable{
+	overflow:hidden;
+	margin-top:15px;
+}
+
+
+#myInfo.wrapper div.content form>div div.infoTable>div{
+	float:left;
+	width:50%;
+}
+
+
+#myInfo.wrapper div.content form>div div.infoTable dl:nth-child(even){
+	background:#f7f7f7;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl{
+	padding:10px;
+	overflow:hidden;
+}
+
+
+#myInfo.wrapper div.content form>div div.infoTable dl dt,
+#myInfo.wrapper div.content form>div div.infoTable dl dd{
+	float:left;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl dt{
+	width:120px;
+	font-weight:bold;
+	vertical-align:middle;
+	padding-top:8px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl dt strong{
+	color:#ff8b8b;
+	font-weight:bold;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl dd{
+	color:#777;	
+}
+
+
+#myInfo.wrapper div.content form>div div.infoTable.facebook dl{
+	height:35px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable.facebook dl dt{
+	color:#3b579d;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable.facebook dl dd{
+	width:285px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable.facebook dl dd .customSelect{
+	border:1px solid #ccc;
+	background:#fff url('../imgs/select_inner_content.png') repeat-y top right;
+}
+
+/*
+#myInfo.wrapper div.content form>div div.infoTable.facebook dl dd>span{
+	display:table-cell;
+	vertical-align:middle;
+	height:35px;	
+}
+*/
+#myInfo.wrapper div.content form>div div.infoTable dl dd>label{
+	font-size:0.9em;
+	margin-left:10px;
+	font-weight:bold;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.email dd>span{
+	display:block;
+	max-width:234px;
+	float:left;
+	margin-top:9px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.email dd>label{
+	display:inline-block;
+	cursor:pointer;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl dd span>input[type="text"]{
+	width:250px;
+	margin-top:3px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.userName dd>input{
+	width:150px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.userPhone dd input[type="text"],
+#myInfo.wrapper div.content form>div div.infoTable dl.userMobile dd input[type="text"]{
+	width:85px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.birth dd input[type="text"]{
+	width:75px;
+}
+
+
+#myInfo.wrapper div.content form>div div.infoTable dl.otherSns dd input[type="text"]{
+	width:300px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl dd button.sns{
+	padding-left:35px;
+	padding-right:10px;
+	background-image:url('../imgs/btn_social.png');
+	background-repeat:no-repeat;
+	background-position:8px 6px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.google dd button.sns{
+	background-position:8px -37px;	
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.dropbox dd button.sns{
+	background-position:8px -81px;	
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.interests dt{
+	vertical-align:top;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.interests dd{
+	width:735px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.interests dd div{
+	background:#f5f5f5;
+	padding:10px;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.interests dd div label{
+	display:inline-block;
+	width:119px;
+	padding:5px;
+	margin:5px;
+	cursor:pointer;
+}
+
+#myInfo.wrapper div.content form>div div.infoTable dl.interests dd div label input{
+	margin-right:5px;
+}
+
+
+#myInfo.wrapper div.content form>div div.infoTable dl dd label input{
+	vertical-align:middle;
+}
+
+#myInfo.wrapper div.content form>div>div{
+	margin:40px 0 0;
+}
+
+#myInfo.wrapper div.content form>div>div button.bigBtn{
+	margin:0 7px;
+	width:160px;
+	display:block;
+	margin:0 auto;
+}
+
+/* sns popup */
+.snsPopup{
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+
+.snsPopup p{
+	margin-top:30%;
+	font-weight:bold;
+	font-size:1.5em;
+}
+
+.snsPopup button{
+	width:80px;
+	margin-top:20px;
+}
+
+
+
+/**************************** service ****************************/
+#service.wrapper div.masthead{
+	background:#31d9c7;
+	border-top:1px solid #2dc5b5;
+}
+
+#service.wrapper div.masthead>div{
+	width:880px;
+	padding:26px 40px;
+	letter-spacing:-1px;
+	background-image:url('../imgs/service_masthead_bg.png');
+}
+
+#service.wrapper div.masthead>div div h2{
+	color:#fff;
+	font-size:2.5em;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+#service.wrapper div.masthead>div div p{
+	color:#4d4e4e;
+	font-size:1.2em;
+	padding-bottom:10px;
+}
+
+#service.wrapper div.masthead>div div button{
+	margin-right:10px;
+}
+
+#service.wrapper div.content{
+	width:880px;
+	padding:26px 40px;
+}
+
+#service.wrapper div.content ul.intro{
+	text-align:center;
+	margin-top:20px;
+}
+
+#service.wrapper div.content ul.intro li{
+	position:relative;
+	display:inline-block;
+	width:260px;
+	vertical-align:top;
+	margin:0 10px;
+	padding-top:129px;
+	letter-spacing:-1px;
+	color:#666;
+}
+
+#service.wrapper div.content ul.intro li:after{
+	position:absolute;
+	top:0;
+	left:77px;
+	display:block;
+	content:"";
+	width:103px;
+	height:103px;
+	background:url('../imgs/service_icon.png') no-repeat 0 0;
+}
+
+#service.wrapper div.content ul.intro li.coupon:after{
+	background-position:-145px 0;
+}
+
+#service.wrapper div.content ul.intro li.review:after{
+	background-position:-294px 0;
+}
+
+#service.wrapper div.content ul.intro li h4{
+	font-size:1.4em;
+	font-weight:bold;
+	margin-bottom:12px;
+}
+
+#service.wrapper div.content div.howto,
+#service.wrapper div.content div.introMembers{
+	margin-top:55px;
+}
+
+#service.wrapper div.content div.howto ul{
+	overflow:hidden;
+	background:#e8e8e8;
+	border-radius:5px;
+	height:71px;
+}
+
+#service.wrapper div.content div.howto ul li{
+	float:left;
+	width:156px;
+	height:51px;
+	padding-top:20px;
+	padding-right:24px;
+	text-align:center;
+	font-weight:bold;
+	color:#454545;
+}
+
+#service.wrapper div.content div.howto ul li:nth-child(even){
+	background:#e0e0e0 url('../imgs/service_howto2.png') no-repeat top right;
+}
+
+#service.wrapper div.content div.howto ul li:nth-child(odd){
+	background:#e8e8e8 url('../imgs/service_howto1.png') no-repeat top right;
+}
+
+#service.wrapper div.content div.howto ul li:nth-child(2),
+#service.wrapper div.content div.howto ul li:nth-child(3){
+	padding-top:30px;
+	height:41px;
+}
+
+#service.wrapper div.content div.howto ul li:last-child{
+	background:none;
+	padding-right: 0;
+}
+
+#service.wrapper div.content div.introMembers{
+	margin-bottom:45px;
+}
+
+#service.wrapper div.content div.introMembers p,
+#service.wrapper div.content div.introMembers button{
+	display:inline-block;
+	vertical-align:top;
+}
+
+#service.wrapper div.content div.introMembers p{
+	width:620px;
+	letter-spacing:-1px;
+	font-size:1.1em;
+}
+
+#service.wrapper div.content div.introMembers button{
+	width:255px;
+	height:70px;
+	margin-top:10px;
+	background-image:url('../imgs/service_members.png');
+	background-repeat:no-repeat;
+	background-position:61px 14px;
+	text-indent:-9999px;
+}
+
+/**************************** marketplace ****************************/
+#marketplace.wrapper div.masthead{
+	background:#617f9b;
+	border-top:1px solid #677f96;
+}
+
+#marketplace.wrapper div{
+	position:relative;	
+}
+
+#marketplace.wrapper div.content{
+	width:920px;
+	padding:26px 20px;
+}
+
+#marketplace.wrapper div.content div.searchArea{
+	margin:-26px -20px 30px; 
+	padding:20px;
+	background:#ececec;
+}
+
+#marketplace.wrapper div.content div.searchArea label{
+	display:block;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+#marketplace.wrapper div.content div.searchArea div.searchBox{
+	width:500px;
+	margin:0 auto;
+}
+
+
+
+#marketplace.wrapper div.content div.searchArea div.searchBox input{
+	width:471px;
+}
+
+#marketplace.wrapper div.content div.selectBox{
+	margin-bottom:15px;
+	margin-left:721px;
+}
+
+#marketplace.wrapper div.content div.selectBox button.btn{
+	padding:10px !important;
+}
+
+#marketplace.wrapper div.content div.selectBox label{
+	visibility:hidden;
+}
+
+#marketplace.wrapper div.content div.matchedApp>p{
+	height:50px;
+	padding-top:10px;
+	font-weight:bold;
+	letter-spacing:-1px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#marketplace.wrapper div.content div.matchedApp>p strong{
+	color:#fd9595;
+	font-weight:bold;
+}
+
+/* detail */
+#marketplace.wrapper div.content div.appDetail div.addDetailHeader{
+	position:relative;
+	margin:-26px -20px 0 -20px;
+	padding:20px;
+	overflow:hidden;
+	background:#ececec;
+}
+
+#marketplace.wrapper div.content div.appDetail div.addDetailHeader>img{
+	width:155px;
+	height:155px;
+	display:block;
+	margin-right:30px;
+	float:left;
+	border-radius:10px;
+	box-shadow:0 3px 0 rgba(0,0,0,0.1);
+}
+
+#marketplace.wrapper div.content div.appDetail div{
+	line-height:1.8;
+}
+
+#marketplace.wrapper div.content div.appDetail h3{
+	font-size:2em;
+	font-weight:bold;
+	color:#30495f;
+	margin-top:-10px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.addDetailheader div h3,
+#marketplace.wrapper div.content div.appDetail div.addDetailheader div p{
+	margin-left:178px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.addDetailheader div button{
+	margin-top:10px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.addDetailHeader div.rate{
+	position:absolute;
+	top:2px;
+	right:52px;
+	margin-left:0;
+}
+
+#marketplace.wrapper div.content div.appDetail div.addDetailHeader div.rate p{
+	font-size:6em;
+	font-family: 'Roboto', sans-serif;
+	color:#617f9b;
+}
+
+#marketplace.wrapper div.content div.appDetail div.addDetailHeader div.rate div.star{
+	margin:0 auto;
+}
+
+#marketplace.wrapper div.content div.appDetail div.appImgs{
+	width:920px;
+	overflow:hidden;
+	padding-bottom:17px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.appImgs:hover{
+	overflow:auto;
+	padding-bottom:0;
+}
+
+#marketplace.wrapper div.content div.appDetail div.appImgs div.mask{
+	width:1500px;
+	padding-top:20px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.appImgs div.mask img{
+	width:250px;
+	margin-right:10px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.appDesc{
+	padding:25px 0;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+
+
+#marketplace.wrapper div.content div.appDetail h4{
+	margin-top:20px;
+	font-weight:bold;
+	font-size:1.5em;
+	margin-bottom:5px;
+	color:#30495f;
+}
+
+#marketplace.wrapper div.content div.appDetail div.writeReview{
+	height:0;
+	overflow:hidden;
+	-webkit-transition:height 0.5s ease;
+    transition:height 0.5s ease;
+	margin:0 auto;
+}
+
+#marketplace.wrapper div.content div.appDetail div.writeReview.open{
+	height:300px;
+	overflow:visible;
+	margin-bottom:30px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.writeReview div{
+	padding:20px;
+	position:relative;
+	background:#eee;
+	width:600px;
+	margin:30px auto 50px;
+}
+
+
+#marketplace.wrapper div.content div.appDetail div.writeReview button.close{
+	position:absolute;
+	top:10px;
+	right:10px;
+	display:block;
+	width:22px;
+	height:22px;
+	background:url('../imgs/btn_review_close.png') no-repeat 0 0;
+	text-indent:-9999px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.writeReview ul.reviewStar{
+	width:159px;
+	overflow:hidden;
+}
+
+#marketplace.wrapper div.content div.appDetail div.writeReview ul.reviewStar li{
+	width:28px;
+	height:27px;
+	float:left;
+}
+
+#marketplace.wrapper div.content div.appDetail div.writeReview ul.reviewStar li a{
+	display:block;
+	width:28px;
+	height:27px;
+	background:url('../imgs/review_write_star.png') no-repeat 0 0;
+	text-indent:-9999px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.writeReview ul.reviewStar li a.selected{
+	background-position:-28px 0;
+}
+
+#marketplace.wrapper div.content div.appDetail div.writeReview textarea{
+	width:597px;
+	height:175px;
+	margin-top:14px;
+	border:1px solid #ddd;
+}
+
+#marketplace.wrapper div.content div.appDetail div.writeReview button.submit{
+	display:block;
+	margin:7px auto 0;
+	width:180px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList{
+	position:relative;
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList button.btnReview{
+	position:absolute;
+	top:0;
+	left:130px;
+	background:#eee url('../imgs/../imgs/btn_bg.png') no-repeat 5px -52px;
+	border:1px solid #dbdbdb;
+	color:#444;
+	padding:6px 9px;
+	padding-left:27px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList button.btnReview:hover{
+	background-color:#ddd;
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList button.btnReview:active{
+	background-color:#f5f5f5;
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList ul.reviewL li{
+	overflow:hidden;
+	padding:10px;
+	border-bottom:1px solid #ddd;
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList ul.reviewL li:last-child{
+	border:0 none;
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList ul.reviewL li img{
+	display:block;
+	width:54px;
+	height:54px;
+	border-radius:54px;
+	float:left;
+	margin-right:20px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList ul.reviewL li>p{
+	margin-left:74px;
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList ul.reviewL li div.star{
+	margin:5px;
+	margin-left:74px;
+	margin-bottom:10px;
+	background-image:url('../imgs/star_rv.png');
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList ul.reviewL li div.star p{
+	background-image:url('../imgs/star_rv.png');	
+}
+
+#marketplace.wrapper div.content div.appDetail div.reviewList ul.reviewL li p.userName{
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+
+
+/**************************** customer ****************************/
+#customer.wrapper div.masthead{
+	background:#ff8b8b;
+	border-top:1px solid #e88989;
+}
+
+#customer.wrapper div.masthead div{
+	padding-top:4px;
+	padding-bottom:0;
+}
+
+#customer.wrapper div.masthead ul{
+	margin-left:283px;
+	overflow:hidden;		
+}
+
+#customer.wrapper div.masthead ul li{
+	float:left;
+}
+
+#customer.wrapper div.masthead ul li a{
+	display:block;
+	padding:10px 20px;
+	margin:0 5px;
+	color:#fff;
+	font-weight:bold;
+}
+
+#customer.wrapper div.masthead ul li a.selected{
+	background:#fff;
+	color:#727272;
+}
+
+#customer.wrapper div.content{
+	width:880px;
+	padding:26px 40px;
+}
+
+#customer.wrapper div.content div.faqSort{
+	position:absolute;
+	top:25px;
+	right:40px;
+}
+
+#customer.wrapper div.content div.faqSort button.btn{
+	padding:10px;
+}
+
+
+/**************************** footer ****************************/
+footer{
+	width:100%;
+	background:#666;
+	color:#fff;
+	padding:30px 0;
+}
+footer div{
+	position:relative;
+	overflow:hidden;
+	width:960px;
+	height:49px;
+	margin:0 auto;
+}
+
+footer div h2{
+	float:left;
+	width:67px;
+	height:37px;
+	background:url('../imgs/logo_footer.png') no-repeat 0 0;
+	text-indent:-9999px;
+}
+
+footer div address{
+	margin-left:90px;
+}
+
+footer div>div{
+	position:absolute;
+	top:0;
+	right:0;
+	text-align:right;
+	font-size:0.9em;
+}
+
+
+/**************************** for Web Accessibility certification ****************************/
+
+div#skipNav,
+div#returntoTop{
+	position:relative;
+}
+
+div#skipNav a,
+div#returntoTop a{
+	display:block; 
+	height:1px; 
+	width:1px; 
+	margin-bottom:-1px; 
+	overflow:hidden; 
+	text-align:center; 
+	color:#000; 
+	white-space:nowrap;
+}
+
+div#skipNav a:focus,
+div#returntoTop a:focus,
+div#skipNav a:active,
+div#returntoTop a:active{
+	height:auto;
+	width:auto;
+	padding:5px; 
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
