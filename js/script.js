@@ -1,7 +1,7 @@
 
 
 
-$('.intro-menu').prepend('<button class="mobile-gnb-open"><i class="fa fa-bars" aria-hidden="true"></i></button>')
+$('.intro-menu-mobile').prepend('<button class="mobile-gnb-open"><i class="fa fa-bars" aria-hidden="true"></i></button>')
 
 var winWidth = 0; 
 $(window).resize(function() {
@@ -12,9 +12,9 @@ $(window).resize(function() {
 if(winWidth < 767){
 	$('.mobile-gnb-open').click(function(){
 
-		$('.intro-menu').prepend('<button class="mobile-gnb-close"><img src="img/close.svg" alt="" /></button>');
+		$('.intro-menu-mobile').prepend('<button class="mobile-gnb-close"><img src="img/close.svg" alt="" /></button>');
 
-		$('.intro-menu-list').animate({
+		$('.intro-menu-mobile-list').animate({
 			top : "0"
 		},"slow", "swing");
 
@@ -22,7 +22,7 @@ if(winWidth < 767){
 			$('.mobile-gnb-close').hide();
 			$('.mobile-gnb-open').show();
 
-			$('.intro-menu-list').animate({
+			$('.intro-menu-mobile-list').animate({
 				top : "-1000px"
 			},"slow", "swing");
 		});
