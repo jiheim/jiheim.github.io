@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* ============================================================
+petLoves.me ++ BASIC ++ styleSheet
+---------------------------------------------------------------
+Version : 1.0
+Author : userstorylab(dannaeyang,hi8ar)
+---------------------------------------------------------------
+Last Date Modified : 2011. 7.
+============================================================== */
+/* status */
+#div_status,
+#div_yesno {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-Index: 1000;
+}
+.overray {
+	width: 820px;
+	margin: 0 auto;
+	background:url(../images/common/bg_overlay.png) repeat-x 0 top;
+
+	color: #fff;
+	z-index: 100;
+	background: 127;
+	display:block;
+	font-family: NanumGothic,나눔고딕,"Malgun Gothic","맑은 고딕",Arial,sans-serif;
+	font-size:14px;
+	font-weight:700;
+	line-height:1.6;
+	text-align:center;
+	vertical-align:middle;
+	text-shadow: 1px 1px #111;
+	/*
+	width: 98%;
+	opacity: 0.9;
+	box-shadow: 0 0 3px #ddd;
+	*/
+	position: relative;
+	border-radius: 0 0 8px 8px;
+	-moz-box-shadow: 0 2px 2px #5F4741;
+	-webkit-box-shadow: 0 2px 2px #5F4741;
+	box-shadow: 0 2px 2px #5F4741;
+}
+#div_status_inner,
+#div_yesno_inner {
+	display: block;
+	padding: 35px 0;
+	/*
+	border: 1px solid #bca789;
+	*/
+	border-bottom: 1px solid #ac987b;
+	border-radius: 0 0 8px 8px;
+}
+#div_status .close,
+#div_yesno .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	background: url(../images/common/ico_closer.png) no-repeat 2px -18px;
+	width: 8px;
+	height: 8px;
+	padding: 2px;
+	border: 1px solid #ac987b;
+	text-indent: -9999px;
+	overflow: hideen;
+}
+
+#div_status .close:hover,
+#div_yesno .close:hover {
+	background-color: #111;
+}
+.yesno { display: block; text-align: center; margin: 15px 0 0; font-size:12px; }
+.yesno a,
+.yesno a:visited {
+	background: #fff url(../images/common/bg_gra.gif) repeat-x 0 0;
+	border: 1px solid #ddd;
+	border-bottom: 3px solid #ddd;
+	padding: 4px 10px;
+	margin: 0 5px;
+	text-decoration: none;
+	border-radius: 3px;
+	letter-spacing: -1px;
+	vertical-align: middle;
+	color: #777;
+	text-shadow: 1px 1px #fff;
+}
+.yesno a:hover {
+	background: #fff url(../images/common/bg_slick.gif) repeat-x 0 0;
+	text-decoration: none;
+}
+.yesno a:active {
+	background: #fff url(../images/common/bg_slick.gif) repeat-x 0 0;
+	padding: 5px 10px 4px;
+	border: 1px solid #bca789;
+	box-shadow: 0 1px 1px #ccc inset;
+	color: #3C3331;
+}

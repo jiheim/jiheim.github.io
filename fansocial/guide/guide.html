@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="no" http-equiv="imagetoolbar" />
+    <meta name="description" content="" />
+    <meta name="keywords" lang="ko" content="" />
+    <meta name="keywords" lang="en" content="" />
+
+    <!-- CSS -->
+<link type="text/css" rel="stylesheet" href="http://petloves.me/style/guide.css" />
+
+    <!-- JS -->
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+
+
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(function(){
+           $(".slide").slides({
+                animationStart: function(current){
+                    $('.caption').animate({
+                        bottom:-35
+                    },100);
+                    if (window.console && console.log) {
+                        // example return of current slide number
+                        console.log('animationStart on slide: ', current);
+                    };
+                },
+                animationComplete: function(current){
+                    $('.caption').animate({
+                        bottom:0
+                    },200);
+                    if (window.console && console.log) {
+                        // example return of current slide number
+                        console.log('animationComplete on slide: ', current);
+                    };
+                },
+                slidesLoaded: function() {
+                    $('.caption').animate({
+                        bottom:0
+                    },200);
+                }
+           });
+        });
+
+        $("div.slideItem img").hover(function () {
+            $(".caption").stop(true, true).animate({bottom:-35},"slow");
+          },function () {
+            $(".caption").stop(true, true).animate({bottom:-0},"fast");
+          }
+        );
+
+        $("#gNav1").click(function() {
+           $(".nav li a").removeClass("selected");
+           $("#gNav1").addClass("selected");
+           $(".gContent").hide();
+           $("#gContent1").show();
+           return false;
+        });
+
+        $("#gNav2,#nextTo2").click(function() {
+           $(".nav li a").removeClass("selected");
+           $("#gNav2").addClass("selected");
+           $(".gContent").hide();
+           $("#gContent2").show();
+           return false;
+        });
+
+        $("#gNav3,#nextTo3").click(function() {
+           $(".nav li a").removeClass("selected");
+           $("#gNav3").addClass("selected");
+           $(".gContent").hide();
+           $("#gContent3").show();
+           return false;
+        });
+
+        $("#gNav4,#nextTo4").click(function() {
+           $(".nav li a").removeClass("selected");
+           $("#gNav4").addClass("selected");
+           $(".gContent").hide();
+           $("#gContent4").show();
+           return false;
+        });
+
+
+    });
+    </script>
+
+ </head>
+
+ <body>
+  <div id="guide">
+	<ul class="nav">
+		<li><a id="gNav1" href="#"><em>1</em>트위터로 가입하기</a></li>
+		<li><a id="gNav2" href="#"><em>2</em>기본정보 쉽게 입력하기</a></li>
+		<li><a id="gNav3" href="#"><em>3</em>친구에 대해 말하기</a></li>
+		<li><a id="gNav4" href="#"><em>4</em>인맥 찾아보기</a></li>
+	</ul>
+
+	<div id="gContent1" class="gContent">
+		<div class="slideContent">
+			<div class="slide">
+				<div class="slides_container">
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="트위터로 가입하기 1" />
+						<div class="caption" style="bottom:0">
+							<p>트위터 연동으로 간편하게 가입하세요</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a id="next_to2" href="#" >다음 슬라이드로</a>
+		</div>
+	</div>
+
+	<div id="gContent2" class="gContent" style="display:none;">
+		<div class="slideContent">
+			<div class="slide">
+				<div class="slides_container">
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="기본정보 쉽게 입력하기1" />
+						<div class="caption">
+							<p>페이스북 계정이 있으세요? 페이스북을 연동하면 프로필을 하나하나 입력하지 않아도 되요.</p>
+						</div>
+					</div>
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="기본정보 쉽게 입력하기2" />
+						<div class="caption" style="bottom:0">
+							<p>만들어진 프로필을 트위터,페이스북에 공유하세요.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a id="next_to3" href="#">다음 슬라이드로</a>
+		</div>
+	</div>
+
+	<div id="gContent3" class="gContent" style="display:none;">
+		<div class="slideContent">
+			<div class="slide">
+				<div class="slides_container" id="slide_me">
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="친구에 대해 말하기1" />
+						<div class="caption" style="bottom:0">
+							<p>버튼을 누르면 자신의 트위터 친구에 대해 말할 수 있는 창이 뜹니다.</p>
+						</div>
+					</div>
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="친구에 대해 말하기2" />
+						<div class="caption" style="bottom:0">
+							<p>트위터 친구의 아이디를 입력하고 보내고 싶은 말을 입력해 보세요.</p>
+						</div>
+					</div>
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="친구에 대해 말하기3" />
+						<div class="caption" style="bottom:0">
+							<p>보내기 버튼을 누르면, 팬소셜 프로필이 없는 친구에게도 프로필을 만들어 줄 수 있습니다.</p>
+						</div>
+					</div>
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="친구에 대해 말하기4" />
+						<div class="caption" style="bottom:0">
+							<p>친구의 프로필을 방문해 보세요</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a id="next_to4" href="#">다음 슬라이드로</a>
+		</div>
+	</div>
+
+	<div id="gContent4" class="gContent" style="display:none;">
+		<div class="slide">
+			<div class="slide_content">
+				<div class="slides_container">
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="인맥 찾아보기 1" />
+						<div class="caption" style="bottom:0">
+							<p>프로필의 말들을 눌러 비슷한 관심사를 가진 사람들을 찾아보세요.</p>
+						</div>
+					</div>
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="인맥 찾아보기 2" />
+						<div class="caption" style="bottom:0">
+							<p>상단의 검색창으로도 다른 사람의 프로필을 찾을 수 있습니다.</p>
+						</div>
+					</div>
+					<div class="slideItem">
+						<img src="images/guide1.jpg" alt="인맥 찾아보기 3" />
+						<div class="caption" style="bottom:0;">
+							<p>마음에 드는 프로필을 찾았다면 팬 될래요! 버튼을 눌러주세요.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+ </BODY>
+</HTML>

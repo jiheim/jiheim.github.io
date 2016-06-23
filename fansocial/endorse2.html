@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="no" http-equiv="imagetoolbar" />
+    <meta name="description" content="" />
+    <meta name="keywords" lang="ko" content="" />
+    <meta name="keywords" lang="en" content="" />
+
+    <title> fansocial! </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" media="screen" href="css/basic.css" type="text/css" />
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox-1.3.4.css" type="text/css" />
+    <!--[if IE 6]>
+        <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js"></script>
+        <script type="text/javascript">
+            DD_belatedPNG.fix('.header_endorse_popup_top,.header_endorse_popup fieldset,.header_endorse_popup_bottom,.fanlist_username,.theme1_highlight,.main_fan_counter,.main_fan_counter span,.main_fan_counter a,.favicons li a,.photo_profile,.theme2_endorse,.sympathy_bt a,.profile_fan a,.goto_profile, img');
+        </script>
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" media="screen" href="" type="text/css" />
+    <![endif]-->
+    <!-- JS -->
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.easing-1.4.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+
+</head>
+
+
+<body>
+
+				 <!--보내기 레이어 1(편지봉투 모양) -->
+				 <div class="letter_wrap" style="display:none;">
+					<div class="letter">
+						<h4>받는 분은 이 분인가요?</h4>
+							<ul>
+								<li><img src="images/user_profile_72.jpg" alt="user_ID" /></li>
+								<li>
+								<p class="letter_name">박슬기</p>
+								<p class="letter_twit">@_happyidea</p>
+							</li>
+						</ul>
+						<div>
+							<button class="no_bt">아니오, 다른 사람이예요</button>
+							<button class="yes_bt">네,맞아요</button>
+						</div>
+					</div>
+				</div>
+				<!--보내기 레이어 1 끝(편지봉투 모양) -->
+
+				 <!--보내기 레이어 2(편지봉투 모양) -->
+				 <div class="letter_wrap" style="display:none;">
+					<div class="letter">
+						<h5>발송이 완료되었습니다.<br />보낸 내용을 확인하러 가시겠어요?</h5>
+						<div>
+							<button class="no_bt">아니요</button>
+							<button class="yes_bt">네,확인할래요</button>
+						</div>
+					</div>
+				</div>
+				<!--보내기 레이어 2 끝(편지봉투 모양) -->
+
+
+<div class="wrap">
+	<div id="header">
+            <h1><a href="#">fansocial</a></h1>
+			<!--헤더 검색-->
+				<ul  class="header_serch">
+					<li class="header_serch_serchtab">
+						<input class="header_serchtext" type="text" />
+						<input class="header_submit" type="submit" value="검색" />
+					</li>
+					<li class="header_serch_random"><button class="header_random">Random</button></li>
+				</ul>
+			 <!--헤더 검색 끝-->
+			 <!--말하기-->
+             <div class="header_nav">
+
+             <p class="header_endorse"><a href="#"><strong>누군가에 대해 말해 보세요!</strong></a></p>
+				 <div class="header_endorse_popup">
+				 	<div class="header_endorse_popup_top"></div>
+					<fieldset> 
+					<div class="header_endorse_twitselect">
+						<label class="header_endorse_content">@</label>
+						<input class="input_txt header_endorse_twitid" type="text"  value="트위터 아이디"/>
+						<label class="header_endorse_content">의</label>
+						<ul class="header_endorse_select">
+							<li><a href="#">선택하세요</a>
+								<ul style="display:none;">
+									<li><a href="#">전문 분야</a></li>
+									<li><a href="#">잘하는 것(특기)</a></li>
+									<li><a href="#">취미</a></li>
+									<li><a href="#">별명</a></li>
+									<li><a href="#">좋아하는 것</a></li>
+									<li><a href="#">싫어하는 것</a></li>
+								</ul>
+							</li>
+						</ul>
+						</div>
+						<div class="clear"></div>
+						<p class="writing_notice"><span>※콤마(,)</span>로 구분해서 작성해 주세요</p>
+						<input class="input_txt header_endorse_write" type="text" value="※쉼표(,)로 구분하여 최대 3가지를 말할 수 있습니다."/>
+						<label class="header_endorse_info"></label>
+						<button class="header_endorse_submit"><a href="#">보내기</a></button>
+					   </fieldset>
+					   	<div class="header_endorse_popup_bottom"></div>
+				 </div>
+				 <!--말하기 끝-->
+				 <!--셋팅,로그아웃-->
+                <ul class="setting">
+                    <li><a href="#">설정</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                </ul>
+				<!--셋팅,로그아웃 끝-->
+            </div>
+			<!--clear-->
+    </div><!-- /#header-->
+
+
+    <div id="container">
+		<div id="content">
+		<!--상단 프로필 부분-->
+       	  <div class="user_profile">
+            <a href="#" class="profile_nav">←<strong>커버스토리</strong>로 돌아가기</a>
+            <img class="user_proflie_pic_128" src="images/user_profile_128.jpg" alt='박슬기' />
+                <div class="profile_desc">
+                    <h2>박슬기</h2>
+                    <h3>@_happyidea</h3>
+                    <p><a href="https://twitter.com/_happyidea" class="twitter-follow-button" data-show-count="false">Follow @_happyidea</a>
+<!--<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>--></p>
+                    <ul class="favicons">
+						<li><a href="#"><img src="images/twitter_16.png" alt="twitter" /></a></li>
+						<li><a href="#"><img src="images/facebook_16.png" alt="facebook" /></a></li>
+						<li><a href="#"><img src="images/linkedin_16.png" alt="linkedin" /></a></li>
+						<li><a href="#"><img src="images/yozm_16.png" alt="yozm" /></a></li>
+						<li><a href="#"><img src="images/me2day_16.png" alt="me2day" /></a></li>
+						<li><a href="#"><img src="images/cyworld_16.png" alt="cyworld" /></a></li>
+						<li><a href="#"><img src="images/userstorybook_16.png" alt="userstorybook" /></a></li>
+						<li><a href="#"><img src="images/kooo_16.png" alt="kooo" /></a></li>
+						<li><a href="#"><img src="images/petlovesme_16.png" alt="petlovesme" /></a></li>
+					</ul>
+					<div class="clear"></div>
+					<p class="profile_introduce">자기소개입니다 동해물과 백두산이 마르고 닳도록.자기소개입니다 동해물과 백두산이 마르고 닳도록.자기소개입니다 동해물과 백두산이 마르고 닳도록.자기소개입니다 동해물과 백두산이 마르고 닳도록.자기소개입니다 동해물과 백두산이 마르고 닳도록.자기소개입니다 동해물과 백두산이 마르고 닳도록.자기소개입니다 동해물과 백두산이 마르고 닳도록.자기소개입니다 동해물과 백두산이 마르고 닳도록.자기소개입니다 동해물과 백두산이 마르고 닳도록.</p>
+                </div>
+				<p class="profile_fan_counter"><a href="#">12,345</a><span>명의 팬이 있습니다</span></p>
+                <p class="profile_fan"><a href="#">팬 될래요!</a></p>
+        	</div><!-- /#user_profile-->
+			<div id="main_content"><!-- /#main_content-->
+				<div id="endorse"><!-- /#endorse-->
+					<h4>※제일 많이 공감을 받은 말 3개가 표시됩니다.</h4>
+					<div class="endorse_best3"><!-- /#endorse_best3-->
+								<ul class="endorse_best3_skill">
+								<li>전문 분야
+									<ul>
+										<li><a href="#">그림그리기</a></li>
+										<li><a href="#">노래부르기</a></li>
+										<li><a href="#">잠자기</a></li>
+									</ul>
+								</li>
+								</ul>
+
+								<ul class="endorse_best3_ability">
+								<li>잘하는 것(특기)
+									<ul>
+										<li><a href="#">그림그리기그림그리기그림그리기</a></li>
+										<li><a href="#">노래부르기</a></li>
+										<li><a href="#">잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기</a></li>
+									</ul>
+								</li>
+								</ul>
+							<ul class="endorse_best3_hobby">
+								<li>취미
+									<ul>
+										<li><a href="#">그림그리기</a></li>
+										<li><a href="#">노래부르기</a></li>
+										<li><a href="#">잠자기</a></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="clear"></div>
+							<ul class="endorse_best3_nickname">
+								<li>별명
+									<ul>
+										<li><a href="#">잠자기잠자기잠자기</a></li>
+										<li><a href="#">노래부르기노래부르기노래부르기노래부르기노래부르기</a></li>
+										<li><a href="#">잠자기잠자기잠자기잠자기</a></li>
+									</ul>
+								</li>
+								</ul>
+						<ul class="endorse_best3_likething">
+							<li>좋아하는 것
+								<ul>
+									<li><a href="#">그림그리기</a></li>
+									<li><a href="#">노래부르기노래부르기</a></li>
+									<li><a href="#">잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기</a></li>
+								</ul>
+							</li>
+							</ul>
+						<ul class="endorse_best3_hatething">
+							<li>싫어하는 것
+								<ul>
+									<li><a href="#">그림그리기</a></li>
+									<li><a href="#">노래부르기</a></li>
+									<li><a href="#">잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기잠자기</a></li>
+								</ul>
+							</li>
+							</ul>
+						<div class="clear"></div>
+					</div><!-- /#endorse_best3-->
+
+
+				  <div class="recent_endorse"><!-- /#recent_endorse-->
+
+					<h3>슬기님에 대해 말해 보세요</h3>
+					<!-- -->
+					<div class="e_write">
+						<div class="select_part">
+							<div class="part_name">
+								<img src="images/user_profile_48.jpg" alt="user_ID" />
+								<p>
+									<span>오오미 긴이름이다!</span>님의
+								</p>
+							</div>
+							<ul class="header_endorse_select">
+							<li><a href="#">선택하세요</a>
+								<ul>
+									<li><a href="#">전문 분야</a></li>
+									<li><a href="#">잘하는 것(특기)</a></li>
+									<li><a href="#">취미</a></li>
+									<li><a href="#">별명</a></li>
+									<li><a href="#">좋아하는 것</a></li>
+									<li><a href="#">싫어하는 것</a></li>
+								</ul>
+							</li>
+						</ul>
+						</div>
+						<p class="writing_notice"><span>※콤마(,)</span>로 구분해서 작성해 주세요</p>
+						<div class="suggest_part">
+							<input type="text" />
+						</div>
+						<button style="display:none;" class="header_endorse_submit" type="submit">보내기</button>
+						<button class="header_endorse_login" type="submit">로그인</button>
+					</div>
+
+					<!--<p class="endorse_textbox_info" for="endorse_textbox"></p>-->
+				   <!-- /.endorse_write_form-->
+				   <div class="clear"></div>
+				   <ul class="list_array">
+						<li><a href="#">공감순</a></li>
+						<li class="list_array_dash"><a href="#">최신순</a></li>
+						<li  class="list_array_dash"><a href="#">내가 쓴 글</a></li>
+				   </ul>
+
+				  <div class="recent_endorsed_list clear">
+					 <ul>
+						<li>
+							<img class="endorse_user32 user_pic_32" src="images/user_profile_32.jpg" alt="user_id" />
+							<p class="recent_endorsed_content"><a class="recent_endorsed_by" href="#">임지혜임지혜임지혜임지혜</a>님이 <a class="recent_endorsed_to" class="" href="#">박슬기</a>님의 <a class="recent_endorsed_section href="#">취미</a>는 <a class="recent_endorsed_thing" href="#">그림그리기</a>,<a class="recent_endorsed_thing" href="#">노래부르기노래부르기노래부르기노래부르기노래부르기</a>,<a class="recent_endorsed_thing" href="#">잠자기</a>라고 말합니다.</p>
+							<div class="recent_endosed_control">
+								<p class="endorsed_date ">1시간 전</p>
+								<p class="sympathy_bt"><a href="#"><span>공감하기</span><strong>982</strong></a></p>
+								<a href="#" class="delete_endorse">삭제</a>
+							</div>
+						</li>
+						<li>
+							<img class="endorse_user32 user_pic_32" src="images/user_profile_32.jpg" alt="user_id" />
+							<p class="recent_endorsed_content"><a class="recent_endorsed_by" href="#">임지혜임지혜임지혜임지혜</a>님이 <a class="recent_endorsed_to" class="" href="#">박슬기</a>님의 <a class="recent_endorsed_section href="#">취미</a>는 <a class="recent_endorsed_thing" href="#">그림그리기</a>,<a class="recent_endorsed_thing" href="#">노래부르기노래부르기노래부르기노래부르기노래부르기</a>,<a class="recent_endorsed_thing" href="#">잠자기</a>라고 말합니다.</p>
+							<div class="recent_endosed_control">
+								<p class="endorsed_date">1시간 전</p>
+								<p class="sympathy_bt sympathy_selected"><a href="#"><span>그만하기</span><strong>1</strong></a></p>
+								<a href="#" class="delete_endorse">삭제</a>
+							</div>
+						</li>
+					 </ul>
+				  </div>
+				<a class="read_more clear" href="#"><span>더 보기</span></a>
+
+				</div><!-- /#recent_endorse-->
+			  </div><!-- /#endorse-->
+		</div><!-- /#main_content-->
+        </div><!-- /#content-->
+		<div id="footer">
+    	<p class="copyright">
+        &copy; 2011
+        <a href="http://userstorylab.com">Userstory Lab</a>
+        </p>
+    	</div><!-- /#footer-->
+    </div><!-- /#container-->
+
+</div><!--/.wrap -->
+</body>
+</html>
