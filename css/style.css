@@ -79,67 +79,65 @@ html {
   .intro strong {
     color: #3c56be; }
 
-.intro-menu {
+.intro-menu-list {
   position: fixed;
   transform: rotate(-90deg);
   transform-origin: 0 0;
   left: 50px;
-  bottom: 6%; }
+  top: 92vh;
+  z-index: 200; }
   @media only screen and (max-width: 768px) {
-    .intro-menu {
+    .intro-menu-list {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      flex-direction: column;
       width: 100%;
+      height: 100vh;
+      top: -100vh;
+      left: 0;
       transform: none;
       background: #3c56be;
-      height: 55px;
       line-height: 55px;
-      text-align: center;
-      z-index: 90; } }
-  .intro-menu li {
+      text-align: center; } }
+  .intro-menu-list li {
     display: inline-block; }
-    .intro-menu li a {
+    .intro-menu-list li a {
       margin: 0 20px; }
       @media only screen and (max-width: 768px) {
-        .intro-menu li a {
+        .intro-menu-list li a {
           margin: 0 10px;
           color: #fff; } }
-      .intro-menu li a:hover {
-        color: #3c56be; }
 
-@media only screen and (max-width: 768px) {
-  .headroom {
-    top: -55px;
-    left: 0;
-    transition-property: all;
-    transition-duration: 0.4s;
-    transition-timing-function: ease; } }
-
-/* scrolling up */
-@media only screen and (max-width: 768px) {
-  .headroom--pinned {
-    top: 0; } }
-
-/* scrolling down */
-@media only screen and (max-width: 768px) {
-  .headroom--unpinned {
-    left: 0;
-    top: -55px; } }
-
-/* on top */
-@media only screen and (max-width: 768px) {
-  .headroom--top {
-    top: -55px !important; } }
-
-.back {
-  display: none; }
+.mobile-gnb-open {
+  display: none !important; }
   @media only screen and (max-width: 768px) {
-    .back {
-      position: relative;
-      display: block;
-      left: -8px;
-      padding: 0 20px;
-      font-size: 1.5625rem;
-      margin: 0 !important;
+    .mobile-gnb-open {
+      display: block !important;
+      position: fixed;
+      font-size: 1.5rem;
+      top: 0.3125rem;
+      left: 0.3125rem;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: none;
+      color: #333;
+      border: 0;
       z-index: 100; } }
+
+.mobile-gnb-close {
+  position: fixed;
+  font-size: 1.5rem;
+  top: 0.3125rem;
+  right: 0.3125rem;
+  border: 0;
+  background: none;
+  color: #fff;
+  z-index: 300; }
 
 .works h1 {
   margin-bottom: 25px; }
@@ -305,26 +303,26 @@ html {
   vertical-align: middle; }
   @media only screen and (max-width: 768px) {
     .work-desc-title h2 {
-      font-size: 1.875rem; } }
+      font-size: 1.875rem;
+      display: block; } }
 
 .work-desc-link {
-  background: #737373;
-  color: #fff;
   display: inline-block;
   margin-left: 10px;
-  width: 2.375rem;
-  height: 2.375rem;
+  padding: 0 15px;
   line-height: 2.375rem;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 1.1875rem;
   font-size: 1.125rem;
-  vertical-align: middle; }
+  vertical-align: middle;
+  color: #4d4d4d;
+  border: 1px solid #b3b3b3; }
   .work-desc-link:hover {
-    background: #333; }
+    background: #b3b3b3;
+    color: #fff; }
   @media only screen and (max-width: 768px) {
     .work-desc-link {
-      width: 1.75rem;
-      height: 1.75rem;
+      margin: 15px 0;
       line-height: 1.75rem; } }
 
 .work-desc-role {

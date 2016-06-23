@@ -16,17 +16,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
 
 	<section class="intro">
 	    <h1></h1>
 
-	    <ul class="intro-menu headroom">
-	        <li><a class="btn" href="#" target="blank">Resume</a></li>
-	        <li><a class="btn" href="https://kr.linkedin.com/in/jihe-im-001334123" target="blank">Linkedin</a></li>
-	        <li><a class="btn" href="mailto:koyote.nowhere@gmail.com" target="blank">email</a></li>
-	    </ul>
+		<div class="intro-menu">
+		    <ul class="intro-menu-list">
+		        <li><a class="btn" href="#" target="blank">Resume</a></li>
+		        <li><a class="btn" href="https://kr.linkedin.com/in/jihe-im-001334123" target="blank">Linkedin</a></li>
+		        <li><a class="btn" href="mailto:koyote.nowhere@gmail.com" target="blank">email</a></li>
+		    </ul>
+	    </div>
 	</section>
 
 	<section class="works">
@@ -136,42 +139,25 @@
 	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.js"></script>
+	<script src="js/script.js"></script>
 
 	<script>
-
-
-
+		
 		$('.intro h1').typeIt({
 		    strings: 'Hello, My name is <strong>Jihe Im</strong>.<br>I do Web Design for a living and I love it.',
-    		speed: 50,
-    		autoStart: false
+			speed: 50,
+			autoStart: false
 		});
 
 		$('.works h1').typeIt({
 		    strings: 'these are my works.',
-    		speed: 50,
-    		autoStart: false,
-    		startDelay:5700,
-    		cursor: false
-		});
-
-		$(".headroom").headroom({
-		    offset : 0,
-		    tolerance : 0,
-		    classes : {
-		        // when element is initialised
-		        initial : "headroom",
-		        // when scrolling up
-		        pinned : "headroom--pinned",
-		        // when scrolling down
-		        unpinned : "headroom--unpinned",
-		        // when above offset
-		        top : "headroom--top"
-		    }
-
+			speed: 50,
+			autoStart: false,
+			startDelay:5700,
+			cursor: false
 		});
 
 	</script>
-	
+
 </body>
 </html>

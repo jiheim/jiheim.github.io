@@ -21,13 +21,13 @@
 <body>
 	
 	<a class="goback" href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-
-	<ul class="intro-menu headroom">
-		<li><a class="back" href="index.html"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
-        <li><a class="btn" href="#" target="blank">Resume</a></li>
-        <li><a class="btn" href="https://kr.linkedin.com/in/jihe-im-001334123" target="blank">Linkedin</a></li>
-	    <li><a class="btn" href="mailto:koyote.nowhere@gmail.com" target="blank">email</a></li>
-    </ul>
+	<div class="intro-menu">
+	    <ul class="intro-menu-list">
+	        <li><a class="btn" href="#" target="blank">Resume</a></li>
+	        <li><a class="btn" href="https://kr.linkedin.com/in/jihe-im-001334123" target="blank">Linkedin</a></li>
+	        <li><a class="btn" href="mailto:koyote.nowhere@gmail.com" target="blank">email</a></li>
+	    </ul>
+    </div>
     
 	<article class="work-content">
 
@@ -62,23 +62,6 @@
 	<script src="js/jquery-1.12.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.js"></script>
-
-	<script>
-		$(".headroom").headroom({
-		    offset : 0,
-		    tolerance : 0,
-		    classes : {
-		        // when element is initialised
-		        initial : "headroom",
-		        // when scrolling up
-		        pinned : "headroom--pinned",
-		        // when scrolling down
-		        unpinned : "headroom--unpinned",
-		        // when above offset
-		        top : "headroom--top"
-		    }
-
-		});
-	</script>
+	<script src="js/script.js"></script>
 </body>
 </html>
