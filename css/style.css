@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6 {
 img, object {
   max-width: 100%; }
 
+button, a {
+  outline: 0; }
+
 a {
   margin: 0;
   padding: 0;
@@ -149,7 +152,9 @@ html {
       border-radius: 50%;
       color: #333;
       border: 0;
-      z-index: 100; } }
+      z-index: 100; }
+      .mobile-gnb-open i {
+        text-align: center; } }
 
 .mobile-gnb-close {
   position: fixed;
@@ -164,6 +169,10 @@ html {
   background: none;
   color: #fff;
   z-index: 300; }
+  .mobile-gnb-close img {
+    width: 50px;
+    height: 50px;
+    text-align: center; }
 
 .works h1 {
   margin-bottom: 25px; }

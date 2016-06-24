@@ -92,6 +92,10 @@ img,object{
 	max-width: 100%;
 }
 
+button, a{
+	outline: 0;
+}
+
 a{
 	margin: 0;
 	padding: 0;
@@ -241,6 +245,10 @@ html{
 		color: $color-font;
 		border: 0;
 		z-index: 100;
+
+		i{
+			text-align: center;
+		}
 	}
 }
 
@@ -257,6 +265,12 @@ html{
 	background: none;
 	color: #fff;
 	z-index: 300;
+
+	img{
+		width: 50px;
+		height: 50px;
+		text-align: center;
+	}
 }
 
 
