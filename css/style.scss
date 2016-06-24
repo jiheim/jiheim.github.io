@@ -233,13 +233,12 @@ html{
 	@include respond-to(handhelds) {
 		display: block !important;
 		position: fixed;
-		font-size: calculateRem(24px);
 		top: 2%;
 		left: 2%;
 		display: inline-block;
 		text-align: center !important;
-		width: 50px;
-		height: 50px;
+		width: calculateRem(50px);
+		height: calculateRem(50px);
 		background: $color-background;
 		border-radius: 50%;
 		color: $color-font;
@@ -248,6 +247,7 @@ html{
 
 		i{
 			text-align: center !important;
+			font-size: calculateRem(24px);
 		}
 	}
 }

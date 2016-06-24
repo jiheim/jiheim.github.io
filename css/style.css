@@ -141,20 +141,20 @@ html {
     .mobile-gnb-open {
       display: block !important;
       position: fixed;
-      font-size: 1.5rem;
       top: 2%;
       left: 2%;
       display: inline-block;
       text-align: center !important;
-      width: 50px;
-      height: 50px;
+      width: 3.125rem;
+      height: 3.125rem;
       background: #fbfbfb;
       border-radius: 50%;
       color: #333;
       border: 0;
       z-index: 100; }
       .mobile-gnb-open i {
-        text-align: center !important; } }
+        text-align: center !important;
+        font-size: 1.5rem; } }
 
 .mobile-gnb-close {
   position: fixed;
