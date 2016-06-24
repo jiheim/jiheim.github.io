@@ -145,7 +145,7 @@ html {
       top: 2%;
       left: 2%;
       display: inline-block;
-      text-align: center;
+      text-align: center !important;
       width: 50px;
       height: 50px;
       background: #fbfbfb;
@@ -154,7 +154,7 @@ html {
       border: 0;
       z-index: 100; }
       .mobile-gnb-open i {
-        text-align: center; } }
+        text-align: center !important; } }
 
 .mobile-gnb-close {
   position: fixed;
