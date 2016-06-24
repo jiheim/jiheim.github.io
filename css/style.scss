@@ -238,10 +238,9 @@ html{
 		left: 2%;
 		display: inline-block;
 		text-align: center;
-		width: 50px;
 		height: 50px;
 		background: $color-background;
-		border-radius: 50%;
+		//border-radius: 50%;
 		color: $color-font;
 		border: 0;
 		z-index: 100;
@@ -268,8 +267,8 @@ html{
 
 	img{
 		display: inline-block;
-		width: 25px;
-		height: 25px;
+		width: 25px !important;
+		height: 25px !important;
 		text-align: center;
 	}
 }
