@@ -51,10 +51,14 @@ $break-large: 1024px;
 
 //center layout with flexbox
 @mixin flex-center{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	-ms-align-items: center;
 	-webkit-align-items: center;
 	align-items: center;
+	-ms-justify-content: center;
 	-webkit-justify-content: center;
 	justify-content: center;
 	flex-direction: column;

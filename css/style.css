@@ -60,10 +60,14 @@ html {
 
 /* index */
 .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -ms-align-items: center;
   -webkit-align-items: center;
   align-items: center;
+  -ms-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center;
   flex-direction: column;
@@ -107,10 +111,14 @@ html {
       display: block; } }
 
 .intro-menu-mobile-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -ms-align-items: center;
   -webkit-align-items: center;
   align-items: center;
+  -ms-justify-content: center;
   -webkit-justify-content: center;
   justify-content: center;
   flex-direction: column;
@@ -215,10 +223,14 @@ html {
       height: 100%;
       color: #fff; }
       .works-list li a:hover .works-list-title {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
+        -ms-align-items: center;
         -webkit-align-items: center;
         align-items: center;
+        -ms-justify-content: center;
         -webkit-justify-content: center;
         justify-content: center;
         flex-direction: column; }
