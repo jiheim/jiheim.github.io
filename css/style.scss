@@ -8,6 +8,7 @@ $color-sub-font: #646464;
 $color-point: #3c56be;
 $color-font-list: #fff;
 $color-background: #fbfbfb;
+$heart: #fd5c71;
 
 $break-small: 768px;
 $break-large: 1024px;
@@ -55,12 +56,15 @@ $break-large: 1024px;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+
 	-ms-align-items: center;
 	-webkit-align-items: center;
 	align-items: center;
-	-ms-justify-content: center;
+
+	-ms-flex-align: center;
 	-webkit-justify-content: center;
 	justify-content: center;
+
 	flex-direction: column;
 }
 
@@ -119,7 +123,6 @@ h1{
 
 /* layout */
 html{
-	padding-bottom: 6%;
 	font: 16px 'Montserrat', sans-serif;
 	background: $color-background;
 	color: $color-font;
@@ -127,11 +130,12 @@ html{
 
 .intro,
 .works,
-.work-content{
-	padding: 0 3% 0 120px;
+.work-content,
+.aboutme{
+	padding: 0 3% 3% 120px;
 
 	@include respond-to(medium-screens) { 
-		padding: 0 5% 0 120px; 
+		padding: 0 5% 5% 120px; 
 	}
 
 	@include respond-to(handhelds) { 
@@ -559,4 +563,95 @@ html{
 		text-align: center;
 	}
 	
+}
+
+
+.aboutme{
+	height: 100vh;
+	@include flex-center;
+
+	@include respond-to(medium-screens) {
+		height: auto;
+		margin-top: calculateRem(50px);
+	}
+
+	@include respond-to(handhelds) {
+		height: auto;
+		margin-top: calculateRem(50px);
+	}
+}
+
+.aboutme-frame{
+	position: relative;
+
+	@include respond-to(handhelds) {
+		margin-top: calculateRem(20px);
+		height: auto;
+	}
+
+	h1{
+		margin-bottom: calculateRem(10px);
+
+		@include respond-to(handhelds) {
+			position: absolute;
+			z-index: 20;
+			margin: calculateRem(20px);
+			padding: calculateRem(10px) calculateRem(20px);
+			background: #fff;
+		}
+	}
+
+	
+
+}
+
+.aboutme-desc{
+	float: left;
+	margin-left: calculateRem(20px);
+	padding: calculateRem(20px);
+	
+	@include respond-to(medium-screens) {
+		margin-top: calculateRem(20px);
+		margin-left: 0;
+		padding: 0 0 calculateRem(50px);
+	}
+
+	@include respond-to(handhelds) {
+		margin-left: 0;
+		padding: calculateRem(20px) 0 calculateRem(50px);
+	}
+}
+
+.aboutme-desc-eng{
+	margin-top: calculateRem(20px);
+	i{
+		color: $heart;
+	}
+}
+
+.aboutme-frame-img{
+	position: relative;
+	float: left;
+	width: 400px;
+
+	p{
+		position: absolute;
+		left: calculateRem(20px);
+		bottom: calculateRem(20px);
+		color: #fff;
+
+		i{
+			margin-right: 10px;
+		}
+	}
+
+	@include respond-to(handhelds) {
+		width: 100%;
+
+		img{
+			position: relative;
+			width: 100%;
+			z-index: 10;
+		}
+	}
 }

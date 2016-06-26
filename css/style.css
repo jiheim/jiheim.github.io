@@ -38,24 +38,26 @@ h1 {
 
 /* layout */
 html {
-  padding-bottom: 6%;
   font: 16px 'Montserrat', sans-serif;
   background: #fbfbfb;
   color: #333; }
 
 .intro,
 .works,
-.work-content {
-  padding: 0 3% 0 120px; }
+.work-content,
+.aboutme {
+  padding: 0 3% 3% 120px; }
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     .intro,
     .works,
-    .work-content {
-      padding: 0 5% 0 120px; } }
+    .work-content,
+    .aboutme {
+      padding: 0 5% 5% 120px; } }
   @media only screen and (max-width: 768px) {
     .intro,
     .works,
-    .work-content {
+    .work-content,
+    .aboutme {
       padding: 5%; } }
 
 /* index */
@@ -67,7 +69,7 @@ html {
   -ms-align-items: center;
   -webkit-align-items: center;
   align-items: center;
-  -ms-justify-content: center;
+  -ms-flex-align: center;
   -webkit-justify-content: center;
   justify-content: center;
   flex-direction: column;
@@ -118,7 +120,7 @@ html {
   -ms-align-items: center;
   -webkit-align-items: center;
   align-items: center;
-  -ms-justify-content: center;
+  -ms-flex-align: center;
   -webkit-justify-content: center;
   justify-content: center;
   flex-direction: column;
@@ -230,7 +232,7 @@ html {
         -ms-align-items: center;
         -webkit-align-items: center;
         align-items: center;
-        -ms-justify-content: center;
+        -ms-flex-align: center;
         -webkit-justify-content: center;
         justify-content: center;
         flex-direction: column; }
@@ -403,5 +405,81 @@ html {
 .work-content-list li {
   margin-bottom: 0.75rem;
   text-align: center; }
+
+.aboutme {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: column; }
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .aboutme {
+      height: auto;
+      margin-top: 3.125rem; } }
+  @media only screen and (max-width: 768px) {
+    .aboutme {
+      height: auto;
+      margin-top: 3.125rem; } }
+
+.aboutme-frame {
+  position: relative; }
+  @media only screen and (max-width: 768px) {
+    .aboutme-frame {
+      margin-top: 1.25rem;
+      height: auto; } }
+  .aboutme-frame h1 {
+    margin-bottom: 0.625rem; }
+    @media only screen and (max-width: 768px) {
+      .aboutme-frame h1 {
+        position: absolute;
+        z-index: 20;
+        margin: 1.25rem;
+        padding: 0.625rem 1.25rem;
+        background: #fff; } }
+
+.aboutme-desc {
+  float: left;
+  margin-left: 1.25rem;
+  padding: 1.25rem; }
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .aboutme-desc {
+      margin-top: 1.25rem;
+      margin-left: 0;
+      padding: 0 0 3.125rem; } }
+  @media only screen and (max-width: 768px) {
+    .aboutme-desc {
+      margin-left: 0;
+      padding: 1.25rem 0 3.125rem; } }
+
+.aboutme-desc-eng {
+  margin-top: 1.25rem; }
+  .aboutme-desc-eng i {
+    color: #fd5c71; }
+
+.aboutme-frame-img {
+  position: relative;
+  float: left;
+  width: 400px; }
+  .aboutme-frame-img p {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.25rem;
+    color: #fff; }
+    .aboutme-frame-img p i {
+      margin-right: 10px; }
+  @media only screen and (max-width: 768px) {
+    .aboutme-frame-img {
+      width: 100%; }
+      .aboutme-frame-img img {
+        position: relative;
+        width: 100%;
+        z-index: 10; } }
 
 /*# sourceMappingURL=style.css.map */
