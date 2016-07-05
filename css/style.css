@@ -1,5 +1,6 @@
 /*! created by Jihe Im from June 2016 */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto);
+@import url(notosans.css);
 /* reset */
 * {
   box-sizing: border-box; }
@@ -41,6 +42,9 @@ html {
   font: 16px 'Montserrat', sans-serif;
   background: #fbfbfb;
   color: #333; }
+
+.kor {
+  font-family: 'Noto Sans Korean', sans-serif; }
 
 .intro,
 .works,
@@ -194,7 +198,7 @@ html {
 
 .works-list {
   width: 100%;
-  margin-left: -0.75rem;
+  margin-left: -0.25rem;
   *zoom: 1; }
   .works-list:after {
     content: "";
@@ -202,13 +206,13 @@ html {
     clear: both; }
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     .works-list {
-      margin-left: -0.3125rem; } }
+      margin-left: -0.25rem; } }
   @media only screen and (max-width: 768px) {
     .works-list {
       margin-left: -0.125rem; } }
   .works-list li {
     width: 25%;
-    padding: 0.75rem;
+    padding: 0.25rem;
     float: left; }
     @media only screen and (min-width: 769px) and (max-width: 1023px) {
       .works-list li {
@@ -335,6 +339,7 @@ html {
   .work-desc dt {
     display: inline-block;
     margin-right: 24px;
+    min-width: 40px;
     vertical-align: top;
     color: #646464;
     text-transform: uppercase;
@@ -352,10 +357,14 @@ html {
   font-size: 3.125rem;
   display: inline-block;
   vertical-align: middle; }
+  .work-desc-title h2.kor {
+    font-size: 2.8125rem; }
   @media only screen and (max-width: 768px) {
     .work-desc-title h2 {
       font-size: 1.875rem;
-      display: block; } }
+      display: block; }
+      .work-desc-title h2.kor {
+        font-size: 1.5625rem; } }
 
 .work-desc-link {
   display: inline-block;
@@ -394,7 +403,10 @@ html {
         font-size: 0.9375rem; } }
 
 .work-desc-article {
-  margin: 2.125rem 0 5rem; }
+  font-family: 'Noto Sans Korean', sans-serif;
+  margin: 2.125rem 0 5rem;
+  line-height: 1.5;
+  color: #4d4d4d; }
   @media only screen and (max-width: 768px) {
     .work-desc-article {
       margin: 0.9375rem 0 1.25rem; } }

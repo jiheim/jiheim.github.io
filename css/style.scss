@@ -1,7 +1,7 @@
 /*! created by Jihe Im from June 2016 */
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto);
-
+@import url(notosans.css);
 
 $color-font: #333;
 $color-sub-font: #646464;
@@ -126,6 +126,10 @@ html{
 	font: 16px 'Montserrat', sans-serif;
 	background: $color-background;
 	color: $color-font;
+}
+
+.kor{
+	font-family: 'Noto Sans Korean', sans-serif;
 }
 
 .intro,
@@ -300,11 +304,11 @@ html{
 
 .works-list{
 	width: 100%;
-	margin-left: calculateRem(-12px);
+	margin-left: calculateRem(-4px);
 	@include clearfix;
 
 	@include respond-to(medium-screens) { 
-		margin-left: calculateRem(-5px);
+		margin-left: calculateRem(-4px);
 	}
 
 	@include respond-to(handhelds) { 
@@ -313,7 +317,7 @@ html{
 	
 	li{
 		width: 25%;
-		padding: calculateRem(12px);
+		padding: calculateRem(4px);
 		float: left;
 
 		@include respond-to(medium-screens) { 
@@ -464,6 +468,7 @@ html{
 	dt{
 		display: inline-block;
 		margin-right: 24px;
+		min-width: 40px;
 		vertical-align: top;
 		color: $color-sub-font;
 		text-transform: uppercase;
@@ -490,12 +495,22 @@ html{
 		display: inline-block;
 		vertical-align: middle;
 
+		&.kor{
+			font-size: calculateRem(45px);
+		}
+
 		@include respond-to(handhelds) {
 			font-size: calculateRem(30px);
 			display: block;
+
+			&.kor{
+				font-size: calculateRem(25px);
+			}
 		}
 	}
 }
+
+
 
 .work-desc-link{
 	display: inline-block;
@@ -545,7 +560,10 @@ html{
 }
 
 .work-desc-article{
+	font-family: 'Noto Sans Korean', sans-serif;
 	margin: calculateRem(34px) 0 calculateRem(80px);
+	line-height: 1.5;
+	color: lighten($color-font, 10%);
 
 	@include respond-to(handhelds) {
 		margin: calculateRem(15px) 0 calculateRem(20px);
