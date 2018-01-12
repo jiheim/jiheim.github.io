@@ -322,24 +322,23 @@ html {
     /* 5px -3px */
     text-align: center; }
 
-.work-content {
-  padding-top: 120px; }
-  @media only screen and (max-width: 768px) {
-    .work-content {
-      padding: 0 !important; } }
+@media only screen and (max-width: 768px) {
+  .work-content {
+    padding: 0 !important; } }
 
 .work-desc {
-  margin: 38px 0; }
+  margin: 20px 0; }
   @media only screen and (max-width: 768px) {
     .work-desc {
       margin: 15px 0;
       padding: 5%; } }
   .work-desc dl {
+    padding: 10px 0;
     border-bottom: 1px solid #e6e6e6; }
   .work-desc dt {
     display: inline-block;
     margin-right: 24px;
-    min-width: 40px;
+    width: 70px;
     vertical-align: top;
     color: #646464;
     text-transform: uppercase;
@@ -388,17 +387,61 @@ html {
     margin-right: 5px; }
 
 .work-desc-role {
-  padding: 10px 0; }
+  border-bottom: none !important; }
+  .work-desc-role dd .meter {
+    display: inline-block;
+    float: left;
+    width: 300px;
+    height: 10px;
+    margin: 7px 10px 0 0;
+    border-radius: 5px;
+    background: #dcdcdc; }
+    .work-desc-role dd .meter .bar {
+      display: block;
+      height: 10px;
+      border-radius: 5px;
+      background: -moz-linear-gradient(left, #3c56be 0%, #4ad5e8 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #3c56be 0%, #4ad5e8 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #3c56be 0%, #4ad5e8 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  .work-desc-role dd span {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 2px; }
+    @media only screen and (max-width: 768px) {
+      .work-desc-role dd span {
+        margin-top: 7px; } }
+
+.work-desc-client {
+  border-top: 1px solid #e6e6e6; }
   @media only screen and (max-width: 768px) {
-    .work-desc-role {
+    .work-desc-client {
       padding: 5px 0; } }
-  .work-desc-role span {
+  .work-desc-client .role-meter dl {
+    display: flex;
+    border-bottom: none; }
+  .work-desc-client .role-meter dt {
+    width: 70px; }
+  .work-desc-client .role-meter dd {
+    vertical-align: middle;
+    width: calc(100% - 70px); }
+    .work-desc-client .role-meter dd .meter {
+      display: flex;
+      width: 12.5rem;
+      height: 10px;
+      border-radius: 5px;
+      background: #dcdcdc; }
+  .work-desc-client span {
+    display: flex;
+    vertical-align: bottom;
     margin-right: 20px;
-    font-size: 1.5rem;
+    font-size: 0.875rem;
     font-weight: bold;
     letter-spacing: -0.050em; }
     @media only screen and (max-width: 768px) {
-      .work-desc-role span {
+      .work-desc-client span {
         margin-right: 5px;
         font-size: 0.9375rem; } }
 

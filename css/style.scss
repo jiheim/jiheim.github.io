@@ -446,15 +446,13 @@ html{
 }
 
 .work-content{
-	padding-top: 120px;
-
 	@include respond-to(handhelds) {
 		padding: 0 !important;
 	}
 }
 
 .work-desc{	
-	margin: 38px 0;
+	margin: 20px 0;
 
 	@include respond-to(handhelds) {
 		margin: 15px 0;
@@ -462,13 +460,14 @@ html{
 	}	
 
 	dl{
+		padding: 10px 0;
 		border-bottom: 1px solid #e6e6e6;
 	}
 
 	dt{
 		display: inline-block;
 		margin-right: 24px;
-		min-width: 40px;
+		width: 70px;
 		vertical-align: top;
 		color: $color-sub-font;
 		text-transform: uppercase;
@@ -484,9 +483,9 @@ html{
 	}
 
 	dd{
-		display: inline-block;
-
+		display:inline-block;
 	}
+
 }
 
 .work-desc-title{
@@ -509,7 +508,6 @@ html{
 		}
 	}
 }
-
 
 
 .work-desc-link{
@@ -540,15 +538,80 @@ html{
 }
 
 .work-desc-role{
-	padding: 10px 0;
 
+	border-bottom: none !important;
+
+	dd{
+		.meter{
+			display: inline-block;
+			float:left;
+			width: 300px;
+			height: 10px;
+			margin:7px 10px 0 0;
+			border-radius: 5px;
+			background: #dcdcdc;
+
+			.bar{
+				display:block;
+				height: 10px;
+				border-radius:5px;
+				background: -moz-linear-gradient(left, #3c56be 0%, #4ad5e8 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left, #3c56be 0%,#4ad5e8 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right, #3c56be 0%,#4ad5e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			}
+		}
+
+		span{
+			display: inline-block;
+			font-weight: bold;
+			margin-top: 2px;
+
+			@include respond-to(handhelds) {
+				margin-top: 7px;
+			}
+		}
+	}
+}
+
+
+.work-desc-client{
+
+	border-top: 1px solid #e6e6e6;
+	
 	@include respond-to(handhelds) {
 		padding: 5px 0;
 	}
 
+	.role-meter {
+
+		dl{
+			display:flex;
+			border-bottom: none;
+
+		}
+		dt{
+			width:70px;
+		}
+
+		dd{
+			vertical-align:middle;
+			width:calc(100% - 70px);
+			.meter{
+				display:flex;
+				width:calculateRem(200px);
+				height: 10px;
+				border-radius:5px;
+				background:#dcdcdc;
+			}
+
+		}
+	}
+
 	span{
+		display:flex;
+		vertical-align:bottom;
 		margin-right: 20px;
-		font-size: calculateRem(24px);
+		font-size: calculateRem(14px);
 		font-weight: bold;
 		letter-spacing: -0.050em;
 
