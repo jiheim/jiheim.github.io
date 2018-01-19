@@ -1,4 +1,5 @@
 /*! created by Jihe Im from June 2016 */
+/*! Modified by Jihe Im from Jan 2018 */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto);
 @import url(notosans.css);
 /* reset */
@@ -14,7 +15,7 @@ ul, li, ol, dl, dt, dd, p, img {
   padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  letter-spacing: -0.050em; }
+  /*letter-spacing: -0.050em;*/ }
 
 img, object {
   max-width: 100%; }
@@ -39,7 +40,7 @@ h1 {
 
 /* layout */
 html {
-  font: 16px 'Montserrat', sans-serif;
+  font: 16px 'Roboto', sans-serif;
   background: #fbfbfb;
   color: #333; }
 
@@ -50,7 +51,7 @@ html {
 .works,
 .work-content,
 .aboutme {
-  padding: 0 3% 3% 120px; }
+  padding: 0 6% 6% 200px; }
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     .intro,
     .works,
@@ -103,7 +104,7 @@ html {
   transform: rotate(-90deg);
   transform-origin: 0 0;
   left: 50px;
-  top: 92vh;
+  top: 90vh;
   z-index: 200; }
   .intro-menu-list li {
     display: inline-block; }
@@ -165,7 +166,8 @@ html {
       border-radius: 50%;
       color: #333;
       border: 0;
-      z-index: 100; }
+      z-index: 100;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3); }
       .mobile-gnb-open i {
         text-align: center !important;
         font-size: 1.5rem; } }
@@ -301,6 +303,58 @@ html {
         text-align: left;
         font-size: 0.75rem; } }
 
+/* bar graph */
+.meter {
+  display: inline-block;
+  width: 300px;
+  height: 10px;
+  margin: 7px 10px 0 0;
+  border-radius: 5px;
+  background: #dcdcdc; }
+  .meter .bar {
+    display: block;
+    height: 10px;
+    border-radius: 5px;
+    background: -moz-linear-gradient(left, #3c56be 0%, #825fc5 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3c56be 0%, #825fc5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3c56be 0%, #825fc5 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+@keyframes barGrow {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+.meter-percent {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 2px; }
+  @media only screen and (max-width: 768px) {
+    .meter-percent {
+      margin-top: 7px; } }
+
+/* button */
+.btn-link {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 1.875rem;
+  text-align: center;
+  border-radius: 1.1875rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  color: #3c56be;
+  border: 1px solid #6076cd; }
+  .btn-link:hover {
+    background: #6076cd;
+    color: #fff; }
+  @media only screen and (max-width: 768px) {
+    .btn-link {
+      margin: 10px 0;
+      line-height: 1.75rem; } }
+  .btn-link i {
+    margin-right: 5px; }
+
 /* detail page */
 .goback {
   position: fixed;
@@ -331,9 +385,9 @@ html {
   @media only screen and (max-width: 768px) {
     .work-desc {
       margin: 15px 0;
-      padding: 5%; } }
+      padding: 0 5%; } }
   .work-desc dl {
-    padding: 10px 0;
+    padding: 12px 0;
     border-bottom: 1px solid #e6e6e6; }
   .work-desc dt {
     display: inline-block;
@@ -351,68 +405,33 @@ html {
         margin-right: 0; } }
   .work-desc dd {
     display: inline-block; }
+    .work-desc dd .btn-link {
+      margin-left: 5px; }
+      @media only screen and (max-width: 768px) {
+        .work-desc dd .btn-link {
+          margin-left: 0; } }
 
 .work-desc-title h2 {
-  font-size: 3.125rem;
+  font-size: 1.875rem;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-right: 13px; }
   .work-desc-title h2.kor {
-    font-size: 2.8125rem; }
+    font-size: 2rem; }
   @media only screen and (max-width: 768px) {
     .work-desc-title h2 {
-      font-size: 1.875rem;
+      font-size: 1.375rem;
       display: block; }
       .work-desc-title h2.kor {
         font-size: 1.5625rem; } }
 
-.work-desc-link {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 0 15px;
-  line-height: 2.375rem;
-  text-align: center;
-  border-radius: 1.1875rem;
-  font-size: 1.125rem;
-  vertical-align: middle;
-  color: #4d4d4d;
-  border: 1px solid gray; }
-  .work-desc-link:hover {
-    background: gray;
-    color: #fff; }
-  @media only screen and (max-width: 768px) {
-    .work-desc-link {
-      margin: 15px 0;
-      line-height: 1.75rem; } }
-  .work-desc-link i {
-    margin-right: 5px; }
+.btn-link .btn-link {
+  margin-left: 10px; }
 
 .work-desc-role {
   border-bottom: none !important; }
-  .work-desc-role dd .meter {
-    display: inline-block;
-    float: left;
-    width: 300px;
-    height: 10px;
-    margin: 7px 10px 0 0;
-    border-radius: 5px;
-    background: #dcdcdc; }
-    .work-desc-role dd .meter .bar {
-      display: block;
-      height: 10px;
-      border-radius: 5px;
-      background: -moz-linear-gradient(left, #3c56be 0%, #4ad5e8 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, #3c56be 0%, #4ad5e8 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, #3c56be 0%, #4ad5e8 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
-  .work-desc-role dd span {
-    display: inline-block;
-    font-weight: bold;
-    margin-top: 2px; }
-    @media only screen and (max-width: 768px) {
-      .work-desc-role dd span {
-        margin-top: 7px; } }
+  .work-desc-role .meter {
+    float: left; }
 
 .work-desc-client {
   border-top: 1px solid #e6e6e6; }
@@ -437,9 +456,8 @@ html {
     display: flex;
     vertical-align: bottom;
     margin-right: 20px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    letter-spacing: -0.050em; }
+    font-size: 1rem;
+    font-weight: bold; }
     @media only screen and (max-width: 768px) {
       .work-desc-client span {
         margin-right: 5px;
@@ -500,9 +518,29 @@ html {
         background: #fff; } }
 
 .aboutme-desc {
+  max-width: 600px;
   float: left;
   margin-left: 1.25rem;
-  padding: 1.25rem; }
+  padding: 0 1.25rem 1.25rem 1.25rem; }
+  .aboutme-desc .resume-btns {
+    margin-top: 36px; }
+    .aboutme-desc .resume-btns .btn-link {
+      margin: 0 10px 0 0;
+      padding: 0 25px; }
+      .aboutme-desc .resume-btns .btn-link i {
+        margin-right: 10px; }
+      @media only screen and (max-width: 768px) {
+        .aboutme-desc .resume-btns .btn-link {
+          width: 100%;
+          margin: 0 0 10px 0; } }
+  .aboutme-desc .skills {
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 36px; }
+    .aboutme-desc .skills ul {
+      margin-top: 15px; }
+      .aboutme-desc .skills ul li {
+        margin-bottom: 10px; }
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     .aboutme-desc {
       margin-top: 1.25rem;
@@ -510,6 +548,7 @@ html {
       padding: 0 0 3.125rem; } }
   @media only screen and (max-width: 768px) {
     .aboutme-desc {
+      max-width: 100%;
       margin-left: 0;
       padding: 1.25rem 0 3.125rem; } }
 

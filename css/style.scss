@@ -1,4 +1,6 @@
 /*! created by Jihe Im from June 2016 */
+/*! Modified by Jihe Im from Jan 2018 */
+
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto);
 @import url(notosans.css);
@@ -32,6 +34,27 @@ $break-large: 1024px;
   $remSize: $size / 16px;
   @return #{$remSize}rem;
 }
+
+//graph bar animation
+
+
+@mixin barAni($barWidth) {
+
+	@keyframes barGrow {
+	  from {
+	    width: 0;
+	  }
+
+	  to {
+	    width: $barWidth;
+	  }
+	}
+
+}
+
+
+
+
 
 //clearfix
 @mixin clearfix{
@@ -76,6 +99,7 @@ $break-large: 1024px;
 }
 
 
+
 /* reset */
 *{
 	box-sizing: border-box;
@@ -93,7 +117,7 @@ ul,li,ol,dl,dt,dd,p,img{
 }
 
 h1,h2,h3,h4,h5,h6{
-	letter-spacing: -0.050em;
+	/*letter-spacing: -0.050em;*/
 }
 
 img,object{
@@ -123,7 +147,7 @@ h1{
 
 /* layout */
 html{
-	font: 16px 'Montserrat', sans-serif;
+	font: 16px 'Roboto', sans-serif;
 	background: $color-background;
 	color: $color-font;
 }
@@ -136,7 +160,7 @@ html{
 .works,
 .work-content,
 .aboutme{
-	padding: 0 3% 3% 120px;
+	padding: 0 6% 6% 200px;
 
 	@include respond-to(medium-screens) { 
 		padding: 0 5% 5% 120px; 
@@ -189,7 +213,7 @@ html{
 	transform: rotate(-90deg);
 	transform-origin: 0 0;
 	left: 50px;
-	top: 92vh;
+	top: 90vh;
 	z-index: 200;
 
 	li{
@@ -256,6 +280,7 @@ html{
 		color: $color-font;
 		border: 0;
 		z-index: 100;
+		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
 
 		i{
 			text-align: center !important;
@@ -421,6 +446,66 @@ html{
 }
 
 
+/* bar graph */
+.meter{
+	display: inline-block;
+	width: 300px;
+	height: 10px;
+	margin:7px 10px 0 0;
+	border-radius: 5px;
+	background: #dcdcdc;
+
+	.bar{
+		@include barAni(100%);
+		display:block;
+		height: 10px;
+		border-radius:5px;
+		background: -moz-linear-gradient(left, #3c56be 0%, #825fc5 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #3c56be 0%,#825fc5 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #3c56be 0%,#825fc5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+}
+
+.meter-percent{
+	display: inline-block;
+	font-weight: bold;
+	margin-top: 2px;
+
+	@include respond-to(handhelds) {
+		margin-top: 7px;
+	}
+}
+
+
+/* button */
+.btn-link{
+	display: inline-block;
+	padding: 0 15px;
+	line-height: calculateRem(30px);
+	text-align: center;
+	border-radius: calculateRem(19px);
+	font-size: calculateRem(16px);
+	vertical-align: middle;
+	color:  lighten($color-point, 0%);
+	border: 1px solid lighten($color-point, 10%);
+
+	&:hover{
+		background: lighten($color-point, 10%);
+		color: #fff;
+	}
+
+	@include respond-to(handhelds) {
+		margin: 10px 0;
+		line-height: calculateRem(28px);
+	}
+
+	i{
+		margin-right: 5px;
+	}
+}
+
+
+
 /* detail page */ 
 .goback{
 	position: fixed;
@@ -456,12 +541,13 @@ html{
 
 	@include respond-to(handhelds) {
 		margin: 15px 0;
-		padding: 5%;
+		padding: 0 5%;
 	}	
 
 	dl{
-		padding: 10px 0;
+		padding: 12px 0;
 		border-bottom: 1px solid #e6e6e6;
+
 	}
 
 	dt{
@@ -484,22 +570,31 @@ html{
 
 	dd{
 		display:inline-block;
+
+		.btn-link{
+			margin-left: 5px;
+
+			@include respond-to(handhelds) {
+				margin-left: 0;
+			}
+		}
 	}
 
 }
 
 .work-desc-title{
 	h2{
-		font-size: calculateRem(50px);
+		font-size: calculateRem(30px);
 		display: inline-block;
 		vertical-align: middle;
+		margin-right:13px;
 
 		&.kor{
-			font-size: calculateRem(45px);
+			font-size: calculateRem(32px);
 		}
 
 		@include respond-to(handhelds) {
-			font-size: calculateRem(30px);
+			font-size: calculateRem(22px);
 			display: block;
 
 			&.kor{
@@ -510,66 +605,19 @@ html{
 }
 
 
-.work-desc-link{
-	display: inline-block;
-	margin-left: 10px;
-	padding: 0 15px;
-	line-height: calculateRem(38px);
-	text-align: center;
-	border-radius: calculateRem(19px);
-	font-size: calculateRem(18px);
-	vertical-align: middle;
-	color:  lighten($color-font, 10%);
-	border: 1px solid lighten($color-font, 30%);
-
-	&:hover{
-		background: lighten($color-font, 30%);
-		color: #fff;
-	}
-
-	@include respond-to(handhelds) {
-		margin: 15px 0;
-		line-height: calculateRem(28px);
-	}
-
-	i{
-		margin-right: 5px;
+.btn-link
+{
+	.btn-link{
+		margin-left: 10px;
 	}
 }
 
 .work-desc-role{
 
-	border-bottom: none !important;
+	border-bottom: none !important;	
 
-	dd{
-		.meter{
-			display: inline-block;
-			float:left;
-			width: 300px;
-			height: 10px;
-			margin:7px 10px 0 0;
-			border-radius: 5px;
-			background: #dcdcdc;
-
-			.bar{
-				display:block;
-				height: 10px;
-				border-radius:5px;
-				background: -moz-linear-gradient(left, #3c56be 0%, #4ad5e8 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(left, #3c56be 0%,#4ad5e8 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to right, #3c56be 0%,#4ad5e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			}
-		}
-
-		span{
-			display: inline-block;
-			font-weight: bold;
-			margin-top: 2px;
-
-			@include respond-to(handhelds) {
-				margin-top: 7px;
-			}
-		}
+	.meter{
+		float:left;
 	}
 }
 
@@ -611,9 +659,8 @@ html{
 		display:flex;
 		vertical-align:bottom;
 		margin-right: 20px;
-		font-size: calculateRem(14px);
+		font-size: calculateRem(16px);
 		font-weight: bold;
-		letter-spacing: -0.050em;
 
 		@include respond-to(handhelds) {
 			margin-right: 5px;
@@ -687,10 +734,48 @@ html{
 }
 
 .aboutme-desc{
+	max-width: 600px;
 	float: left;
 	margin-left: calculateRem(20px);
-	padding: calculateRem(20px);
+	padding: 0 calculateRem(20px)  calculateRem(20px) calculateRem(20px);
+
+	.resume-btns{
+		margin-top: 36px;
+
+		.btn-link{
+			margin: 0 10px 0 0;
+			padding: 0 25px;
+
+			i{
+				margin-right: 10px;
+			}
+
+
+			@include respond-to(handhelds) {
+				width:100%;
+				margin: 0 0 10px 0;
+			}
+		}
+	}
 	
+
+
+	.skills{
+		margin-top:40px;
+		border-top: 1px solid #ddd;
+		padding-top: 36px;
+		
+		ul{
+			margin-top:15px;
+
+			li{
+				margin-bottom:10px;
+			}
+		}		
+
+	}
+
+
 	@include respond-to(medium-screens) {
 		margin-top: calculateRem(20px);
 		margin-left: 0;
@@ -698,6 +783,7 @@ html{
 	}
 
 	@include respond-to(handhelds) {
+		max-width: 100%;
 		margin-left: 0;
 		padding: calculateRem(20px) 0 calculateRem(50px);
 	}

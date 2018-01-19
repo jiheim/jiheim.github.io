@@ -1,8 +1,10 @@
+@import url(../../../css/notosans.css);
+
 *:focus{ outline:1px solid #f86765; }
 html{ background:#f7f7f7; }
 body{ 
 	width:100%; 
-	font-family:"malgun gothic","맑은 고딕","돋움",Dotum,Sans-serif;
+	 font-family: 'Noto Sans Korean', sans-serif;  
 	font-size:0.8em;
 	color:#444;
 }
@@ -15,7 +17,7 @@ button{
 	border:0 none;
 	padding:0;
 	cursor:pointer;
-	font-family:"malgun gothic","맑은 고딕","돋움",Dotum,Sans-serif;
+	 font-family: 'Noto Sans Korean', sans-serif;  
 	line-height:1.2;
 }
 
@@ -53,12 +55,12 @@ div.star p{
 button.moreResult{
 	display:block;
 	width:918px;
-	padding:8px 0;
+	padding:13px 0;
 	text-align:center;
 	background:#fff;
 	border:1px solid #eee;
 	margin-top:-5px;
-	font-weight:bold;
+	font-size: 1.2em;
 }
 button.moreResult:hover{
 	background:#eee;
@@ -72,10 +74,9 @@ button.moreResult:hover{
 /* selectbox */
 .customSelect {  
 	width:95px;
-	padding:9px;
+	padding:12px;
 	border-radius:3px;
 	background:#eee url('../imgs/select_inner.png') repeat-y top right;
-	font-weight:bold;
 }
 
 .customSelectInner{
@@ -95,7 +96,6 @@ button.btn{
 	border-radius:3px;
 	background:#ff7777;
 	color:#fff;
-	font-weight:bold;
 }
 
 button.btn:hover{
@@ -126,7 +126,6 @@ button.bigBtn{
 	background:#ff7777;
 	color:#fff;
 	font-size:1.2em;
-	font-weight:bold;
 }
 
 /* big grey button */
@@ -159,7 +158,7 @@ button.download.done{
 button.btnAppDownload{
 	width:232px;
 	height:64px;
-	margin-top:10px;
+	margin-top:20px;
 	background:#fff url('../imgs/app_btns.png') no-repeat 19px 10px;
 	border-radius:5px;
 	border-bottom:3px solid #e0e0e0;
@@ -174,7 +173,7 @@ button.btnAppDownload.appstore{
 /* searchbox */
 div.searchBox{
 	position:relative;
-	margin:20px;
+	margin:0 20px;
 	margin-bottom:10px;
 	text-align:right;
 	height:49px;
@@ -185,6 +184,7 @@ div.searchBox input{
 	border:6px solid #f86765;
 	padding:10px;
 	min-width:300px;
+	font-family: 'noto sans korean',sans-serif;
 }
 
 div.searchBox input:focus{
@@ -639,10 +639,7 @@ header div h1 a{
 header div ul li{
 	display:inline-block;
 }
-header div ul li a{
-	font-weight:bold;
-	letter-spacing:-1px;
-}
+
 header div>nav,
 header div>ul{
 	position:absolute;
@@ -652,7 +649,7 @@ header div ul li a:hover{
 }
 /* Login */
 header div>ul{
-	top:13px;
+	top:19px;
 	right:10px;
 }
 header div>ul li{
@@ -664,7 +661,7 @@ header div>ul li.fb a{
 
 /* GNB */
 header div>nav{
-	top:10px;
+	top:15px;
 	left:145px;
 }
 header div>nav ul li{
@@ -675,7 +672,9 @@ header div>nav ul li:first-child{
 }
 header div>nav ul li a{
 	font-size:1.4em;
+	font-weight: 400;
 }
+
 
 
 /**************************** wrapper ****************************/
@@ -707,9 +706,7 @@ header div>nav ul li a{
 
 .wrapper div.content h2{
 	font-size:1.8em;
-	font-weight:bold;
-	letter-spacing:-1px;
-	margin-bottom:20px;
+	margin:25px 0 20px;
 }
 
 /**************************** Apps ****************************/
@@ -722,7 +719,7 @@ ul.appList li{
 	position:relative;
 	float:left;
 	width:274px;
-	padding:11px;
+	padding:20px 11px;
 	background:#eee;
 	margin:0 15px 15px 0;
 }
@@ -764,8 +761,9 @@ ul.appList li a:focus span{
 
 
 ul.appList li img{
-	width:117px;
-	height:117px;
+	width:100px;
+	height:100px;
+	margin-left: 10px;
 	display:block;
 	float:left;
 	border-radius:10px;
@@ -776,7 +774,7 @@ ul.appList li h3,
 ul.appList li div.star,
 ul.appList li>p{
 	margin:0 0 5px 130px;
-	letter-spacing:-1px;
+	 
 }
 
 ul.appList li h3,
@@ -786,8 +784,7 @@ ul.appList li>p{
 
 ul.appList li h3{
 	margin-top:3px;
-	font-weight:bold;
-	font-size:1.3em;
+	font-size:1.5em;
 	color:#244a6e;
 }
 
@@ -814,11 +811,12 @@ ul.appList li h3{
 
 #index.wrapper div.masthead div div.explore div.searchBox{
 	width:556px;
-	height:84px;
+	height:115px;
 }
 
 #index.wrapper div.masthead div div.explore div.searchBox input{
 	width:524px;
+	font-family: 'Noto sans Korean',sans-serif;
 }
 
 #index.wrapper div.masthead div div.explore div.searchBox button{
@@ -829,27 +827,23 @@ ul.appList li h3{
 #index.wrapper div.masthead div div.explore div.searchBox label{
 	display:block;
 	text-align:center;
-	margin-bottom:10px;
-	font-size:1.4em;
-	font-weight:bold;
-	letter-spacing:-1px;
-	color:#555;	
+	margin:20px 0;
+	font-size:1.8em;
+	color:#fff;	
 }
 
 #index.wrapper div.masthead div div.explore p,
 #index.wrapper div.masthead div div.appDownload p{
 	text-align:center;
-	margin-bottom:10px;
-	font-size:1.4em;
-	font-weight:bold;
-	letter-spacing:-1px;
-	color:#555;
+	margin:20px 0;
+	font-size:1.6em;
+	color:#fff;
 }
 
 #index.wrapper div.masthead div.appDownload{
 	position:absolute;
 	width:330px;
-	height:480px;
+	height:515px;
 	top:0;
 	left:0;
 	background:rgba(255,255,255,0.2);
@@ -867,9 +861,11 @@ ul.appList li h3{
 }
 
 #index.wrapper div.masthead div div.appDownload p{
-	margin:15px 38px;
-	font-size:1.7em;
+	margin:28px 38px;
 	text-align:left;
+	color: #fff;
+	font: 400 2em 'Noto sans Korean', sans-serif;
+	line-height: 1.2;
 }
 
 #index.wrapper div.masthead div.appDownload div{
@@ -895,7 +891,7 @@ ul.appList li h3{
 
 #index.wrapper div.content{
 	width:920px;
-	padding:26px 20px;
+	padding:46px 20px;
 }
 
 
@@ -907,7 +903,7 @@ ul.appList li h3{
 	position:relative;
 	width:843px;
 	overflow:hidden;
-	margin-left:38px;
+	margin: 0 0 50px 38px;
 }
 
 #index.wrapper div.event div ul{	
@@ -964,7 +960,7 @@ ul.appList li h3{
 #myInfo.wrapper div.content form>div ul{
 	width:900px;
 	overflow:hidden;
-	background:#FFD270;
+	background:#ececec;
 }
 
 #myInfo.wrapper div.content form>div ul li{
@@ -975,12 +971,11 @@ ul.appList li h3{
 
 #myInfo.wrapper div.content form>div ul li a{
 	display:block;
-	padding:15px 0;
+	padding:15px 0 20px;
 	margin:5px;
 	margin-bottom:0;
 	text-align:center;
 	font-size:1.3em;
-	font-weight:bold;
 	color:#666;
 }
 
@@ -993,7 +988,7 @@ ul.appList li h3{
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	color:#444;
-	border-right:1px solid #ffc955;
+	border-right:1px solid #ddd;
 }
 
 #myInfo.wrapper div.content form>div div.infoTable{
@@ -1013,7 +1008,7 @@ ul.appList li h3{
 }
 
 #myInfo.wrapper div.content form>div div.infoTable dl{
-	padding:10px;
+	padding:15px 10px;
 	overflow:hidden;
 }
 
@@ -1025,9 +1020,9 @@ ul.appList li h3{
 
 #myInfo.wrapper div.content form>div div.infoTable dl dt{
 	width:120px;
-	font-weight:bold;
 	vertical-align:middle;
 	padding-top:8px;
+	font-size: 1.1em;
 }
 
 #myInfo.wrapper div.content form>div div.infoTable dl dt strong{
@@ -1052,8 +1047,13 @@ ul.appList li h3{
 	width:285px;
 }
 
+#myInfo.wrapper div.content form>div div.infoTable.facebook dl dd span.ddText{
+	display: inline-block;
+	margin-top: 9px;
+}
+
 #myInfo.wrapper div.content form>div div.infoTable.facebook dl dd .customSelect{
-	border:1px solid #ccc;
+	border:1px solid #e8e8e8;
 	background:#fff url('../imgs/select_inner_content.png') repeat-y top right;
 }
 
@@ -1192,26 +1192,27 @@ ul.appList li h3{
 
 #service.wrapper div.masthead>div{
 	width:880px;
-	padding:26px 40px;
-	letter-spacing:-1px;
+	padding:36px 40px;
+	 
 	background-image:url('../imgs/service_masthead_bg.png');
 }
 
 #service.wrapper div.masthead>div div h2{
 	color:#fff;
 	font-size:2.5em;
-	font-weight:bold;
 	margin-bottom:5px;
 }
 
 #service.wrapper div.masthead>div div p{
 	color:#4d4e4e;
 	font-size:1.2em;
+	margin-top: 20px;
 	padding-bottom:10px;
+	line-height: 1.5;
 }
 
 #service.wrapper div.masthead>div div button{
-	margin-right:10px;
+	margin-right:15px;
 }
 
 #service.wrapper div.content{
@@ -1229,10 +1230,13 @@ ul.appList li h3{
 	display:inline-block;
 	width:260px;
 	vertical-align:top;
-	margin:0 10px;
-	padding-top:129px;
-	letter-spacing:-1px;
+	margin:0 15px;
+	padding-top:129px; 
 	color:#666;
+}
+
+#service.wrapper div.content ul.intro li{
+	line-height: 1.5;
 }
 
 #service.wrapper div.content ul.intro li:after{
@@ -1256,13 +1260,12 @@ ul.appList li h3{
 
 #service.wrapper div.content ul.intro li h4{
 	font-size:1.4em;
-	font-weight:bold;
 	margin-bottom:12px;
 }
 
 #service.wrapper div.content div.howto,
 #service.wrapper div.content div.introMembers{
-	margin-top:55px;
+	margin-top:80px;
 }
 
 #service.wrapper div.content div.howto ul{
@@ -1275,11 +1278,11 @@ ul.appList li h3{
 #service.wrapper div.content div.howto ul li{
 	float:left;
 	width:156px;
-	height:51px;
-	padding-top:20px;
+	height:55px;
+	padding-top:17px;
 	padding-right:24px;
 	text-align:center;
-	font-weight:bold;
+	line-height: 1.5;
 	color:#454545;
 }
 
@@ -1314,7 +1317,7 @@ ul.appList li h3{
 
 #service.wrapper div.content div.introMembers p{
 	width:620px;
-	letter-spacing:-1px;
+	line-height: 1.5;
 	font-size:1.1em;
 }
 
@@ -1345,16 +1348,15 @@ ul.appList li h3{
 
 #marketplace.wrapper div.content div.searchArea{
 	margin:-26px -20px 30px; 
-	padding:20px;
+	padding:30px 20px;
 	background:#ececec;
 }
 
 #marketplace.wrapper div.content div.searchArea label{
 	display:block;
-	margin-bottom:10px;
+	margin-bottom:20px;
 	text-align:center;
-	font-size:1.2em;
-	font-weight:bold;
+	font-size:1.5em;
 }
 
 #marketplace.wrapper div.content div.searchArea div.searchBox{
@@ -1369,7 +1371,7 @@ ul.appList li h3{
 }
 
 #marketplace.wrapper div.content div.selectBox{
-	margin-bottom:15px;
+	margin-bottom:30px;
 	margin-left:721px;
 }
 
@@ -1384,8 +1386,7 @@ ul.appList li h3{
 #marketplace.wrapper div.content div.matchedApp>p{
 	height:50px;
 	padding-top:10px;
-	font-weight:bold;
-	letter-spacing:-1px;
+	font-size: 1.2em;
 	position:absolute;
 	top:0;
 	left:0;
@@ -1400,14 +1401,14 @@ ul.appList li h3{
 #marketplace.wrapper div.content div.appDetail div.addDetailHeader{
 	position:relative;
 	margin:-26px -20px 0 -20px;
-	padding:20px;
+	padding:30px 20px;
 	overflow:hidden;
 	background:#ececec;
 }
 
 #marketplace.wrapper div.content div.appDetail div.addDetailHeader>img{
-	width:155px;
-	height:155px;
+	width:140px;
+	height:140px;
 	display:block;
 	margin-right:30px;
 	float:left;
@@ -1421,15 +1422,16 @@ ul.appList li h3{
 
 #marketplace.wrapper div.content div.appDetail h3{
 	font-size:2em;
-	font-weight:bold;
 	color:#30495f;
 	margin-top:-10px;
 }
+
 
 #marketplace.wrapper div.content div.appDetail div.addDetailheader div h3,
 #marketplace.wrapper div.content div.appDetail div.addDetailheader div p{
 	margin-left:178px;
 }
+
 
 #marketplace.wrapper div.content div.appDetail div.addDetailheader div button{
 	margin-top:10px;
@@ -1455,17 +1457,17 @@ ul.appList li h3{
 #marketplace.wrapper div.content div.appDetail div.appImgs{
 	width:920px;
 	overflow:hidden;
-	padding-bottom:17px;
+	padding-bottom:30px;
 }
 
 #marketplace.wrapper div.content div.appDetail div.appImgs:hover{
 	overflow:auto;
-	padding-bottom:0;
+	padding-bottom:13px;
 }
 
 #marketplace.wrapper div.content div.appDetail div.appImgs div.mask{
 	width:1500px;
-	padding-top:20px;
+	padding-top:30px;
 }
 
 #marketplace.wrapper div.content div.appDetail div.appImgs div.mask img{
@@ -1474,7 +1476,7 @@ ul.appList li h3{
 }
 
 #marketplace.wrapper div.content div.appDetail div.appDesc{
-	padding:25px 0;
+	padding:0 0 30px 0;
 	border-top:1px solid #ddd;
 	border-bottom:1px solid #ddd;
 }
@@ -1482,7 +1484,6 @@ ul.appList li h3{
 
 #marketplace.wrapper div.content div.appDetail h4{
 	margin-top:20px;
-	font-weight:bold;
 	font-size:1.5em;
 	margin-bottom:5px;
 	color:#30495f;
@@ -1499,7 +1500,7 @@ ul.appList li h3{
 #marketplace.wrapper div.content div.appDetail div.writeReview.open{
 	height:300px;
 	overflow:visible;
-	margin-bottom:30px;
+	margin-bottom:70px;
 }
 
 #marketplace.wrapper div.content div.appDetail div.writeReview div{
@@ -1571,6 +1572,7 @@ ul.appList li h3{
 	color:#444;
 	padding:6px 9px;
 	padding-left:27px;
+	font-weight: 400;
 }
 
 #marketplace.wrapper div.content div.appDetail div.reviewList button.btnReview:hover{
@@ -1583,7 +1585,7 @@ ul.appList li h3{
 
 #marketplace.wrapper div.content div.appDetail div.reviewList ul.reviewL li{
 	overflow:hidden;
-	padding:10px;
+	padding:30px 10px;
 	border-bottom:1px solid #ddd;
 }
 
@@ -1696,6 +1698,7 @@ footer div h2{
 
 footer div address{
 	margin-left:90px;
+	line-height: 1.5;
 }
 
 footer div>div{
@@ -1704,6 +1707,10 @@ footer div>div{
 	right:0;
 	text-align:right;
 	font-size:0.9em;
+}
+
+footer div>div p{
+	line-height: 1.5;
 }
 
 

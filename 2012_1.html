@@ -48,14 +48,14 @@
 
 			<dl class="work-desc-title">
 				<dt>title</dt>
-				<dd><h2>Petloves.me mobile app</h2></dd>
+				<dd><h2></h2></dd>
 			</dl>
 
 			<dl class="work-desc-role">
 				<dt>Design</dt>
 				<dd>
 					<div class="meter"><div class="bar" style="width:100%;"></div></div>
-					<span>100&#37;</span>
+					<span class="meter-percent">100&#37;</span>
 				</dd>
 			</dl>
 
@@ -63,6 +63,13 @@
 				<dt>client</dt>
 				<dd>
 					<span>userstorylab</span>
+				</dd>
+			</dl>
+
+			<dl class="work-desc-date">
+				<dt>date</dt>
+				<dd>
+					<span>May, 2012</span>
 				</dd>
 			</dl>
 
@@ -79,8 +86,19 @@
 	</article>
 
 	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.js"></script>
 	<script src="js/script.js"></script>
+
+	<script>
+		
+		$('.work-desc-title h2').typeIt({
+		    strings: 'Petloves.me mobile app',
+			speed: 50,
+			autoStart: false
+		});
+
+	</script>
 </body>
 </html>

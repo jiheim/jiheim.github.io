@@ -1,10 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import url(../../../css/notosans.css);
+
+
 *:focus{ outline:none; }
 
 html,body{ 
-    font-family: 'Malgun Gothic','맑은 고딕',Dotum, sans-serif;  
+    font-family: 'Noto Sans Korean', sans-serif;  
     width:100%; 
 	height:100%;    
 }
@@ -15,6 +18,10 @@ a{ text-decoration:none; }
 	text-overflow:ellipsis;
 	overflow:hidden;
 	white-space:nowrap;
+}
+
+button{
+	font-family: 'Noto Sans Korean', sans-serif;
 }
 
 /* 상단 메뉴 */
@@ -48,7 +55,6 @@ a{ text-decoration:none; }
 	float:left;
 	padding: 20px 10px;
 	line-height:30px;
-	font-weight:bold;
 	-webkit-transition: all .2s ease-in-out;
 	text-align:center;
 	width:124px;
@@ -174,7 +180,7 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 	width:1200px;
 	height:500px;
 	position:relative;
-	top:90px;
+	top:160px;
 	z-index:1;
 }
 
@@ -204,21 +210,22 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 
 #slide1 .wrapper div.slogan{
 	overflow:hidden;
-	margin-top:30px;
+	margin-top:60px;
 }
 
 #slide1 .wrapper div.slogan h2{
 	width:831px;
 	height:63px;
-	margin:0 auto 25px;
+	margin:0 auto 45px;
 	background:url('../images/main/ribbon.png') no-repeat 0 0;
 	text-indent:-9999px;
 } 
 
 #slide1 .wrapper div.slogan p{
+	margin-top: 10px;
 	margin-left:12px;
 	font-size:1.3em;
-	letter-spacing:-1px;
+	line-height: 1.5;
 	color:#fff;
 	float:left;
 }
@@ -231,9 +238,9 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 	padding:20px 30px;
 	float:right;
 	margin-right:30px;
-	font:600 1.5em 'Malgun Gothic','맑은 고딕',Dotum, sans-serif;
+	font: 1.5em 'Noto sans Korean', sans-serif;
 	color:#666;
-	letter-spacing:-1px;
+	 
 	cursor:pointer;
 }
 
@@ -263,7 +270,7 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 
 /******************************
  SLIDE 2 
-*******************************/
+******************g48*************/
 #slide2{
 	background:#6cdace url('../images/slide2/top_bg.jpg') repeat-x 0 0 !important;
 	height:1000px;
@@ -272,14 +279,16 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 	padding-top:120px;
 	width:90%;
 	margin:0 auto;
-	font-size:1.5em;
+	font-size:1.2em;
+	font-weight: 200;
+	line-height: 1.5;
 	color:#fff;
-	letter-spacing:-1px;
+	 
 }
 
 #slide2 .wrapper>div{
 	width:1050px;
-	margin:20px auto;
+	margin:48px auto;
 }
 
 #slide2 .wrapper>div img{
@@ -300,7 +309,7 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 	width:318px;
 	float:left;
 	margin-right:60px;
-	margin-bottom:20px;
+	margin-bottom:40px;
 	color:#3a3a3a;
 	font-size:0.9em;
 	line-height:1.6;
@@ -313,8 +322,7 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 
 #slide2 .wrapper>ul li h4{
 	color:#fff;
-	font-weight:bold;
-	font-size:1.1em;
+	font:200 1.2em 'Noto Sans Korean', sans-serif;
 	margin-bottom:5px;
 }
 
@@ -332,8 +340,8 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 
 #slide3 .wrapper h2{
 	font-size:2em;
-	font-weight:bold;
-	letter-spacing:-1px;
+	font-weight: 200;
+	margin: 70px 0 50px;
 	text-align:center;
 	color:#fff;
 }
@@ -378,11 +386,18 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 #slide3 .wrapper>div.casesSlide>ul>li div:first-child h3,
 #slide3 .wrapper>div.casesSlide>ul>li div:first-child ul{
 	margin-left:175px;
+	margin-top: 14px;
+}
+
+#slide3 .wrapper>div.casesSlide>ul>li div:first-child ul li{
+	font-size: 0.8em;
+	line-height: 1.2;
 }
 
 #slide3 .wrapper>div.casesSlide>ul>li div:first-child h3{
 	color:#3a5d7e;
-	font-weight:bold;
+	margin-top: 20px;
+	font-size: 1.2em;
 	margin-bottom:5px;
 }
 
@@ -392,7 +407,6 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 	margin-top:15px;
 	background:#ff8b8b;
 	color:#fff;
-	font-family: 'Malgun Gothic','맑은 고딕',Dotum, sans-serif; 
 	font-size:1.1em;
 	border:0 none;
 	border-radius:5px;
@@ -401,7 +415,7 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 
 #slide3 .wrapper>div.casesSlide>ul>li div:nth-child(2){
 	background:#fff;
-	padding:16px 27px;
+	padding: 35px 27px;
 	font-size:1em;
 	color:#333;
 	line-height:1.5;
@@ -414,8 +428,8 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 }
 
 #slide3 .wrapper>div.casesSlide>ul>li>ul>li {
-	border-top:1px solid #c2c2c2;
-	padding:16px 27px;
+	border-top:1px solid #eee;
+	padding: 27px;
 	overflow:hidden;
 }
 
@@ -428,6 +442,8 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 
 #slide3 .wrapper>div.casesSlide>ul>li>ul>li p{
 	margin-left:70px;
+	font-size: 0.8em;
+	line-height: 1.5;
 }
 
 
@@ -546,7 +562,7 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 	padding:10px;
 	font-size:0.8em;
 	text-align:center;
-	letter-spacing:-1px;
+	 
 }
 
 #slide4 .wrapper .mask .func2 ul li:nth-child(even){
@@ -593,14 +609,13 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 #slide5 .wrapper h2{
 	color:#fff;
 	font-size:2em;
-	font-weight:bold;
-	letter-spacing:-1px;
-	margin-bottom:20px;
-	padding-top:50px;
+	font-weight: 200;
+	margin-bottom:50px;
+	padding-top:80px;
 }
 
 #slide5 .wrapper h2:first-child{
-	padding-top:120px;
+	padding-top:220px;
 }
 
 #slide5 footer{
@@ -630,8 +645,8 @@ ul.sidebar li.mypage a:hover{ background:#ff8c59; }
 
 #slide5 footer div p:first-child span{
 	display:block;
-	margin-left:80px;
-	margin-top:3px;
+	margin:0 0 20px 80px;
+	line-height: 1.5;
 }
 
 #slide5 footer div p:last-child{
