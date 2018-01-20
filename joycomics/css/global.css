@@ -1,0 +1,1489 @@
+
+/* 코인 */
+i.coin{
+	display: inline-block;
+	background: url('../img/global_sprite.png') no-repeat -292px -332px;
+	width: 16px;
+	height: 16px;	
+	vertical-align: middle;
+}
+
+
+
+/* 버튼 */
+button.buttonXlarge{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 1em; /* 16px */
+}
+
+button.buttonlarge{
+	padding-top:8px;
+	padding-bottom: 10px;
+	font-size: 0.875em; /* 14px */
+}
+
+button.buttonNormal{
+	padding-top:5px;
+	padding-bottom: 7px;
+	font-size: 0.813em; /* 13px */
+}
+
+button.line{
+	background: transparent;
+	border: 2px solid #000;
+}
+
+button.yellow{
+	background: #f3ce39;
+}
+
+button.grey{
+	background: #888;
+	color: #fff;
+}
+
+button.red{
+	background: #ff4b4b;
+	color: #fff;
+}
+
+button.white{
+	background: #fff;
+	border: 1px solid #ddd;
+	color: #333;
+}
+
+
+button.lineRed{
+	border-color: #ff4b4b;
+	color: #ff4b4b;
+}
+
+button.lineRed:hover,
+button.lineRed:active{
+	background: #ff4b4b;
+	color: #fff;
+}
+
+/* 위로가기 버튼 */
+button.gotoTop{
+	position: fixed;
+	bottom:80px;
+	right:20px;
+	color: rgba(144, 144, 144, 0.6);
+	font-size: 3.75em; /* 60px */
+}
+
+
+
+/* 소셜버튼 */
+button.btnSocial{
+	width: 100%;
+	padding: 0 !important;
+	margin-bottom: 6px;
+	background: #fff;
+	border-bottom: 1px solid #dbdbdb;
+	text-align: left;
+}
+
+button.btnSocial span{
+	display: block;
+	margin: 12px 0 0 16px;
+	color: #666;
+	font-weight: normal;
+	font-size: 0.875em; /* 14px */
+}
+
+button.btnSocial:before{
+	content: "";
+	display: block;
+	width: 51px;
+	height: 44px;
+	margin-right: 10px;
+	float: left;
+	background-image: url('../img/global_sprite.png');
+	background-repeat: no-repeat;
+}
+
+button.btnSocial.naver:before{
+	background-color: #1fbc02;
+	background-position: -190px -222px;
+}
+
+button.btnSocial.fb:before{
+	background-color: #3b5998;
+	background-position: -240px -224px;
+}
+button.btnSocial.google:before{
+	background-color: #ea4436;
+	background-position: -291px -223px;
+}
+
+
+div.btnWrap{
+	text-align: center;
+}
+
+div.btnWrap:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+div.btnWrap button{
+	width: 48%;
+}
+
+div.btnWrap button:first-child{
+	margin-right: 2%;
+}
+
+
+span.date{
+	font-size: 0.813em; /* 13px */
+	color: #666;
+}
+
+
+/* 등급 */
+
+
+
+i.grade.gold:after{
+	content: "";
+	display: block;
+	background-image: url('../img/global_sprite.png');
+	background-position: -520px -10px;
+	width: 32px;
+	height: 29px;
+}
+
+i.grade.silver:after{
+	content: "";
+	display: block;
+	background-image: url('../img/global_sprite.png');
+	background-position: -559px -10px;
+	width: 28px;
+	height: 29px;
+}
+
+i.grade.bronze:after{
+	content: "";
+	display: block;
+	background-image: url('../img/global_sprite.png');
+	background-position: -597px -11px;
+	width: 26px;
+	height: 28px;
+}
+
+
+/* ICONS */
+div.icons p.freepass{
+	display: none;
+	/*display: inline-block;*/
+	padding: 3px 12px;
+	background: #3498db;
+	border-radius: 18px;
+	font-size: 0.75em;
+	font-weight: bold;
+	color: #fff;
+}
+
+div.icons div.iconState p{
+	display: inline-block;
+	height: 18px;
+	background-image:url('../img/global_sprite.png');
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+div.icons div.iconState p.new{
+	width: 40px;
+	background-position: -356px -328px;
+}
+
+div.icons div.iconState p.up{
+	width: 29px;
+	background-position: -448px -328px;
+}
+
+div.icons div.iconState p.end{
+	width: 40px;
+	background-position: -399px -328px;
+}
+
+
+/* placeholder */
+div.placeholder{
+	position: relative;
+}
+
+div.placeholder label{
+	position: absolute;
+	margin: 0;
+	top: 12px;
+	left: 12px;
+	color: #aaa;
+}
+
+div.placeholder label.icon{
+
+}
+
+div.placeholder label.icon:before{
+	content: "";
+	display: block;
+	float: left;
+	margin-right: 7px;
+	background-image: url('../img/global_sprite.png');
+	background-repeat: no-repeat;
+}
+
+div.placeholder.email label.icon:before{
+	width: 26px;
+	height: 18px;
+	margin-top: 2px;
+	background-position: -386px -290px;
+}
+
+div.placeholder.password label.icon:before{
+	position: relative;
+	width: 20px;
+	height: 22px;
+	background-position: -425px -284px;
+}
+
+div.placeholder input,
+div.placeholder textarea{
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background: rgba(0,0,0,0.02);
+}
+
+div.placeholder input:focus,
+div.placeholder textarea:focus{
+	background: #fff !important;	
+}
+
+div.placeholder input:focus + label,
+div.placeholder textarea:focus + label{
+	display: none;
+}
+
+div.placeholder input:valid,
+div.placeholder textarea:valid{
+	background: #fff !important;
+}
+
+
+/* 세일가격 */
+div.sale{
+	position: relative;
+	padding: 10px;
+	background:#eee;
+	text-align: center;
+}
+
+
+div.sale:before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: -2px;
+	display: block;
+	width: 2px;
+	height: 100%;
+	background: url('../img/comicdeal_bg.png') repeat-y top left;
+}
+
+div.sale:after{
+	position: absolute;
+	content: "";
+	top: 0;
+	right: -2px;
+	display: block;
+	width: 2px;
+	height: 100%;
+	background: url('../img/comicdeal_bg.png') repeat-y top left;
+}
+
+div.sale p{
+	width: 45%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div.sale p:first-child{
+	border-right: 1px solid #ddd;
+}
+
+div.sale p span{
+	font-family: 'Noto Sans Korean', sans-serif;
+}
+
+div.sale p:first-child span{
+	font-size: 3.125em; /* 50px */
+	color: #f04848;
+}
+
+div.sale p:last-child span{
+	display: block;
+}
+
+div.sale p:last-child span:first-child{
+	font-size: 1em;
+	color: #a4a4a4;
+	text-decoration: line-through;
+}
+
+div.sale p:last-child span:last-child{
+	color: #4b93ff;
+	font-size: 1.6875em; /* 27px */
+}
+
+
+/* 지은이 | 장르 */
+p.authorAndgenre{
+	font-size: 0.750em;
+}
+
+p.authorAndgenre span.author{
+}
+
+p.authorAndgenre span.author:after{
+	content:"|";
+	margin-left:6px;
+	font-size: 0.4em;
+	color: rgba(0,0,0,0.5);
+}
+
+p.authorAndgenre span.genre{
+	margin-left: 6px;
+	color: #ff6d6d;
+}
+
+
+/* 정렬,구분 */
+ul.sort{
+	text-align: right;
+	margin-bottom: 10px;
+	padding: 0  .8333333333333333%; /* 10 / 1200 */
+}
+
+ul.sort li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+ul.sort li a{
+	display: block;
+	font-size: 0.875em; /* 14px */
+	font-weight: bold;
+	color: #666;
+}
+
+ul.sort li.selected a{
+	color: #f13f0f;
+}
+
+ul.sort li a:before{
+	content: "";
+	display: inline-block;
+	width: 11px;
+	height: 10px;
+	margin-right: 3px;
+	background: url('../img/global_sprite.png') no-repeat -310px -294px;;
+}
+
+ul.sort li.selected a:before{
+	background-position: -286px -294px;
+}
+
+
+
+/* 본문탭 */
+ul.contentTab{
+	width: 100%;
+	margin-bottom: 12px;
+	background: #fff;
+	border:1px solid #bababa;
+	border:1px solid #bababa;
+}
+
+ul.contentTab:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+ul.contentTab li{
+	display: block;
+	float: left;
+	background: #fff;
+}
+
+ul.contentTab li a{
+	position: relative;
+	display: block;
+	padding: 10px 0;
+	border-right: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	color: #555;
+	font-weight: bold;
+	font-size: 0.875em; /* 14px */
+	text-align: center;
+}
+
+ul.contentTab li:last-child a{
+	border-right: 0 none;	
+}
+
+ul.contentTab li:nth-child(12) a{
+	border-right: 0;
+}
+
+ul.contentTab li:nth-child(13) a{
+	border-bottom: 0;
+}
+
+ul.contentTab li:nth-child(14) a{
+	border-bottom: 0;
+}
+
+ul.contentTab li a:hover{
+	color: #EF6767;
+}
+
+ul.contentTab li.selected a{
+	background: #ffdf5f;
+	color: #4a4220;
+}
+
+ul.contentTab li a.brand{
+	color: #FF4B4B;
+}
+
+
+
+
+
+/* 썸네일 정렬 */
+
+ul.cardList li{
+	margin-top: 1.694915254237288%; /* 20px / 1180px */
+	padding: 0 0.8333333333333333%; /* 10 / 1200 */
+}
+
+
+
+/* 컨텐츠 상단 네비게이션 breadcrumb */
+ul.breadCrumb{
+	text-align: right;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+ul.breadCrumb li{
+	display: inline-block;
+}
+
+ul.breadCrumb li a{
+	font-size: 	0.813em; /* 13px */
+}
+
+ul.breadCrumb li:last-child a{
+	font-weight: bold;	
+}
+
+ul.breadCrumb li a:hover{
+	text-decoration: underline;
+}
+
+ul.breadCrumb li i.fa-angle-right{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 3px;
+}
+
+
+
+/* 상단탭 (코믹딜,마이페이지) */
+ul.topSideTab{
+	width: 100%;
+	background: #fff;
+	border: 1px solid #bbb;
+	border-bottom: 0 none;
+}
+
+ul.topSideTab li a{
+	display: block;
+	padding: 15px 0;
+	padding-bottom: 17px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #bbb;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.125em; /* 18px */
+}
+
+ul.topSideTab li:last-child a{
+	border-right: 0 none;
+}
+
+ul.topSideTab li.selected a{
+	padding-bottom: 15px;
+	border-bottom: 3px solid #ff4b4b;
+}
+
+
+
+/* 작품썸네일-제목박스 */
+.card{
+	position: relative;
+	background: #fff;
+	z-index: 50;
+}
+
+.card a{
+	position: relative;
+	display: block;
+}
+
+
+.card a.tContent div.tnArea{
+	position: relative;
+}
+
+
+
+/* 19금 제목가리기 */
+.xRateAll h3{
+	color: #555;
+	background: #555;
+}
+
+div.xRate{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(26,26,26,0.8);
+	z-index: 100;
+}
+
+div.xRate span{
+	display: block;
+	width: 44px;
+	height: 44px;
+	background: url('../img/global_sprite.png') no-repeat -28px -148px;
+	text-indent: -9999px;
+}
+
+.card a.tContent div.tnArea img{
+	width: 100%;
+}
+
+.card a.tContent div.tnArea div.icons{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 101;
+}
+
+.card a.tContent div.tnArea div.icons:before{
+	content: "";
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/* FF3.6-15 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+	/* Chrome10-25,Safari5.1-6 */ 
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); 
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); 
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 ); 
+}
+
+
+.card a.tContent div.tnArea div.icons span{
+}
+
+
+
+.card a.tContent div.tnArea div.icons p.freepass{
+	margin: 10px 15px;	
+		display: none;
+}
+
+.card a.tContent div.tnArea div.icons div{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+}
+
+.card a.tContent div.tnArea div.icons div p{
+	background-image:url('../img/global_sprite.png');
+	background-repeat: no-repeat;
+	height: 19px;
+	float: left;
+	text-indent: -9999px;
+}
+
+.card a.tContent div.tnArea div.icons div p.new{
+	width: 42px;
+	background-position: -181px -108px;
+}
+
+.card a.tContent div.tnArea div.icons div p.up{
+	width: 31px;
+	background-position: -235px -108px;
+}
+
+.card a.tContent div.tnArea div.icons div p.end{
+	width: 42px;
+	background-position: -278px -108px;
+}
+
+.card a.tContent div.tnDesc{
+	padding:12px 15px;
+}
+
+
+
+.card a.tContent div.tnDesc h3{
+	margin-bottom: 5px;
+}
+
+.card a.tContent div.tnDesc span{
+	display: block;
+}
+
+.card a.tContent div.tnDesc span.author:after{
+	content:"";
+	margin-left:0;
+}
+
+.card a.tContent div.tnDesc span.genre{
+	margin:3px 0 0 0;
+}
+
+
+
+
+/* 썸네일 - 소 */
+.card.small{
+
+	background: transparent;
+}
+
+.card.small a.tContent div.tnArea{
+	border:1px solid #ddd;
+}
+
+.card.small a.tContent div.tnDesc{
+	padding: 10px 0;
+}
+
+.card.small a.tContent div.tnDesc h3{
+	font-size: 0.875em; /* 14px */
+}
+
+.card.small a.tContent div.tnDesc p span{
+	font-size: 0.8125em; /* 13px */
+}
+
+
+main div#comicListArea div.comicListAreaWrapper section ul.cardList li img.tn11{
+	display: none;
+}
+
+
+/* aside */
+aside{
+
+}
+
+aside section{
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-top: 2px solid #888;
+}
+
+aside section:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+aside section h2{
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	font-size: 1em; /* 16px */
+}
+
+aside section>div{
+	padding: 10px;
+}
+
+/* 마지막으로 읽은 화 */
+aside section.latestRead img{
+	width: 120px;
+	float:left;
+}
+
+aside section.latestRead h3{
+	margin-left: 130px;
+	margin-top: 30px;
+}
+
+aside section.latestRead h3:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+aside section.latestRead button{
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+}
+
+/* 연관이벤트 */
+aside section.relatedEvent img{
+	width: 100%;
+}
+
+
+/* 코믹딜 */
+
+
+.comicDealSide{
+	background: #fff;
+}
+
+.comicDealSide h3{
+	margin: 10px 0;
+}
+
+.comicDealSide img{
+	width: 100%;
+}
+
+.comicDealSide p.saleTime,
+.comicDealSide p.saleAmount{
+	padding: 10px 5px;	
+	font-size: 1em; /* 16px */
+	font-weight: bold;
+}
+
+.comicDealSide p.saleTime{
+	border-bottom: 1px solid #ddd;
+	padding-top: 20px;
+}
+
+.comicDealSide p.saleAmount{
+	padding-bottom: 0;
+}
+
+.comicDealSide p strong{
+	color: #f04848;
+}
+
+
+
+
+
+
+/* 이 작품을 본 회원님이 본 다른 작품 */
+aside section.otherUserReadThis ul{
+	padding: 10px;
+}
+
+aside section.otherUserReadThis ul li{
+	border-bottom: 1px solid #ddd;
+}
+
+
+aside section.otherUserReadThis ul li:last-child{
+	border: 0 none;
+}
+
+aside section.otherUserReadThis ul li a{
+	display: block;
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+aside section.otherUserReadThis ul li:first-child a{
+	padding-top: 0;
+}
+
+aside section.otherUserReadThis ul li:last-child a{
+	padding-bottom: 0;
+}
+
+aside section.otherUserReadThis ul li a img{
+	width: 120px;
+	float: left;
+}
+
+aside section.otherUserReadThis ul li a h3,
+aside section.otherUserReadThis ul li a p{
+	margin-left: 130px;
+	font-size: 0.875em;
+}
+
+aside section.otherUserReadThis ul li a p span{
+	margin-left: 0 !important;
+	font-size: 0.750em; /* 12px */
+}
+
+
+/* 페이징 */
+div.pagenation{
+	margin: 20px 0;
+	text-align: center;
+}
+
+div.pagenation ul li{
+	display: inline-block;
+	margin: 0 2px;
+}
+
+div.pagenation ul li a{
+	display: block;
+	padding: 4px 9px;
+	font-weight: bold;
+	border-radius: 50%;
+}
+
+div.pagenation ul li a:hover{
+	background: #eee;
+}
+
+div.pagenation ul li.first a,
+div.pagenation ul li.prev a,
+div.pagenation ul li.next a,
+div.pagenation ul li.last a{
+	font-size: 0.750em; /* 12px */
+	color: #888;
+	font-weight: normal;
+}
+
+div.pagenation ul li a.selected{
+	background: #f1c40f;
+	color:#fff;
+}
+
+
+/* 댓글 */
+div.reply{
+
+}
+
+div.reply div.writeReply{
+	background: #eee;
+	padding: 1.6666666666666666%; /* 20 / 1200 */
+	border: 1px solid #ddd;
+}
+
+div.reply div.writeReply h2{
+	margin-bottom: 7px;
+	font-size: 1em; /* 16px */
+}
+
+div.reply div.writeReply h2 span{
+	color: #f10f0f;
+	font-size: 0.813em; /* 13px */
+}
+
+div.reply div.writeReply div{
+	padding-right: 0.8333333333333333%; /* 10 / 1200 */
+}
+
+div.reply div.writeReply div textarea{
+	width: 100%;
+	height: 100px;
+}
+
+div.reply div.writeReply div span{
+	display: block;
+	text-align: right;
+	width: 100%;
+	font-size: 0.750em; /* 12px */
+}
+
+div.reply div.writeReply div span strong{
+	color: #f10f0f;
+}
+
+div.reply div.writeReply div button{
+	height: 100px;
+	background: #666;
+	border: 1px solid #555;
+	color: #fff;
+}
+
+
+div.reply div.replyList{
+	margin-top: 20px;
+}
+
+div.reply div.replyList div.replySort{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+div.reply div.replyList div.replySort ul{
+	float: left;
+	margin-bottom: 0;
+}
+
+div.reply div.replyList div.replySort ul li{
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+
+
+div.reply div.replyList div.replySort button.refreshBtn{
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.reply div.replyList div.replySort button.refreshBtn i{
+	margin-right: 5px;
+}
+
+div.reply div.replyList>ul li{
+	padding: 15px 0;
+	border-top: 1px solid #ddd;
+}
+
+div.reply div.replyList>ul li:first-child{
+	border-top: 1px solid #aaa;
+}
+
+div.reply div.replyList>ul li:last-child{
+	border-bottom: 1px solid #aaa;
+}
+
+div.reply div.replyList>ul li div.replyState{
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+div.reply div.replyList>ul li div.replyState span.bestReply{
+	display: inline-block;
+	padding: 0 6px;
+	background: #ff4b4b;
+	border: 1px solid #EC0E0E;
+	color: #fff;
+	font-size: 0.750em; /* 12px */
+	vertical-align: middle;
+}
+
+div.reply div.replyList>ul li div.replyState span.userID{
+	font-weight: bold;
+	font-size: 0.875em; /* 14px */
+	vertical-align: middle;
+}
+
+div.reply div.replyList>ul li div.replyState span.date{
+	margin-left: 5px;
+	font-size: 0.750em; /* 12px */
+	color: #999;
+	vertical-align: middle;
+}
+
+div.reply div.replyList>ul li div.replyState>div{
+	display: inline-block;
+	float: right;
+}
+
+div.reply div.replyList>ul li div.replyState>div button{
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+
+div.reply div.replyList>ul li div.replyState>div button.btnRecommend:hover,
+div.reply div.replyList>ul li div.replyState>div button.btnRecommend.recommended{
+	background: #46bf68;
+	color: #fff;
+	border-color: #1B9C3F;
+}
+
+
+/* 공유창 */
+div.shareWindow{
+	position: absolute;
+	width: 310px;
+	padding: 20px;
+	background: #fff;
+	border:1px solid #ddd;
+}
+
+div.shareWindow button{
+	position: relative;
+	color: #fff;
+	text-align: center;
+}
+
+div.shareWindow button.fb{
+	width: 48.5%;
+	background: #3b5998;
+	border: 1px solid #244894;
+}
+
+div.shareWindow button.blog{
+	width: 48.5%;
+	background: #1fbc02;
+	border: 1px solid #1E9808;
+}
+
+div.shareWindow button.fb:before,
+div.shareWindow button.blog:before{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 26px;
+	height: 26px;
+	background-image: url('../img/global_sprite.png');
+}
+
+div.shareWindow button.fb:before{
+	top: 7px;
+	left: 10px;
+	background-position: -259px -233px;
+}
+
+div.shareWindow button.blog:before{
+	top: 13px;
+	left: 8px;
+	background-position: -207px -237px;
+}
+
+div.shareWindow form{
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+div.shareWindow form input,
+div.shareWindow form button{
+	float: left;
+}
+
+div.shareWindow form input{
+	width: 190px;
+	height: 40px;
+	border-color: #C7C7C7 !important;
+}
+div.shareWindow form button.duplicateUrl{
+	position: relative;
+	left:-1px;
+	color: #333;
+	padding: 12px 8px;
+	vertical-align: middle;
+}
+
+
+
+/* 안내문 UL */
+
+ul.infoBoard,
+ol.infoBoard{
+	padding: 15px 20px;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+}
+
+.infoBoard.grey{
+	background: #f5f5f5;
+}
+
+.infoBoard li{
+	padding: 3px 0;
+	margin-left: 10px;
+	font-size: 0.875em; /* 14px */
+	list-style-type: disc;
+	list-style-position: outside;
+	line-height: 1.5;
+}
+
+ol.infoBoard li{
+	list-style-type: decimal;
+}
+
+.infoBoard li ul li{
+	list-style-type: none;
+}
+
+.infoBoard li ul li:before{
+	content: "-";
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.infoBoard li p{
+	margin-top: 5px;
+	font-size: 0.875em; /* 14px */
+}
+
+
+/* LNB */
+.pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus{
+	border-radius: 3px;
+	color: #333;
+	background: #eee;
+}
+
+
+/* 자동결제순서 */
+div.paySelect{
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+div.paySelect form{
+	padding: 5px;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+}
+
+div.paySelect form label{
+	display: inline-block;
+	padding: 0 10px;
+	font-weight: bold;
+	font-size: 1em; /* 16px */
+}
+
+div.paySelect ul.infoBoard{
+	border: 0 none;
+}
+
+
+/* 사이드 LNB */
+ul.sideLNB{
+	border: 1px solid #aaa;
+	background: #fff !important;
+	border-radius: 3px;
+}
+
+ul.sideLNB li{
+
+	border-bottom: 1px solid #ddd;
+}
+
+ul.sideLNB li.pure-menu-selected{
+	background: #f5f5f5;
+}
+
+ul.sideLNB li:last-child{
+	border-bottom: 0 none;
+}
+
+ul.sideLNB li a{
+	padding: 13px 18px;	
+	color: #777;
+	font-family: 'Noto Sans Korean', sans-serif;
+}
+
+ul.sideLNB li a i{
+	margin-right: 5px;
+}
+
+.customerCenter div.customerContent{
+	padding-left: 0.8333333333333333%; /* 10 / 1200 */
+}
+
+
+
+/* 아코디언 메뉴 */
+ul.accordion{
+	background: #fff;
+	border: 1px solid #aaa;
+}
+
+ul.accordion li h3{
+	border-bottom: 1px solid #ddd;
+}
+
+ul.accordion li:last-child h3{
+	border-bottom: 0 none;
+}
+
+ul.accordion li h3 a{
+	display: block;
+	font-weight: bold;
+	font-size: 0.875em; /* 14px */
+	padding: 15px 20px;
+}
+
+ul.accordion li h3 a i{
+	display: none;
+	color: #333;
+}
+
+ul.accordion li:target h3 i.fa-angle-down{
+	display: none !important;
+}
+
+ul.accordion li h3 a i.fa-angle-down{
+	display: none;
+}
+
+ul.accordion li h3 i.fa-angle-right{
+	width: 9px;
+}
+
+ul.accordion li h3 a i.fa-bullhorn{
+	margin-left: 5px;
+}
+
+ul.accordion li h3 a span{
+	width: 80%;
+	display: inline-block;
+}
+
+ul.accordion li h3 a span.date{
+	width: auto;
+}
+
+
+ul.accordion li div.accContent{
+	display: none;
+	padding: 20px;
+	border-bottom: 1px solid #aaa;
+}
+
+ul.accordion li strong{
+
+}
+
+
+ul.accordion li:last-child div.accContent{
+	border-bottom: 0 none;
+}
+
+
+ul.accordion li:target{
+}
+
+ul.accordion li:target h3{
+	border-bottom: 1px solid #ddd !important;		
+}
+
+ul.accordion li:target h3 i.fa-angle-right{
+	display: none;
+}
+
+ul.accordion li:target h3 i.fa-angle-down{
+	display: inline-block;
+}
+
+ul.accordion li:target div.accContent{
+	display: block;
+	background: #eee;
+}
+
+
+
+
+
+
+
+div.textboxArea{
+	width: 100%;
+	height: 150px;
+	padding: 15px;
+	overflow: auto;
+	border: 1px solid #ddd; 
+	font-size: 0.875em; /* 14px */
+	background: #fff;
+}
+
+
+div.textboxArea h3,
+div.textboxArea h4{
+	margin: 10px 0 5px;
+	font-size: 	1.063em; /* 17px */
+}
+
+div.textboxArea h5{
+	margin: 10px 0 5px;
+	font-size: 	1em; /* 16px */
+}
+
+
+div.textboxArea p{
+	font-size: 	0.938em; /* 15px */
+}
+
+div.textboxArea>ul>li{
+	margin: 5px 0;
+	font-size: 	0.938em; /* 15px */
+}
+
+div.textboxArea>ul>li:first-letter{
+	font-weight: bold;
+}
+
+div.textboxArea>ul>li>ul>li{
+	margin-left: 20px;
+	font-size: 	0.875em; /* 14px */
+}
+
+
+/*****************************************************미디어쿼리**********************************************************/
+
+
+
+
+
+
+/* ≥ 1024px pure-u-lg */
+@media screen and (max-width:1024px){
+	aside section.comicDealSide div p.saleTime,
+	aside section.comicDealSide div p.saleAmount{
+		font-size: 0.875em;
+	}
+
+	.card a.tContent div.tnDesc{
+		padding: 7px 10px;
+	}
+
+	.card a.tContent div.tnDesc h3{
+		margin-bottom: 0;
+		font-size: 0.875em;
+	}
+
+	.card a.tContent div.tnArea div.icons>div{
+		display: none;
+	}
+
+
+}
+
+/* ≥ 980px pure-u-md */
+@media screen and (max-width:980px){
+	aside section{
+		margin-bottom: 0;
+		margin-top: 2.6041666666666668%; /* 20 / 768 */
+	}
+
+	ul.sideLNB li{
+		border-bottom: 0 none;
+		border-right: 1px solid #ddd;
+	}
+
+	ul.sideLNB li:last-child{
+		border-right: 0 none;
+	}
+
+	.customerCenter div.customerContent{
+		margin-top: 2.6041666666666668%; /* 20 / 768 */
+		padding-left: 0;
+	}
+
+	ul.contentTab{
+		padding: 0;
+	}
+
+
+	ul.contentTab li a{
+		border-top: 0 none;
+	}
+
+	ul.contentTab li:nth-child(6n) a{
+		border-right: 0 none;
+	}
+
+
+
+	ul.contentTab.weekly li:nth-child(6n) a{
+		border-right: 1px solid #dbdbdb;
+	}
+
+	ul.contentTab.weekly li:nth-child(4n) a{
+		border-right: 0 none;
+	}
+
+	ul.contentTab.weekly li:nth-child(5),
+	ul.contentTab.weekly li:nth-child(6){
+		border-bottom: 0 none;
+	}
+}
+
+
+/* ≥ 680px pure-u-sm */
+@media screen and (max-width: 740px){
+
+
+	ul.breadCrumb{
+		display: none;
+	}
+
+	ul.contentTab li:nth-child(3n) a{
+		border-right: 0 none;
+	}
+
+	.card a.tContent div.tnArea img.tn11{
+		display: block;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section ul.cardList li img.tn11{
+		display: block;
+	}
+
+	.card a.tContent div.tnArea img.tn12{
+		display: none;
+	}
+
+	ul.sideLNB li a{
+		padding: 13px 10px;
+		font-size: 0.875em; /* 14px */
+	}
+
+	ul.sort{
+		margin:20px 0 10px;
+	}
+
+
+	div.reply div.writeReply{
+		padding: 10px;
+	}
+
+	div.reply div.writeReply div button{
+		height: 45px;
+		margin-top: 5px;
+	}
+
+	div.reply div.replyList>ul li div.replyState>div{
+
+	}
+
+	ul.contentTab.weekly li:nth-child(3n) a{
+		border-right: 1px solid #ddd;
+	}
+
+	ul.contentTab.weekly li:nth-child(7),
+	ul.contentTab.weekly li:nth-child(8), 
+	ul.contentTab.weekly li:nth-child(9){ 
+		border-bottom: 0;
+	}
+}

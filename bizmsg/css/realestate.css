@@ -1,0 +1,355 @@
+/* 헤더 */
+header{
+	position: absolute;
+	top:0;
+	z-index: 1000;
+}
+
+header a{
+	color:#fff;
+	font-weight: bold;
+}
+
+
+/* 메뉴 */
+nav{
+	width:100%;
+	position: absolute;
+	top:9.1%;
+	z-index: 1000;
+}
+
+nav ul{
+	position: relative;
+	height: 100%;
+
+	/* 메뉴 수직 수평 정렬 */
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-direction:row;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+}
+
+nav ul li{
+	width:33.3333333333%;
+}
+
+nav ul li a{
+	position: relative;
+	display: block;
+	width:100%;
+	padding:35% 0 10%;
+	text-align: center;
+	background: none;
+	color:#fff;
+	font-size: 0.9em;
+}
+
+
+
+nav ul li a:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top:15%;
+	left:50%;
+	width:18%;
+	height: 33%;
+	margin-left:-9%;
+	background-size: 100% 100%;
+}
+
+nav ul li.bHour a:after{
+	background-image: url('../img/hospital/menu_bhour.png');
+}
+
+nav ul li.map a:after{
+	background-image: url('../img/hospital/menu_map.png');
+}
+
+nav ul li.moreInfo a:after{
+	width:28%;
+	height:49%;
+	margin-left:-14%;
+	background-image: url('../img/hospital/menu_moreinfo.png');
+}
+
+
+/* content */
+div.content{
+	top:21.3%;
+	z-index: 100;
+}
+
+div.mainCover div.content{
+	height:67.1%;
+}
+
+/* 메인 커버이미지 */
+div.content div.mainImg{
+	width:100%;
+	height:100%;
+}
+
+div.content div.mainImg img{
+	width:100%;
+	height:100%;
+}
+
+/* 지도 */
+div.content.mapPage{
+	height:80.7%;
+	background: #fff;
+}
+
+div.content div.map{
+	width:100%;
+	height:75.1%;
+	border: 0 none;
+	background: none;
+	box-shadow: none;
+}
+
+div.content div.map>div{
+	width:100%;
+}
+
+div.content div.map>p{
+	background: #f5f5f5;
+	border-top: 1px solid #ddd;
+}
+
+div.content ul.shareRE{
+	margin: 3.8%;
+	margin-bottom: 0;
+}
+
+div.content ul.shareRE li{
+	width:100%;
+}
+
+div.content ul.shareRE li:last-child{
+	margin-top: 2%;	
+}
+
+div.content ul.shareRE li a{
+	position: relative;
+	display: block;
+	width:100%;
+	padding:4%;
+	color: #fff;
+	text-align: center;
+	text-shadow:0 1px 0 rgba(0,0,0,0.2);
+}
+
+div.content ul.shareRE li.naver a{
+	background: #73b75c;
+}
+
+div.content ul.shareRE li.kakao a{
+	background: #dcc246;
+}
+
+div.content ul.shareRE li a:before{
+	content: "";
+	display: inline-block;
+	position: relative;
+	width:5%;
+	padding-bottom:5%;
+	margin-right: 3px;
+
+	background-size: 100% 100%;
+}
+
+div.content ul.shareRE li.naver a:before{
+	background-image: url('../img/realestate/share_naver.png');
+}
+
+div.content ul.shareRE li.kakao a:before{
+	background-image: url('../img/realestate/share_kakao.png');
+}
+
+
+
+/* 추가정보 */
+
+div.review,
+div.reviewWrite{
+	position: relative;
+	margin:3.8%;
+	margin-top:0;
+	border: 1px solid #bcbcbc;
+	background:#fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+
+/* footer */
+footer{
+	background: #f7f7f7 !important;
+}
+
+/********************************************  color - green ********************************************/
+.green header{
+	background: #3f4441;
+}
+
+
+/* 네비게이션 */
+.green nav{
+	background: #27ae60;
+}
+
+.green nav ul li a.selected{
+	background: #1f8b4d;
+}
+
+
+/* footer */
+.green footer div.pAddress p{
+	color:#259755;
+}
+
+.green div.info dl dd{
+	color:#187640;
+}
+
+/*이용후기*/
+.green div.review div.controlBtns button.readMore{
+	background:#F5AC3A;
+}
+
+.green div.review div.viewReview div.writePass div button.modify{
+	background:#F5AC3A;
+}
+
+.green div.reviewWrite div.controlBtns button.submit{
+	background: #F5AC3A;
+}
+
+/********************************************  color - blue ********************************************/
+.blue header{
+	background: #3c3e41;
+}
+
+/* 네비게이션 */
+.blue nav{
+	background: #468ded;
+}
+
+.blue nav ul li button.selected{
+	background: #3871be;
+}
+
+/* footer */
+.blue footer div.pAddress p{
+	color:#3d7fd8;
+}
+
+/*이용후기*/
+.blue div.review div.controlBtns button.readMore{
+	background:#EC5757;
+}
+
+.blue div.review div.viewReview div.writePass div button.modify{
+	background:#EC5757;
+}
+
+.blue div.reviewWrite div.controlBtns button.submit{
+	background: #EC5757;
+}
+
+
+/********************************************  color - orange ********************************************/
+.orange header{
+	background: #44423f;
+}
+
+/* 네비게이션 */
+.orange nav{
+	background: #ff8c25;
+}
+
+.orange nav ul li button{
+	color:#4f3b37;
+}
+
+.orange nav ul li button.selected{
+	background: #ff9d45;
+}
+
+.orange nav ul li.bHour button:after{
+	background-image: url('../img/realestate/menu_bhour.png');
+}
+
+.orange nav ul li.map button:after{
+	background-image: url('../img/realestate/menu_map.png');
+}
+
+.orange nav ul li.moreInfo button:after{
+	background-image: url('../img/realestate/menu_moreinfo.png');
+}
+
+.orange div.info dl dd{
+	color:#ff8314;
+}
+
+/*이용후기*/
+.orange div.review div.controlBtns button.readMore{
+	background:#71594A;
+}
+
+.orange div.review div.viewReview div.writePass div button.modify{
+	background:#71594A;
+}
+
+.orange div.reviewWrite div.controlBtns button.submit{
+	background: #71594A;
+}
+
+
+/* 레티나 디스플레이 대비 */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+	nav ul li.bHour button:after{
+	background-image: url('../img/hospital/menu_bhour@2x.png');
+	}
+
+	nav ul li.map button:after{
+		background-image: url('../img/hospital/menu_map@2x.png');
+	}
+
+	nav ul li.moreInfo button:after{
+		background-image: url('../img/hospital/menu_moreinfo@2x.png');
+	}
+
+
+	.orange nav ul li.bHour button:after{
+	background-image: url('../img/realestate/menu_bhour@2x.png');
+	}
+
+	.orange nav ul li.map button:after{
+		background-image: url('../img/realestate/menu_map@2x.png');
+	}
+
+	.orange nav ul li.moreInfo button:after{
+		background-image: url('../img/realestate/menu_moreinfo@2x.png');
+	}
+
+
+	div.content ul.shareRE li.naver button:before{
+	background-image: url('../img/realestate/share_naver@2x.png');
+	}
+
+	div.content ul.shareRE li.kakao button:before{
+		background-image: url('../img/realestate/share_kakao@2x.png');
+	}
+
+}

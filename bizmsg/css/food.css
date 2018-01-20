@@ -1,0 +1,447 @@
+
+/* 헤더 */
+header{
+	position: absolute;
+	top:0;
+	background: #fff;
+	border-bottom: 1px solid #bcbcbc;
+	z-index: 1000;
+}
+
+header a{
+	font-weight: bold;
+}
+
+
+/* 메뉴 */
+nav{
+	width:100%;
+	position: absolute;
+	bottom:0;
+	z-index: 1000;
+}
+
+nav ul{
+	position: relative;
+	height: 100%;
+
+	/* 메뉴 수직 수평 정렬 */
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-direction:row;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+}
+
+nav ul li{
+	width:25%;
+}
+
+nav ul li a{
+	position: relative;
+	display: block;
+	background: none;
+	width:100%;
+	padding:35% 0 10%;
+	text-align: center;
+	color:#fff;
+	font-size: 0.9em;
+}
+
+nav ul li a:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top:15%;
+	left:50%;
+	width:19%;
+	height: 33%;
+	margin-left:-9.5%;
+	background-size: 100% 100%;
+}
+
+nav ul li.bHour a:after{
+	background-image: url('../img/hospital/menu_bhour.png');
+}
+
+nav ul li.menu a:after{
+	background-image: url('../img/food/menu_menu.png');
+}
+
+nav ul li.map a:after{
+	background-image: url('../img/hospital/menu_map.png');
+}
+
+nav ul li.moreInfo a:after{
+	width:28%;
+	height:49%;
+	margin-left:-14%;
+	background-image: url('../img/hospital/menu_moreinfo.png');
+}
+
+
+/* content */
+div.content{
+	top:9.1%;
+	z-index: 100;
+	padding-bottom:15%;
+}
+
+
+/* 메인 커버이미지 */
+div.content.mainImgCon{
+	height: 83%;
+	padding: 0;
+}
+
+div.content div.mainImg{
+	width:100%;
+	height:100%;
+}
+
+div.content div.mainImg img{
+	width:100%;
+	height:100%;
+}
+
+
+/* 영업시간 */
+div.infobox.blurryBg div.blur{
+	top:9.1%;
+	height:82.6% !important;
+}
+
+/* 메뉴 */
+div.content div.menuList{
+	padding:3.8%;
+}
+
+div.content div.menuList>div{
+	position: relative;
+	margin-top: 5%;
+	border: 1px solid #bcbcbc;
+	background:#fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+div.content div.menuList>div h3{
+	position: absolute;
+	top:-28px;
+	left:50%;
+	margin-left: -16%;
+	padding: 1.5% 0;
+	width:30%;
+	text-align: center;
+	color:#fff;
+	font-size: 1em;
+	border-radius: 150px;
+}
+
+div.content div.menuList>div ul{
+	position: relative;
+	padding-top:7%;
+}
+
+div.content div.menuList>div ul li{
+	margin:0 3% 3%;
+	padding:0 3% 3%;
+	border-bottom: 1px solid #ddd;
+}
+
+div.content div.menuList>div ul li:last-child{
+	border: 0 none;
+}
+
+
+/* 20150506 수정 */
+div.content div.menuList>div ul li dl{
+	width:100%;
+	margin-top:2%;
+	overflow: hidden;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+div.content div.menuList>div ul li dl dt,
+div.content div.menuList>div ul li dl dd{
+	float: left;
+}
+
+div.content div.menuList>div ul li dl dt{
+	width:60%;
+}
+
+div.content div.menuList>div ul li dl dd{
+	width:40%;
+	text-align: right;
+}
+
+div.content div.menuList>div ul li dl.subMenu{
+	font-size: 1em;
+	color: #6a6a6a;
+}
+
+div.content div.menuList>div ul li dl.subMenu dt:before{
+	content: "-";
+	display: inline;
+	position: relative;
+	margin-right: 5px
+}
+/* 20150506 수정 - 여기까지 */
+
+
+/*지도*/
+div.content.mapPage{
+	padding:3.8%;
+	height: 73.8%;
+	padding-bottom: 0 !important;
+}
+
+div.content.mapPage div.map{
+	height:75%;
+}
+
+
+/* 추가정보 */
+
+div.review,
+div.reviewWrite{
+	position: relative;
+	margin:3.8%;
+	margin-top:0;
+	border: 1px solid #bcbcbc;
+	background:#fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+
+/* footer */
+footer{
+	position: absolute !important;
+	bottom:8.2% !important;
+	background: rgba(255,255,255,0.7) !important;
+}
+
+/********************************************  color - red ********************************************/
+
+/* 헤더 */
+.red header a{
+	color:#bb372a;	
+}
+
+
+/* 네비게이션 */
+.red nav{
+	background: #c73c2e;
+}
+
+.red nav ul li a.selected{
+	background: #a93327;
+}
+
+
+/* footer */
+.red footer div.pAddress p{
+	color:#932a20;
+}
+
+.red div.info dl dd{
+	color:#a43b31;
+}
+
+/* 메뉴 */
+.red div.content div.menuList>div h3{
+	background:#c73c2e;
+	border: 1px solid #9b281c;
+}
+
+.red div.content div.menuList>div ul li dl dd{
+	color:#a43b31;
+}
+
+/*이용후기*/
+.red div.review div.controlBtns button.readMore{
+	background:#F5AC3A;
+}
+
+.red div.review div.viewReview div.writePass div button.modify{
+	background:#F5AC3A;
+}
+
+.red div.reviewWrite div.controlBtns button.submit{
+	background: #F5AC3A;
+}
+
+
+
+
+/********************************************  color - brown ********************************************/
+/* 헤더 */
+.brown header a{
+	color:#4f3f38;	
+}
+
+/* 네비게이션 */
+.brown nav{
+	background: #876c60;
+}
+
+.brown nav ul li a.selected{
+	background: #735c52;
+}
+
+/* 메뉴 */
+.brown div.content div.menuList>div h3{
+	background:#735c52;
+	border: 1px solid #473e3a;
+}
+
+.brown div.content div.menuList>div ul li dl dd{
+	color:#9f5f40;
+}
+
+.brown div.info dl dd{
+	color:#9f5f3f;
+}
+
+
+/*이용후기*/
+.brown div.review div.controlBtns button.readMore{
+	background:#F76161;
+}
+
+.brown div.review div.viewReview div.writePass div button.modify{
+	background:#F76161;
+}
+
+.brown div.reviewWrite div.controlBtns button.submit{
+	background: #F76161;
+}
+
+/* footer */
+.brown footer div.pAddress p{
+	color:#4f433d;
+}
+
+
+/********************************************  color - yellow ********************************************/
+
+/* 헤더 */
+.yellow header a{
+	color:#3f3f3f;	
+}
+
+/* 네비게이션 */
+.yellow nav{
+	background: #f6b340;
+}
+
+.yellow nav ul li button{
+	color:#583d0e;	
+}
+
+.yellow nav ul li a.selected{
+	background: #f8c670;
+}
+
+.yellow nav ul li.bHour button:after{
+	background-image: url('../img/food/menu_bhour_yellow.png');
+}
+
+.yellow nav ul li.menu button:after{
+	background-image: url('../img/food/menu_menu_yellow.png');
+}
+
+.yellow nav ul li.map button:after{
+	background-image: url('../img/food/menu_map_yellow.png');
+}
+
+.yellow nav ul li.moreInfo button:after{
+	background-image: url('../img/food/menu_moreinfo_yellow.png');
+}
+
+
+.yellow div.info dl dd{
+	color:#583d0e;
+}
+
+/* 메뉴 */
+.yellow div.content div.menuList>div h3{
+	background:#f6b340;
+	border: 1px solid #ce922a;
+}
+
+.yellow div.content div.menuList>div ul li dl dd{
+	color:#9f5f40;
+}
+
+.yellow div.info dl dd{
+	color:#583d0e;
+}
+
+
+/*이용후기*/
+.yellow div.review div.controlBtns button.readMore{
+	background:#71594A;
+}
+
+.yellow div.review div.viewReview div.writePass div button.modify{
+	background:#71594A;
+}
+
+.yellow div.reviewWrite div.controlBtns button.submit{
+	background: #71594A;
+}
+
+/* footer */
+.yellow footer div.pAddress p{
+	color:#3c372e;
+}
+
+
+
+/* 레티나 디스플레이 대비 */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+	nav ul li.bHour button:after{
+	background-image: url('../img/hospital/menu_bhour@2x.png');
+	}
+
+	nav ul li.map button:after{
+		background-image: url('../img/hospital/menu_map@2x.png');
+	}
+
+	nav ul li.menu button:after{
+	background-image: url('../img/food/menu_menu@2x.png');
+	}
+
+	nav ul li.moreInfo button:after{
+		background-image: url('../img/hospital/menu_moreinfo@2x.png');
+	}
+
+
+	.yellow nav ul li.bHour button:after{
+	background-image: url('../img/food/menu_bhour_yellow@2x.png');
+	}
+
+	.yellow nav ul li.menu button:after{
+		background-image: url('../img/food/menu_menu_yellow@2x.png');
+	}
+
+	.yellow nav ul li.map button:after{
+		background-image: url('../img/food/menu_map_yellow@2x.png');
+	}
+
+	.yellow nav ul li.moreInfo button:after{
+		background-image: url('../img/food/menu_moreinfo_yellow@2x.png');
+	}
+
+
+
+}

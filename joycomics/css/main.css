@@ -1,0 +1,879 @@
+
+
+/****************************** MASTHEAD ******************************/
+
+
+ul#masthead{
+	position: relative;
+	width: 100%;
+	height: 320px;
+}
+
+
+ul#masthead li.mastheadList{
+	position: absolute;
+	width: 100%;
+	height: 320px;
+	background-image:url('../img/index/masthead_pattern.png');
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper{
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 0.8333333333333333%; /* 10 / 1200 */;
+	z-index: 50;
+}
+
+
+/************* 슬라이드 컨트롤 *************/
+
+ul#masthead li.mastheadList div.mastheadWrapper ul.mastControl{
+	position: absolute;
+	z-index: 100;
+	bottom: 33px;
+	right:0;
+	overflow: hidden;
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper ul.mastControl li{
+	float: left;
+	margin-left: 12px;
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper ul.mastControl li a{
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	background: rgba(117,117,117,0.5);
+	text-indent: -9999px;
+	border-radius: 50%;
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper ul.mastControl li.selected a{
+	width: 12px;
+	height: 12px;
+	background: #ffde58;
+}
+
+
+
+/************* //슬라이드 컨트롤 *************/
+
+
+/************* 요일,장르 컨트롤 *************/
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex{
+	position: absolute;
+	width: 19.166666666666668%; /* 230 / 1200 */;
+	margin-right: 0.8333333333333333%; /* 10 / 1200 */;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: rgba(255,255,255,0.35);
+
+}
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul{
+	padding: 6.086956521739131% 0; /* 14 / 230 */
+}
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li{
+	position: relative;
+	height: 25%;
+}
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li.selected{
+	border-left: 4px solid #ffde58;
+}
+
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li.selected a{
+	background: rgba(255,255,255,0.3);
+}
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li.selected:after{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 4px;
+	height: 8px;
+	left: -8px;
+	top: 50%;
+	margin-top: -4px;
+	background: url('../img/global_sprite.png') no-repeat -331px -177px;
+}
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 9px 6.086956521739131%; /* 14 / 230 */
+	overflow: hidden;
+}
+
+
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a:after{
+	position: absolute;
+	content: "";
+	width: 87%;
+	height: 1px;
+	bottom: 0;
+	display: block;
+	background: rgba(0,0,0,0.1);
+}
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li:last-child a:after{
+	display: none;
+}
+
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a img{
+	width: 25.5%; /* 51 / 200 */
+	margin-left: 5%; /* 10 / 200 */
+	border-radius: 50%;
+	border: 3px solid rgba(0,0,0,0.2);
+}
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a h3,
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a p{
+	width: 68.5%; /* 137 / 200 */
+	float: left;
+}
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a h3{
+	margin-top: 7px;
+	font-size: 0.8125em; /* 13px */
+}
+
+ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a p{
+	margin-top: 3px;
+	font-size: 0.75em; /* 12px */
+	color: #666;
+}
+
+
+/************* //요일,장르 컨트롤 *************/
+
+
+
+/************* 슬라이드 내용 *************/
+
+/******* 신간소개 슬라이드 ********/
+ul#masthead li.mastheadList div.mastheadWrapper div.MastContent{
+	position: relative;
+	height: 320px;
+	width: 73.33333333333333%; /* 880 / 1200 */
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.MastContent a{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+ul#masthead li.mastheadList div.mastheadWrapper div.newComic a img{
+	position: relative;
+	bottom: 0;
+	display: block;
+	width: 65.9090909090%; /* 580 / 880 */
+	height: 320px;
+	float: left;
+}
+
+
+ul#masthead li.mastheadList div.mastheadWrapper div.newComic a div{
+	width: 34.09090909090909%; /* 300 / 880 */
+	margin-left: 65.9090909090%; /* 580 / 880 */
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.newComic a div h3,
+ul#masthead li.mastheadList div.mastheadWrapper div.newComic a div p{
+	text-align: right;
+	color: #fff;
+	font-family: 'Noto Sans Korean', sans-serif;
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.newComic a div h3{
+	position: relative;
+	margin-top: 54px;
+	padding-bottom: 20px;
+	font-size: 	2.1875em; /* 35px */
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.newComic a div h3:after{
+	position: absolute;
+	right: 0;
+	content: "";
+	display: block;
+	width: 24px;
+	height: 2px;
+	margin-top: 20px;
+	background: rgba(255,255,255,0.5);
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.newComic a div p{
+	margin-top: 20px;
+	line-height: 1.5;	
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.newComic a div p.author{
+	margin-top: 10px;
+}
+/******* // 신간소개 슬라이드 ********/
+
+
+/******* 이벤트 슬라이드 ********/
+
+ul#masthead li.mastheadList div.mastheadWrapper div.eventImg a{
+	display: block;
+	width: 100%;
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.eventImg a img{
+	width: 100%;
+	height: 320px;
+}
+
+/******* //이벤트 슬라이드 ********/
+
+
+/************* //슬라이드 내용 *************/
+
+/************* 추천만화 *************/
+ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics{
+	/* width:1200 height:320; */
+	position: absolute;
+	top: 9.375%; /* 30 / 320 */
+	right: 0.8333333333333333%; /* 10 / 1200 */
+	width: 19.166666666666668%; /* 230 / 1200 */
+	height: 80.625%; /* 258 / 320 */
+	padding: 0.8333333333333333%; /* 10 / 1200 */
+	background: rgba(255,255,255,0.6);
+	border-radius: 3px;
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics h2{
+	margin-bottom: 12px;
+	font-size: 0.875em;
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics div.comicTn a{
+	display: block;
+	position: relative;
+}
+
+
+ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics div.comicTn a div.desc{
+	position: absolute;
+	bottom: 0;
+	width: 100%; /* 190 / 210 */
+	padding: 7.142857142857142% 4.7619047619047616%; /* 15 / 210 , 10 / 210 */
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics div.comicTn a div.desc:after{
+	position: absolute;
+	content: "";
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	/* FF3.6-15 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); 
+	/* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); 
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); 
+	z-index: 50;
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics div.comicTn a div.desc h3,
+ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics div.comicTn a div.desc span,
+ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics div.comicTn a div.desc span:after{
+	position: relative;
+	color: #fff;
+	z-index: 100;
+}
+
+ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics div.comicTn a div.desc h3{
+	margin-bottom: 6px;
+}
+/************* //추천만화 *************/
+
+
+
+
+
+/****************************** BANNER AREA ******************************/
+
+div.bannerArea{
+	padding: 20px 0;	
+	border-bottom: 1px solid #dfdfdf;
+	box-shadow: 0 1px 1px #f4f4f4;
+}
+
+div.bannerArea ul{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+div.bannerArea ul li{
+	width: 25%;
+	padding: 0 0.8333333333333333%; /* 10 / 1200 */
+	border-right: 1px dashed #ddd;
+}
+
+div.bannerArea ul li:last-child{
+	border-right: 0;
+}
+
+
+div.bannerArea ul li a{
+	display: block;
+	width: 100%;
+}
+
+div.bannerArea ul li a img{
+}
+
+/************* NEW ARRIVAL *************/
+
+
+main div.naJ5{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding:50px 0;
+}
+
+
+
+main div.naJ5 h2{
+	margin-bottom: 12px;
+}
+
+main div.naJ5 div.NewArrival h2{
+	padding-left: 0.6944444444444444%; /* 5 / 720 */
+}
+
+main div.naJ5 div.NewArrival div.naContent{
+ padding: 0 1.0416666666666666%; /* 5 / 480 */
+}
+
+main div.naJ5 div.NewArrival div.naContent div.selectedCon{
+	background: #ffde58;
+	border: 1px solid #FFD21E;
+	border-right: 0 none;
+}
+
+main div.naJ5 div.NewArrival div.naContent div.selectedCon a{
+	display: block;
+	padding:15px;
+}
+
+main div.naJ5 div.NewArrival div.naContent div.selectedCon a img{
+	width:100%;
+	margin-bottom: 24px;
+}
+
+main div.naJ5 div.NewArrival div.naContent div.selectedCon h3{
+	font-size: 1.25em;
+}
+
+main div.naJ5 div.NewArrival div.naContent div.selectedCon p.authorAndgenre{
+	margin: 13px 0;
+}
+
+main div.naJ5 div.NewArrival div.naContent div.selectedCon p.sDesc{
+
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList{
+	position: relative;
+
+	height: 20%;
+	border: 1px solid #ccc;
+	border-left: 0 none;
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li{
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li:last-child{
+	border-bottom: 0 none;
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li a{
+	display: block;
+	height: 93px;
+	padding-right: 20px;
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li a img{
+	float: left;
+	display: block;
+	width: 93px;
+	height: 93px;
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li a h3,
+main div.naJ5 div.NewArrival div.naContent ul.naList li a p{
+	margin-left: 108px;
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li a h3{
+	padding-top: 10px;
+	font-size: 1em;
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li a p.authorAndgenre{
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li.selected{
+	position: relative;
+	background: #ffde58;
+	border-color: #ffde58; 
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li.selected img{
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+main div.naJ5 div.NewArrival div.naContent ul.naList li.selected a:after{
+	position: absolute;
+	display: block;
+	content:"";
+	width: 70px;
+	height: 70px;
+	top:10px;
+	left:10px;
+	background: rgba(103,103,103,0.7) url("../img/global_sprite.png") no-repeat -402px -82px;
+	border-radius: 50%;
+}
+
+/************* //NEW ARRIVAL *************/
+
+
+
+/************* JOY5 *************/
+
+main div.joy5{
+ padding: 0 1.0416666666666666%; /* 5 / 480 */
+
+}
+
+main div.joy5 ul{
+	height: 471px;
+	border:1px solid #ccc;
+}
+
+main div.joy5 ul li{
+	height: 20%;
+	border-bottom:1px solid #ddd;	
+}
+
+main div.joy5 ul li:last-child{
+	border-bottom:0 none;
+}
+
+/* 1위 */
+main div.joy5 ul li:first-child a{
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+}
+
+main div.joy5 ul li:first-child a:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 /* FF3.6-15 */
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); 
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%); 
+	/* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=1 ); 
+
+}
+
+main div.joy5 ul li:first-child a p,
+main div.joy5 ul li:first-child a h3{
+	position: absolute;
+}
+
+main div.joy5 ul li:first-child a p.number{
+	width: 62px;
+	height: 70px;
+	padding-top: 13px;
+	margin-top: 11px;
+	color: #fad649;
+	border:0 none;
+	border-radius:0;
+	background: url('../img/global_sprite.png') no-repeat -101px -148px;
+}
+
+
+main div.joy5 ul li:first-child a h3{
+	left: 98px;
+	max-width: 260px;
+	color: #fff;
+}
+
+main div.joy5 ul li:first-child a p.authorAndgenre{
+	top: 55px;
+	left: 100px;
+}
+
+main div.joy5 ul li:first-child a p.authorAndgenre span.author{
+	color: #fff;
+}
+
+main div.joy5 ul li:first-child a img{
+	width: 100%;
+	height: auto;
+}
+
+
+main div.joy5 ul li a{
+	display: block;
+	overflow: hidden;
+}
+
+main div.joy5 ul li a:hover{
+	background:#f5f5f5;
+}
+
+main div.joy5 ul li a img{
+	width: 93px;
+	height: 100%;
+	float: right;
+}
+
+main div.joy5 ul li a p.number{
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin:17px 20px 0 14px;
+	padding-top: 10px;
+	border: 2px solid #aaa;
+	border-radius: 5px;
+	color: #444;
+	font-size: 1.5625em; /* 25px */
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+
+main div.joy5 ul li a h3{
+	font-size: 1em;
+	margin: 26px 0 5px 0;
+	padding-right: 20px;
+}
+
+
+
+
+
+/*****************************************************미디어쿼리**********************************************************/
+
+
+
+
+
+
+
+/* ≥ 1024px pure-u-lg */
+@media screen and (max-width:1024px){
+
+	ul#masthead,
+	ul#masthead li.mastheadList,
+	ul#masthead li.mastheadList div.mastheadWrapper div.MastContent,
+	ul#masthead li.mastheadList div.mastheadWrapper div.eventImg a img{
+		height: 274px;
+	}
+
+	ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics{
+	height: 83.625%;
+	}
+
+	div.bannerArea{
+		padding: 15px 0;	
+	}
+
+	main div.naJ5 {
+    padding: 2.6041666666666668%; /* 20 / 768 */	
+	}
+    
+	main div.naJ5 div.NewArrival div.naContent ul.naList{
+		border: 1px solid #ccc;
+	}
+
+	main div.naJ5 div.NewArrival div.naContent ul.naList li.selected{
+		background: none;
+		border-color: #ddd;
+	}
+
+	main div.naJ5 div.NewArrival div.naContent ul.naList li.selected a:after{
+		display: none;
+	}
+
+	main div.naJ5 div.NewArrival div.naContent ul.naList li.selected img{
+		width: 93px;
+		height: 93px;
+		border-radius: 0;
+		margin: 0;
+	}
+
+}
+
+
+/* ≥ 980px pure-u-md */
+@media screen and (max-width:980px){
+
+	ul#masthead,
+	ul#masthead li.mastheadList,
+	ul#masthead li.mastheadList div.mastheadWrapper div.MastContent,
+	ul#masthead li.mastheadList div.mastheadWrapper div.eventImg a img{
+		height: 279px;
+	}
+
+	ul#masthead li.mastheadList div.mastheadWrapper div.recommendComics{
+		display: none;
+	}
+
+	ul#masthead li.mastheadList div.mastheadWrapper ul.mastControl{
+		right: 15px;
+	}
+
+	main div.naJ5 div.NewArrival div.naContent div.selectedCon{
+		display: none;
+	}
+
+	
+	ul#masthead li.mastheadList div.mastheadWrapper div.MastContent{
+		width: 100%;
+	}
+	
+	main div.naJ5 div.NewArrival div.naContent ul.naList li a{
+		padding-right: 0;
+	}
+
+
+	ul#masthead li.mastheadList div.mastheadWrapper{
+		padding: 0;
+	}
+
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex{
+		position: absolute;
+		width: 100%;
+		height: 22%;
+		bottom: 0;
+		top: auto;
+		margin-right: 0;
+	}
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul {
+		overflow: hidden;
+		padding: 0;
+	}
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li{
+		position: relative;
+		width: 25%;
+		float: left;
+	}
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a:after{
+		position: absolute;
+		content: "";
+		height: 87%;
+		width: 1px;
+		right: 0;
+		top:5px;
+		display: block;
+		background: rgba(0,0,0,0.1);
+	}
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li.selected{
+		border-left: 0 none;
+	}
+
+
+	
+
+}
+
+
+/* ≥ 680px pure-u-sm */
+@media screen and (max-width: 740px){
+
+	
+	ul#masthead,
+	ul#masthead li.mastheadList,
+	ul#masthead li.mastheadList div.mastheadWrapper div.MastContent,
+	ul#masthead li.mastheadList div.mastheadWrapper div.eventImg a img{
+		height: 133px;
+	}
+
+	ul#masthead li.mastheadList div.mastheadWrapper ul.mastControl{
+		bottom: 9px;
+	}
+		
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex{
+		display: none;
+	}
+
+	div.bannerArea{
+		width: 100%;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+		
+	div.bannerArea ul{
+		width: 170%;
+	}	
+
+	div.bannerArea{
+		padding: 10px 0;	
+	}
+
+	main div.naJ5 {
+    padding: 2.5%; /* 8 / 320 */
+	}
+
+	main div.naJ5 p.authorAndgenre{
+		display: none;
+	}
+
+	main div.joy5,
+	main div.naJ5 div.NewArrival{
+		margin-bottom: 30px;
+	}
+
+	main div.joy5 h2,
+	main div.naJ5 div.NewArrival h2{
+		font-weight: bold;
+	}
+
+	main div.naJ5 div.NewArrival{
+		margin-top: 10px;
+	}
+
+	main div.naJ5 div.NewArrival div.naContent ul.naList li a img{
+		width: 58px;
+		height: 58px;
+	}
+
+	main div.naJ5 div.NewArrival div.naContent ul.naList li.selected img{
+		width: 58px;
+		height: 58px;
+	}
+
+
+	main div.naJ5 div.NewArrival div.naContent ul.naList li a{
+		height: 58px;
+	}
+
+
+	main div.naJ5 div.NewArrival div.naContent ul.naList li a h3,
+	main div.naJ5 div.NewArrival div.naContent ul.naList li a p{
+		margin-left: 68px;
+		padding-right: 10px;
+	}
+
+	main div.naJ5 div.NewArrival div.naContent ul.naList li a h3{
+		padding-top: 9px;
+		font-size: 0.875em;
+		font-weight: bold;
+		margin-bottom: 3px;
+	}
+
+	main div.joy5 ul{
+		height: auto;
+	}
+
+	main div.joy5 ul li{
+		height: auto;
+	}
+
+	main div.joy5 ul li:first-child{
+		height: 93px;
+		overflow: hidden;
+	}
+
+	main div.joy5 ul li:first-child p.authorAndgenre{
+		display: block;
+	}
+
+	main div.joy5 ul li:first-child a h3{
+		margin-top: 26px;
+	}
+
+	main div.joy5 ul li a img{
+		width: 58px;
+		height: 58px;
+		float: right;
+	}
+
+
+	main div.joy5 ul li a h3{
+		font-size: 1em;
+		margin: 18px 0 5px 0;
+		padding-right: 20px;
+	}
+
+
+	main div.joy5 ul li a p.number{
+		float: left;
+		width: 30px;
+		height: 30px;
+		margin: 16px 12px 0 14px;
+		padding-top: 0;
+		border: 0 none;
+		border-radius: 50%;
+		color: #444;
+		font-size: 1.250em; /* 20px */
+		text-align: center;
+	}
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a{
+		padding: 4px 6.086956521739131%;	
+	}
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a:after{
+		height: 70%;
+	}
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a p{
+		display: none;
+	}
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a h3{
+		margin-top: 4px;
+	}
+
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li a img{
+		border: 0;
+    	margin-top: 2px;
+	}
+}
+
+

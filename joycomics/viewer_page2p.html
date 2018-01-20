@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+    <!-- 2015-12-18 최초 작성자 Boddah 
+          이 페이지는 Purecss(http://purecss.io/) 프레임워크를 사용하였습니다. 
+          pure- 로 시작하는 클래스네임은 이 프레임워크에서 불러옵니다.
+          카멜케이스로 작성된 클래스네임은 제가 작성한 것입니다
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>조이코믹스</title>
+    
+    <!-- PURE CSS -->
+    <link rel="stylesheet" media="screen" href="css/pure/pure-min.css">
+    <link rel="stylesheet" media="screen" href="css/pure/base-min.css">
+    <link rel="stylesheet" media="screen" href="css/pure/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="fonts/NotoSansKr/stylesheets/NotoSansKR-Hestia.css">
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <!-- BOOTSTRAP CSS -->
+    <!-- <link rel="stylesheet" media="screen" href="css/bs/bootstrap.min.css"> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" media="screen" href="css/base.css">
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+  <!-- MENU -->
+  <header class="viewer pageView pure-g">
+
+    <div class="seriesTitle pure-u-1 pure-u-md-7-24">
+      <h1><a href="index.html">조이코믹스</a></h1>
+      <h2 class="ellipsis">가나다라가나다</h2>     
+    </div>
+
+    <div class="pure-u-1 pure-u-md-8-24">
+      <div class="selectBox">
+        <select name="" id="">
+          <option value="">1화 가나다라가나다라가나다라가나다라가</option>
+          <option value="">2화 가나다라가나다라가나다라가나다라가나다라가나다라가나다라</option>
+          <option value="">3화 가나다라가나다라가나다라가나다라가나다라가나다라가나다라</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div class="shareMenu pure-u-1 pure-u-md-9-24">
+      <ul>
+        
+        <!-- 클릭된 버튼에는 .selected가 붙습니다 -->
+        <li><button class="fullScreen" type="button" title="전체화면 보기"><i class="fa fa-arrows-alt"></i></button></li>
+
+        <li><button class="compressScreen" type="button" title="화면 축소" hidden><i></i></button></li>
+
+        <li><button class="webtoonView" type="button" title="웹툰 뷰어로 보기"><i class="fa fa-arrows-v"></i></button></li>
+
+        <li><button class="backtoPageView" type="button" title="페이지 뷰어로 돌아가기" hidden><i></i></button></li>
+
+        <li><button class="bookmark selected" type="button" title="북마크"><i class="fa fa-bookmark"></i></button></li>
+
+        <li><button class="comment" type="button" title="댓글보기"><i class="fa fa-commenting"></i></button></li>
+
+        <li>
+          <button class="share" type="button"><i class="fa fa-share-alt" title="공유"></i></button>
+
+          <!-- 공유창  -->
+          <div class="shareWindow shadow" hidden>
+            <button class="fb buttonXlarge" type="button">페이스북</button>
+            <button class="blog buttonXlarge" type="button">블로그</button>
+
+            <div>
+              <form class="pure-form">
+                <input type="text" value="http://joycomics.co.kr/web/index.html" readonly />
+                <button class="duplicateUrl buttonlarge white" type="button">URL 복사</button>
+              </form>
+            </div>
+          </div>
+        </li>
+
+
+
+      </ul>
+    </div>
+
+  </header>
+  <!-- //MENU -->
+
+  
+  <main>
+
+
+  <!-- 만화 이미지 -->
+  <div class="imageWrap pageViewer">
+    <div class="imgCenter japanese">
+
+
+
+      <div>
+        <!-- 브라우저의 높이값 -->
+        <img style="height:955px;" class="pure-img" src="img/dummy/page.png" alt="">
+      </div>
+
+      <div>
+        <!-- 브라우저의 높이값 -->
+        <img style="height:955px;" class="pure-img" src="img/dummy/page.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- //만화 이미지 -->
+
+
+
+  <!-- 만화 페이지 제어 -->
+  <div class="controlPages">
+  
+    <!-- 브라우저의 높이값 -->
+    <div style="height:955px;" class="prev"></div>
+    <div style="height:955px;" class="showMenu"></div>
+    <div style="height:955px;" class="next"></div>
+  </div>
+
+  <!-- 일본만화용 페이지 제어 -->
+  <div class="japaneseControlPages" hidden>
+  
+    <!-- 브라우저의 높이값 -->
+    <div style="height:955px;" class="prev"></div>
+    <div style="height:955px;" class="showMenu"></div>
+    <div style="height:955px;" class="next"></div>
+  </div>
+
+
+  
+  <div class="cartoonPager pageViewerPagenation">
+    <div class="pageControlWrapper">
+
+      <!-- 이전화 / 다음화 -->
+      <div class="pageArrow">
+        <button class="prev" type="button" title="다음화"><i class="fa fa-chevron-left"></i><span>다음화</span></button>
+        <button class="next" type="button" title="이전화"><span>이전화</span><i class="fa fa-chevron-right"></i></button>
+      </div>
+
+      <!-- 페이지 프로그레스 바 -->
+      <div class="pageProgressbar">
+
+        <span class="pageNumber"><strong>1</strong> / 24</span>
+
+        <!-- 일본식 분철이면 .japanese 클래스 추가 -->
+        <div class="progressBar japanese">
+          <!-- 읽은 분량 퍼센트로 표시 -->
+          <span class="seleted"  style="width:10%"></span>
+          <span style="width:10%"></span>
+          <span style="width:10%"></span>
+          <span style="width:10%"></span>
+          <span style="width:10%"></span>
+          <span style="width:10%"></span>
+          <span style="width:10%"></span>
+          <span style="width:10%"></span>
+          <span style="width:10%"></span>
+          <span style="width:10%"></span>
+        </div>
+
+        <table>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <!-- 1페이지 / 2페이지 -->
+      <div class="page1p2p">
+        <!-- 선택된 버튼에는 .selected가 붙음 -->
+        <button class="btnPage2 selected" title="2페이지 보기">2P보기</button>
+        <button class="btnPage1" title="1페이지 보기">1P보기</button>    
+      </div>
+
+    </div>
+  </div>
+
+
+
+  </div>
+  <!-- //.contentWrap -->
+
+
+</main>
+
+
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

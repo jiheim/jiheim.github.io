@@ -1,0 +1,66 @@
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html{
+	font-family:HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif;
+	font-size: 0.875em; /* 폰트사이즈 16px */
+}
+
+html,body{
+	height:100%;
+	line-height:1;
+}
+
+/*20150506 수정*/
+body{
+	background: #ededed;
+}
+
+img,object{
+	max-width: 100%;
+}
+
+h1{
+	font-size: 1.5em;
+}
+
+h2{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+
+p{
+	margin:0;
+}
+
+dl,
+dt,
+dd{
+	margin:0;
+	padding:0;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color:#484848;
+}
+
+button{
+	border:0 none;
+}
+
+

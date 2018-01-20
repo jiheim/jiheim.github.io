@@ -1,0 +1,663 @@
+::-webkit-scrollbar {
+    width: 3px;
+}
+ 
+::-webkit-scrollbar-track {
+}
+ 
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	background: rgba(0,0,0,0.1);
+}
+
+
+#ppWrapper{
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-ms-align-items: center;
+	align-items: center;
+
+	justify-content: center;
+}
+
+
+div#wrapper{
+	width:320px;
+	height:560px;
+	position: relative;
+	z-index: 1;
+	color:#484848;
+	overflow: auto;
+}
+
+div.content{
+	position: relative;
+}
+
+
+
+
+/******************************************** 헤더 ********************************************/
+header{
+	position:relative;
+	height:9.1%;
+	width:100%;
+	color:#fff;
+	z-index: 10;
+
+	/* h1 수직, 수평 정렬 */
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+
+/* 네비게이션 비활성화 */
+nav ul li button[disabled="disabled"]{
+	opacity: 0.3;
+}
+
+@media screen and (max-width:480px) {
+  div#wrapper{
+		width:100%;
+		height:100%;
+	}
+
+}
+
+/******************************************** 지도 ********************************************/
+
+
+div.mapPage div.map,
+div.mapPage ul.share{
+	border: 1px solid #bcbcbc;
+	background:#fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+div.map>div{
+	width:100%;
+	height:80%;
+	overflow:hidden;
+}
+
+div.map>div a{
+	display:block;
+	width:100%;
+	height: 100%;
+}
+
+div.map>div a img{
+	width:100%;
+	min-height:100%;
+	max-height:100%;
+}
+
+
+div.map p{
+	padding:2%;
+	text-align: center;
+	width:100%;
+	height:17.9%;
+
+	/* 텍스트 수직, 수평 정렬 */
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-webkit-justify-content:center;
+	justify-content:center;
+
+	-webkit-align-items:center;
+	align-items:center;
+
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+div.map p span{
+	display: block;
+}
+
+/* 공유버튼 */
+ul.share{
+	position: relative;
+	width:100%;
+	height:20.5%;
+	overflow: hidden;
+	margin-top:3%;
+}
+
+ul.share:after{
+	position: absolute;
+	top:10%;
+	left: 50%;
+	display: block;
+	content: "";
+	width:1px;
+	height:80%;
+	background:#ddd;
+}
+
+ul.share li{
+	width:50%;
+	height:100%;
+	float:left;
+}
+
+ul.share li a{
+	position: relative;
+	display:block;
+	width:100%;
+	height: 100%;
+	font-size: 0.8em;
+	text-align: center;
+
+	/* 아이콘,텍스트 수직 수평 정렬 */
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-box-align: center;
+    -webkit-box-pack: center;
+
+	-ms-flex-direction:column;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+
+	-ms-justify-content:center;
+	-webkit-justify-content:center;
+	justify-content:center;
+
+	-ms-align-items:center;
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+/* 공유 버튼 아이콘 */
+ul.share li.naver a:before,
+ul.share li.kakao a:before{
+	content: "";
+	display: block;
+	position: relative;
+	width:24%;
+	height:46.3%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 10px
+}
+
+ul.share li.naver a:before{
+	background-image: url('../img/default/share_naver.png');
+}
+ul.share li.kakao a:before{
+	background-image: url('../img/default/share_kakao.png');
+}
+
+ul.share li a span{
+	display: block;
+}
+
+
+
+/* 레티나 디스플레이 대비 */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+ul.share li.naver a:before{
+	background-image: url('../img/default/share_naver@2x.png');
+	}
+ul.share li.kakao a:before{
+	background-image: url('../img/default/share_kakao@2x.png');
+	}
+button.writeBtn{
+	background-image: url('../img/write@2x.png');
+	}
+
+}
+
+
+
+/******************************************** 상세정보 ********************************************/
+
+
+div.infobox{
+	position: relative;
+}
+
+div.infobox{
+	position: relative;
+	padding: 3.8%;
+}
+
+div.infobox div.info{
+	position: relative;
+	z-index: 100;
+}
+
+/* bg없을때 */
+div.infobox.noBg div.info{
+	width:100%;
+	border: 1px solid #bcbcbc;
+	background:#fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+div.infobox.noBg h2{
+	position: relative;
+}
+
+div.infobox.noBg h2:after{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom:-80%;
+	left: 3.8%;
+	width:92.4%;
+	height: 1px;
+	background: #ddd;
+}
+
+div.infobox.noBg div.blur{
+	display: none;
+}
+
+/* blur bg 들어갈때 */
+div.infobox.blurryBg{
+	position: relative;
+	width:100%;
+	height:100%;
+}
+
+div.infobox.blurryBg div.blur{
+	position: absolute;
+	top:0;
+	left:0;
+	height:380px;
+	width: 100%;
+	background-size: 100% 100%;
+}
+
+div.infobox.blurryBg div.blur:before{
+  content: '';
+  position: absolute;
+  top: 0; 
+  left:0; 
+  right:0; 
+  bottom:0;
+  padding:20px;
+  background: inherit;
+  z-index:-1;
+  filter: blur(8px); 
+  -webkit-filter: blur(8px); 
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  filter:url(#blur);
+}
+
+div.infobox.blurryBg div.blur:after{
+  content: '';
+  position: absolute;
+  top: 0; 
+  left:0; 
+  right:0; 
+  bottom:0;
+  background: rgba(0,0,0,0.4);
+}
+
+div.infobox.blurryBg div.info h2{
+	color: #fff;
+}
+
+div.infobox.blurryBg div.info dl,
+div.infobox.blurryBg div.info ul li{
+	border-color:rgba(255,255,255,0.3);
+}
+
+div.infobox.blurryBg div.info dl dt,
+div.infobox.blurryBg div.info dl dd,
+div.infobox.blurryBg div.info ul li{
+	color: #fff;
+}
+
+div.infobox.blurryBg div.info dl dt{
+	background: none;
+	padding-left: 0;
+}
+
+div.infobox.blurryBg div.info ul li:last-child,
+div.infobox.blurryBg div.info ul li:last-child{
+	border-bottom:1px solid rgba(255,255,255,0.3);
+}
+
+
+
+div.info{
+
+}
+
+div.info dl{
+	margin:0 3%;
+	padding:4.5% 0;
+	border-bottom:1px solid #bcbcbc;
+
+	/* 텍스트 수직 수평 정렬 */
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-direction:row;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-ms-justify-content:space-between;
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+
+	-ms-align-items:center;
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+div.info dl dt{
+	max-width: 38%;
+	padding-left:3%;
+	background: url('../img/bullet.png') no-repeat left center;
+}
+
+
+div.info dl dd{
+	max-width: 60%;
+	color:#08255e;
+}
+
+
+div.info dl:last-child{
+	border:0 none;
+}
+
+
+div.info ul{
+	max-width:100%;
+}
+
+div.info ul li{
+	display: block;
+	text-align: center;
+	border-bottom:1px solid #bcbcbc;
+	margin:0 3%;
+	padding:4.5% 0;
+}
+
+div.info ul li:last-child{
+	border:0 none;
+}
+
+
+/******************************************** 이용후기 ********************************************/
+
+div.review{
+	border: 1px solid #bcbcbc;
+	background:#fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+div.review button.writeBtn{
+	display:block;
+	position: absolute;
+	top:12px;
+	right:5%;
+	width:21px;
+	height:21px;
+	background:#fff url('../img/write.png') no-repeat;
+	background-size: 100% 100%;
+	text-indent: -9999px;
+}
+
+div.review div.controlBtns{
+	width:100%;
+
+	/* 텍스트 수직 수평 정렬 */
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-direction:row;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-ms-justify-content:space-between;
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+
+	-ms-align-items:flex-end;
+	-webkit-align-items:flex-end;
+	align-items:flex-end;
+}
+
+div.review div.controlBtns button{
+	width:50%;
+	padding:4%;
+}
+
+div.review div.controlBtns button.readMore{
+	background:#497adc;
+	color:#fff;
+}
+
+div.review div.controlBtns button.gotoTop{
+	background: #ddd;
+}
+
+
+
+div.review ul{
+	margin:0 3%;
+	margin-top:-4%;
+	padding:4.5% 0;
+}
+
+div.review ul li{
+	width:100%;
+	border-bottom: 1px solid #ddd;
+}
+
+div.review ul li:first-child{
+	border-top:1px solid #ddd;
+}
+
+div.review ul li a{
+	width:100%;
+	display: block;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	padding:5% 3%;
+	background: url('../img/bullet.png') no-repeat left center;	
+}
+
+
+
+
+div.review div.viewReview{
+	width:100%;
+	background: #f5f5f5;
+	margin-bottom: 3%;
+}
+
+div.review div.viewReview div.reviewCont{
+	padding:3%;
+	line-height: 1.5;
+}
+
+div#slide4 div.writePass{
+	padding:3%;
+	border-top:1px solid #ddd;
+}
+
+div.writePass input,
+div.writePass input{
+	width:80px;
+}
+
+div.writePass span,
+div.writePass span{
+	font-size: 0.9em;
+}
+
+div.writePass div{
+	margin-top:3%;
+
+	/* 버튼 수직 수평 정렬 */
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-direction:row;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-ms-justify-content:space-between;
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+
+	-ms-align-items:flex-end;
+	-webkit-align-items:flex-end;
+	align-items:flex-end;
+}
+
+div.review div.viewReview div.writePass div button{
+	width:50%;
+	padding:2% 0;
+}
+
+div.review div.viewReview div.writePass div button.modify{
+	background:#497adc;
+	color:#fff;
+}
+
+div.review div.viewReview div.writePass div button.delete{
+	background:#ddd;
+}
+
+
+div.reviewWrite div.writeArticle{
+	padding:0 3%;
+}
+
+div.reviewWrite textarea{
+	width:100%;
+	margin-bottom: 3%;
+}
+
+div.reviewWrite div.writePass{
+	padding:7% 0;
+}
+
+div.reviewWrite div.controlBtns{
+	/* 버튼 수직 수평 정렬 */
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+
+div.reviewWrite div.controlBtns button.submit{
+	width:70%;
+	background: #497adc;
+	color:#fff;
+	padding:3% 0;
+}
+
+div.reviewWrite div.controlBtns button.cancel{
+	width:30%;
+	background:#ddd;
+	padding:3% 0;
+}
+
+
+
+/******************************************** footer 전화번호 주소 ********************************************/
+
+footer{
+	position: relative;
+	width:100%;
+	height:15.6%;
+	bottom:0;
+	background: #f6f6f6;
+	border-top:1px solid #ddd;
+	margin-top:-1px;
+	z-index: 1000;
+}
+
+
+.hospital footer,
+.realestate footer,
+.food footer{
+	position: absolute;
+	height:13.6%;
+	bottom: 0;
+	background: #fff;
+	border-top:1px solid rgba(0,0,0,0.2);
+
+	/* 전화번호, 주소 정렬 */
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-justify-content:center;
+	-webkit-justify-content:center;
+	justify-content:center;
+
+	-ms-align-items:center;
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+/* 20150506 수정 */
+footer div.pAddress{
+	width:100%;
+	text-align: center;
+}
+
+
+footer div.pAddress p{
+	font-size:2em;
+	font-family: Helvetica,sans-serif;
+	font-weight: bold;
+}
+
+footer div.pAddress address{
+	font-style: normal;
+	font-size: 0.9em;
+	color:#353439;
+	padding:0 5%;
+}
+

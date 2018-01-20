@@ -1,0 +1,1166 @@
+
+/****************************** LAYOUT ******************************/
+
+div#contentWrapper{
+	max-width: 1200px;
+	margin: auto;
+}
+
+
+
+
+/****************************** GNB ******************************/
+
+header{
+	position: relative;
+	width: 100%;
+	z-index:100;
+}
+
+header nav#gnbTop,
+header nav#gnbBottom{
+	width:100%;
+}
+
+header nav div.gnbWrapper{
+	position: relative;
+	overflow: hidden;
+	max-width: 1200px;
+	padding: 0 0.8333333333333333%; /* 10 / 1200 */;
+	margin:auto;
+}
+
+
+
+/* 로고 */
+h1 a{
+	display: block;
+	width:44px;
+	height: 44px;
+	text-indent: -9999px;
+	background: url('../img/global_sprite.png') no-repeat -16px -8px;
+}
+
+/************* GNB상단 *************/
+header nav#gnbTop{
+	padding: 9px 0;
+	background: #f1c40f;
+	z-index: 50;
+
+}
+
+/* 로고 */
+header nav#gnbTop h1{
+	float:left;
+}
+
+
+
+header nav#gnbTop div.gnbWrapper>div{
+	float: right;
+}
+
+
+/* 19마크 */
+header nav#gnbTop div.gnbWrapper div div.rateSwitch{
+	display: inline-block;
+	vertical-align: top;
+}
+
+header nav#gnbTop div.gnbWrapper div div.rateSwitch a{
+	display: block;
+	width: 72px;
+	height: 24px;
+	margin-top: 10px;
+	background-image: url('../img/global_sprite.png');
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+header nav#gnbTop div.gnbWrapper div div.rateSwitch a.switchOn{
+	background-position: -417px -9px;
+}
+
+header nav#gnbTop div.gnbWrapper div div.rateSwitch a.switchOff{
+	background-position: -417px -43px;
+}
+
+
+header nav#gnbTop div.gnbWrapper div button.mobileMenu{
+	display: none;
+}
+
+
+
+/* 메뉴 */
+header nav#gnbTop div.gnbWrapper div.topUserMenu{
+	margin-top:12px;
+	display: inline-block;
+}
+
+header nav#gnbTop div.gnbWrapper div>ul>li,
+header nav#gnbBottom div.gnbWrapper ul.sideMenu>li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+header nav#gnbTop div.gnbWrapper div>ul>li.btnMobileMypage,
+header nav#gnbTop div.gnbWrapper div>ul>li.btnCustomercenter{
+	display: none;
+}
+
+
+header nav#gnbTop div.gnbWrapper div>ul>li>a,
+header nav#gnbTop div.gnbWrapper div>ul>li>button,
+header nav#gnbBottom div.gnbWrapper ul.sideMenu>li>a{
+	position: relative;
+	display: block;
+	padding-left: 18px;
+	font-weight: bold;
+}
+
+header nav#gnbTop div.gnbWrapper div>ul>li>a:hover{
+	text-decoration: underline;
+}
+
+header nav#gnbTop div.gnbWrapper div>ul>li>a:after,
+header nav#gnbTop div.gnbWrapper div>ul>li>button:after,
+header nav#gnbBottom div.gnbWrapper>ul.sideMenu>li>a:after{
+	content:"";
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	background-image: url('../img/global_sprite.png');
+	background-repeat: no-repeat;
+}
+
+header nav#gnbTop div.gnbWrapper div>ul>li.btnLogin a:after{
+	background-position: -123px -18px;
+}
+
+header nav#gnbTop div.gnbWrapper div>ul>li.btnLogout a:after{
+	background-position: -154px -18px;
+}
+
+header nav#gnbTop div.gnbWrapper div>ul>li.btnJoin a:after{
+	background-position: -185px -18px;
+}
+
+header nav#gnbTop div.gnbWrapper div>ul>li.btnCoin a:after{
+	background-position:  -216px -18px;
+}
+
+header nav#gnbTop div.gnbWrapper div>ul>li.btnMypage a:after{
+	background-position: -98px -18px;
+}
+
+
+/************* //GNB상단 *************/
+
+
+/************* GNB하단 *************/
+
+header nav#gnbBottom{
+	padding:12px 0;
+	background: rgba(255,255,255,0.85);
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15);
+}
+
+header nav#gnbBottom div.gnbWrapper{
+	position: relative;
+	overflow: inherit;
+}
+
+
+/* 작가방,이벤트 */
+header nav#gnbBottom div.gnbWrapper ul.sideMenu{
+}
+
+header nav#gnbBottom div.gnbWrapper ul.sideMenu li{
+	margin-left: 0;
+	margin-right: 3px;
+}
+
+header nav#gnbBottom div.gnbWrapper ul.sideMenu li a{
+	padding: 6px 14px 6px 32px;
+	border:1px solid #ccc;
+	background: #fff;
+	-webkit-border-radius: 20px ;
+	-moz-border-radius: 20px ;
+	-ms-border-radius: 20px ;
+	-o-border-radius: 20px ;
+	border-radius: 20px ;
+}
+
+header nav#gnbBottom div.gnbWrapper ul.sideMenu li a:after{
+	top:8px;
+	left: 12px;
+}
+
+header nav#gnbBottom div.gnbWrapper ul.sideMenu li.btnAuthor a:after{
+	background-position: -278px -18px;
+}
+
+header nav#gnbBottom div.gnbWrapper ul.sideMenu li.btnEvent a:after{
+	background-position: -309px -18px;
+}
+
+
+/* 메인메뉴 */
+header nav#gnbBottom div.gnbWrapper ul.mainMenu{
+	margin: 0 auto;
+	padding: 4px 0;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+header nav#gnbBottom div.gnbWrapper ul.mainMenu li{
+	display: inline-block;
+	vertical-align: middle;
+ 	margin:0 32px;
+ 	font-size: 1.375em;
+ 	font-weight: bold;
+}
+
+
+header nav#gnbBottom div.gnbWrapper ul.mainMenu li:nth-child(5),
+header nav#gnbBottom div.gnbWrapper ul.mainMenu li:nth-child(6){
+	display: none;
+}
+
+header nav#gnbBottom div.gnbWrapper ul.mainMenu li a:hover{
+	color: #ff4b4b;
+}
+
+header nav#gnbBottom div.gnbWrapper ul.mainMenu li.selected a{
+	color: #f10f0f;
+}
+
+
+/* 검색결과 */
+header nav#gnbBottom div.gnbWrapper div.searchForm{
+	position: relative;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm form{
+	position: relative;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm form.type2{
+	display: none;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm form input{
+	position: absolute;
+	right: 0;
+	width: 160px;
+    border-radius: 2em;
+    padding: 7px 30px 7px 14px;
+	border-radius: 20px;
+	font-size: 13px; /* 14px */
+	-webkit-transition: ease 0.5s; /* Safari */
+    transition: ease 0.5s;
+    border-color: #bbb;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm form input:-ms-input-placeholder{
+	color: #aaa;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm form input:focus{
+	width: 280px;
+	border-color: #666 !important;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm form button{
+	position: absolute;
+	display: block;
+	background: transparent;
+	border: 0 none;
+	top: 4px;
+	right: 6px;
+	padding: 4px;
+}
+
+
+/* 검색결과 목록 */
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult{
+	position: absolute;
+	width: 280px;
+	top: 54px;
+	right: 0;
+	background: #fff;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult:before{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 5px;
+	top: -5px;
+	left: 10px;
+	background: url('../img/global_sprite.png') no-repeat -329px -156px;');
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult h2{
+	padding: 13px 15px;
+	background: #333;
+	color: #fff;
+	font-size: 0.875em; /* 14px */
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul{
+	border: 1px solid #ddd;
+	border-top: 0 none;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li{
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a{
+	display: block;
+	width: 100%;
+	height: 80px;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a:hover{
+	background: #f5f5f5;
+}
+
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a img{
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a h3,
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a p{
+	margin-left: 90px;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a h3{
+	padding: 22px 0 5px;
+}
+
+header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a p span:after{
+	display: none;
+}
+
+header nav#gnbTop div.gnbWrapper div div.topUserMenu button.close{
+	display: none;
+}
+
+header nav#gnbTop div.gnbWrapper div div.topUserMenu button.close:after{
+	display: none;
+}
+
+
+
+
+/************* //GNB하단 *************/
+
+
+
+
+
+
+/****************************** CONTENT ******************************/
+
+main{
+	
+}
+
+
+
+/*************  COMIC LIST AREA *************/
+main div#comicListArea{
+
+	background: #f1f1f1;
+}
+
+main div#comicListArea div.comicListAreaWrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+main div#comicListArea div.comicListAreaWrapper h2{
+	position: relative;
+	padding:0  0 12px 40px;
+	margin: 0 .8333333333333333%; /* 10 / 1200 */
+	border-bottom: 1px solid #d2d2d2;
+	font-weight: 400;
+	letter-spacing: -1px;
+}
+
+
+main div#comicListArea div.comicListAreaWrapper h2:before{
+	position: absolute;
+	left: 0;
+	bottom: 16px;
+	content: "";
+	display: block;
+	width: 27px;
+	height: 27px;
+	margin-right: 10px;
+	background-image: url('../img/global_sprite.png');
+	background-repeat: no-repeat;
+	
+}
+
+main div#comicListArea div.comicListAreaWrapper section{
+
+}
+
+main div#comicListArea div.comicListAreaWrapper section.redtoon h2:before{
+	height: 32px;
+	background-position: -185px -152px;
+}
+
+main div#comicListArea div.comicListAreaWrapper section.creamtoon h2:before{
+	background-position: -220px -156px;
+}
+
+main div#comicListArea div.comicListAreaWrapper section.joytoon h2:before{
+	background-position: -254px -156px;
+}
+
+main div#comicListArea div.comicListAreaWrapper section.endtoon h2:before{
+	background-position: -289px -156px;
+}
+
+main div#comicListArea div.comicListAreaWrapper section{
+	margin-bottom: 60px;
+}
+
+
+
+
+main div.contentWrap{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+
+/****************************** FOOTER ******************************/
+
+/************* 공지사항 *************/
+
+
+
+footer div#notice{
+	padding: 10px 0;
+	background: #fad649;
+}
+
+footer div#notice p{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 0.8333333333333333% 0; /* 10 / 1200 */
+}
+
+footer div#notice p a{
+	position: relative;
+	display: inline-block;
+	padding: 10px 0;
+	padding-left: 33px;
+	margin: 0 0.8333333333333333% 0; /* 10 / 1200 */
+	max-width:90%;
+}
+
+
+footer div#notice p a:before{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	display: block;
+	width: 21px;
+	height: 14px;
+	background: url('../img/global_sprite.png') no-repeat -337px -18px;
+}
+
+footer div#notice p a span{
+	display: inline-block;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+footer div#notice p a span.date{
+	margin-right: 7px;
+}z
+
+footer div#notice p a span.date:after{
+	content: "|";
+	margin-left: 7px;
+	color: #fff;
+	font-size: 0.688em; /* 11px */
+}
+
+footer div#notice p a span.noti{
+	max-width: 70%;
+}
+
+footer div#notice p a span.noti:hover{
+	text-decoration: underline;
+}
+
+/************* //공지사항 *************/
+
+
+/************* 푸터 *************/
+footer div#footer{
+	background: #444;
+}
+
+footer div#footer>div{
+	position: relative;
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 2.5423728813559324% .847457627118644% 6.35593220338983%; /* 30/1180, 10/1180, 75/1180 */
+}
+
+footer div#footer>div h2{
+	width: 121px;
+	height: 63px;
+	margin-right: 38px;
+	float: left;
+	background: url('../img/global_sprite.png') no-repeat -16px -67px;
+	text-indent: -9999px;
+}
+
+
+footer div#footer>div ul.privacy{
+	margin:12px 0 33px 0;
+}
+
+footer div#footer>div ul.privacy li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+footer div#footer>div ul.privacy li:after{
+	content: "|";
+	margin-left: 10px;
+	color: #fff;
+	font-size: 0.625em; /* 10px */	
+}
+
+footer div#footer>div ul.privacy li.last:after{
+	content:"";
+}
+
+footer div#footer>div ul.privacy li a{
+	font-size: 0.8125em; /* 13px */
+	color: #fff;
+}
+
+footer div#footer>div p{
+	line-height: 1.5;
+	margin-left: 161px;
+	color: #ddd;
+	font-size: 0.75em;
+}
+
+
+footer div#footer>div ul.social{
+	position: absolute;
+	top:40px;
+	right: 10px;
+}
+
+footer div#footer>div ul.social li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+footer div#footer>div ul.social li a{
+	display: block;
+	width: 42px;
+	height: 42px;
+	background: url('../img/global_sprite.png') no-repeat;
+	text-indent: -9999px;
+}
+
+footer div#footer>div ul.social li.iphone a{
+	background-position: -181px -51px;
+}
+
+footer div#footer>div ul.social li.android a{
+	background-position: -236px -51px;
+}
+
+footer div#footer>div ul.social li.blog a{
+	background-position: -292px -51px;
+}
+
+footer div#footer>div ul.social li.facebook a{
+	background-position: -347px -51px;
+}
+
+
+footer address{
+	width: 50%;
+	margin: 10px 0 5px 161px;
+	font-style: normal;
+
+}
+
+footer address p{
+	display: inline-block;
+	margin-left: 0 !important;
+	margin-right: 5px;
+	color: #888 !important;
+}
+
+footer p.copyright{
+	color: #888 !important;
+}
+
+
+/************* //푸터 *************/
+
+
+
+
+
+
+
+
+
+/*****************************************************미디어쿼리**********************************************************/
+
+
+
+
+/* ≥ 1024px pure-u-lg */
+@media screen and (max-width:1024px){
+
+	footer div#footer>div ul.social{
+		top: 20px;
+		right: 20px;
+	}
+
+	footer div#footer>div{
+		padding: 2.5423728813559324% 2.6041666666666668% 6.35593220338983%; /* 30/1180, 20/768, 75/1180 */
+	}
+
+	main div#comicListArea div.comicListAreaWrapper{
+	padding: 2.6041666666666668%; /* 20 / 768 */
+	}
+
+	p.copyright{
+		margin-left: 0 !important;
+	}
+}
+
+
+/* ≥ 980px pure-u-md */
+@media screen and (max-width:980px){
+
+	h1 a{
+		width: 35px;
+		height: 35px;	
+		background-position: -432px -428px; 
+	}
+
+	header nav#gnbTop{
+		padding: 5px 0;
+	}
+
+	header nav#gnbTop div.gnbWrapper{
+
+	}
+
+	header nav#gnbTop div.gnbWrapper div{
+		position: relative;
+	}
+	header nav#gnbTop div.gnbWrapper div div.rateSwitch{
+	}
+
+	header nav#gnbTop div.gnbWrapper div div.rateSwitch a{
+		margin-top: 6px;
+	}
+
+	header nav#gnbTop div.gnbWrapper div button.mobileMenu{
+		display: inline-block;
+		padding: 10px 12px;
+		margin-left: 5px;
+	}
+
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.85);
+		top: 0;
+		right: -100%;
+		margin-top: 0;
+		z-index: 1000;
+		-webkit-transition: width 2s; /* Safari */
+    	transition: width 2s;
+	}
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu.selected{
+		right: 0;
+	}
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu>ul{
+		position: absolute;
+		width: 200px;
+		height: 100%;
+		top: 0;
+		right: 0;
+		margin-top: 0;
+		background: #101010;
+	}
+
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu button.close{
+		position: absolute;
+		display: block;
+		right: 200px;
+		text-indent: -9999px;
+		width: 50px;
+		height: 50px;
+		padding-bottom: 20px;
+		background: #ECC524;
+	}
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu button.close:after{
+		content: "";
+		display: block;
+		background: url('../img/global_sprite.png') no-repeat -300px -436px;
+		width: 15px;
+		height: 16px;
+		margin: 0 auto;
+	}
+
+
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu>ul>li{
+		display: block;
+		margin-left: 0;
+	}
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu>ul>li>a{
+		color: #fff;
+		padding: 15px 20px;
+	}
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu li a:hover,
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu li a:active{
+		text-decoration: none;
+		background: rgba(0,0,0,0.3);
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.moMypage,
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnCustomercenter{
+		display: block;
+	}
+
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu>ul>li.btnMypage{
+		display: none;
+	}
+
+	header nav#gnbBottom div.gnbWrapper ul.mainMenu>li:nth-child(5),
+	header nav#gnbBottom div.gnbWrapper ul.mainMenu>li:nth-child(6){
+		display: inline-block;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnLogin a:after{
+		background-position: -154px -463px !important;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnLogout a:after{
+		background-position: -123px -463px !important;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnLogout a:after{
+		background-position: -123px -463px !important;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnJoin a:after{
+		background-position: -185px -463px !important;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnMobileMypage a:after{
+		background-position: -98px -463px !important;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnCoin a:after{
+		background-position: -216px -463px !important;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnMobileMypage>ul{
+		background: rgba(255,255,255,0.05);
+		height: 0;
+		overflow: hidden;
+		-webkit-transition: all ease 0.5s;
+		transition: all ease 0.5s;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnMobileMypage>ul>li{
+		border-bottom: 1px solid #212121;
+	}
+
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnMobileMypage>ul>li>a{
+		display: block;
+		padding: 15px 20px 15px 45px;
+		color: #fff;
+		font-size: 0.875em;/* 14px */
+	}
+
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnMobileMypage:target>ul{
+		height: 147px;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li.btnCustomercenter a:after{
+		width: 21px;
+		height: 14px;
+		background-position: -244px -464px;
+	}
+
+	header nav#gnbTop div.gnbWrapper div div.topUserMenu>ul>li>a{
+		padding: 15px 20px 15px 45px;
+	}
+
+	header nav#gnbTop div.gnbWrapper div>ul>li>a:after, header nav#gnbBottom div.gnbWrapper ul.sideMenu>li>a:after{
+	    top: 19px;
+	    left: 15px;
+	}
+
+	    
+
+	header nav#gnbBottom{
+		padding:0;
+		height: 50px;
+	}
+
+	header nav#gnbBottom div.gnbWrapper{
+		padding: 0;
+	}
+
+	header nav#gnbBottom div.gnbWrapper ul.mainMenu{
+		width: 90%;
+		padding: 0;
+		height: 50px;
+		overflow: hidden;
+	}
+
+	header nav#gnbBottom div.gnbWrapper ul.mainMenu li{
+		width: 16%;
+		margin: 0;
+		display: block;
+		float: left;
+	}
+
+	header nav#gnbBottom div.gnbWrapper ul.mainMenu li a{
+		display: inline-block;
+		height: 50px;
+		width: 100%;
+		padding-top: 12px;
+		font-size: 16px;
+	}
+
+	header nav#gnbBottom div.gnbWrapper ul.mainMenu li.selected a{
+		border-bottom: 2px solid #f10f0f;
+	}
+
+	header nav#gnbBottom div.gnbWrapper ul.sideMenu{
+		display: none;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm{
+		width: 10%;
+		text-align: right;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form.type1{
+		display: none;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form.type2{
+		display: block;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form button{
+		position: relative;
+		top: 0;
+		right: 0;
+		padding: 16px;
+		display: inline-block;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form button.selected{
+		background: #333;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form button.selected i{
+		color: #fff;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form.type2 div.inputWrap{
+		position: absolute;
+		width: 1000%;
+		top: 50px;
+		right: 0;
+		height: 50px;
+		padding: 0 10px;
+		background:#fff;
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #aaa;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form.type2 div.inputWrap input{
+		position: relative;
+		width: 100%;
+		border-radius: 0 !important;
+		padding: 0;
+		height: 48px;
+		border: 0 none;
+	}
+	
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form input:focus{
+		width: 1000%;
+		border-color: #ddd !important;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult{
+		top: 99px;
+		width: 1000%;
+		height: 100%;
+		text-align: left;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult:before{
+		display: none;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul{
+		background: #fff;
+		border: 0 none;
+	}
+
+
+
+	footer address{
+		width: 100%;
+		margin: 20px 0 5px 0;
+		font-style: normal;
+		font-weight: bold;
+	}
+
+	footer address p{
+		display: inline-block;
+		margin-left: 0 !important;
+		margin-right: 5px;
+
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section div{
+		width: 100%;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section div ul{
+		width: 1700px;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section.joytoon div ul{
+		width: 850px;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section div ul li{
+		margin-top: 10px;
+		padding: 7px;
+	}
+}
+
+
+/* ≥ 680px pure-u-sm */
+@media screen and (max-width: 740px){
+
+
+	header nav#gnbBottom div.gnbWrapper ul.mainMenu{
+		width: 85%;
+	}
+
+	header nav#gnbBottom div.gnbWrapper ul.mainMenu li{
+		
+	}
+
+	header nav#gnbBottom div.gnbWrapper ul.mainMenu li a{
+		padding-top: 16px;
+		font-size: 13px;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm{
+		width: 15%;
+	}
+
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form button{
+		margin-top: 0;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form.type2 div.inputWrap{
+		width: 666%;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form input{
+		width: 100%;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm form input:focus{
+		width: 100%;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult{
+		width: 666%;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul{
+		background: #fff;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a{
+		height: 70px;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a img{
+		width: 70px;
+    	height: 70px;
+	}
+
+	header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult ul li a h3{
+		padding: 14px 0 5px;
+	}
+
+	footer div#footer>div ul.social{
+		position: relative;
+		top: 0;
+		left: 0;
+		text-align: center;
+	}
+
+	footer div#footer>div ul.privacy{
+		margin: 0 0 30px 0;
+		overflow: hidden;
+	}
+
+	footer div#footer>div ul.privacy li{
+		width: 50%;
+		margin-right: 0;
+		margin-top: 10px;
+		display: block;
+		float: left;
+		text-align: center;
+		border-right: 1px solid #5F5F5F;
+	}
+
+	footer div#footer>div ul.privacy li:nth-child(2n){
+		border-right: 0 none;
+	}
+
+	footer div#footer>div ul.privacy li:after{
+		display: none;
+	}
+
+	footer div#footer>div ul.privacy li a{
+		font-size: 12px;
+    	display: block;
+	}
+
+	footer div#footer>div ul.social{
+		margin-bottom: 30px;
+	}
+
+	footer div#footer>div h2{
+		display: none;
+		background-position: -409px -372px;
+		width: 61px;
+		height: 32px;	
+		margin-right: 0;
+		float: none;
+	}
+
+	footer div#footer>div p{
+		display: none;
+		margin-left: 0;
+		margin-top: 10px;
+	}
+    
+	footer address p{
+		margin-top: 0 !important;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section.redtoon{
+		margin-top: 30px;
+	}
+
+
+	main div#comicListArea div.comicListAreaWrapper section{
+		margin-bottom: 20px;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper h2{
+		padding-left: 0;
+		font-weight: bold;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper h2:before{
+		display: none;
+		
+	}
+
+
+	main div#comicListArea div.comicListAreaWrapper section div ul{
+		width: 800px;
+
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section div ul li{
+		margin-top: 10px;
+		padding: 2px;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section div ul li div.card{
+		background: none;
+		box-shadow: none;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section div ul li div.card a.tContent div.tnDesc{
+		margin: 5px 0 10px;
+		padding: 0;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section div ul li img{
+		width: 100%;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper section div ul li p{
+		display: none;
+	}
+
+	main div#comicListArea div.comicListAreaWrapper h2{
+		padding-bottom:5px;
+	}
+
+
+
+}

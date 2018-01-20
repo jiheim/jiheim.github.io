@@ -1,0 +1,288 @@
+
+p.qWait{
+	font-weight: bold;
+	color: #666;
+}
+
+p.qDone{
+	font-weight: bold;
+	color: #ff4b4b;
+}
+
+
+table.boardList{
+	width: 100%;
+	background: #fff;
+	border-left: 1px solid #aaa !important;
+	border-right: 1px solid #aaa !important;
+	border-bottom: 1px solid #aaa;
+}
+
+table.boardList thead tr th{
+	text-align: center;
+}
+
+table.boardList tbody tr:hover{
+	background: #f5f5f5;
+}
+
+table.boardList tbody tr td{
+	text-align: center;
+}
+
+table.boardList tr .qSort{
+	width: 15%;
+}
+
+table.boardList tr .gotoArticle{
+	width: 60%;
+}
+
+table.boardList tr .dateCell{
+	width: 12.5%;
+}
+
+table.boardList tr .qStatus{
+	width: 12.5%;
+}
+
+
+
+
+table.boardList tbody tr.selected{
+	background: #f5f5f5;
+}
+
+table.boardList tbody tr.selected td.qSort:before{
+	content: "";
+	display: inline-block;
+	background: url('../img/global_sprite.png') no-repeat -383px -115px;
+	width: 6px;
+	height: 10px;
+	margin-right: 8px;	
+	vertical-align: middle;
+}
+
+table.boardList tbody tr td.gotoArticle{
+	text-align: left;
+}
+
+table.boardList tbody tr td.gotoArticle a{
+	display: inline-block;
+	font-weight: bold;
+	word-break: break-all;
+}
+
+table.boardList tbody tr td.gotoArticle a:hover,
+table.boardList tbody tr td.gotoArticle a:active{
+	text-decoration: underline;
+}
+
+table.boardList tbody tr td.qStatus{
+	font-weight: bold;
+}
+
+table.boardList tbody tr td.qStatus button{
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 5px;
+}
+
+table.boardList tbody tr td.noArticle{
+	padding: 100px 0;
+}
+
+table.boardList tbody tr td.noArticle:hover{
+	background: #fff;
+}
+
+
+div.BoardNotice table.boardList tr .gotoArticle{
+	width: 87.5%;
+}
+
+div.BoardNotice table.boardList tbody tr:first-child td.gotoArticle.topArticle:before{
+	content: "";
+	display: inline-block;
+	background: url('../img/global_sprite.png') no-repeat -337px -18px;
+	width: 21px;
+	height: 14px;
+	margin-right: 5px;
+}
+
+
+/* view */
+article.boardView{
+	margin-bottom: 50px;
+	background: #fff;
+	border: 1px solid #888;
+}
+
+article.boardView ul.viewHeader{
+	border-bottom: 1px solid #999;
+}
+
+article.boardView ul.viewHeader li{
+	display: inline-block;
+	padding: 15px 20px;
+}
+
+article.boardView ul.viewHeader li.qSort,
+article.boardView ul.viewHeader li.articleName{
+	font-weight: bold;
+	-ms-word-break: break-all;
+	word-break: break-all;
+}
+
+article.boardView ul.viewHeader li.qSort{
+	color: #666;
+}
+
+article.boardView div.viewArticle{
+	padding: 25px;
+	color: #333;
+	background: #eee;
+	line-height: 1.5;
+}
+
+article.boardView section.viewAnswer{
+	margin-top: 0;
+	padding: 25px;
+	color: #333;
+}
+
+article.boardView div.viewArticle>*,
+article.boardView section.viewAnswer>*{
+	-ms-word-break: break-all;
+	word-break: break-all;
+}
+
+
+article.boardView section.viewAnswer h3{
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+
+
+
+div.boardSearch{
+	margin: 20px 0 40px;
+	text-align: right;
+}
+
+div.boardSearch form.pure-form{
+	display: inline-block;
+}
+
+div.boardSearch form.pure-form label{
+	font-size: 0.875em; /* 14px */
+	font-weight: bold;
+	display: inline-block !important;
+}
+
+
+div.boardSearch form.pure-form input{
+	padding: 5px 15px !important;
+    border-radius: 20px;
+}
+
+
+
+/* 쓰기 */
+
+form.writeForm{
+	margin-top: 10px;
+	background: #fff;
+	border: 1px solid #999;
+}
+
+form.writeForm dl{
+	border-bottom: 1px solid #ddd;
+}
+
+form.writeForm dl dt,
+form.writeForm dl dd{
+	padding: 10px 15px;
+	vertical-align: middle;
+}
+
+form.writeForm dl dt{
+	border-right: 1px solid #ddd;
+	background: #f5f5f5;
+	font-weight: bold;
+}
+
+
+form.writeForm textarea{
+	margin: 2%;
+	width: 96%;
+	height: 300px;
+}
+
+form.writeForm div.btnWrap{
+	margin-bottom: 30px;
+	text-align: center !important;
+}
+
+form.writeForm div.btnWrap button{
+	padding: 10px 0 !important;
+}
+
+
+
+/*****************************************************미디어쿼리**********************************************************/
+
+
+
+
+
+/* ≥ 1024px pure-u-lg */
+@media screen and (max-width:1024px){}
+
+
+/* ≥ 980px pure-u-md */
+@media screen and (max-width:980px){
+	article.boardView ul.viewHeader li.qSort{
+		font-size: 0.875em;
+	}
+
+}
+
+
+/* ≥ 680px pure-u-sm */
+@media screen and (max-width: 740px){
+	table.boardList tr .qSort{
+		display: none;
+	}
+
+	table.boardList tr .dateCell{
+		display: none;
+	}
+
+	table.boardList tr .gotoArticle{
+		width: 40%;
+	}
+
+	table.boardList tr .qStatus{
+		border-right: 1px solid #aaa;
+	}
+
+	div.boardSearch form.pure-form{
+		display: block;
+		overflow: hidden;
+	}
+
+	div.boardSearch form.pure-form>*{
+		float: left;
+	}
+
+	div.boardSearch form.pure-form label{
+		font-size:0.813em; /* 13px */
+	}
+
+	div.boardSearch form.pure-form input[type="search"]{
+		margin: 0 5px;
+	}
+}

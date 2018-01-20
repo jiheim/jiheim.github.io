@@ -1,0 +1,365 @@
+@import url("layout.css");
+@import url("global.css");
+@import url("main.css");
+@import url("content.css");
+@import url("popup.css");
+@import url("viewer.css");
+@import url("board.css");
+
+*{
+	font-family: "Apple SD Gothic Neo", "Malgun Gothic", dotum, sans-serif;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+	color:#333;	
+}
+
+body{
+	position: relative;
+	width:100%;
+	z-index: 1;
+}
+
+a{ 
+	text-decoration: none; 
+	color:#333;
+}
+
+
+ul,li,dl,dt,dd{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+dt,dd{
+	font-size: 0.875em; /* 14px */
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans Korean', sans-serif;
+	font-weight: normal;
+}
+
+h2{
+	font-size: 1.5625em; /* 25px */
+}
+
+h3{
+	font-size: 1em;
+}
+
+p{
+	font-size:	0.813em; /* 13px */
+	color: #555;
+	margin: 0;
+	padding: 0;
+}
+
+label{
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+button,
+input[type="submit"]{
+	display: inline-block;
+	cursor:pointer;
+	border: 0 none;
+	font-weight: bold;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+	vertical-align: middle;
+}
+
+
+.pure-form fieldset {
+    padding: 0 !important;
+}
+
+/* 체크박스 필드셋 라벨 */
+fieldset.checkField label{
+	font-size: 0.813em; /* 13px */
+	color: #666;
+}
+
+button{
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover,
+button:active{
+}
+
+
+img, object{
+	max-width: 100%;
+}
+
+
+table.pure-table{
+	border-left: 0 none;
+	border-right: 0 none;
+	border-top:  1px solid #666;
+}
+
+.pure-table thead{
+	background: #f5f5f5;
+	color: #333;
+}
+
+.pure-table td, 
+.pure-table th{
+	padding: 13px 15px;
+	font-size: 0.813em; /* 13px */
+}
+
+
+
+/* selectbox */
+div.selectBox{
+	position: relative;
+	display: inline-block;
+	border:1px solid #aaa;
+	border-radius: 3px;
+	background: #fff;
+}
+
+div.selectBox select{
+	position: relative;
+	z-index: 100;
+	width: 100%;
+	padding: 4px 30px 7px 5px;
+	padding: 5px \0/IE8+9; /* IE9 HACK */
+	font-weight: bold;
+	font-size: 0.875em; /* 14px */
+	outline: none;
+	border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+div.selectBox:after{
+	content: "";
+	z-index: 1;
+	display: block;
+	display: none \0/IE8+9;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	background: url('../img/global_sprite.png') no-repeat -347px -299px;
+	width: 10px;
+	height: 5px;
+}
+
+select::-ms-expand { 
+  display: none;
+}
+
+
+
+.pure-form input[type="text"],
+.pure-form input[type="password"],
+.pure-form input[type="email"],
+.pure-form input[type="url"],
+.pure-form input[type="date"],
+.pure-form input[type="month"],
+.pure-form input[type="time"],
+.pure-form input[type="datetime"],
+.pure-form input[type="datetime-local"],
+.pure-form input[type="week"],
+.pure-form input[type="number"],
+.pure-form input[type="search"],
+.pure-form input[type="tel"],
+.pure-form input[type="color"],
+.pure-form select,
+.pure-form textarea {
+    box-shadow: none !important;
+    border-color: #9C9C9C;
+    border-radius: 0;
+    font-size: 0.813em; /* 13px */
+    box-shadow: 0;
+}
+
+.pure-form .pure-group input:first-child, 
+.pure-form .pure-group textarea:first-child,
+.pure-form .pure-group input:last-child, 
+.pure-form .pure-group textarea:last-child {
+    border-radius: 0 !important;
+}
+
+.pure-form input[type="text"]:focus,
+.pure-form input[type="password"]:focus,
+.pure-form input[type="email"]:focus,
+.pure-form input[type="url"]:focus,
+.pure-form input[type="date"]:focus,
+.pure-form input[type="month"]:focus,
+.pure-form input[type="time"]:focus,
+.pure-form input[type="datetime"]:focus,
+.pure-form input[type="datetime-local"]:focus,
+.pure-form input[type="week"]:focus,
+.pure-form input[type="number"]:focus,
+.pure-form input[type="search"]:focus,
+.pure-form input[type="tel"]:focus,
+.pure-form input[type="color"]:focus,
+.pure-form select:focus,
+.pure-form textarea:focus {
+    border-color: #3498DB !important;
+    background: #fff;
+}
+
+/* 그룹 input */
+fieldset.pure-group>div:nth-child(odd) input,
+fieldset.pure-group>div:nth-child(2n) input{
+	border-bottom: 0 none;
+}
+
+fieldset.pure-group>div:last-child input{	
+	border-bottom: 1px solid #9C9C9C;
+}
+
+textarea{
+	font-size: 0.875em; /* 14px */
+	border: 1px solid #bbb;
+}
+
+textarea:focus{
+	border-color: #888;
+	outline: 0;
+}
+
+
+/* 텍스트 색깔 */
+.redText{
+	color: #ff4b4b !important;
+}
+
+.textGreyblue{
+	color: #51809e;
+}
+
+
+
+/* 말줄임 */
+.ellipsis { 
+	text-overflow: ellipsis; 
+	white-space: nowrap; 
+	overflow: hidden; 
+}
+
+
+/* 그림자 */
+.shadow{
+	box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************미디어쿼리**********************************************************/
+
+
+
+/* ≥ 1024px pure-u-lg */
+@media screen and (max-width:1024px){
+	h1,h2,h3,h4,h5,h6{
+	font-family: "Malgun Gothic", dotum, sans-serif;
+	}
+
+}
+
+
+
+
+/* ≥ 980px pure-u-md */
+@media screen and (max-width:980px){
+
+
+}
+
+
+
+
+/* ≥ 680px pure-u-sm */
+@media screen and (max-width: 740px){
+	h2{
+		font-size: 1.250em; /* 20px */
+	}
+
+	button.gotoTop{
+		bottom: 68px;
+	}
+}
+
+
+/* 레티나 해상도 대비 */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min--moz-device-pixel-ratio: 1.5), 
+only screen and (min-resolution: 240dpi) {
+
+	h1 a,
+	div.icons div.iconState p,
+	footer div#footer>div h2,
+	main div#comicListArea div.joy50 ul.topRank li.first div.card a.tContent div.icons p.rank,
+	main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.icons p.rank,
+	main div#comicListArea div.joy50 ul#rank7to22 li div.card a.tContent div.icons p.rank,
+	main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState div.coinState div span:after,
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li>div span.coin:before,
+	header nav#gnbTop div.gnbWrapper div div.rateSwitch a,
+	header nav#gnbTop div.gnbWrapper div ul li a:after,
+	header nav#gnbBottom div.gnbWrapper ul.sideMenu li a:after,
+	main div#comicListArea div.comicListAreaWrapper h2:before,
+	header nav#gnbBottom div.gnbWrapper div.searchForm div.searchResult:before,
+	footer div#notice p a:before,
+	footer div#footer>div h2,
+	footer div#footer>div ul.social li a,
+	ul.sort li a:before,
+	.card a.tContent div.xRate span,
+	ul#masthead.subMast li.mastheadList div.mastheadWrapper div.mastIndex ul li.selected:after,
+	main div.joy5 ul li:first-child a p.number,
+	header.viewer.pageView div.shareMenu ul button.compressScreen i,
+	header.viewer.pageView div.shareMenu ul button.backtoPageView i,
+	table.boardList tbody tr.selected td.qSort:before,
+	div.BoardNotice table.boardList tbody tr:first-child td.gotoArticle:before,
+	div.BoardNotice table.boardList tbody tr:nth-child(2) td.gotoArticle:before,
+	div.BoardNotice table.boardList tbody tr:nth-child(3) td.gotoArticle:before,
+	div.dim div.popup div.popupTitle button:after,
+	div.dim div.popup div.popupContent div.WarnDesc:before{
+	background-image: url('../img/global_sprite_2x.png') !important;
+	background-size: 700px !important;
+	}
+
+}

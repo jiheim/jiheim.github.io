@@ -1,0 +1,16 @@
+
+/*****************************************************미디어쿼리**********************************************************/
+
+
+
+/* ≥ 568px pure-u-sm */
+@media screen and (min-width: 35.5em){}
+
+/* ≥ 768px pure-u-md */
+@media screen and (min-width: 48em){}
+
+/* ≥ 1024px pure-u-lg */
+@media screen and (min-width: 64em){}
+
+/* ≥ 1024px pure-u-xl*/
+@media screen and (min-width: 80em){}

@@ -1,0 +1,284 @@
+/*메뉴*/
+
+.hospital.mainCover header{
+	background: rgba(51,53,57,0.85);
+	position: absolute;
+}
+
+.hospital.conPage header{
+	background: #3e4043;
+	position: absolute;
+	top:0;
+	z-index: 1000;
+}
+
+.hospital header a{
+	color:#fff;
+	font-weight: bold;
+}
+
+.hospital.conPage div.content{
+	top: 9.1%;
+	padding-bottom:27%;
+}
+
+
+
+/* 메인 이미지 */
+.hospital div.mainImgCon{
+	height:100%;
+}
+
+.hospital div.mainImgCon div.mainImg{
+	position: absolute;
+	width:100%;
+	height:86.4%;
+}
+
+.hospital div.mainImgCon div.mainImg img{
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	max-height: 100%;
+}
+
+
+
+/* 진료시간 */
+
+
+/* 지도 */
+div.content.mapPage{
+	padding:3.8%;
+	height: 73.8%;
+	padding-bottom: 0 !important;
+}
+
+div.content.mapPage div.map{
+	height:75%;
+}
+
+
+
+/* 추가정보 */
+div.review{
+	position: relative;
+	margin:3.8%;
+	margin-top:0;
+}
+
+
+/* 네비게이션 */
+nav{
+	width:100%;
+	z-index: 1000;
+}
+
+nav ul{
+	width:95%;
+	height:22.3%;
+	margin:0 auto;
+
+	/* 메뉴 아이콘 정렬 */
+	display: -webkit-box;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction:row;
+	-ms-flex-direction:row;
+	flex-direction:row;
+
+	-webkit-justify-content:space-between;
+	-ms-justify-content:space-between;
+	justify-content:space-between;
+}
+
+nav ul li{
+	width:23.05%;
+	height:100%;
+	margin-right:2.6%;
+}
+
+nav ul li:last-child{
+	margin-right:0;
+}
+
+nav ul li a{
+	position: relative;
+	display:block;
+	width:100%;
+	padding:50% 0;
+	border-radius: 50%;
+	font-size: 0.7em;
+	text-align: center;
+	color:#fff;
+}
+
+nav ul li a span{
+	position: absolute;
+	display: block;
+	bottom:20%;
+	left:0;
+	width:100%;
+	text-align: center;
+}
+
+/* 네비 메뉴 아이콘 */
+nav ul li a:after{
+	content:"";
+	display: block;
+	position: absolute;
+	top:22.5%;
+	left:50%;
+	margin-left: -15%;
+	width:30%;
+	height:30%;
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+
+nav ul li.bHour a:after{
+	background-image: url('../img/hospital/menu_bhour.png');
+}
+
+nav ul li.subject a:after{
+	background-image: url('../img/hospital/menu_subject.png');
+}
+
+nav ul li.map a:after{
+	background-image: url('../img/hospital/menu_map.png');
+}
+
+nav ul li.moreInfo a:after{
+	background-image: url('../img/hospital/menu_moreinfo.png');
+}
+
+
+.mainCover nav{
+	position: absolute;
+	bottom: 14.5%;
+}
+
+.conPage nav{
+	position: absolute;
+	bottom:0;
+	padding:2% 0;
+	background: rgba(255,255,255,0.5);
+	border-top:1px solid rgba(0,0,0,0.1);
+}
+
+/* 리뷰 */
+div.review,
+div.reviewWrite{
+	position: relative;
+	margin:3.8%;
+	margin-top:0;
+	border: 1px solid #bcbcbc;
+	background:#fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+
+/* footer */
+footer div.pAddress p{
+	color:#565a69;
+}
+
+
+
+/********************************************  color - green ********************************************/
+
+/* 네비게이션 */
+.hospital.green nav ul li a{
+	background:#27ae60;
+}
+
+/* 상세정보목록 제목 */
+.hospital.green div.info dl dd{
+	color:#187640;
+}
+
+/*이용후기*/
+.hospital.green div.review div.controlBtns button.readMore{
+	background:#F5AC3A;
+}
+
+.hospital.green div.review div.viewReview div.writePass div button.modify{
+	background:#F5AC3A;
+}
+
+.hospital.green div.reviewWrite div.controlBtns button.submit{
+	background: #F5AC3A;
+}
+
+
+
+/********************************************  color - blue ********************************************/
+/* 네비게이션 */
+.hospital.blue nav ul li a{
+	background:#497adc;
+}
+
+/*이용후기*/
+.hospital.blue div.review div.controlBtns button.readMore{
+	background:#EC5757;
+}
+
+.hospital.blue div.review div.viewReview div.writePass div button.modify{
+	background:#EC5757;
+}
+
+.hospital.blue div.reviewWrite div.controlBtns button.submit{
+	background: #EC5757;
+}
+
+/********************************************  color - white ********************************************/
+/* 네비게이션 */
+.hospital.white nav ul li a{
+	background:#38a9c5;
+}
+
+/* 상세정보목록 제목 */
+.hospital.white div.info dl dd{
+	color:#38a9c5;
+}
+
+/*이용후기*/
+.hospital.white div.review div.controlBtns button.readMore{
+	background:#38a9c5;
+}
+
+.hospital.white div.review div.viewReview div.writePass div button.modify{
+	background:#38a9c5;
+}
+
+.hospital.white div.reviewWrite div.controlBtns button.submit{
+	background: #38a9c5;
+}
+
+
+
+
+
+/* 레티나 디스플레이 대비 */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+	nav ul li.bHour button:after{
+	background-image: url('../img/hospital/menu_bhour@2x.png');
+	}
+
+	nav ul li.subject button:after{
+	background-image: url('../img/hospital/menu_subject@2x.png');
+	}
+
+	nav ul li.map button:after{
+	background-image: url('../img/hospital/menu_map@2x.png');
+	}
+
+	nav ul li.moreInfo button:after{
+	background-image: url('../img/hospital/menu_moreinfo@2x.png');
+	}
+}

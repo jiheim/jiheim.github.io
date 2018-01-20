@@ -1,0 +1,820 @@
+/****************************** POPUP ******************************/
+div.dim{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+	z-index: 1000;
+}
+
+div.dim div.popup{
+	position: absolute;
+	width: 540px;
+	left: 50%;
+	margin-left: -270px;
+	background: #fff;
+
+}
+
+div.dim div.popup.warn19,
+div.dim div.popup.join,
+div.dim div.popup.viewerReply,
+div.dim div.popup.deleteAccountEmail,
+div.dim div.popup.warning{
+	top:10%;
+	
+}
+
+div.dim div.popup.purchaseDone,
+div.dim div.popup.findPw,
+div.dim div.popup.changePw,
+div.dim div.popup.submission,
+div.dim div.popup.useCoupon,
+div.dim div.popup.payTurn,
+div.dim div.popup.bannedWord,
+div.dim div.popup.reportReply,
+div.dim div.popup.coimcdealDetail,
+div.dim div.popup.couponCode,
+div.dim div.popup.couponApply{
+	top: 30%;
+	max-height: 100% !important;
+}
+
+
+div.dim div.popup.smallPopup{
+	width: 400px;
+	margin-left: -200px;
+}  
+
+
+/* 팝업 타이틀 */
+div.dim div.popup div.popupTitle{
+	position: relative;
+	padding: 0 17px;
+	height: 50px;
+	background: #eee;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+div.dim div.popup div.popupTitle h2{
+	font-size: 1.125em;
+	padding-top: 10px;
+}
+
+div.dim div.popup div.popupTitle button{
+	position: absolute;
+	display: block;
+	top: 10px;
+	right: 17px;
+	width: 29px;
+	height: 29px;
+	border: 0 none;
+	background: #555;
+	border-radius: 50%;
+	text-indent: -9999px;
+}
+
+div.dim div.popup div.popupTitle button:after{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 11px;
+	height: 11px;
+	top: 9px;
+	left: 9px;
+	background: url('../img/global_sprite.png') no-repeat -192px -204px;	
+}
+
+/* 팝업 상단 탭 */
+div.dim div.popup ul.tab{
+	padding: 6px;
+	padding-bottom: 0;
+	background: #555;
+}
+
+div.dim div.popup ul.tab li{
+	display: inline-block;
+
+}
+
+div.dim div.popup ul.tab li:first-child{
+	margin-right: 6px;
+}
+
+div.dim div.popup ul.tab li a{
+	display: block;
+	padding: 16px 0;
+	width:188px;
+	text-align: center;	
+	font-weight: bold;
+	font-size: 1.125em; /* 18px */
+	color: #ddd;
+}
+
+div.dim div.popup ul.tab li.selected a{
+	background: #fff;	
+	color: #333;
+}
+
+
+/* 팝업 컨텐츠 */
+div.dim div.popup div.popupContent{
+	padding: 20px;
+}
+
+
+
+div.dim div.popup div.grey{
+	border-top: 1px solid #ddd;
+	background: #eee;
+}
+
+div.dim div.popup div.darkgrey{
+	background: #555;
+	color: #fff;
+}
+
+div.dim div.popup div.popupContent div.textboxArea p,
+div.dim div.popup div.popupContent div.textboxArea li{
+	line-height: 1.5;
+	font-size: 0.813em;
+}
+
+
+div.dim div.popup div.popupContent p.desc{
+	text-align: center;
+}
+
+
+div.dim div.popup div.popupContent form.formList{
+	padding: 5px 10px;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+div.dim div.popup div.popupContent p.infoP{
+	font-weight: bold;
+	text-align: center;
+	font-size: 1em; /* 16px */
+	color: #333;
+}
+
+div.dim div.popup div.popupContent form.doNotShow{
+	margin-top: 30px;
+	padding-top: 5px;
+	border-top: 1px solid #ddd;
+}
+
+
+
+
+/* 팝업 내용 상자 */
+
+
+div.dim div.popup div.popupContent div.popupBoard>div{
+	padding: 10px;
+	background: #eee;
+	border: 1px solid #ddd;
+}
+
+
+
+
+
+/* 19세 성인인증 */
+div.dim div.popup div.popupContent div.WarnDesc{
+	position: relative;
+	overflow: hidden;
+	width: 410px;
+	margin: 30px auto;
+}
+
+div.dim div.popup div.popupContent div.WarnDesc:before{
+	display: block;
+	content: "";
+	width: 96px;
+	height: 96px;
+	background: url('../img/global_sprite.png') no-repeat -386px -166px;
+	float: left;
+}
+
+div.dim div.popup div.popupContent div.WarnDesc p{
+	margin: 35px 0 0 130px;
+	font-size: 1em; /* 16px */
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+
+div.dim div.popup.warn19 div.popupContent{
+	padding: 0;
+}
+
+div.dim div.popup.warn19 div.grey{
+	margin-top: 30px;
+}
+
+
+div.dim div.popup div.popupContent div.phone,
+div.dim div.popup div.popupContent div.ipin{
+	text-align: center;
+	padding: 20px 0;
+}
+
+div.dim div.popup div.popupContent div.phone{
+	border-right: 1px solid #ddd;
+}
+
+div.dim div.popup div.popupContent div.phone h3:before,
+div.dim div.popup div.popupContent div.ipin h3:before{
+	content:"";
+	display: block;
+	background-image: url('../img/global_sprite.png');
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+div.dim div.popup div.popupContent div.phone h3{
+	margin-bottom: 10px;
+}
+
+
+div.dim div.popup div.popupContent div.phone h3:before{
+	width: 55px;
+	height: 94px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-position: -23px -252px;
+}
+
+
+div.dim div.popup div.popupContent div.ipin h3{
+	margin-bottom: 20px;
+}
+
+div.dim div.popup div.popupContent div.ipin h3:before{
+	width: 118px;
+	height:35px;
+	margin-top: 38px;
+	margin-bottom: 49px;
+	background-position: -129px -281px;
+}
+
+div.dim div.popup div.popupContent div.phone p{
+	margin-bottom: 20px;
+}
+
+div.dim div.popup div.popupContent div.ipin p{
+	margin-bottom: 31px;
+}
+
+
+div.dim div.popup div.popupContent button.over19{
+	display: block;
+	width:234px;
+	margin: 25px auto 0;
+}
+
+div.dim div.popup div.popupContent button.reg{
+	width:129px;
+}
+
+/* //19세 성인인증 */
+
+
+
+/* 회원가입,로그인,비밀번호 찾기  */
+
+
+
+div.dim div.popup.join{
+	width: 400px;
+	margin-left: -200px;
+}
+
+div.dim div.popup.join div.popupContent{
+	padding: 0;
+}
+
+div.dim div.popup.join div.popupContent form.pure-form,
+div.dim div.popup.join div.popupContent div.socialLogin,
+div.dim div.popup.join div.popupContent div.popupFooter{
+	padding: 20px;
+}
+
+
+
+div.dim div.popup.join div.popupContent form button.btnLogin{
+	width: 100%;
+	margin:15px 0;
+}
+
+div.dim div.popup.join div.popupContent form fieldset.checkField{
+	text-align: center;
+}
+
+div.dim div.popup.join div.popupContent form fieldset.checkField label{
+	margin: 0 10px;
+	display: inline-block;
+}
+
+div.dim div.popup.join div.popupContent div.btnFindpw{
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+div.dim div.popup.join div.popupContent div.btnFindpw a{
+	display: inline-block;
+	text-decoration: underline;
+	font-size: 0.813em; /* 13px */
+	font-weight: bold;
+	color: #666;
+}
+
+div.dim div.popup.join div.popupContent div.privacy{
+	padding: 20px;
+	padding-bottom: 0;
+}
+
+div.dim div.popup.join div.popupContent div.privacy label{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 0.875em; /* 14px */ 
+}
+
+div.dim div.popup.join div.popupContent div.privacy label input{
+	margin-right: 5px;
+}
+
+
+
+div.dim div.popup.join div.popupContent div.btnWrap{
+	padding: 20px;
+	padding-top: 0;
+}
+
+div.dim div.popup.join div.socialLogin h3{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+div.dim div.popup.join div.popupFooter ul{
+	text-align: center;
+}
+
+div.dim div.popup.join div.popupFooter ul li{
+	display: inline-block;
+
+}
+
+div.dim div.popup.join div.popupFooter ul li:after{
+	content: "|";
+	font-size: 0.375em; /* 6px */
+	vertical-align: middle;
+	color: #767676; 
+}
+
+div.dim div.popup.join div.popupFooter ul li.last:after{
+	display: none;
+}
+
+
+div.dim div.popup.join div.popupFooter ul li a{
+	color: #ddd;
+	font-size: 0.75em; /* 12px */ 
+	margin-right: 7px;
+}
+
+
+div.dim div.popup.join div.popupFooter ul li a:hover{
+	text-decoration: underline;
+}
+
+
+div.dim div.popup.findPw div.popupContent p{
+	padding: 20px 20px 0;
+}
+
+div.dim div.popup.changePw div.changeDesc{
+	margin-bottom: 20px;
+	padding: 20px 20px 0 20px;
+}
+
+div.dim div.popup.changePw div.changeDesc i{
+	float: left;
+	width: 80px;
+	height: 80px;
+	padding-top: 8px;
+	margin-top: 12px;
+	font-size: 4em;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	background: #888;
+}
+
+div.dim div.popup.changePw div.changeDesc h3{
+	margin-bottom: 10px;
+}
+
+div.dim div.popup.changePw div.changeDesc p{
+	font-size: 0.75em; /* 12px */
+}
+
+div.dim div.popup.changePw div.changeDesc h3,
+div.dim div.popup.changePw div.changeDesc p{
+	margin-left: 100px;
+}
+
+div.dim div.popup.submission p span{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+div.dim div.popup.submission div.btnWrap{
+	width: 300px;
+	margin: 20px auto 0;
+}
+
+
+/* 할인쿠폰 적용 */
+div.dim div.popup.useCoupon{
+	top:30%;
+
+}
+
+div.dim div.popup.useCoupon form.formList{
+	margin-top: 10px;
+}
+
+div.dim div.popup.useCoupon div.calculation{
+	margin-top: 20px;
+	border-top: 2px solid #888;
+}
+
+
+div.dim div.popup.useCoupon div.calculation dl{
+	overflow: hidden;
+	padding: 5px;
+}
+
+div.dim div.popup.useCoupon div.calculation dl:last-child{
+	border-top: 1px solid #ddd;
+}
+
+div.dim div.popup.useCoupon div.calculation dl dt,
+div.dim div.popup.useCoupon div.calculation dl dd{
+	display: inline-block;
+}
+
+div.dim div.popup.useCoupon div.calculation dl dd{
+	float: right;
+}
+
+
+div.dim div.popup.useCoupon div.calculation dl dd strong{
+	margin-right: 5px;
+}
+
+div.dim div.popup.useCoupon p.infoP.redText{
+	margin-top: 20px;
+}
+
+
+/* //할인쿠폰 적용 */
+
+
+
+
+
+
+/* //자동결제순서 */
+
+
+
+
+
+
+/* 금칙어 */
+
+div.dim div.popup.bannedWord div.popupContent div.popupBoard{
+	margin-top: 30px;
+}
+
+div.dim div.popup.bannedWord div.popupContent div.popupBoard h3{
+	font-size: 1.250em; /* 20px */
+}
+
+div.dim div.popup.bannedWord div.popupContent div.popupBoard>div{
+	margin-top: 10px;
+}
+
+
+div.dim div.popup.bannedWord p.infoP{
+	margin: 20px 0;
+}
+
+div.dim div.popup.bannedWord div.btnWrap button{
+	width: 30%;
+}
+
+
+/* 신고 */
+div.dim div.popup.reportReply div.popupContent div.popupBoard{
+	margin-bottom: 30px;
+}
+
+div.dim div.popup.reportReply div.popupContent div.popupBoard dl{
+	margin-bottom: 10px;
+}
+
+div.dim div.popup.reportReply div.popupContent div.popupBoard dl dt{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+div.dim div.popup.reportReply div.popupContent form{
+	margin-bottom: 30px;
+}
+
+
+
+/* 페이지 뷰어 댓글 */
+
+
+div.dim div.popup.viewerReply{
+	height: 80%;
+}
+
+div.dim div.popup.viewerReply div.popupContent{
+	height: calc(100% - 50px);
+	overflow: auto;
+}
+
+
+/* 쿠폰 코드 */
+
+div.dim div.popup.couponCode form.pure-form{
+	margin: 10px 0 30px;
+}
+
+div.dim div.popup.couponCode form.pure-form fieldset{
+	margin: 0 auto;
+}
+
+
+
+/* 쿠폰 적용 가능 대상 */
+div.dim div.popup.couponApply section{
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	overflow: hidden;
+	margin: 20px;
+}
+
+div.dim div.popup.couponApply section h3{
+	background: #f5f5f5;
+	padding: 10px;
+}
+
+div.dim div.popup.couponApply section ul{
+	padding: 10px 0;
+}
+
+div.dim div.popup.couponApply section ul li{
+	padding: 5px 20px;
+}
+
+div.dim div.popup.couponApply section ul li:before{
+	content: "-";
+	font-size: 1.250em; /* 16px */
+	margin-right: 5px;
+}
+
+
+/* 회원탈퇴 인증 */
+
+div.dim div.popup.deleteAccountEmail p.desc{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.dim div.popup.deleteAccountEmail div.activateEmail{
+	margin: 30px 0 40px;
+}
+
+div.dim div.popup.deleteAccountEmail h3{
+	margin: 30px 0 0;
+}
+
+div.dim div.popup.deleteAccountEmail h3 i{
+	margin-right: 5px;
+	vertical-align: middle;
+	color: #666;
+}
+
+div.dim div.popup.deleteAccountEmail ol{
+	margin-top: 10px;
+}
+
+
+/* 경고 */
+div.dim div.popup.warning div.popupCharacter{
+	margin-top: 10px;
+	text-align: center;
+}
+
+div.dim div.popup.warning div.popupCharacter img{
+	display: inline-block;
+}
+
+div.dim div.popup.warning div.WarnDesc:before{
+	display: none !important;
+}
+
+div.dim div.popup.warning div.WarnDesc p{
+	font-size: 0.875em !important; /* 14px */
+	margin: 0 0 10px !important;
+	text-align: center;
+}
+
+
+/* 코인충전완료 */
+div.dim div.popup.purchaseDone div.popupContent{
+	text-align: center;
+}
+
+div.dim div.popup.purchaseDone div.popupContent p.purchasedCoin{
+	margin: 10px 0;
+	font-size: 1.250em;
+	color: #333;
+}
+
+div.dim div.popup.purchaseDone div.popupContent p.purchasedCoin i{
+	font-size: 	0.688em; 
+	margin: 0 5px;
+	color: #666;
+}
+
+div.dim div.popup .infoBoard{
+	margin: 20px;
+}
+
+
+/*****************************************************미디어쿼리**********************************************************/
+
+
+
+
+
+
+
+/* ≥ 1024px pure-u-lg */
+@media screen and (max-width:1024px){
+	
+	div.dim div.popup.warning{
+		top: 1%;
+	}
+
+	div.dim div.popup.join,
+	div.dim div.popup.warn19,
+	div.dim div.popup.viewerReply,
+	div.dim div.popup.deleteAccountEmail{
+		top: 8%;
+	}
+
+	div.dim div.popup.payTurn,
+	div.dim div.popup.findPw,
+	div.dim div.popup.changePw,
+	div.dim div.popup.useCoupon,
+	div.dim div.popup.payTurn,
+	div.dim div.popup.bannedWord,
+	div.dim div.popup.reportReply,
+	div.dim div.popup.coimcdealDetail,
+	div.dim div.popup.couponCode,
+	div.dim div.popup.couponApply{
+		top:15%;
+	}
+
+	div.dim div.popup.changePw,
+	div.dim div.popup.submission,
+	div.dim div.popup.useCoupon,
+	div.dim div.popup.bannedWord,
+	div.dim div.popup.reportReply,
+	div.dim div.popup.couponCode,
+	div.dim div.popup.couponApply{
+		top: 20%;
+	}
+
+	div.dim div.popup.findPw,
+	div.dim div.popup.submission,
+	div.dim div.popup.coimcdealDetail{
+		top: 30%;
+	}
+
+}
+
+div.dim div.popup div.btnWrap{
+	margin-top: 15px;
+}
+
+
+/* ≥ 980px pure-u-md */
+@media screen and (max-width:980px){
+
+	div.dim div.popup.warning{
+		top: 10%;
+	}
+
+}
+
+/* ≥ 680px pure-u-sm */
+@media screen and (max-width: 740px){
+
+	div.dim div.popup,
+	div.dim div.popup.warn19,
+	div.dim div.popup.join,
+	div.dim div.popup.viewerReply,
+	div.dim div.popup.deleteAccountEmail,
+	div.dim div.popup.warning,
+	div.dim div.popup.findPw,
+	div.dim div.popup.changePw,
+	div.dim div.popup.submission,
+	div.dim div.popup.useCoupon,
+	div.dim div.popup.payTurn,
+	div.dim div.popup.bannedWord,
+	div.dim div.popup.reportReply,
+	div.dim div.popup.coimcdealDetail,
+	div.dim div.popup.couponCode,
+	div.dim div.popup.couponApply{
+		width: 100%;
+		margin-left: 0;
+		left: 0;
+		top: 0;
+		height: 100%;
+	}
+
+	div.dim div.popup.customModal{
+		top: 30%;
+		width: 90%;
+		left: 5%;
+		height: auto;
+	}
+
+	div.dim div.popup div.popupContent{
+		height: calc(100% - 25px);
+		overflow: auto;
+	}
+
+	div.dim div.popup div.popupContent div.WarnDesc:before{
+		float: none;
+		margin: 0 auto;
+	}
+
+	div.dim div.popup.warn19 div.popupContent p.desc{
+		padding: 10px;
+	}
+
+	
+
+	div.dim div.popup div.popupContent div.WarnDesc{
+		width: 100%;
+		margin: 0;
+	}
+
+	div.dim div.popup div.popupContent div.WarnDesc p{
+		margin: 20px 0 0;
+		color: #FF4B4B;
+		text-align: center;
+	}
+
+	div.dim div.popup div.popupContent div.phone,
+	div.dim div.popup div.popupContent div.ipin{
+		padding: 20px 0;
+	}
+
+
+	div.dim div.popup.submission div.btnWrap{
+		width: 100%;
+	}
+
+	div.dim div.popup div.popupContent button.over19{
+		margin: 10px auto 20px;
+	}
+
+
+	div.dim div.popup ul.tab{
+		width: 100%;
+	}
+	div.dim div.popup ul.tab li{
+    	width: 48%;
+	}
+
+	div.dim div.popup ul.tab li a{
+		width: 100%;
+	}
+
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/basic.css">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/food.css">
+
+        <!-- 안드로이드 주소창 없앰 -->
+        <script type="text/javascript" language = "javascript"> 
+            window.addEventListener('load', function() {
+                setTimeout(scrollTo, 0, 0, 1);
+            }, false);
+        </script>
+    </head>
+    <body>
+
+        <div id="ppWrapper">
+
+            <!--업종 테마: *food 색상 테마:red,brown,yellow 메인일때:mainCover 컨텐츠페이지:conPage -->
+            <div id="wrapper" class="food yellow mainCover">
+                <!-- top - 상단제목 -->
+                <header><h1><a href="food_main.html">테스트입니다</a></h1></header>
+
+                
+
+                <!-- content - 내용 -->
+                    <div class="content mainImgCon">
+                        <!-- 메인 이미지 -->  
+                        <div class="mainImg">
+                            <img src="../img/dummy_food.jpg" alt="">
+                        </div>
+                    </div>
+                <!-- //content -->
+
+                <!-- footer -->
+                <footer>                
+                    <div class="pAddress">
+                       <p>02-1234-5678</p>
+                       <address>서울시 관악구 신림동</address>
+                    </div>
+                </footer>
+                <!-- //footer -->
+
+                <!-- navigation -->
+                <nav>
+                    <ul>
+                        <!-- 선택된 메뉴에는 .selected 가 붙음 -->
+                        <li class="bHour"><a href="food_bhour.html"><span>영업시간</span></a></li>
+                        <li class="menu"><a href="food_menu.html"><span>메뉴</span></a></li>
+                        <li class="map"><a href="food_map.html"><span>오시는 길</span></a></li>
+                        <li class="moreInfo"><a href="food_moreinfo.html"><span>추가정보</span></a></li>
+                    </ul>
+                </nav>
+                <!-- //navigation -->
+            </div>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,2706 @@
+
+
+ main div.defaultContentWrapper{
+ 	width: 100%;
+ }
+
+
+  main div.defaultContentWrapper.grey{
+ 	background: #f1f1f1;
+ }
+
+ main div.defaultContentWrapper div.defaultContent{
+ 	position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5% 0.83333333333%; /* 10 / 1200 */
+ }
+
+
+/* 베타기간 충전소 */
+
+div.beta{
+	margin:50px 0;
+}
+
+div.beta img{
+	margin: 0 auto;
+}
+div.beta p{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+/*	background: #fff;
+	padding: 30px;
+	border:1px solid #ddd;
+	border-radius: 3px;
+	line-height: 1.5;*/
+}
+
+
+
+
+/* joy50 */
+main div#comicListArea div.joy50{
+}
+
+main div#comicListArea div.joy50 ul#rank1to3{
+	padding: 0 0.8333333333333333%; /* 10 / 1200 */
+}
+
+main div#comicListArea div.joy50 ul#rank1to3 li{
+}
+
+main div#comicListArea div.joy50 ul#rank1to3 li.first{
+	padding-left: 0;
+	padding-right: 0.5%; /* 6 / 1200 */
+}
+
+main div#comicListArea div.joy50 ul#rank1to3 li.second{
+	padding-right: 0.25%; /* 3 / 1200 */
+	padding-left: 0;
+}
+
+main div#comicListArea div.joy50 ul#rank1to3 li.third{
+	padding-right: 0;
+	padding-left: 0.25%; /* 3 / 1200 */
+}
+
+main div#comicListArea div.joy50 ul#rank4to6{
+	padding:0 0.583333333333333%; /* 7 / 1200 */
+}
+
+main div#comicListArea div.joy50 ul#rank4to6 li.fourth,
+main div#comicListArea div.joy50 ul#rank4to6 li.fifth,
+main div#comicListArea div.joy50 ul#rank4to6 li.sixth{
+	margin-top: 0.5%;
+	padding:0 0.25%;
+}
+
+main div#comicListArea div.joy50 ul#rank1to3 li.second img.tn12,
+main div#comicListArea div.joy50 ul#rank1to3 li.third img.tn12,
+main div#comicListArea div.joy50 ul#rank4to6 li.fourth img.tn11,
+main div#comicListArea div.joy50 ul#rank4to6 li.fifth img.tn11,
+main div#comicListArea div.joy50 ul#rank4to6 li.sixth img.tn11{
+	display: none;
+}
+
+main div#comicListArea div.joy50 ul#rank23to50 li{
+	padding: 0;
+}
+
+main div#comicListArea div.joy50 ul#rank23to50 li div.card{
+ padding: 0 6.666666666666667%; /* 10 / 150 */
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card{
+	background: transparent;
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent{
+	position: relative;
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.tnDesc{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 200;
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.tnDesc h3{
+	color: #fff;
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.tnDesc p.authorAndgenre span{
+	display: inline-block;
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.tnDesc p.authorAndgenre span.author{
+	color: #fff;
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.tnDesc p.authorAndgenre span.author:after{
+	content: "|";
+    margin-left: 6px;
+    font-size: 0.4em;
+    color: rgba(255,255,255,0.5);
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.icons p.freepass{
+	display: none;
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.icons{
+	z-index: 200;
+}
+
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.icons p.rank{
+	position: absolute;
+	top:0;
+	right: 10px;
+	padding-top: 3px;
+	text-align: center;
+	background: url('../img/global_sprite.png') no-repeat -112px -372px;
+	width: 59px;
+	height: 54px;
+	color: #333;
+}
+
+main div#comicListArea div.joy50 ul.topRank li.first div.card a.tContent div.icons p.rank{
+	background: url('../img/global_sprite.png') no-repeat -23px -372px;
+	width: 82px;
+	height: 82px;
+	text-indent: -9999px;
+}
+
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.icons p.rank span{
+	font-size: 1.875em; /* 30px */
+	font-weight: bold;
+}
+
+main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.icons p.rank i{
+	font-style: normal;
+}
+
+
+main div#comicListArea div.joy50 ul#rank7to22 li div.card a.tContent div.icons p.rank{
+	position: absolute;
+	width: 38px;
+	height: 41px;
+	bottom:-41px;
+	left: 4px;
+	padding-top: 2px;
+	text-align: center;
+	font-size: 1.375em; /* 22px */
+	color: #333;
+	background: url('../img/global_sprite.png') no-repeat -180px -372px;
+}
+
+main div#comicListArea div.joy50 ul#rank7to22 li div.card a.tContent div.tnDesc{
+	padding-left: 50px;
+}
+
+
+
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350{
+	display: inline-block;
+
+}
+
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:first-child,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(9),
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(17),
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(25){
+	padding: 0 .8333333333333333%; /* 10 / 1200 */
+}
+
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:first-child div,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(9) div,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(17) div,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(25) div{
+	display: inline-block;
+	position: relative;
+	background: #d2d2d2;
+	width: 100%;
+	padding-top: 100%;
+}
+
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:first-child div p,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(9) div p,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(17) div p,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(25) div p{
+	padding: 10px;
+	font-family: 'Noto Sans Korean', sans-serif;
+	font-size: 20px;
+	color: #333;
+}
+
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:first-child div p:before,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(9) div p:before,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(17) div p:before,
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(25) div p:before{
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f105";
+	display: inline-block;	
+	text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 5px;
+
+}
+
+
+
+
+
+
+main div#comicListArea div.joy50 ul#rank23to50 li.rank2350 div{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.5625em;
+}
+
+
+
+
+
+/* 작품 상세 목록 */
+
+main #comicDetailWrapper{
+	background: #f1f1f1;
+}
+
+
+main #comicDetailWrapper div.comicDetail{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2.5% .8333333333333333%; /* 10 / 1200 */
+}
+
+main #comicDetailWrapper div.detailTn img{
+	width: 100%;
+}
+
+main #comicDetailWrapper div.comicDetail div.btnWrap{
+	position: absolute;
+	bottom: 0;
+	width: 98%;
+	text-align: left;
+}
+
+main #comicDetailWrapper div.comicDetail div.btnWrap button.readChapter1{
+	width: 100%;
+}
+main #comicDetailWrapper div.comicDetail div.btnWrap button.gotoAuthorRoom{
+	/*width: 30%;*/
+
+}
+
+main #comicDetailWrapper div.comicDetail div.btnWrap button.readChapter1{
+	border:2px solid #ff4b4b;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo{
+	position: relative;
+	padding-left: 1.6666666666666666%; /* 20 / 1200 */
+	height: 342px;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader div.icons{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader div.icons div.iconState{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns{
+	display: inline-block;
+	float: right;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li button{
+	background:transparent;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li i{
+	font-size: 30px;
+	color: #666;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li.recommend button i.fa-heart{
+	display: none;
+}
+
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li.recommend button.selected i.fa-heart{
+	display: block;
+	color: #ef6767;
+}
+
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li.recommend button.selected i.fa-heart-o{
+	display: none;
+}
+
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li.like button.selected i{
+	color: #46bf68;
+}
+
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li.share button.selected i{
+	color: #3498db;
+}
+
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li p{
+	text-align: center;
+	color: #666;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader>p{
+	padding-bottom: 10px;
+	margin: 13px 0 15px;
+	font-weight: bold;
+	border-bottom: 1px solid #bbb;
+}
+
+main #comicDetailWrapper div.comicDetail div.infoDetail p{
+}
+
+main #comicDetailWrapper div.comicDetail div.infoDetail h2{
+}
+
+main #comicDetailWrapper div.comicDetail div.infoDetail p.authorAndgenre{
+	margin: 10px 0;
+	height: auto;
+}
+
+
+
+
+main #chapterListInfoWrapper{
+	width: 100%;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo{
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2.5% 0.8333333333333333%; /* 10 / 1200 */
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo div.freepassMenu{
+	margin-bottom: 10px;
+	text-align: right;
+	overflow: hidden;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.freepassMenu:after{
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.freepassMenu div.btnWrap{
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	width: 30%;
+	float: right;
+	overflow: hidden;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.freepassMenu div.btnWrap button:first-child{
+	float: left;
+}
+
+
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState div.coinState>div{
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState div.coinState label{
+	display: inline-block;
+	position: relative;
+	background: #46bf68;
+	border-radius: 3px;
+	
+	font-weight: bold;
+	color: #fff;
+	overflow: hidden;
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo div.chapterList{
+	text-align: right;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect{
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect button{
+	display: inline-block;
+	background: #46bf68;
+	border-radius: 3px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	overflow: hidden;
+	padding: 10px 20px;
+	vertical-align: middle;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect button span{
+	vertical-align: middle;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect button strong{
+	display: inline-block;
+	background: rgba(0,0,0,0.3);
+	padding: 7px 10px;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect i.coin{
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+p.gradeNoti{
+	position: relative;
+	display: inline-block;
+	background: #eee;
+	padding: 9px 20px;
+	border-radius: 3px;
+	margin-right: 5px;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+p.gradeNoti:after{
+	content: "";
+	display: block;
+	position: absolute;
+	background: url('../img/global_sprite.png') no-repeat -330px -193px;
+	width: 5px;
+	height: 9px;
+	top: 15px;
+	right: -5px;
+}
+
+
+
+/*main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState div.coinState div>span:last-child{
+	display: none;
+}
+*/
+
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState div.coinState label p{
+	float: left;
+	padding: 4px 10px;
+	margin-right: 3px;
+	color: #fff;	
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState div.coinState label p:after{
+	content: "";
+	display: block;
+	background: url('../img/global_sprite.png') no-repeat -318px -332px;
+	width: 16px;
+	height: 16px;
+	top: 5px;
+	right: 5px;
+	float: right;
+	margin-left: 5px;
+	margin-top: 1px;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState div.coinState label button{
+	float: right;
+	background: rgba(0,0,0,0.3);
+	height: 26px;
+	padding:0 10px;
+	font-size: 0.750em;
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState.myPage div.mypageContentWrapper div.myPageStatList1543 div.coinState div span:first-child{
+	color: #333;
+	font-size: 0.875em; /* 14px */
+	font-weight: bold;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState div.coinState div span:first-child strong{
+	color: #ff4b4b;
+}
+
+
+
+
+main #chapterListInfoWrapper div.chapterListInfo div.chapterList{
+	padding-right: 0.8333333333333333%; /* 10 / 1200 */
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter{
+	border-top: 2px solid #888;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li{
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	vertical-align: middle;
+	overflow: hidden;
+	text-align: justify;
+	padding: 0 10px;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li:hover{
+	background: #f5f5f5;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li a.chapterImg{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px 0;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li a.chapterImg img{
+	width: 160px;
+	border: 1px solid #ddd;
+
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chaperTitle{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.icons{
+	margin-top: 5px;
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chaperTitle a h3{
+	margin-bottom: 3px;
+	font-size: 1.250em; /* 20px */
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chaperTitle p.ellipsis{
+	font-size: 1em;
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li span.date{
+	margin-bottom: 3px;
+	margin-top: 10px;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -18px;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li.purchasedChapter div.chapterStat,
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li.freeChapter div.chapterStat{
+	margin-top: -7px;
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li.defaultStat a.chapterImg{
+	position: relative;
+
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li.defaultStat a.chapterImg:after{
+	font: normal normal normal 50px FontAwesome;
+	content: "\f023";
+	position: absolute;
+	top: 40px;
+	left: 66px;
+	color: #fff;
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li.defaultStat a.chapterImg:before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat>span{
+	margin-right: 10px;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat button{
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 5px;
+	height: 42px;
+	border-radius: 3px;
+	color: #666;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat button span{
+	vertical-align: middle;
+	margin-left: 3px;
+	color: #333;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat button i{
+	margin-left: 10px;
+}
+
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat span.chapterStatMsg{
+	color: #666;
+}
+
+main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat span.chapterStatMsg i{
+	margin-right: 5px;
+	color: #EF6767;
+}
+
+
+
+
+main #chapterListInfoWrapper div.chapterListInfo aside{
+	padding-left: 0.8333333333333333%; /* 10 / 1200 */	
+}
+
+
+
+/* 충전소 */
+div.userStatTotalInfo h2{
+	font-size: 1.4375em; /* 24px; */
+}
+
+div.userStatTotalInfo h2 strong{
+	margin-right: 5px;
+	color: #147EC5;
+}
+
+div.dashboard{
+	margin-top: 30px;
+	text-align: center;
+}
+
+div.dashboard section{
+	padding-left: 10px;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+
+div.dashboard section:first-child{
+	padding-left: 0;
+}
+
+div.dashboard section h3{
+	padding: 10px 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	color: #fff;
+	text-align: left;  
+	background: #5F5F5F;
+
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+div.dashboard section>div{
+	min-height: 150px;
+	padding-top: 37px;
+	color: #fff;
+	background: #484848;
+	font-family: 'Noto Sans Korean', sans-serif;
+	text-align: center;
+	
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+
+div.dashboard section>div>i{
+	display: inline-block;
+	padding: 18px;
+	width: 65px;
+	height: 65px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background: #B7B7B7;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 5px 7px 0px -1px rgba(0, 0, 0, 0.27);
+}
+
+
+
+div.dashboard section.gradeStat>div>span{
+	font-family: 'Noto Sans Korean', sans-serif;
+}
+
+
+
+
+div.dashboard section>div>i.fa-heart{
+	color: #ef6767;	
+	font-size: 1.875em; /* 30px */
+}
+
+div.dashboard section>div>i.fa-ticket{
+	color: #46bf68;	
+	font-size: 1.875em; /* 30px */
+}
+
+
+div.dashboard section>div>i.bigCoin:after{
+	content: "";
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url('../img/global_sprite.png') no-repeat -251px -328px;
+}
+
+div.dashboard section span{
+	display: inline-block;
+	font-size: 24px; 
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+div.dashboard section span strong{
+	font-family: 'Noto Sans Korean', sans-serif;
+	font-weight: normal;
+	font-size: 40px; 
+}
+
+div.dashboard section span em{
+	margin-left: 5px;
+	font-family: 'Noto Sans Korean', sans-serif;
+	font-size: 15px; 
+	font-style: normal;
+	vertical-align: middle;
+	color: #aaa;
+}
+
+
+div.purchaseTopImg{
+	padding: 40px 20px;
+	background: #eee;
+	border: 1px solid #e1e1e1;
+	text-align: center;
+}
+
+div.purchaseTopImg img{
+	display: inline-block;
+}
+
+section.purchaseCoin,
+section.purchaseMethod,
+section.purchaseInfo{
+	margin-bottom: 50px;
+}
+
+section.purchaseCoin h2,
+section.purchaseMethod h2,
+section.purchaseInfo h2{
+	font-size: 1.250em; /* 20px */
+	margin-bottom: 10px;
+}
+
+
+section.purchaseCoin a.bnrInviteFreind{
+	/*display: block;*/
+	display: none;
+	margin-top: 15px;
+}
+
+section.purchaseCoin a.bnrInviteFreind img:first-child{
+	display: block;
+}
+
+section.purchaseCoin a.bnrInviteFreind img:last-child{
+	display: none;
+}
+
+section.purchaseCoin table{
+	margin-top: 15px;
+	width: 100%;
+	border-color: #999;
+}
+
+section.purchaseCoin table th{
+	background: #f9f9f9;
+}
+
+section.purchaseCoin table tr:last-child th{
+	border-bottom: 0 none;
+}
+
+section.purchaseCoin table td{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+section.purchaseCoin table td label{
+	margin: 0 !important;
+	padding: 20px;
+}
+
+section.purchaseCoin table td label:hover{
+	background: #f5f5f5;
+}
+
+section.purchaseCoin table td span.saleInfo{
+	/*display: inline-block;*/
+	display: none;
+	float: right;
+	font-weight: bold;
+}
+
+section.purchaseCoin table td label{
+	font-size: 14px;
+}
+
+section.purchaseCoin table td i.fa-chevron-right,
+section.purchaseCoin table td i.fa-plus{
+	font-size: 0.75em;  /* 12px */
+	margin: 0 5px;
+}
+
+section.purchaseCoin table td label{
+	color: #555;
+}
+
+section.purchaseCoin table td span.price{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.125em;
+	color: #333;
+}
+
+
+
+
+
+section.purchaseMethod ul li{
+	padding:  0.4166666666666667%; /* 5 / 1200 */
+}
+
+section.purchaseMethod ul li button{
+	display: block;
+	width: 100%;
+	padding: 15px 0;
+	border:1px solid #333;
+	border-radius: 30px;
+}
+
+section.purchaseMethod ul li button:hover,
+section.purchaseMethod ul li button:active{
+	background: #333;
+	color: #fff;
+}
+
+
+section.purchaseMethod ul li button i{
+	margin-right: 5px;
+	vertical-align: middle;
+	font-size: 1.125em;
+}
+
+
+section.purchaseInfo ul li button{
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+div.defaultContentWrapper div.textboxArea{
+	height: 500px;
+	margin: 10px 0 20px;
+}
+
+
+
+
+/* 마이페이지 */
+
+
+
+div.dashboard.myPageDash section.heartStat div div.deleteSoon{
+	display: none;
+	width: 70%;
+	height: 30px;
+	margin: 17px auto 0;
+	border-radius: 3px;
+	background: rgba(255,255,255,0.2);
+	overflow: hidden;
+}
+
+div.dashboard.myPageDash section.heartStat div div.deleteSoon h4{
+	display: block;
+	float: left;
+	height: 32px;
+	color: #333;
+	font-size: 0.875em; /* 14px */
+	overflow: hidden;
+	padding: 5px 10px;
+	background: rgba(255,255,255,0.3);
+}
+
+div.dashboard.myPageDash section.heartStat div div.deleteSoon span{
+	font-weight: bold;
+	font-size: 0.875em; /* 14px */	
+}
+
+
+.myPage ul.topSideTab{
+	margin: 10px 0 30px;
+}
+
+
+.myPage div.mypageContentWrapper div.mypageLNB{
+	padding-right: 2.5%; /* 30 / 1200 */
+}
+
+
+.myPage div.mypageContentWrapper div.mypageLNB ul{
+
+	
+}
+
+.myPage div.mypageContentWrapper div.mypageLNB ul>li>a i{
+	margin-right: 5px;
+	font-size: 0.75em; /* 12px */
+}
+
+.myPage div.mypageContentWrapper div.myPageSort{
+	overflow: hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageSort span{
+}
+
+.myPage div.mypageContentWrapper div.myPageSort span strong{
+	color: #ef6767;
+}
+
+.myPage div.mypageContentWrapper div.myPageSort>div{
+	display: inline-block;
+	float: right;
+}
+
+.myPage div.mypageContentWrapper div.myPageSort>div button{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.myPage div.mypageContentWrapper div.myPageSort ul{
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.myPage div.mypageContentWrapper div.myPageSort ul li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.myPage div.mypageContentWrapper div.myPageSort ul li a{
+	font-size: 	0.813em;
+	color: #666;
+}
+
+.myPage div.mypageContentWrapper div.myPageSort ul li.selected a{
+	color: #f10f0f;
+	font-weight: bold;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList{
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li{
+	padding: 15px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li{
+	position: relative;
+	overflow: hidden;
+	border:1px solid #ddd;
+	border-top: 0 none;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li:first-child,
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li:nth-child(2){
+	border-top: 1px solid #ddd;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li:nth-child(even){
+	border-left: 0 none;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li img{
+	display: inline-block;
+	float: left;
+	width: 120px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li a{
+	font-weight: bold;	
+	margin-left: 10px;
+	margin-bottom: 5px;
+	width: calc( 100% - 130px );
+	float: left;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li a.comicDealDetail{
+	display: inline-block;
+	font-weight: normal;	
+	width: auto;
+	font-size: 0.813em; /* 13px */
+	color: #666;
+	float: none;
+}
+
+
+
+.chapterTitle{
+	font-size: 0.875em !important;
+	font-weight: bold;
+}
+
+
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li p.chapterTitle{
+	margin-bottom: 5px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li p.titleStat{
+	margin-bottom: 5px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li p,
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li span{
+	display: block;
+	margin-left: 130px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li button.btnDeleteChpter{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	padding-left: 5px;	
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li button.btnDeleteChpter i{
+	font-size: 1.5em; /* 24px */
+	color: #ff4b4b;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li button.btnNextChapter,
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li button.btnSeeDetail{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li button.btnNextChapter i{
+	font-size: 0.750em; /* 12px */
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList table{
+	width: 100%;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList table thead tr th,
+.myPage div.mypageContentWrapper div.myPageStatList table tbody tr td{
+	text-align: center;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList table tbody tr:hover{
+	background: #f5f5f5;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList table tbody tr td:first-child{
+	width: 5%;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList table tbody tr td.chapterTitle{
+	width: 40%;
+	text-align: left;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList table tbody tr td.chapterTitle a:hover{
+	color: #555;
+	text-decoration: underline;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList table tbody tr td.dueTime{
+	width: 20%;
+	text-align: left;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList table tbody tr td span.hPlus{
+	color: #46bf68;
+	font-weight: bold;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList table tbody tr td span.hMinus{
+	color: #ef6767;
+	font-weight: bold;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList div.btnWrap{
+	text-align: right;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList div.btnWrap button{
+	width: 20%;
+	margin: 0;
+}
+
+
+.customerCenter div.header1to1{
+	display: none;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList{
+	border: 1px solid #ddd;
+	padding: 20px;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList li{
+	padding: 1.0638297872340425%; /* 10 / 940 */
+}
+
+/*.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList li div.favIcon{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	padding-top: 9px;
+	border-radius: 50%;
+	top: -10px;
+	right: -10px;
+	background: #5A5A5A;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList li div.favIcon i{
+	font-size: 1.438em;
+	color: #FFCD00;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList li div.favIcon i.fa-times{
+	display: none;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList li div.card:hover div.favIcon i.fa-times{
+	display: inline-block;
+	color: #fff;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList li div.card:hover div.favIcon i.fa-star{
+	display: none;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList.bookmark li div.card div.favIcon i.fa-times{
+	display: inline-block !important;
+	color: #ff4b4b;
+}
+*/
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList li a.deleteIt{
+	font-size: 14px;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList{
+	border: 1px solid #ddd;
+	background: #eee;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList>li{
+	padding: 1.0638297872340425%; /* 10 / 940 */
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon{
+	background: #fff;
+	border-radius: 13px;
+	overflow: hidden;
+	box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.05);
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon>div{
+	float: left;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponHeader{
+	position: relative;
+	width: 40%;
+	padding: 10px;
+	min-height: 170px;
+	max-height: 200px;
+	text-align: center;1
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponHeader div:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponHeader h4{
+	height: 20px;
+	display: inline-block;
+	font-size: 0.750em; /* 12px */
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponHeader span{
+	display: inline-block;
+	background: #eee;
+	color: #333;
+	padding: 5px 10px;
+	border-radius: 20px;
+	font-size: 0.750em; /* 12px */
+	font-weight: bold;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponHeader a{
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 0.750em; /*  */
+	color: #666;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponHeader p{
+	text-align: center;
+	margin-top: 5px;
+	color: #ff4b4b;
+	font-weight: 300;
+	font-size: 3.125em; /* 50px */
+	font-family: 'Noto Sans Korean', sans-serif;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon.coinCoupon div.couponHeader h4 i.coin{
+	content: "";
+	display: inline-block;
+	margin-left: 2px;
+	padding: 10px;
+	background: url('../img/global_sprite.png') no-repeat -292px -332px;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponCon a{
+	display: block;
+	height: 100%;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponCon{
+	width: 60%;
+	padding: 5px;
+	border-left: 1px dashed #ccc;
+	min-height: 170px;
+	max-height: 200px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponCon h3{
+	font-size: 1.250em; /* 20px */
+	padding:10px 10px 0 10px;
+}
+
+
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponCon ul.infoBoard{
+	border:0 none;
+	padding-top: 5px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponCon ul.infoBoard li{
+	font-size: 0.813em; /* 13px */
+	color: #666;
+	padding: 0;
+}
+
+
+.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo{
+	padding: 20px 10px;
+	background: #f5f5f5;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+}
+
+/*.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo dt,
+.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo label{
+	width: 130px;
+	font-size: 13px;
+	margin-top: 5px;
+	padding: 10px 0;
+}*/
+
+
+.myPage div.mypageContentWrapper div.myPageStatList form dl{
+	margin-bottom: .5em;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList form dl dt{
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    width: 12em;
+    margin: 0 1em 0 0;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList form dl dd{
+	display: inline-block;
+	font-weight: bold;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList section.purchaseInfo{
+	margin-top: 30px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo div.daWrapper{
+	margin: 0 auto;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo div.selectBox{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo textarea{
+	display: block;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo div.placeholder{
+	background: #fff;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo div.placeholder input{
+	height: 44px;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo input#pwAgain{
+	border-top:  0 none;
+}
+
+.myPage div.mypageContentWrapper div.myPageStatList div.paySelect label{
+	display: inline-block !important;
+	padding: 0 30px 0 10px;
+}
+
+.myPage div.mypageContentWrapper div.btnWrap{
+	margin-top: 20px;
+}
+
+/* 고객센터 */
+
+.customerCenter div.customerMenu{
+	padding-right: 1.6666666666666666%; /* 20 / 1200 */
+}
+
+
+.customerCenter div.customerMenu div.telNumber{
+	margin-top: 10px;
+	padding: 15px;
+	border: 1px solid #3E3E3E;
+	background: #585858 !important;
+	border-radius: 3px;
+}
+
+.customerCenter div.customerMenu div.telNumber div{
+	margin: 20px 0;
+	text-align: center;
+}
+
+.customerCenter div.customerMenu div.telNumber div img{
+	display: inline-block;
+	text-align: center;
+}
+
+.customerCenter div.customerMenu div.telNumber section h2{
+	font-size: 1em; /* 16px */
+	color: #ddd;
+}
+
+.customerCenter div.customerMenu div.telNumber section address{
+	margin-bottom: 5px;
+	font-size: 	1.125em; /* 18px */
+	font-style: normal;
+	font-weight: bold;
+	font-family: 'Noto Sans Korean', sans-serif;
+	color: #fff;
+}
+
+.customerCenter div.customerMenu div.telNumber section p{
+	margin-bottom: 3px;
+	color: #ddd;
+}
+
+.customerCenter div.customerMenu div.telNumber section p i{
+	margin-right: 3px;
+	font-size: 0.375em; /* 8px */
+	color: #aaa;
+}
+
+.customerCenter div.customerContent div.btnWrap{
+	margin-top: 10px;
+	text-align: right;
+}
+
+.customerCenter div.customerContent div.btnWrap button{
+	width: auto;
+	margin-right: 0;
+	margin-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.customerCenter div.customerContent ul.noticeBox{
+	border-color: #888;
+}
+
+.customerCenter div.customerContent ul.noticeBox span.date{
+	display: inline-block;
+}
+
+.customerCenter div.customerContent ul.noticeBox span.date:before{
+	content: "";
+	display: inline-block;
+	background: url('../img/global_sprite.png') no-repeat -337px -18px;
+	width: 21px;
+	height: 14px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.customerCenter div.customerContent section.faq{
+	margin-top: 20px;
+}
+
+.customerCenter div.customerContent section.faq h2{
+	font-size: 1.375em; /* 22px */
+	margin-bottom: 10px;
+}
+
+
+.customerCenter div.customerContent section.faq strong.qMark,
+.customerCenter div.customerContent section.faq strong.aMark{
+	margin-right: 5px;
+	display: inline-block;
+	font-family: 'Noto Sans Korean', sans-serif;
+}
+
+.customerCenter div.customerContent section.faq strong.qMark{
+	color: #ff4b4b;
+}
+
+.customerCenter div.customerContent section.faq strong.aMark{
+	color: #4561CC;
+	display: block;
+}
+
+.customerCenter div.customerContent section.faq div.gotoQnaBox{
+	margin-top: 30px;
+	padding-top: 10px;
+	border-top: 1px solid #bbb;
+}
+
+.customerCenter div.customerContent section.faq div.gotoQnaBox p{
+	display: inline-block;
+	font-weight: bold;
+	color: #333;
+}
+
+.customerCenter div.customerContent section.faq div.gotoQnaBox button{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 10px;
+}
+
+.customerCenter div.customerContent div.header1to1 div{
+	display: inline-block;
+	padding: 0 0 15px;
+	overflow: hidden;
+}
+
+.customerCenter div.customerContent div.header1to1 div h3{
+	font-size: 	1.125em; /* 18px */
+	margin-bottom: 3px;
+}
+
+.customerCenter div.customerContent div.header1to1 button{
+	width: 100%;
+}
+
+
+
+
+
+/* 코믹딜 */
+
+
+div.comicdealHeader{
+	background: #555;
+}
+
+div.comicdealHeader>div p{
+	color: #fff;
+	font-family: 'Noto Sans Korean', sans-serif;
+	text-align: center;
+	font-size: 1.5625em; /* 25px */
+}
+
+div.comicdealHeader>div p.saleTitle{
+	margin-bottom: 20px;
+	color: #ffe168;
+	font-weight: 800;
+	font-size: 1.625em; /* 26px */
+}
+
+div.comicdealHeader>div p.saleTitle span,
+div.comicdealHeader>div p.saleTitle strong{
+	font-family: 'Noto Sans Korean', sans-serif;	
+}
+
+div.comicdealHeader>div p.saleTitle span{
+	font-size: 32px;
+}
+
+div.comicdealHeader>div p.saleTitle strong{
+	
+	font-size: 15px;
+	margin: 0 3px;
+}
+
+div.comicdealHeader>div img{
+	margin: 0 auto 20px;
+}
+
+
+
+ul.comicDealList{
+	margin-top: 30px;
+}
+
+ul.comicDealList.dealEnd li a div.xRate{
+	display: none;
+}
+
+ul.comicDealList.dealEnd li a{
+	background: #000;
+}
+
+
+ul.comicDealList.dealEnd li a:before{
+	position: absolute;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	z-index: 102;
+}
+
+ul.comicDealList li div.comicDealSide{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+ul.comicDealList li:nth-child(odd) div.comicDealSide{
+	margin-right: 10px;
+}
+
+ul.comicDealList li:nth-child(even) div.comicDealSide{
+	margin-left: 10px;
+}
+
+ul.comicDealList li div.comicDealSide h3,
+ul.comicDealList li div.comicDealSide p.saleTime{
+	margin: 0;
+	padding: 15px;
+}
+
+
+ul.comicDealList li div.comicDealSide div.saleInfo{
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+
+ul.comicDealList li div.comicDealSide div.saleInfo p.saleTime{
+	float: left;
+	border-bottom: 0 none;
+}
+
+ul.comicDealList li div.comicDealSide div.saleInfo p.saleAmount{
+	float: right;
+	margin-right: 15px;
+	padding-top: 15px;
+}
+
+
+ul.comicDealList li div.comicDealSide a{
+	display: block;
+	position: relative;
+}
+
+ul.comicDealList li div.comicDealSide a div.sale{
+	position: absolute;
+	width: 300px;
+	left: 10px;
+	bottom: 10px;
+	z-index: 101;
+}
+
+ul.comicDealList li div.comicDealSide a div.icons{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	z-index: 101;
+	text-align: right;
+}
+
+ul.comicDealList li div.comicDealSide a div.icons>div{
+	border-radius: 50%;
+	background: #fff;
+	font-weight: bold;	
+}
+
+ul.comicDealList li div.comicDealSide a div.icons div.saleIcon,
+ul.comicDealList li div.comicDealSide a div.icons div.timeOver{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	font-size: 1.063em; /* 17px */
+	margin-left: 5px;
+}
+
+ul.comicDealList li div.comicDealSide a div.icons div.saleIcon p,
+ul.comicDealList li div.comicDealSide a div.icons div.timeOver p,
+ul.comicDealList li div.comicDealSide a div.icons div.soldOut p{
+	font-family: 'Noto Sans Korean', sans-serif;
+	text-align: center;
+	margin-top: 23px;
+}
+
+ul.comicDealList li div.comicDealSide a div.icons div.soldOut{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 102px;
+	height: 102px;
+	text-align: center;
+}
+
+ul.comicDealList li div.comicDealSide a div.icons div.soldOut:before{
+	content: "";
+	display: inline-block;
+	width: 56px;
+	height: 53px;
+	margin-top: 12px;
+	background: url('../img/global_sprite.png') no-repeat -349px -427px;
+}
+
+ul.comicDealList li div.comicDealSide a div.icons div.saleIcon p{
+	color: #ff4b93;
+}
+
+ul.comicDealList li div.comicDealSide a div.icons div.timeOver p{
+	color: #f04848;
+}
+
+ul.comicDealList li div.comicDealSide a div.icons div.soldOut p{
+	margin-top: 0;
+	color: #f04848;
+}
+
+
+
+  
+
+/*****************************************************미디어쿼리**********************************************************/
+
+
+
+
+/* ≥ 1024px pure-u-lg */
+@media screen and (max-width:1024px){
+	div.infoDetail h2{
+		font-size: 1.250em;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.infoDetail p{
+	font-size: 0.875em;
+	height: auto;
+	}
+
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader>p {
+    margin: 10px 0 12px;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.infoDetail p.authorAndgenre {
+    margin: 5px 0;
+	}
+
+	.customerCenter div.customerMenu div.telNumber section address {
+    font-size: 1.125em; /* 18px */
+	}
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo{
+		height: 295px;
+	}
+
+	ul.comicDealList li div.comicDealSide h3, 
+	ul.comicDealList li div.comicDealSide p.saleTime{
+		font-weight: bold;
+	}
+
+}
+
+
+
+/* ≥ 980px pure-u-md */
+@media screen and (max-width:980px){
+
+
+	main #chapterListInfoWrapper div.chapterListInfo aside{
+    padding-left: 0;
+    overflow: hidden;
+    padding: 2.6041666666666668%; /* 20 / 768 */
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo aside section{
+		display: block;
+		float: left;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo aside section.comicDealSide,
+	main #chapterListInfoWrapper div.chapterListInfo aside section.relatedEvent{
+		width: 49.5%;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo aside section.comicDealSide{
+		margin-right: 0.5%;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo aside section.relatedEvent{
+		margin-left: 0.5%;
+	}
+
+	main div#comicListArea div.joy50 ul#rank4to6 li.fourth img.tn11,
+	main div#comicListArea div.joy50 ul#rank4to6 li.fifth img.tn11,
+	main div#comicListArea div.joy50 ul#rank4to6 li.sixth img.tn11{
+		display: block;
+	}
+
+	main div#comicListArea div.joy50 ul#rank4to6 li.fourth img.tn12,
+	main div#comicListArea div.joy50 ul#rank4to6 li.fifth img.tn12,
+	main div#comicListArea div.joy50 ul#rank4to6 li.sixth img.tn12{
+		display: none;
+	}
+
+	main #comicDetailWrapper div.comicDetail{
+		padding: 0; 
+	}
+	
+	main #comicDetailWrapper div.comicDetail div.detailInfo{
+		position: relative;
+		padding: 2.6041666666666668%; /* 20 / 768 */
+		height: auto;
+
+	}
+
+	main #comicDetailWrapper div.comicDetail div.btnWrap{
+		margin-top: 1em;
+		position: relative;
+		width: 100%;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.btnWrap button.readChapter1{
+		width: 66%;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo{
+		padding: 0;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo div.chapterList{
+		margin-top: 40px;
+		padding-right: 0;
+	}
+
+
+	 main div.defaultContentWrapper div.defaultContent{
+	    padding: 2.6041666666666668%; /* 20 / 768 */
+	 }
+
+	.customerCenter div.customerMenu{
+		padding: 0;
+	}	
+
+
+
+	.customerCenter div.customerMenu div.telNumber{
+
+	}
+
+	.customerCenter div.customerMenu div.telNumber div,
+	.customerCenter div.customerMenu div.telNumber section{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.customerCenter div.customerMenu div.telNumber div{
+		margin: 0;
+	}
+
+	.customerCenter div.customerMenu div.telNumber section{
+		margin-left: 30px;
+		text-align: left;
+	}
+
+	.customerCenter div.customerContent section.faq div.gotoQnaBox button{
+		margin: 10px 0 0 0;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponHeader{
+		position: relative;
+		padding: 10px;
+		width: 100%;
+		min-height: auto;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponCon{
+		width: 100%;
+		border-left: 0 none;
+		border-top: 1px dashed #ccc;
+		min-height: auto;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponCon h3{
+		font-size: 1em;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponCon ul.infoBoard li{
+		font-size: 0.750em;
+	}
+
+	div.dashboard section>div{
+		padding-top: 15px;
+	}
+
+	div.dashboard section>div>i{
+		display: block;
+	}
+
+	div.dashboard section span strong{
+		font-size: 30px; 
+	}
+
+	div.dashboard section span{
+		margin-top: 
+	}
+
+	div.dashboard.myPageDash section.heartStat div div.deleteSoon{
+		width: 80%;
+		height: 30px;
+		margin: 5px auto 0;
+	}
+
+	div.dashboard.myPageDash section.heartStat div div.deleteSoon h4{
+		
+	}
+
+	.myPage div.mypageContentWrapper div.mypageLNB{
+		padding-right: 0;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageSort{
+		overflow: hidden;
+		margin: 30px 0 10px;
+	}
+
+
+	.myPage div.mypageContentWrapper div.myPageStatList table{
+		margin-top: 30px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList{
+		margin-top: 20px;
+	}
+
+
+	main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect{
+		margin-right: 10px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.selectPay{
+		overflow: hidden;
+		background: #eee;
+		float: none;
+		display: block;
+	}
+
+
+	main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.selectPay button{
+		width: 50%;
+		float: left;
+		padding: 15px 0;
+		background: #ccc;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.selectPay button.selected{
+		position: relative;
+		border-radius: 0;
+		background: none;
+		background: #eee;
+		border-top: 2px solid #3498db;
+		color: #333;
+	}
+
+
+	main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect input[type="checkbox"]{
+		display: none;
+	}
+
+
+	main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState div.coinState{
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect div.payState{
+		padding: 20px 15px;
+	}
+
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter{
+		border-top: 1px solid #333;
+	}
+
+
+	
+	ul.comicDealList li div.comicDealSide a div.icons{
+
+	}
+
+	ul.comicDealList li div.comicDealSide a div.sale{
+		position: relative;
+		width: 100%;
+		background: #fff;
+		left: 0;
+		bottom: 0;
+		border-bottom: 1px solid #ddd;
+	}
+
+	ul.comicDealList li div.comicDealSide a div.icons{
+
+	}
+
+	ul.comicDealList li div.comicDealSide a div.icons>div{
+		border-radius: 0;
+		font-weight: normal;
+	}
+
+	ul.comicDealList li div.comicDealSide a div.icons div.saleIcon, 
+	ul.comicDealList li div.comicDealSide a div.icons div.timeOver{
+		width: 70px;
+		height: 23px;
+		margin-left: 0;
+
+		border-radius: 20px;
+	}
+
+	ul.comicDealList li div.comicDealSide a div.icons div.saleIcon p, 
+	ul.comicDealList li div.comicDealSide a div.icons div.timeOver p,
+	ul.comicDealList li div.comicDealSide a div.icons div.soldOut p{
+		margin-top: 0;
+		font-size: 0.875em; /* 14px */
+	}
+
+	ul.comicDealList li div.comicDealSide a div.icons div.soldOut{
+		position: relative;
+		display: inline-block;
+		bottom: auto;
+		right: auto;
+		width: 70px;
+		height: 23px;
+		border-radius: 20px;
+	}
+
+	ul.comicDealList li div.comicDealSide a div.icons div.soldOut:before{
+		display: none;
+	}
+
+	div.comicdealHeader>div img{
+		width: 55%;
+	}
+
+
+}
+
+
+/* ≥ 680px pure-u-sm */
+@media screen and (max-width: 740px){
+
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:first-child,
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(9),
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(17),
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(25){
+		display: none;
+	}
+
+
+/*	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:first-child div p,
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(9) div p,
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(17) div p,
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(25) div p{
+		font-size: 14px;
+	}
+
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:first-child div p:before,
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(9) div p:before,
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(17) div p:before,
+	main div#comicListArea div.joy50 ul#rank23to50 li.rank2350:nth-child(25) div p:before{
+		font: normal normal normal 14px/1 FontAwesome;
+		content: "\f105";
+		display: inline-block;	
+		text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    margin-right: 5px;
+	    
+	}
+*/
+
+	main div#comicListArea div.joy50 ul#rank1to3 li.second img.tn12,
+	main div#comicListArea div.joy50 ul#rank1to3 li.third img.tn12{
+		display: none;
+	}
+
+	main div#comicListArea div.joy50 ul#rank1to3 li.second img.tn11,
+	main div#comicListArea div.joy50 ul#rank1to3 li.third img.tn11{
+		display: block;
+	}
+
+
+
+	main #chapterListInfoWrapper div.chapterListInfo aside section.comicDealSide,
+	main #chapterListInfoWrapper div.chapterListInfo aside section.relatedEvent{
+		width: 100%;
+	}
+
+	main #comicDetailWrapper div.comicDetail{
+	}
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader{
+		position: relative;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #aaa;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader>p{
+		position: absolute;
+		border-bottom: 0 none;
+		margin: 0;	
+		bottom: 0;
+	}
+
+
+	p.gradeNoti{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 5px;
+		margin-right: 0;
+		font-size: 14px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo div.paymentSelect button{
+		width: 49%;
+		font-size: 14px;
+	}
+
+	p.gradeNoti:after{
+		display: none;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader div.icons{
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat{
+		top: inherit;
+		bottom: 10px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li.purchasedChapter div.chapterStat, 
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li.freeChapter div.chapterStat{
+		margin-top: 0;
+		bottom: 10px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat button{
+		font-size: 13px;
+		height: auto;
+		padding: 5px 10px;
+		margin-left: 0;
+		border-radius: 20px;
+		border-color: #ccc;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat button i{
+		margin-left: 3px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat>span{
+		margin-right: 0;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chapterStat span.chapterStatMsg{
+		font-size: 13px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns{
+		float: right;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li{
+		display: inline-block;
+		margin: 0 5px;
+		padding: 5px 0;
+		text-align: center;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.detailInfo div.infoHeader ul.socialBtns li i{
+		font-size: 24px;
+	}
+
+	main #comicDetailWrapper div.comicDetail div.infoDetail p.authorAndgenre {
+   		margin: 10px 0;
+	}
+
+	div.infoDetail h2{
+		font-size: 1.125em;
+		font-weight: bold;
+	}
+
+
+	main #chapterListInfoWrapper div.chapterListInfo div.chapterList{
+		margin-top: 10px;
+	}
+
+
+	main #chapterListInfoWrapper div.chapterListInfo{
+		margin-top: 20px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li.defaultStat a.chapterImg:after{
+		top: 22px;
+    	left: 44px;
+	}
+
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chaperTitle{
+		vertical-align: top;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chaperTitle a{
+		display: inline-block;
+		margin-top: 10px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li span.date{
+		display: block;
+		margin-top: 0;
+	}
+
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chaperTitle a h3{
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.chaperTitle p.ellipsis{
+		font-size: 14px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li div.icons{
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo ul.chapter li a.chapterImg img{
+		width: 120px;
+	}
+
+	main #chapterListInfoWrapper div.chapterListInfo div.freepassMenu div.btnWrap{
+		width: 100%;
+		padding: 0 3.125%; /* 10 / 320 */
+	}
+
+	.customerCenter div.customerMenu div.telNumber div{
+		display: inline-block;
+    	width: 30%;
+	}
+
+
+	.customerCenter div.header1to1{
+		margin-top: 10px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList div.btnWrap{
+		text-align: center;
+	}
+
+	.customerCenter div.customerContent div.header1to1 div h3{
+		font-size: 0.938em; /* 15px */
+		font-weight: bold;
+	}
+
+	.customerCenter div.customerContent .writeForm div.btnWrap button{
+		width: 30%;
+	}
+
+	main div#comicListArea div.joy50 ul.topRank li div.card a.tContent div.icons p.rank{
+		right: 2px;
+	}
+
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.couponList{
+		padding: 10px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponHeader{
+		width: 40%;
+	    min-height: 170px;
+	    max-height: 200px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.couponList li div.coupon div.couponCon{
+		width: 60%;
+	    border-left: 1px dashed #ccc;
+	    border-top: 0 none;
+	    min-height: 170px;
+	}
+
+
+	.myPage div.mypageContentWrapper div.myPageStatList div.btnWrap button{
+		width: 100%;
+	}
+
+
+	div.dashboard {
+	    margin-top: 12px;
+	}
+
+	div.userStatTotalInfo h2 {
+	    font-size: 1.063em;
+	}
+
+	div.dashboard section{
+		padding-left: 0;
+	}
+
+	div.dashboard section:first-child, div.dashboard section:nth-child(3){
+		padding: 0;
+	}
+
+	div.dashboard section h3{
+		display: none;
+	}
+
+	div.dashboard section>div{
+		background: none;
+		min-height: 130px;
+	}
+
+	div.dashboard section div{
+		padding-top: 30px;
+		overflow: hidden;
+	}
+
+	div.dashboard section span{
+		vertical-align: top;
+	}
+
+	div.dashboard section.heartStat span{
+		display: inline-block;
+		
+		margin-top: 5px;
+	}
+
+	div.dashboard section span strong{
+		font-size: 15px;
+		color: #333;
+	}
+	
+	div.dashboard.myPageDash section.heartStat div div.deleteSoon span{
+		margin-left: 0;
+		margin-top: 12px;
+		font-size: 12px;
+	}
+
+	div.dashboard.myPageDash section.heartStat div div.deleteSoon span:before{
+		content: "/-"
+	}
+	
+	div.dashboard section>div{
+	}
+
+	div.dashboard section>div>i{
+		padding: 13px;
+	    width: 55px;
+	    height: 55px;
+	    box-shadow: 2px 3px 0px -1px rgba(0, 0, 0, 0.1);
+	    border: 1px solid #ECECEC;
+	    background: #fff;
+	}
+
+	div.dashboard section:not(.heartStat)>div{
+		padding-top: 30px;
+	}
+
+	div.dashboard.myPageDash section.heartStat div div.deleteSoon{
+		display: inline-block;
+		background: none;
+		overflow: inherit;
+		width: auto;
+		padding-top: 0;
+	}
+
+	div.dashboard.myPageDash section.heartStat div div.deleteSoon h4{
+		display: none;
+	}
+
+	div.dashboard.myPageDash section.heartStat div div.deleteSoon span{
+		color: #333;
+	}
+
+	div.dashboard section:first-child,
+	div.dashboard section:nth-child(3){
+		padding-right: 2px;
+	}
+
+	div.dashboard section:nth-child(2),
+	div.dashboard section:nth-child(4){
+		padding-left: 2px;
+	}
+
+	div.dashboard section span{
+		margin-top: 5px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList form dl dt{
+		width: 1em;
+	}
+
+	.myPage div.mypageContentWrapper div.mypageLNB ul li:first-child,
+	.myPage div.mypageContentWrapper div.mypageLNB ul li:nth-child(2){
+		border-bottom: 1px solid #ddd;
+	}
+
+	.myPage div.mypageContentWrapper div.mypageLNB ul li:nth-child(2){
+		border-right: 0 none;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList{
+		margin-top: 0;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageSort{
+		margin: 30px 0 0;
+	}
+
+	.myPage div.mypageContentWrapper form.changeInfo div.placeholder input{
+		margin-bottom: 0;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList div.btnWrap button.btnGotoPlist{
+		width: 49%;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList.coinHistory,
+	.myPage div.mypageContentWrapper div.myPageStatList.heartHistory,
+	.myPage div.mypageContentWrapper div.myPageStatList.purchasedChapter{
+		width: 100%;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList.coinHistory table,
+	.myPage div.mypageContentWrapper div.myPageStatList.purchasedChapter table{
+		width: 200%;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList.heartHistory table{
+		width: 120%;
+	}
+
+	div.paySelect{
+		margin-top: 20px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageSort{
+		    margin: 30px 0 10px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList li div.favIcon{
+		position: absolute;
+	    width: 30px;
+	    height: 30px;
+	    padding-top: 4px;
+		top: 3px;
+   		right: 3px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.bookTnList li div.favIcon i{
+		font-size: 18px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li img{
+		width: 75px;
+		margin-right: 10px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li a{
+		width: auto;
+		display: block;
+		float: none;
+		margin-left: 0;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li p.chapterTitle{
+		float: none;
+	}
+
+
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li p, 
+	.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li span{
+		margin-left: 0;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li:nth-child(even){
+		border-left: 1px solid #ddd;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList ul.bookList li:nth-child(2){
+		border-top: 0 none;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageSort>div{
+		text-align: left;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageSort>div button{
+		margin-top: 10px;
+    	width: 50%;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageSort span{
+		display: block;
+		margin-bottom: 10px;
+	}
+
+
+	.myPage div.mypageContentWrapper div.myPageSort{
+		    margin: 30px 0 0;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageSort>div{
+		display: block;
+		float: none;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageSort>div button{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo dt,
+	.myPage div.mypageContentWrapper div.myPageStatList form.changeInfo label{
+		display: inline-block;
+		width: auto;
+	}
+
+
+
+
+	section.purchaseMethod ul li button{
+	    padding: 12px 0;
+	    margin: 3px 0;
+	}
+
+
+	section.purchaseCoin a.bnrInviteFreind img:first-child{
+		display: none;
+	}
+
+	section.purchaseCoin a.bnrInviteFreind img:last-child{
+		display: block;
+	}
+
+	section.purchaseCoin table td label{
+		font-size: 13px;
+	}
+
+	section.purchaseCoin table td span.saleInfo{
+		/*display: block;*/
+		display: none;
+		background: #f1f1f1;
+	    padding: 3px 20px;
+	    border-radius: 15px;
+	    margin: 10px 0;
+	}
+
+
+	div.comicdealHeader>div p{
+		font-size: 	1.063em; /* 17px */
+    	margin-top: 18px;
+	}
+
+	div.comicdealHeader>div p.saleTitle{
+		font-size: 	1.063em; /* 17px */
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
+	div.comicdealHeader>div p.saleTitle span{
+		font-size: 1.625em; /* 26px */
+	}
+
+	div.comicdealHeader>div img{
+		width: 77%;
+	}
+
+	ul.comicDealList li:nth-child(even) div.comicDealSide{
+		margin-left: 0;
+	}
+
+	ul.comicDealList li:nth-child(odd) div.comicDealSide{
+		margin-right: 0;
+	}
+
+	ul.comicDealList li div.comicDealSide div.saleInfo p.saleTime{
+		float: none;
+	}
+
+	ul.comicDealList li div.comicDealSide div.saleInfo p.saleAmount{
+		float: none;
+	}
+
+	
+	ul.comicDealList li div.comicDealSide p.saleTime{
+		padding: 10px 10px 3px
+	}
+	ul.comicDealList li div.comicDealSide div.saleInfo p.saleAmount{
+		padding: 3px 10px 10px;
+	}
+
+	ul.comicDealList li div.comicDealSide h3{
+		padding: 10px;
+	}
+
+	ul.comicDealList li div.sale p:first-child span{
+		font-size: 2.1875em; /* 25px */
+	}
+
+	ul.comicDealList li div.sale p:last-child span:last-child{
+		font-size: 1.125em; /* 18px */
+	}
+
+	div.beta p{
+		font-size: 15px;
+	}
+
+	div.dashboard section.gradeStat>div>span{
+		color: #333;
+		font-size: 15px;
+	}
+
+}

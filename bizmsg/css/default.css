@@ -1,0 +1,506 @@
+
+div#wrapper{
+	width:100%;
+	height:100%;
+	position: relative;
+	z-index: 1;
+	background: #ddd;
+	color:#484848;
+}
+
+/* 상단 제목 */
+div.top{
+	position:relative;
+	height:9.1%;
+	width:100%;
+	background:#497adc;
+	color:#fff;
+	z-index: 1;
+
+	/* h1 수직, 수평 정렬 */
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-webkit-justify-content:center;
+	justify-content:center;
+
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+div.top h1{
+	font-size: 1.5em;
+}
+
+
+/* 슬라이드 */
+div.content{
+	position: relative;
+	overflow-x:hidden;
+	overflow-y:auto;
+	width:100%;
+	min-height:75.3%;
+	max-height:75.3%;
+	background: #ededed;
+}
+
+div.content>div{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding:3.7%;	
+}
+
+div.content>div>div,
+div.content>div>ul{
+	border: 1px solid #bcbcbc;
+	background:#fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+/* 슬라이드1 - 메인 */
+div.content div#slide1{
+	overflow: hidden;
+	padding:0;
+	width:100%;
+	height:100%;
+	background-size: 100% 100%;
+	border: 0 none;
+	box-shadow:none;
+}
+
+div.content div#slide1 img{
+	
+}
+
+
+/* 슬라이드2 - 지도 */
+
+/* 지도 */
+div.content div#slide2 div.map{
+	height:73.8%;
+}
+
+div.content div#slide2 div.map>div{
+	width:100%;
+	height:82%;
+	overflow:hidden;
+}
+
+div.content div#slide2 p{
+	padding:2%;
+	text-align: center;
+	width:100%;
+	height:17.9%;
+
+	/* 텍스트 수직, 수평 정렬 */
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-webkit-justify-content:center;
+	justify-content:center;
+
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+div.content div#slide2 p span{
+	display: block;
+}
+
+/* 공유버튼 */
+div.content div#slide2 ul.share{
+	position: relative;
+	width:100%;
+	height:20.5%;
+	overflow: hidden;
+	margin-top:3%;
+}
+
+div.content div#slide2 ul.share:after{
+	position: absolute;
+	top:10%;
+	left: 50%;
+	display: block;
+	content: "";
+	width:1px;
+	height:80%;
+	background:#ddd;
+}
+
+div.content div#slide2 ul.share li{
+	width:50%;
+	height:100%;
+	float:left;
+}
+
+div.content div#slide2 ul.share li a{
+	position: relative;
+	display:block;
+	width:100%;
+	height: 100%;
+	font-size: 0.8em;
+	text-align: center;
+
+	/* 아이콘,텍스트 수직 수평 정렬 */
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction:column;
+	flex-direction:column;
+
+	-webkit-justify-content:center;
+	justify-content:center;
+
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+/* 버튼 아이콘 */
+div.content div#slide2 ul.share li.naver a:before,
+div.content div#slide2 ul.share li.kakao a:before{
+	content: "";
+	display: block;
+	position: relative;
+	width:24%;
+	height:46.3%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 10px
+}
+
+div.content div#slide2 ul.share li.naver a:before{
+	background-image: url('../img/default/share_kakao.png');
+}
+div.content div#slide2 ul.share li.kakao a:before{
+	background-image: url('../img/default/share_naver.png');
+}
+
+div.content div#slide2 ul.share li a span{
+	display: block;
+}
+
+
+/* 슬라이드3 - 상세정보 */
+div.content div#slide3 div.info{
+	max-height: 97%;
+	overflow-y:auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+div.content div#slide3 div.info dl{
+	margin:0 3%;
+	padding:4.5% 0;
+	border-bottom:1px solid #bcbcbc;
+
+	/* 텍스트 수직 수평 정렬 */
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+div.content div#slide3 div.info dl dt{
+	max-width: 38%;
+	padding-left:3%;
+	background: url('../img/bullet.png') no-repeat left center;
+}
+
+
+div.content div#slide3 div.info dl dd{
+	max-width: 60%;
+	color:#08255e;
+}
+
+
+/* 슬라이드4 - 이용후기 */
+div.content div#slide4 div.review{
+	position: relative;
+	height: 97%;
+	overflow-y:auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+div.content div#slide4 h2{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+div.content div#slide4 button.writeBtn{
+	display:block;
+	position: absolute;
+	top:12px;
+	right:5%;
+	width:21px;
+	height:21px;
+	background:#fff url('../img/write.png') no-repeat;
+	background-size: 100% 100%;
+	text-indent: -9999px;
+}
+
+div.content div#slide4 div.controlBtns{
+	width:100%;
+
+	/* 텍스트 수직 수평 정렬 */
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+
+	-webkit-align-items:flex-end;
+	align-items:flex-end;
+}
+
+div.content div#slide4 div.controlBtns button{
+	width:50%;
+	padding:4%;
+}
+
+div.content div#slide4 div.review div.controlBtns button.readMore{
+	background:#497adc;
+	color:#fff;
+}
+
+div.content div#slide4 div.review div.controlBtns button.gotoTop{
+	background: #ddd;
+}
+
+
+
+div.content div#slide4 div.review ul{
+	margin:0 3%;
+	margin-top:-4%;
+	padding:4.5% 0;
+}
+
+div.content div#slide4 div.review ul li{
+	width:100%;
+	border-bottom: 1px solid #ddd;
+}
+
+div.content div#slide4 div.review ul li:first-child{
+	border-top:1px solid #ddd;
+}
+
+div.content div#slide4 div.review ul li a{
+	width:100%;
+	display: block;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	padding:5% 3%;
+	background: url('../img/bullet.png') no-repeat left center;	
+}
+
+
+
+
+div.content div#slide4 div.review div.viewReview{
+	width:100%;
+	background: #f5f5f5;
+	margin-bottom: 3%;
+}
+
+div.content div#slide4 div.review div.viewReview div.reviewCont{
+	padding:3%;
+	line-height: 1.5;
+}
+
+div.content div#slide4 div.writePass{
+	padding:3%;
+	border-top:1px solid #ddd;
+}
+
+div.content div#slide4 div.writePass input{
+	width:80px;
+}
+
+div.content div#slide4 div.writePass span{
+	font-size: 0.9em;
+}
+
+div.content div#slide4 div.writePass div{
+	margin-top:3%;
+
+	/* 버튼 수직 수평 정렬 */
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+
+	-webkit-align-items:flex-end;
+	align-items:flex-end;
+}
+
+div.content div#slide4 div.review div.viewReview div.writePass div button{
+	width:49%;
+	padding:2% 0;
+}
+
+div.content div#slide4 div.review div.viewReview div.writePass div button.modify{
+	background:#497adc;
+	color:#fff;
+}
+
+div.content div#slide4 div.review div.viewReview div.writePass div button.delete{
+	background:#ddd;
+}
+
+
+div.content div#slide4 div.reviewWrite div.writeArticle{
+	padding:0 3%;
+}
+
+div.content div#slide4 div.reviewWrite textarea{
+	width:100%;
+	margin-bottom: 3%;
+}
+
+div.content div#slide4 div.reviewWrite div.writePass{
+	padding:7% 0;
+}
+
+div.content div#slide4 div.reviewWrite div.controlBtns button.submit{
+	width:70%;
+	background: #497adc;
+	color:#fff;
+}
+
+div.content div#slide4 div.reviewWrite div.controlBtns button.cancel{
+	width:30%;
+	background:#ddd;
+}
+
+
+
+/* GNB */
+div.gnb{
+	position: relative;
+	width:100%;
+	height:15.6%;
+	bottom:0;
+	background: #f6f6f6;
+	border-top:1px solid #ddd;
+	margin-top:-1px;
+}
+
+
+div.gnb nav{
+	position:absolute;
+	top:-14%;
+	left:50%;
+	width:27.9%;
+	margin-left:-13.95%;
+	padding:2% 2.5%;
+	background:#fff;
+	border:1px solid rgba(197,197,197,0.5);
+	border-bottom:2px solid rgba(197,197,197,0.5);
+	border-top:0 none;
+	border-radius:50px;
+}
+
+div.gnb nav ul{
+	overflow: hidden;
+	box-shadow:0 2% 0 #c5c5c5;
+	
+	/* 네비게이션 원 정렬 */
+	display: flex;
+	display: -webkit-flex;
+
+	-webkit-flex-direction:row;
+	flex-direction:row;
+
+	-webkit-justify-content:center;
+	justify-content:space-around;
+
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+div.gnb nav ul li{
+	float:left;
+	margin:0 5%;
+}
+
+div.gnb nav ul li a{
+	display: block;
+	margin:0 auto;
+	width:10px;
+	height:10px;
+	background:#cbcbcb;
+	text-indent:-9999px;
+	border-radius: 50%; 
+}
+
+div.gnb nav ul li a.selected{
+	background: #ff4d4d;
+}
+
+
+/* 전화번호, 주소 */
+div.gnb div.pAddress{
+	text-align: center;
+	padding-top:5%;
+}
+
+
+div.gnb div.pAddress p{
+	font-size:2em;
+	font-family: Helvetica,sans-serif;
+	font-weight: bold;
+	color:#2d5ebf;
+}
+
+div.gnb div.pAddress address{
+	font-style: normal;
+	font-size: 0.9em;
+	color:#353439;
+	padding:0 5%;
+}
+
+
+
+
+
+
+
+/* 레티나 디스플레이 대비 */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+div.content div#slide2 ul.share li.naver a:before{
+	background-image: url('../img/default/share_kakaox2@.png');
+	}
+div.content div#slide2 ul.share li.kakao a:before{
+	background-image: url('../img/default/share_naverx2@.png');
+	}
+div.content div#slide4 button.writeBtn{
+	background-image: url('../img/writex2@.png');
+}
+
+}
