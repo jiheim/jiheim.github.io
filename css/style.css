@@ -530,7 +530,12 @@ html {
       margin-top: 3.125rem; } }
 
 .aboutme-frame {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
+  @media screen and (min-width: 1400px) {
+    .aboutme-frame {
+      width: 80%; } }
   @media only screen and (max-width: 768px) {
     .aboutme-frame {
       margin-top: 1.25rem;
@@ -546,14 +551,14 @@ html {
         background: #fff; } }
 
 .aboutme-desc {
-  max-width: 600px;
+  max-width: 50%;
   float: left;
   margin-left: 1.25rem;
   padding: 0 1.25rem 1.25rem 1.25rem; }
   .aboutme-desc .resume-btns {
     margin-top: 36px; }
     .aboutme-desc .resume-btns .btn-link {
-      margin: 0 10px 0 0;
+      margin: 0 10px 10px 0;
       padding: 0 25px; }
       .aboutme-desc .resume-btns .btn-link i {
         margin-right: 10px; }
@@ -562,18 +567,13 @@ html {
           width: 100%;
           margin: 0 0 10px 0; } }
   .aboutme-desc .skills {
-    margin-top: 40px;
+    margin-top: 30px;
     border-top: 1px solid #ddd;
     padding-top: 36px; }
     .aboutme-desc .skills ul {
       margin-top: 15px; }
       .aboutme-desc .skills ul li {
         margin-bottom: 10px; }
-  @media only screen and (min-width: 769px) and (max-width: 1023px) {
-    .aboutme-desc {
-      margin-top: 1.25rem;
-      margin-left: 0;
-      padding: 0 0 3.125rem; } }
   @media only screen and (max-width: 768px) {
     .aboutme-desc {
       max-width: 100%;
@@ -588,7 +588,7 @@ html {
 .aboutme-frame-img {
   position: relative;
   float: left;
-  width: 400px; }
+  width: 40%; }
   .aboutme-frame-img p {
     position: absolute;
     left: 1.25rem;
