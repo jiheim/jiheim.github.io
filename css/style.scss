@@ -718,6 +718,19 @@ html{
 	li{
 		margin-bottom: calculateRem(12px);
 		text-align: center;
+
+		.btn-link{
+			width:25%;
+			display:inline-block;
+			padding: calculateRem(6px) 0;
+			margin:calculateRem(40px) auto;
+			border-radius: calculateRem(30px);
+
+			@include respond-to(handhelds) {
+				width:100%;
+				margin:calculateRem(5px) auto;
+			}
+		}
 	}
 	
 }
