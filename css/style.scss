@@ -731,6 +731,14 @@ html{
 				margin:calculateRem(5px) auto;
 			}
 		}
+
+		&.video-list{
+			margin-top:calculateRem(30px);
+		}
+
+		.img-list{
+		
+		}
 	}
 	
 }
