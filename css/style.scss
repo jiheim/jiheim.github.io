@@ -719,6 +719,32 @@ html{
 		margin-bottom: calculateRem(12px);
 		text-align: center;
 
+
+		&.video-list{
+			margin-top:70px;
+
+			iframe{
+				width:560px;
+				height:315px;
+
+				@include respond-to(handhelds) {
+					width:100%;
+				}
+			}
+		}
+
+		&.img-list{
+			margin-top:70px;
+
+			img{
+				max-width:700px;
+
+				@include respond-to(handhelds) {
+					width:100%;
+				}
+			}
+		}
+
 		.btn-link{
 			width:25%;
 			display:inline-block;
@@ -731,17 +757,11 @@ html{
 				margin:calculateRem(5px) auto;
 			}
 		}
-
-		&.video-list{
-			margin-top:calculateRem(30px);
-		}
-
-		.img-list{
-		
-		}
 	}
 	
 }
+
+x
 
 
 .aboutme{
