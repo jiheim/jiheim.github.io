@@ -505,7 +505,8 @@ html {
     padding: 0 5% 5%; } }
 .work-content-list li {
   margin-bottom: 0.75rem;
-  text-align: center; }
+  text-align: center;
+  line-height: 0; }
   .work-content-list li.video-list {
     margin-top: 70px; }
     .work-content-list li.video-list iframe {

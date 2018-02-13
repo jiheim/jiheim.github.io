@@ -718,6 +718,7 @@ html{
 	li{
 		margin-bottom: calculateRem(12px);
 		text-align: center;
+		line-height:0;
 
 
 		&.video-list{
