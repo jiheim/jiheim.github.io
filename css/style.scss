@@ -561,6 +561,20 @@ html{
 	}
 }
 
+.header-img{
+	display:block;
+	@media screen and (max-width:499px) {
+		display:none;
+	}
+}
+
+
+.header-img-m{
+	display:block;
+	@media screen and (min-width:499px) {
+		display:none;
+	}
+}
 
 
 .work-desc{	

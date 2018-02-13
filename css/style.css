@@ -407,6 +407,18 @@ html {
   .work-content {
     padding: 0 !important; } }
 
+.header-img {
+  display: block; }
+  @media screen and (max-width: 499px) {
+    .header-img {
+      display: none; } }
+
+.header-img-m {
+  display: block; }
+  @media screen and (min-width: 499px) {
+    .header-img-m {
+      display: none; } }
+
 .work-desc {
   margin: 20px 0; }
   @media only screen and (max-width: 768px) {
