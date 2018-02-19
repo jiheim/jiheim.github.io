@@ -52,6 +52,11 @@ $break-large: 1024px;
   100% { width: 30%; }
 }
 
+@keyframes p20 {
+  0%   { width: 0; }
+  100% { width: 20%; }
+}
+
 //button fadeIn animation
 @keyframes btnFadeIn {
   0%   { opacity: 0; }
@@ -488,6 +493,10 @@ html{
 
 	.bar30{
 		animation: p30 1s ease-out;
+	}
+
+	.bar20{
+		animation: p20 1s ease-out;
 	}
 }
 

@@ -17,6 +17,11 @@
     width: 0; }
   100% {
     width: 30%; } }
+@keyframes p20 {
+  0% {
+    width: 0; }
+  100% {
+    width: 20%; } }
 @keyframes btnFadeIn {
   0% {
     opacity: 0; }
@@ -352,6 +357,8 @@ html {
     animation: p90 1s ease-out; }
   .meter .bar30 {
     animation: p30 1s ease-out; }
+  .meter .bar20 {
+    animation: p20 1s ease-out; }
 
 .meter-percent {
   display: inline-block;
