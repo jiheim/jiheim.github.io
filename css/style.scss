@@ -47,6 +47,11 @@ $break-large: 1024px;
   100% { width: 90%; }
 }
 
+@keyframes p50 {
+  0%   { width: 0; }
+  100% { width: 50%; }
+}
+
 @keyframes p30 {
   0%   { width: 0; }
   100% { width: 30%; }
@@ -489,6 +494,10 @@ html{
 
 	.bar90{
 		animation: p90 1s ease-out;
+	}
+
+	.bar50{
+		animation: p50 1s ease-out;
 	}
 
 	.bar30{

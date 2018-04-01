@@ -12,6 +12,11 @@
     width: 0; }
   100% {
     width: 90%; } }
+@keyframes p50 {
+  0% {
+    width: 0; }
+  100% {
+    width: 50%; } }
 @keyframes p30 {
   0% {
     width: 0; }
@@ -355,6 +360,8 @@ html {
     animation: p100 1s ease-out; }
   .meter .bar90 {
     animation: p90 1s ease-out; }
+  .meter .bar50 {
+    animation: p50 1s ease-out; }
   .meter .bar30 {
     animation: p30 1s ease-out; }
   .meter .bar20 {
