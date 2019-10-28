@@ -490,6 +490,9 @@ html {
     .input-form input[type="submit"] {
       margin-top: 15px; }
 
+  .main form:after {
+    display: none; }
+
   input[type="password"],
   input[type="email"] {
     padding: 24px 30px 8px; }
@@ -514,7 +517,8 @@ html {
 
   .btn-line,
   .btn-primary {
-    padding: 15px 0; }
+    padding: 10px 0;
+    font-size: 18px !important; }
 
   .popup {
     width: 86%;
