@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto:300,400,500,700&display=swap");
 h1,
 h2,
 p {
   margin: 0; }
 
 * {
-  font-family: 'SF Pro Display','Roboto','Noto Sans KR', sans-serif;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans KR",sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
