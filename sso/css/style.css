@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap");
+h1,
+h2,
+p {
+  margin: 0; }
+
+* {
+  font-family: 'SF Pro Display','Roboto','Noto Sans KR', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  box-sizing: border-box; }
+
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  font-size: 22px;
+  line-height: 26px;
+  outline: none;
+  transition: 0.2s; }
+
+.btn-primary {
+  border: 0;
+  padding: 17px 0;
+  background-image: linear-gradient(99deg, #ff5b5b -4%, #ff896e 100%);
+  color: #fff; }
+  .btn-primary:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+    background-image: linear-gradient(99deg, #ff4545 -4%, #ff704f 100%); }
+  .btn-primary:active {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.31); }
+
+.btn-line {
+  padding: 15px 0;
+  border: 2px solid #ff5b5b;
+  color: #ff5b5b;
+  background: transparent; }
+  .btn-line:hover {
+    background-color: #ff5b5b;
+    color: #fff; }
+  .btn-line:active {
+    border-color: #e94d4d;
+    background-color: #e94d4d; }
+
+.btn-close {
+  position: absolute;
+  width: 40px !important;
+  height: 40px;
+  top: 28px;
+  right: 40px;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 13px;
+  background-image: url(../img/ic-close@3x.png);
+  text-indent: -9999px;
+  border-radius: 50%;
+  border: 0; }
+
+input[type="password"],
+input[type="email"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 30px;
+  padding: 29px 34px 12px;
+  font-size: 18px;
+  background-color: #f0f0f0;
+  outline: none;
+  transition: 0.2s; }
+  input[type="password"]:hover,
+  input[type="email"]:hover {
+    box-shadow: 0 0 0 1px #cccccc inset; }
+  input[type="password"]:hover + label,
+  input[type="email"]:hover + label {
+    font-size: 12px;
+    top: 9px;
+    transition: 0.2s; }
+  input[type="password"][disabled="disabled"],
+  input[type="email"][disabled="disabled"] {
+    background: #e4e4e4;
+    box-shadow: none; }
+  input[type="password"][disabled="disabled"] + label,
+  input[type="email"][disabled="disabled"] + label {
+    font-size: 18px;
+    top: 20px;
+    color: #cccccc; }
+  input[type="password"]:valid + label,
+  input[type="email"]:valid + label {
+    font-size: 12px;
+    top: 9px; }
+
+label {
+  position: absolute;
+  top: 20px;
+  left: 34px;
+  color: #888; }
+
+.input-wrap {
+  position: relative; }
+  .input-wrap p {
+    visibility: hidden;
+    padding: 0 34px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #ff5b5b; }
+
+.correct:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 25px;
+  background-image: url(../img/ic-checked@3x.png);
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+  top: 18px;
+  right: 17px; }
+.correct label {
+  font-size: 12px;
+  top: 9px; }
+
+.error:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 25px;
+  background-image: url(../img/ic-warning@3x.png);
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+  top: 18px;
+  right: 17px; }
+.error input {
+  background-color: #ffeded; }
+  .error input:hover {
+    box-shadow: 0 0 0 1px #ffc2c2 inset; }
+.error label {
+  color: #ff5b5b;
+  font-size: 12px;
+  top: 9px; }
+.error p {
+  visibility: visible;
+  transition: 0.2; }
+
+.reset-pw {
+  display: block;
+  font-size: 16px;
+  color: #ff5b5b;
+  text-decoration: none;
+  text-align: right; }
+  .reset-pw:before {
+    content: '';
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 12px;
+    background-image: url(../img/ic-reset@3x.png);
+    text-indent: -9999px;
+    margin-right: 9px;
+    transition: 0.2s; }
+  .reset-pw:hover {
+    color: #ff0f0f;
+    text-decoration: underline; }
+    .reset-pw:hover:before {
+      transform: rotate(180deg); }
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #F7F7F7; }
+
+.wrap {
+  display: flex;
+  width: 940px;
+  height: 674px;
+  box-shadow: 0 2px 52px 0 rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+  z-index: 1; }
+
+.main {
+  height: 565px; }
+
+.masthead {
+  position: relative;
+  width: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px auto;
+  background-image: url(../img/left-bg@3x.png);
+  text-indent: -9999px; }
+  .masthead h1 {
+    position: absolute;
+    width: 260px;
+    height: 51px;
+    top: 80px;
+    left: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 260px 51px;
+    background-image: url(../img/logo@3x.png);
+    text-indent: -9999px; }
+  .masthead h2 {
+    position: absolute;
+    width: 283px;
+    height: 75px;
+    top: 136px;
+    left: 61px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 283px 75px;
+    background-image: url(../img/single-sign-on@3x.png);
+    text-indent: -9999px; }
+
+.input-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 540px;
+  padding: 80px; }
+  .input-form form {
+    width: 100%; }
+    .input-form form .input-wrap {
+      margin-bottom: 16px; }
+  .input-form .reset-pw {
+    margin: 25px 26px 0 0; }
+  .input-form input[type="submit"] {
+    margin-top: 25px; }
+
+.notice {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 23px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #d8d8d8;
+  color: #444; }
+  .notice strong {
+    color: #ff5b5b; }
+  .notice em {
+    font-weight: 600; }
+  .notice:after {
+    position: absolute;
+    left: calc(50% - (6px / 2));
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    bottom: -5px;
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    transform: rotate(45deg); }
+
+.crypto-rules {
+  position: absolute;
+  padding: 60px;
+  width: 400px;
+  left: -400px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.66);
+  color: #cccccc; }
+  .crypto-rules ul {
+    padding-inline-start: 10px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #787878; }
+    .crypto-rules ul li {
+      margin-bottom: 15px;
+      font-size: 14px; }
+
+.user {
+  text-align: center;
+  padding: 32px 0 10px; }
+  .user .user-name {
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 0.47px;
+    line-height: 31px;
+    margin-bottom: 7px; }
+  .user .user-domain {
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 0.55px;
+    color: #cccccc; }
+
+.dim {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100; }
+
+.popup {
+  position: relative;
+  width: 460px;
+  min-height: 290px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px 60px 40px; }
+  .popup .msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 80px;
+    min-height: 200px; }
+    .popup .msg p {
+      text-align: center; }
+  .popup .btn-line {
+    position: absolute;
+    width: 340px;
+    bottom: 40px; }
+
+.error-box {
+  position: relative;
+  width: 660px;
+  padding: 100px 80px 80px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 52px 0 rgba(0, 0, 0, 0.09); }
+  .error-box:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 144px;
+    height: 131px;
+    top: -73px;
+    left: auto;
+    left: calc(50% - (144px / 2));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 144px 131px;
+    background-image: url(../img/ic-error-page-1@3x.png);
+    text-indent: -9999px; }
+  .error-box .error-title {
+    color: #ff5b5b;
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: 0.58px; }
+  .error-box p {
+    margin: 35px 0 55px;
+    font-size: 22px;
+    letter-spacing: 0.37px; }
+
+@media screen and (max-width: 800px) {
+  html {
+    align-items: flex-start;
+    background: #fff; }
+
+  body {
+    width: 100%; }
+
+  .wrap {
+    width: 100%;
+    box-shadow: none;
+    display: block; }
+
+  .main {
+    height: auto; }
+
+  .masthead {
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+    height: 180px; }
+    .masthead h1 {
+      width: 164px;
+      height: 34px;
+      top: 30px;
+      left: auto;
+      left: calc(50% - (164px / 2));
+      background-size: 164px 34px; }
+    .masthead h2 {
+      width: 166px;
+      height: 45px;
+      top: 67px;
+      left: auto;
+      left: calc(50% - (166px / 2));
+      background-size: 166px 45px; }
+
+  .input-form {
+    position: relative;
+    top: -32px;
+    width: 100%;
+    padding: 32px 6.9% 6.9%;
+    border-radius: 32px;
+    background: #fff; }
+    .input-form .crypto-rules {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -30px;
+      padding: 0;
+      left: 0;
+      width: 100%;
+      background-color: transparent; }
+      .input-form .crypto-rules .rule-list {
+        position: relative;
+        order: 2;
+        color: #666;
+        padding: 30px 7.5%;
+        border: none; }
+        .input-form .crypto-rules .rule-list li {
+          list-style: none; }
+          .input-form .crypto-rules .rule-list li:before {
+            position: relative;
+            content: "";
+            display: block;
+            width: 5px;
+            height: 5px;
+            left: -15px;
+            top: 12px;
+            background: #ff5b5b;
+            border-radius: 50%; }
+        .input-form .crypto-rules .rule-list:after {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 115%;
+          height: 1px;
+          top: 100%;
+          left: -7.5%;
+          background-color: #eee; }
+      .input-form .crypto-rules .user {
+        order: 1;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eee; }
+        .input-form .crypto-rules .user .user-name {
+          font-size: 24px;
+          color: #333;
+          line-height: 14px; }
+        .input-form .crypto-rules .user .user-domain {
+          font-size: 18px;
+          color: #666; }
+    .input-form .notice {
+      order: 3;
+      padding-top: 32px;
+      font-size: 14px;
+      border-bottom: none; }
+      .input-form .notice:after {
+        display: none; }
+    .input-form form {
+      position: relative;
+      order: 2;
+      padding-bottom: 32px; }
+      .input-form form:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 115%;
+        height: 1px;
+        top: 100%;
+        left: -7.5%;
+        background-color: #eee; }
+      .input-form form .input-wrap {
+        margin-bottom: 8px; }
+    .input-form .reset-pw {
+      margin: 25px auto auto;
+      text-align: center; }
+    .input-form input[type="submit"] {
+      margin-top: 15px; }
+
+  input[type="password"],
+  input[type="email"] {
+    padding: 24px 30px 8px; }
+    input[type="password"]:hover + label, input[type="password"]:valid + label,
+    input[type="email"]:hover + label,
+    input[type="email"]:valid + label {
+      top: 6px; }
+    input[type="password"][disabled="disabled"] + label,
+    input[type="email"][disabled="disabled"] + label {
+      top: 14px; }
+
+  label {
+    top: 14px;
+    left: 30px; }
+
+  .correct:after,
+  .error:after {
+    top: 12px; }
+  .correct label,
+  .error label {
+    top: 6px; }
+
+  .btn-line,
+  .btn-primary {
+    padding: 15px 0; }
+
+  .popup {
+    width: 86%;
+    padding: 20px;
+    min-height: auto; }
+    .popup .msg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      padding-bottom: 80px;
+      min-height: 150px; }
+      .popup .msg p {
+        text-align: center; }
+    .popup .btn-line {
+      position: absolute;
+      width: 86%;
+      bottom: 20px; }
+
+  .btn-close {
+    width: 30px !important;
+    height: 30px;
+    top: 20px;
+    right: 20px; }
+
+  .error-wrap {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7; }
+
+  .error-box {
+    width: 86%;
+    padding: 58px 20px 20px; }
+    .error-box:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 74px;
+      height: 74px;
+      top: -30px;
+      left: auto;
+      left: calc(50% - (74px / 2));
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 74px 68px;
+      background-image: url(../img/ic-error-page-1@3x.png);
+      text-indent: -9999px; }
+    .error-box .error-title {
+      font-size: 20px; }
+    .error-box p {
+      margin: 16px 0 29px;
+      font-size: 18px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap');
+
+//reset
+h1,
+h2,
+p{
+	margin: 0;
+}
+
+
+//Var
+
+$primary: #ff5b5b;
+$input_bg: #f0f0f0;
+$input_text: #888;
+$input_border: #cccccc;
+$error_bg: #ffeded;
+$errror_border: #ffc2c2;
+$disable_bg: #e4e4e4;
+$notice_text: #333;
+$white: #fff;
+
+
+//mixin
+@mixin leftcenter($width){
+	left: calc(50% - (#{$width} / 2));
+}
+
+@mixin selectorblock{
+	content: "";
+	display: block;
+}
+
+@mixin bgoption($bgwidth, $bgheight, $bgurl){
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: $bgwidth $bgheight;
+	background-image: url(../img/#{$bgurl}@3x.png);
+	text-indent: -9999px;
+}
+
+@mixin objectleft($objwidth, $objheight, $objtop, $objleft){
+	width: $objwidth;
+	height: $objheight;
+	top: $objtop;
+	left: $objleft;
+}
+
+@mixin objectright($objwidth, $objheight, $objtop, $objright){
+	width: $objwidth;
+	height: $objheight;
+	top: $objtop;
+	right: $objright;
+}
+
+
+//font
+
+*{
+	font-family: 'SF Pro Display','Roboto','Noto Sans KR', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	box-sizing: border-box;
+}
+
+
+	//buttons
+
+input[type="submit"],
+input[type="button"]{
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	border-radius: 30px;
+	font-size: 22px;
+	line-height: 26px;
+	outline: none;
+	transition: 0.2s;
+}
+
+
+.btn-primary{
+	border: 0;
+	padding: 17px 0;
+	background-image: linear-gradient(99deg, $primary -4%, #ff896e 100%);
+	color: $white;
+
+	&:hover{
+		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+		background-image: linear-gradient(99deg, #ff4545 -4%, #ff704f 100%);
+	}
+
+	&:active{
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.31);
+	}
+}
+
+.btn-line{
+	padding: 15px 0;
+	border: 2px solid $primary;
+	color: $primary;
+	background: transparent;
+
+	&:hover{
+		background-color: $primary;
+		color: $white;
+	}
+
+	&:active{
+		border-color: #e94d4d;
+		background-color: #e94d4d;
+	}
+}
+
+.btn-close{
+	position: absolute;
+	@include objectright(40px !important, 40px, 28px, 40px);
+	background-color: #f2f2f2;
+	@include bgoption(13px, 13px, ic-close);
+	border-radius: 50%;
+	border: 0;
+}
+
+
+
+
+
+//input
+input[type="password"],
+input[type="email"]{
+	-webkit-appearance: none;
+    -webkit-border-radius: 0;
+	position: relative;
+	display: block;
+	width: 100%;
+	border: 0;
+	border-radius: 30px;
+	padding: 29px 34px 12px;
+	font-size: 18px;
+	background-color: $input_bg;
+	outline: none;
+	transition: 0.2s;
+
+	&:hover{
+		box-shadow: 0 0 0 1px $input_border inset;
+	}
+
+	&:hover + label{
+		font-size: 12px;
+		top: 9px;
+		transition: 0.2s;
+	}
+
+	&[disabled="disabled"]{
+		background: $disable_bg;
+		box-shadow: none;
+	}
+
+	&[disabled="disabled"] + label{
+		font-size: 18px;
+		top: 20px;
+		color: $input-border;
+	}
+
+	&:valid + label{
+		font-size: 12px;
+		top: 9px;
+	}
+
+}
+
+label{
+		position: absolute;
+		top: 20px;
+		left: 34px;
+		color: $input-text;
+	}
+
+.input-wrap{
+	position: relative;
+
+	
+
+	p{
+		visibility: hidden;
+		padding: 0 34px;
+		margin-top: 6px;
+		font-size: 12px;
+		color: $primary;
+	}
+}
+
+.correct{
+
+	&:after{
+		@include selectorblock;
+		position: absolute;
+		@include bgoption(25px, 25px, ic-checked);
+		@include objectright(25px, 25px, 18px, 17px);
+	}
+
+	label{
+		font-size: 12px;
+		top: 9px;
+	}
+}
+
+.error{
+
+	&:after{
+		@include selectorblock;
+		position: absolute;
+		@include bgoption(25px, 25px, ic-warning);
+		@include objectright(25px, 25px, 18px, 17px);
+	}
+
+	input{
+		background-color: $error_bg;
+		
+		&:hover{
+			box-shadow: 0 0 0 1px $errror_border inset;
+		}
+	}
+
+	label{
+		color: $primary;
+		font-size: 12px;
+		top: 9px;
+	}
+
+	p{
+		visibility: visible;
+		transition: 0.2;
+	}
+}
+
+
+
+
+
+
+
+//link
+.reset-pw{
+	display: block;
+	font-size: 16px;
+	color: $primary;
+	text-decoration: none;
+	text-align: right;
+
+	&:before{
+		content:'';
+		position: relative;
+		top: 3px;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: $input_bg;
+		@include bgoption(13px, 12px, ic-reset);
+		margin-right: 9px;
+		transition: 0.2s;
+	}
+
+	&:hover{
+		color: darken($primary, 15%);
+		text-decoration: underline;
+	
+		&:before{
+			transform: rotate(180deg);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+//layout
+
+html{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	background: #F7F7F7;
+}
+
+.wrap{
+	display: flex;
+	width: 940px;
+  	height: 674px;
+  	box-shadow: 0 2px 52px 0 rgba(0, 0, 0, 0.09);
+  	background-color: $white;
+  	z-index:1;
+}
+
+.main{
+	height: 565px;
+}
+
+.masthead{
+	position: relative;
+	width: 400px;
+	@include bgoption(400px, auto, left-bg);
+
+	h1{
+		position: absolute;
+		@include objectleft(260px, 51px, 80px, 70px);
+		@include bgoption(260px, 51px, logo);
+	}
+
+	h2{
+		position: absolute;
+		@include objectleft(283px, 75px, 136px, 61px);
+		@include bgoption(283px, 75px, single-sign-on);
+	}
+}
+
+.input-form{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 540px;
+	padding: 80px;
+	
+
+	form{
+		width: 100%;
+
+		.input-wrap{
+			margin-bottom: 16px;
+		}
+	}
+
+
+	.reset-pw{
+		margin: 25px 26px 0 0;
+	}
+
+	input[type="submit"]{
+		margin-top: 25px;
+	}
+
+	
+
+}
+
+
+.notice{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	font-weight: 200;
+	font-size: 16px;
+	line-height: 23px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #d8d8d8;
+	color: #444;
+
+	strong{
+		color: $primary;
+	}
+
+	em{
+		font-weight: 600;
+	}
+
+	&:after{
+		position: absolute;
+		@include leftcenter(6px);
+		@include selectorblock;
+		width: 6px;
+		height: 6px;
+		bottom: -5px;
+		border: 1px solid #d8d8d8;
+		background: $white;
+		transform: rotate(45deg);
+	}
+
+}
+
+
+.crypto-rules{
+	position: absolute;
+	padding: 60px;
+	width: 400px;
+	left: -400px;
+	bottom: 0;
+  	background-color: rgba(0,0,0,0.66);
+  	color: $input-border;
+	
+	ul{
+		padding-inline-start: 10px;
+		padding-bottom: 17px;
+		border-bottom: 1px solid #787878;
+
+		li{
+			margin-bottom: 15px;
+			font-size: 14px;
+		}
+	}
+}
+
+
+.user{
+	text-align: center;
+	padding: 32px 0 10px;
+
+	.user-name{
+		font-weight: 600;
+		font-size: 28px;
+		color: $white;
+		letter-spacing: 0.47px;
+		line-height: 31px;
+		margin-bottom: 7px;
+	}
+
+	.user-domain{
+		font-size: 22px;
+		font-weight: 200;
+		letter-spacing: 0.55px;
+		color: $input-border;
+	}
+}
+
+
+
+
+//popup
+
+.dim{
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include objectleft(100%, 100%, 0, 0);
+	background: rgba(0,0,0,0.8);
+	z-index:100;
+}
+
+.popup{
+	position: relative;
+	width: 460px;
+	min-height:290px;
+	background: $white;
+	border-radius: 20px;
+	padding: 28px 60px 40px;
+	
+
+	.msg{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 50px;
+		padding-bottom: 80px;
+		min-height: 200px;
+
+		p{
+			text-align: center;
+		}
+	}
+
+	.btn-line{
+		position: absolute;
+		width: 340px;
+		bottom: 40px;
+	}
+}
+
+
+
+//error
+
+.error-box{
+	position: relative;
+	width: 660px;
+	padding: 100px 80px 80px;
+	border-radius: 20px;
+	text-align: center;
+	background-color: $white;
+	box-shadow: 0 2px 52px 0 rgba(0, 0, 0, 0.09);
+
+	&:after{
+		position: absolute;
+		@include selectorblock;
+		@include objectleft(144px, 131px, -73px, auto);
+		@include leftcenter(144px);
+		@include bgoption(144px, 131px, ic-error-page-1);
+	}
+
+	.error-title{
+		color: $primary;
+		font-weight: 600;
+		font-size: 35px;
+		letter-spacing: 0.58px;
+	}
+
+	p{
+		margin: 35px 0 55px;
+		font-size: 22px;
+		letter-spacing: 0.37px;
+	}
+}
+
+
+
+//mobile
+
+@media screen and (max-width: 800px) {
+
+	//layout
+
+	html{
+		align-items: flex-start;
+		background: $white;
+	}
+
+	body{
+		width: 100%;
+	}
+
+	.wrap{
+		width: 100%;
+		box-shadow: none;
+		display: block;
+	}
+
+	.main{
+		height: auto;
+	}
+
+	.masthead{
+		width: 100%;
+		background-size: 100%;
+		background-position: center;
+		height: 180px;
+
+		h1{
+			@include objectleft(164px, 34px, 30px, auto);
+			@include leftcenter(164px);
+			background-size: 164px 34px;
+		}
+
+		h2{
+			@include objectleft(166px,45px, 67px, auto);
+			@include leftcenter(166px);
+			background-size: 166px 45px;
+		}
+	}
+
+	.input-form{
+		position: relative;
+		top: -32px;
+	   	width: 100%;
+		padding: 32px 6.9% 6.9%;
+		border-radius: 32px;
+	    background: $white;
+
+		.crypto-rules{
+			order: 1;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			top: -30px;
+			padding: 0;
+			left: 0;
+			width: 100%;
+			background-color: transparent;
+
+			.rule-list{
+				position: relative;
+				order: 2;
+				color: #666;
+				padding: 30px 7.5%;
+				border: none;
+
+				li{
+					list-style: none;
+
+					&:before{
+						position: relative;
+						@include selectorblock;
+						width: 5px;
+						height: 5px;
+						left: -15px;
+						top: 12px;
+						background: $primary;
+						border-radius: 50%;
+					}
+				}
+
+				&:after{
+					position: absolute;
+					@include selectorblock;
+					@include objectleft(115%, 1px, 100%, -7.5%); 
+					background-color: #eee;
+				}
+			}
+
+			.user{
+				order: 1;
+				padding-bottom: 30px;
+				border-bottom: 1px solid #eee;
+
+				.user-name{
+					font-size: 24px;
+					color: $notice_text;
+					line-height: 14px;
+				}
+
+				.user-domain{
+					font-size: 18px;
+					color: #666;
+				}
+			}
+		}
+
+		.notice{
+			order: 3;
+			padding-top: 32px;
+			font-size: 14px;
+			border-bottom: none;
+
+			&:after{
+				display: none;
+			}
+		}
+
+	    form{
+	    	position: relative;
+			order: 2;
+			padding-bottom: 32px;
+
+
+			&:after{
+					position: absolute;
+					@include selectorblock;
+					@include objectleft(115%, 1px, 100%, -7.5%); 
+					background-color: #eee;
+				}
+
+
+
+			.input-wrap{
+				margin-bottom: 8px;
+			}
+		}
+
+		.reset-pw{
+			margin: 25px auto auto;
+			text-align: center;
+		}
+
+		input[type="submit"]{
+			margin-top: 15px;
+		}
+	}
+
+
+	input[type="password"],
+	input[type="email"]{
+		padding: 24px 30px 8px;
+
+		&:hover + label,
+		&:valid + label{
+			top: 6px;
+		}
+
+		&[disabled="disabled"] + label{
+			top: 14px;
+		}
+
+	}
+
+	label{
+		top: 14px;
+		left: 30px;
+	}
+
+	.correct,
+	.error{
+
+		&:after{
+			top: 12px;
+		}
+
+		label{
+			top: 6px;
+		}
+	}
+
+
+	.btn-line,
+	.btn-primary{
+		padding: 15px 0;
+	}
+
+
+	//popup
+	.popup{
+		width: 86%;
+		padding: 20px;
+		min-height: auto;
+		
+
+		.msg{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 50px;
+			padding-bottom: 80px;
+			min-height: 150px;
+
+			p{
+				text-align: center;
+			}
+		}
+
+		.btn-line{
+			position: absolute;
+			width: 86%;
+			bottom: 20px;
+		}
+	}
+
+	.btn-close{
+		@include objectright(30px !important, 30px, 20px, 20px);
+	}
+
+	//error
+	
+	.error-wrap{
+		position: fixed;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		background: #f7f7f7;
+	}
+
+	.error-box{
+		width: 86%;
+		padding: 58px 20px 20px;
+
+
+		&:after{
+			position: absolute;
+			@include selectorblock;
+			@include objectleft(74px, 74px, -30px, auto);
+			@include leftcenter(74px);
+			@include bgoption(74px, 68px, ic-error-page-1);
+		}
+
+		.error-title{
+			font-size: 20px;
+		}
+
+		p{
+			margin: 16px 0 29px;
+			font-size: 18px;
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
