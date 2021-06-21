@@ -108,6 +108,7 @@ nav::-webkit-scrollbar {
 section{
 	position: relative;
 	padding: 35px;
+	margin-top: 35px;
 	z-index: 10;
 
 	h2{
@@ -131,7 +132,7 @@ section{
 		content: "";
 	}
 
-	img, h2, p{
+	.video-preview, h2, p{
 		position: relative;
 		z-index: 100;
 	}
@@ -144,7 +145,7 @@ section{
     margin: 0 auto;
     max-width: 100%;
 	border-radius: 8px;
-  	box-shadow: 0 23px 10px 0 rgba(0, 0, 0, 0.35);
+  	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.35);
 }
 
 
