@@ -24,7 +24,7 @@ a {
 
 /* navigation */
 nav {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -36,27 +36,30 @@ nav {
     overflow: auto;
     white-space: nowrap; }
     nav ul li {
+      position: relative;
       font-size: 1.125rem; }
       nav ul li a {
         display: block;
         line-height: 56px;
         padding: 0 16px;
         white-space: nowrap; }
-        nav ul li a.selected {
-          color: #fff;
-          height: 56px;
-          border-bottom: 3px solid #fff; }
 
-nav::-webkit-scrollbar {
+.active a {
+  color: #fff;
+  height: 56px;
+  border-bottom: 3px solid #fff; }
+
+nav ul {
+  scrollbar-width: none;
+  -ms-overflow-style: none; }
+
+nav ul::-webkit-scrollbar {
   display: none; }
 
 .nav-up {
   top: -56px; }
 
 /* section */
-.container {
-  margin-top: 56px; }
-
 section {
   position: relative;
   padding: 35px;
@@ -68,11 +71,19 @@ section {
   section p {
     color: #999; }
   section:before {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 40px;
+    width: 100%; }
+  section:after {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - 370px);
+    height: calc(100% - 400px);
     background: #161717;
     z-index: 5;
     content: ""; }

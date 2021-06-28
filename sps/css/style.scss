@@ -51,7 +51,7 @@ a{
 /* navigation */
 
 nav{
-	position: fixed;
+	position: fixed !important;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -63,13 +63,14 @@ nav{
 
 	
 	ul{
+		
 		display: flex;
 		overflow: auto;
 		white-space: nowrap;
 
 		li{
+			position: relative;
 			font-size: calculateRem(18px);
-			 
 
 			a{
 				display: block;
@@ -77,21 +78,30 @@ nav{
 				padding: 0 16px;
 				white-space: nowrap;
 
-
-				&.selected{
-					color: $secondary;
-					height: 56px;
-					border-bottom: 3px solid $secondary;
-				}
 			}
-
+			
 		}
+	}
+}
+				
+.active{
+
+	a{
+		color: $secondary;
+		height: 56px;
+		border-bottom: 3px solid $secondary;
 	}
 }
 
 
-nav::-webkit-scrollbar {
-    display: none; 
+
+
+nav ul {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+nav ul::-webkit-scrollbar {
+    display: none;
 }
 
 .nav-up {
@@ -102,7 +112,7 @@ nav::-webkit-scrollbar {
 /* section */
 
 .container{
-	margin-top: 56px;
+
 }
 
 section{
@@ -122,6 +132,16 @@ section{
 
 
 	&:before{
+		position: relative;
+		display: block;
+		top:0;
+		left: 0;
+		content: "";
+		height: 40px;
+		width: 100%;
+	}
+
+	&:after{
 		position: absolute;
 		bottom: 0;
 		left: 0;
