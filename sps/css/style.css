@@ -91,12 +91,16 @@ section {
     position: relative;
     z-index: 100; }
 
+#practice:before {
+  height: 0; }
+
 .video-preview {
   display: block;
   margin: 0 auto;
-  width: 250px;
-  max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.35); }
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.35);
+  width: 250px;
+  height: 518px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */
