@@ -66,12 +66,10 @@ nav ul::-webkit-scrollbar {
   top: -56px; }
 
 /* index */
-.vid-background {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%; }
+.index-body {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .index-container {
   display: flex;
@@ -147,6 +145,8 @@ footer {
       background: url(../img/ic-social-youtube.svg) no-repeat center; }
     footer .contact .mail:before {
       background: url(../img/ic-contact.svg) no-repeat center; }
+    footer .contact .tutorial:before {
+      background: url(../img/ic-tutorial.svg) no-repeat center; }
   footer .copyright {
     position: absolute;
     text-align: right;

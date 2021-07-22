@@ -146,12 +146,10 @@ nav ul::-webkit-scrollbar {
 
 /* index */
 
-.vid-background{
-	position: fixed;
-	  right: 0;
-	  bottom: 0;
-	  min-width: 100%;
-	  min-height: 100%;
+.index-body{
+	background-image:url(../img/bg.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 .index-container{
@@ -260,6 +258,10 @@ footer{
 	.mail:before{
 			background:url(../img/ic-contact.svg) no-repeat center;
 		}
+
+	.tutorial:before{
+		background:url(../img/ic-tutorial.svg) no-repeat center;
+	}
 
 	}
 
