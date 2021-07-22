@@ -369,20 +369,56 @@ section{
 }
 
 
-#practice:before{
-	height: 0;
-}
+
 
 .video-preview{
 	display: block;
     margin: 0 auto;
-
     border-radius: 8px;
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.35);
     width: 250px;
     height: 518px;
     overflow: hidden;
+    background-size: cover;
 }
+
+
+#practice:before{
+	height: 0;
+}
+
+#practice .video-preview{
+	background-image:url(../img/tutorial01.png);
+}
+
+#edit-lyrics .video-preview{
+	background-image:url(../img/tutorial02.png);
+}
+
+#adjust-sync .video-preview{
+	background-image:url(../img/tutorial03.png);
+}
+
+#recording .video-preview{
+	background-image:url(../img/tutorial04.png);
+}
+
+#clip .video-preview{
+	background-image:url(../img/tutorial05.png);
+}
+
+#clip-sync .video-preview{
+	background-image:url(../img/tutorial06.png);
+}
+
+#template .video-preview{
+	background-image:url(../img/tutorial07.png);
+}
+
+
+
+
+
 
 
 
