@@ -43,7 +43,13 @@ $breakpoint-desktop: 1024px;
   }
 }
 
+/* clear */
 
+@mixin clear{
+	content: "";
+	display: block;
+	clear: both;
+}
 
 /* global */
 
@@ -80,9 +86,12 @@ p{
 }
 
 
+
+
+
 /* navigation */
 
-nav{
+.navbar-wrapper{
 	position: fixed !important;
 	top: 0;
 	left: 0;
@@ -114,6 +123,18 @@ nav{
 			
 		}
 	}
+
+	@include desktop{
+
+		width: 300px;
+		height: 100%;
+
+		ul{
+			
+			flex-direction: column;
+		}
+
+	}
 }
 				
 .active{
@@ -122,17 +143,22 @@ nav{
 		color: $secondary;
 		height: 56px;
 		border-bottom: 3px solid $secondary;
-	}
+
+		@include desktop{
+		border-bottom: 0 none;
+		background: darken($bg-700, 30%);
+		}
+	}	
 }
 
 
 
 
-nav ul {
+.navbar-wrapper ul {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
-nav ul::-webkit-scrollbar {
+.navbar-wrapper ul::-webkit-scrollbar {
     display: none;
 }
 
@@ -322,13 +348,38 @@ footer{
 
 /* section */
 
+.tutorial .container{
 
+	@include desktop{
+		width: calc(100% - 300px);
+		margin-left: 300px;
+		padding: 0 30px;
+
+
+		section{
+			&:after{
+				display: none;
+			}
+			
+			.video-preview{
+				float:left;
+			}
+
+			h2, p{
+				margin-left: 300px;
+			}
+		}
+		
+	}
+	
+}
 
 section{
 	position: relative;
 	padding: 35px;
 	margin-top: 35px;
 	z-index: 10;
+	@include clear;
 
 	h2{
 		margin-top: 35px;

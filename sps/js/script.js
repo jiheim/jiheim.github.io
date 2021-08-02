@@ -50,16 +50,18 @@
   jQuery(function($) {
     $(document).ready( function() {
       //enabling stickUp on the '.navbar-wrapper' class
-      $('nav').stickUp({
+      $('.navbar-wrapper').stickUp({
 
                     parts: {
                       0:'practice',
-                      1:'edit-lyrics',
-                      2:'adjust-sync',
-                      3:'recording',
-                      4:'clip',
-                      5:'clip-sync',
-                      6:'template'
+                      1:'setting',
+                      2:'edit-lyrics',
+                      3:'adjust-sync',
+                      4:'recording',
+                      5:'clip',
+                      6:'trim',
+                      7:'clip-sync',
+                      8:'template'
                     },
                     itemClass: 'menuItem',
                     itemHover: 'active'

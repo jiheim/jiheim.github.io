@@ -13,16 +13,18 @@
 
 </head>
 
-<body>
+<body class="tutorial">
 
 
 <nav class="navbar-wrapper">
   <ul>
     <li class="menuItem active"><a href="#practice">#연습하기</a></li>
+    <li class="menuItem"><a href="#setting">#프로젝트 설정</a></li>
     <li class="menuItem"><a href="#edit-lyrics">#가사추가/입력/수정</a></li>
     <li class="menuItem"><a href="#adjust-sync">#가사 싱크 조정</a></li>
     <li class="menuItem"><a href="#recording">#오디오/비디오 리코딩</a></li>
     <li class="menuItem"><a href="#clip">#클립 상세 조정</a></li>
+    <li class="menuItem"><a href="#trim">#클립 자르기</a></li>
     <li class="menuItem"><a href="#clip-sync">#클립 싱크 조정</a></li>
     <li class="menuItem"><a href="#template">#비디오 템플릿</a></li>
   </ul>
@@ -30,7 +32,7 @@
 
 
 <!-- container -->
-<div class="container">
+<div class="tutorial container">
 
   <!-- practice -->
   <section id="practice">
@@ -44,6 +46,19 @@
 
   </section>
   <!-- //practice -->
+
+<!-- project setting -->
+  <section id="setting">
+    
+    <div class="video-preview">    
+     <iframe id="video" src="https://player.vimeo.com/video/581982376?&loop=1&autopause=0&muted=1" width="250" height="520" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+    <h2>프로젝트 설정(곡 설정)</h2>
+    <p>곡 제목, 가수명은 영상에 노출되니 꼭 수정해주세요. 앨범 아트 이미지는 영상이 없는 경우 앨범 아트 이미지로 대체되어 보여져, 원하는 이미지를 순서대로 등록해보세요.</p>
+
+  </section>
+<!-- //project setting -->
 
 
   <!-- edit-lyrics -->
@@ -104,6 +119,20 @@
   <!-- //clip -->
 
 
+  <!-- trim - 동영상 교체 -->
+  <section id="trim">
+    
+    <div class="video-preview">    
+     <iframe id="video" src="https://player.vimeo.com/video/581982376?&loop=1&autopause=0&muted=1" width="250" height="520" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+    <h2>클립 자르기(Trim 기능)</h2>
+    <p>클립이 중복되거나 필요없는 부분이 생겼을 때 다시 녹음하지 마시고 자르기(Trim) 기능을 활용해보세요. 다중 녹음(녹화) 후에 필요없는 부분만 자를 수 있어 더 편하게 녹음(녹화)을 하실 수 있습니다.</p>
+
+  </section>
+<!-- //trim -->
+
+
 
   <!-- clip sync -->
   <section id="clip-sync">
@@ -132,6 +161,9 @@
 
   </section>
   <!-- //video template -->
+
+
+
 
 </div>
 <!-- //container -->
