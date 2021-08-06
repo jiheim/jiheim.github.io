@@ -64,7 +64,8 @@
                       8:'template'
                     },
                     itemClass: 'menuItem',
-                    itemHover: 'active'
+                    itemHover: 'active',
+                    marginTop: '0'
                   });
     });
   });

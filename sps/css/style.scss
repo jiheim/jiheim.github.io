@@ -348,31 +348,31 @@ footer{
 
 /* section */
 
-.tutorial .container{
+// .tutorial .container{
 
-	@include desktop{
-		width: calc(100% - 300px);
-		margin-left: 300px;
-		padding: 0 30px;
+// 	@include desktop{
+// 		width: calc(100% - 300px);
+// 		margin-left: 300px;
+// 		padding: 0 30px;
 
 
-		section{
-			&:after{
-				display: none;
-			}
+// 		section{
+// 			&:after{
+// 				display: none;
+// 			}
 			
-			.video-preview{
-				float:left;
-			}
+// 			.video-preview{
+// 				float:left;
+// 			}
 
-			h2, p{
-				margin-left: 300px;
-			}
-		}
+// 			h2, p{
+// 				margin-left: 300px;
+// 			}
+// 		}
 		
-	}
+// 	}
 	
-}
+// }
 
 section{
 	position: relative;
