@@ -65,7 +65,7 @@
                     },
                     itemClass: 'menuItem',
                     itemHover: 'active',
-                    marginTop: '0'
+                    marginTop: '0px'
                   });
     });
   });

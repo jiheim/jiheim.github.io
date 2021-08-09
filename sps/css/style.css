@@ -197,6 +197,7 @@ footer {
   .tutorial .container {
     width: calc(100% - 300px);
     margin-left: 300px;
+    margin-top: 0px !important;
     padding: 0 30px; }
     .tutorial .container section:after {
       display: none; }
