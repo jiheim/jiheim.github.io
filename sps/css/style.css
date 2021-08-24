@@ -75,6 +75,9 @@ p {
 
 .nav-up {
   top: -56px; }
+  @media (min-width: 1024px) {
+    .nav-up {
+      top: 0; } }
 
 /* index */
 .index-body {

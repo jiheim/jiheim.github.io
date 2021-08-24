@@ -57,11 +57,12 @@
                       1:'setting',
                       2:'edit-lyrics',
                       3:'adjust-sync',
-                      4:'recording',
-                      5:'clip',
-                      6:'trim',
-                      7:'clip-sync',
-                      8:'template'
+                      4:'fine-ture',
+                      5:'recording',
+                      6:'clip',
+                      7:'trim',
+                      8:'clip-sync',
+                      9:'template'
                     },
                     itemClass: 'menuItem',
                     itemHover: 'active',

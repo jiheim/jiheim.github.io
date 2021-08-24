@@ -164,6 +164,11 @@ p{
 
 .nav-up {
     top: -56px;
+
+    @include desktop{
+    	top: 0;
+    }
+
 }
 
 
