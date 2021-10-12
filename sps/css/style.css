@@ -95,7 +95,7 @@ p {
       height: 80vh; } }
 
 .index-logo {
-  width: 95px;
+  width: 150px;
   height: 132px;
   margin: 0 auto 60px;
   background: url(../img/sub-logo.svg) 0 0 no-repeat;
@@ -103,7 +103,7 @@ p {
   text-indent: -9999px; }
   @media (min-width: 280px) and (max-width: 757px) {
     .index-logo {
-      width: 72px;
+      width: 120px;
       height: 100px; } }
 
 .slogan {
