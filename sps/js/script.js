@@ -57,7 +57,7 @@
                       1:'setting',
                       2:'edit-lyrics',
                       3:'adjust-sync',
-                      4:'fine-ture',
+                      4:'fine-tune',
                       5:'recording',
                       6:'clip',
                       7:'trim',
