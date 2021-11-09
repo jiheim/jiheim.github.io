@@ -363,6 +363,8 @@ footer{
 
 
 		section{
+
+			overflow: hidden;
 			&:after{
 				display: none;
 			}
