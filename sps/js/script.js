@@ -20,7 +20,9 @@
                       7:'trim',
                       8:'clip-sync',
                       9:'template',
-                      10:'share'
+                      10:'share',
+                      11:'language',
+                      12:'search'
                     },
                     itemClass: 'menuItem',
                     itemHover: 'active',
