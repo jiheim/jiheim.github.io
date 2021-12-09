@@ -366,6 +366,8 @@ footer{
 
 .tutorial .container{
 
+	margin-top: 0 !important;
+
 	@include desktop{
 		display: flex;
 		flex-direction: column;
@@ -390,6 +392,11 @@ footer{
 			}
 		}
 		
+	}
+
+
+	@include tablet{
+		margin-left: 0 !important;
 	}
 	
 }

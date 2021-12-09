@@ -201,21 +201,26 @@ footer {
         font-size: 0.75rem; } }
 
 /* section */
-@media (min-width: 1024px) {
-  .tutorial .container {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    margin-top: 0px !important;
-    padding: 0 30px; }
-    .tutorial .container section {
-      overflow: hidden; }
-      .tutorial .container section:after {
-        display: none; }
-      .tutorial .container section .video-preview {
-        float: left; }
-      .tutorial .container section h2, .tutorial .container section p {
-        margin-left: 300px; } }
+.tutorial .container {
+  margin-top: 0 !important; }
+  @media (min-width: 1024px) {
+    .tutorial .container {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      margin-top: 0px !important;
+      padding: 0 30px; }
+      .tutorial .container section {
+        overflow: hidden; }
+        .tutorial .container section:after {
+          display: none; }
+        .tutorial .container section .video-preview {
+          float: left; }
+        .tutorial .container section h2, .tutorial .container section p {
+          margin-left: 300px; } }
+  @media (min-width: 758px) and (max-width: 1023px) {
+    .tutorial .container {
+      margin-left: 0 !important; } }
 
 section {
   position: relative;
