@@ -101,7 +101,7 @@ body{
 	display: flex;
 	top: 0;
 	left: 0;
-	width: auto;
+	width: 100%;
 	height: 56px;
 	background: $surface;
 	z-index: 999;
@@ -131,7 +131,7 @@ body{
 	}
 
 	@include desktop{
-
+		width: auto;
 		height: 100%;
 
 		ul{

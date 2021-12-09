@@ -37,7 +37,7 @@ body {
   display: flex;
   top: 0;
   left: 0;
-  width: auto;
+  width: 100%;
   height: 56px;
   background: #161717;
   z-index: 999; }
@@ -55,6 +55,7 @@ body {
         white-space: nowrap; }
   @media (min-width: 1024px) {
     .navbar-wrapper {
+      width: auto;
       height: 100%; }
       .navbar-wrapper ul {
         flex-direction: column; }

@@ -30,22 +30,18 @@
                   });
     });
 
+     var navWidth = $( '.navbar-wrapper' ).outerWidth() + 30;
+
+
+      if($(window).width() > 1023) { 
+          $( '.tutorial .container' ).css( "margin-left", navWidth );
+        }
+
 
   });
 
 
 
-//튜토리얼 PC버전 레이아웃
-var navWidth = $( '.navbar-wrapper' ).outerWidth() + 30;
-
-$(window).resize(function(){ 
-  if (window.width > 1023) { 
-   $( '.tutorial .container' ).css( "margin-left", navWidth ); 
-  } else { 
-     $( '.tutorial .container' ).css( "margin-left", "0" );
-  } 
-
-}).resize();
 
 
 
