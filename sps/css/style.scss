@@ -9,6 +9,8 @@ $text: #999;
 $bg-200: #767A7C;
 $bg-700: #2A2C2D;
 
+
+
 $breakpoint-mobile: 280px;
 $breakpoint-tablet: 758px;
 $breakpoint-desktop: 1024px;
@@ -91,11 +93,15 @@ p{
 
 /* navigation */
 
+body{
+	display:flex;
+}
+
 .navbar-wrapper{
-	position: fixed !important;
+	display: flex;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: auto;
 	height: 56px;
 	background: $surface;
 	z-index: 999;
@@ -126,12 +132,17 @@ p{
 
 	@include desktop{
 
-		width: 300px;
 		height: 100%;
 
 		ul{
 			
 			flex-direction: column;
+
+
+			li a{
+				padding: 0 30px;
+			}
+			
 		}
 
 	}
@@ -356,8 +367,9 @@ footer{
 .tutorial .container{
 
 	@include desktop{
-		width: calc(100% - 300px);
-		margin-left: 300px;
+		display: flex;
+		flex-direction: column;
+		width: auto;
 		margin-top: 0px !important;
 		padding: 0 30px;
 
@@ -383,9 +395,10 @@ footer{
 }
 
 
+
 section{
 	position: relative;
-	padding: 35px;
+	padding: 50px;
 	margin-top: 35px;
 	z-index: 10;
 	@include clear;
