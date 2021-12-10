@@ -5,7 +5,24 @@
 //메뉴 선택
   //initiating jQuery  
   jQuery(function($) {
+
+
+
     $(document).ready( function() {
+
+
+
+     var navWidth = $( '.navbar-wrapper' ).outerWidth() + 30;
+
+
+      if($(window).width() > 1023) { 
+          $( '.tutorial .container' ).css( "margin-left", navWidth );
+        }
+
+
+
+
+      
       //enabling stickUp on the '.navbar-wrapper' class
       $('.navbar-wrapper').stickUp({
 
@@ -29,13 +46,6 @@
                     marginTop: '0px'
                   });
     });
-
-     var navWidth = $( '.navbar-wrapper' ).outerWidth() + 30;
-
-
-      if($(window).width() > 1023) { 
-          $( '.tutorial .container' ).css( "margin-left", navWidth );
-        }
 
 
   });
