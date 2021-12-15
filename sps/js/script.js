@@ -12,12 +12,12 @@
 
 
 
-     var navWidth = $( '.navbar-wrapper' ).outerWidth() + 30;
+     // var navWidth = $( '.navbar-wrapper' ).outerWidth() + 30;
 
 
-      if($(window).width() > 1023) { 
-          $( '.tutorial .container' ).css( "margin-left", navWidth );
-        }
+     //  if($(window).width() > 1023) { 
+     //      $( '.tutorial .container' ).css( "margin-left", navWidth );
+     //    }
 
 
 

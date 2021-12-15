@@ -43,24 +43,26 @@ body {
   z-index: 999; }
   .navbar-wrapper ul {
     display: flex;
-    overflow: auto;
-    white-space: nowrap; }
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: auto; }
     .navbar-wrapper ul li {
       position: relative;
       font-size: 1.125rem; }
       .navbar-wrapper ul li a {
         display: block;
-        line-height: 56px;
         padding: 0 16px;
-        white-space: nowrap; }
+        line-height: 56px; }
   @media (min-width: 1024px) {
     .navbar-wrapper {
-      width: auto;
+      width: 300px;
       height: 100%; }
       .navbar-wrapper ul {
+        white-space: normal;
         flex-direction: column; }
         .navbar-wrapper ul li a {
-          padding: 0 30px; } }
+          padding: 20px 30px;
+          line-height: 1; } }
 
 .active a {
   color: #fff;
@@ -69,6 +71,7 @@ body {
   @media (min-width: 1024px) {
     .active a {
       border-bottom: 0 none;
+      height: auto;
       background: black; } }
 
 .navbar-wrapper ul {
@@ -209,6 +212,7 @@ footer {
       flex-direction: column;
       width: auto;
       margin-top: 0px !important;
+      margin-left: 300px;
       padding: 0 30px; }
       .tutorial .container section {
         overflow: hidden; }

@@ -112,8 +112,9 @@ body{
 	ul{
 		
 		display: flex;
-		overflow: auto;
+		flex-wrap: nowrap;
 		white-space: nowrap;
+		overflow: auto;
 
 		li{
 			position: relative;
@@ -121,26 +122,25 @@ body{
 
 			a{
 				display: block;
-				line-height: 56px;
 				padding: 0 16px;
-				white-space: nowrap;
-
+				line-height: 56px;
 			}
 			
 		}
 	}
 
 	@include desktop{
-		width: auto;
+		width: 300px;
 		height: 100%;
 
 		ul{
-			
+			white-space: normal;
 			flex-direction: column;
 
 
 			li a{
-				padding: 0 30px;
+				padding: 20px 30px;
+				line-height: 1;
 			}
 			
 		}
@@ -157,6 +157,7 @@ body{
 
 		@include desktop{
 		border-bottom: 0 none;
+		height: auto;
 		background: darken($bg-700, 30%);
 		}
 	}	
@@ -373,6 +374,7 @@ footer{
 		flex-direction: column;
 		width: auto;
 		margin-top: 0px !important;
+		margin-left: 300px;
 		padding: 0 30px;
 
 
