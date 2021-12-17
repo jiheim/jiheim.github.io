@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+
+
+/* colors */
+$surface: #161717;
+$secondary: #fff;
+$text: #999;
+$bg-200: #767A7C;
+$bg-700: #2A2C2D;
+
+
+
+
+/* function */
+
+/* rem calculator */ 
+@function calculateRem($size) {
+ @return $size / 16px * 1rem;
+}
+
+
+
+/* clear */
+
+@mixin clear{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* global */
+
+*{
+	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	scroll-behavior: smooth;
+}
+
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
+// @include media-breakpoint-up(xxl) { ... }
+
+
+@media (max-width: 992px){
+	.tutorial-nav{
+		display: none !important;
+	}
+}
+
+@media (min-width: 992px){
+	.mobile-navbar{
+		display: none;
+	}
+}
