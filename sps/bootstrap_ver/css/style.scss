@@ -8,7 +8,7 @@ $secondary: #fff;
 $text: #999;
 $bg-200: #767A7C;
 $bg-700: #2A2C2D;
-
+$white: white;
 
 
 
@@ -45,14 +45,109 @@ $bg-700: #2A2C2D;
 // @include media-breakpoint-up(xxl) { ... }
 
 
-@media (max-width: 992px){
-	.tutorial-nav{
-		display: none !important;
+body{
+	background: $bg-700;
+	position: relative;
+}
+
+
+.tuts-container{
+	position: relative;
+}
+
+#tuts-nav{
+	
+	background: $surface;
+
+	 .nav-link{
+		padding: 15px 30px;
+		color: $text;
 	}
 }
+
+
+.tutorial-content{
+	position: relative;
+	color: $text;
+	padding: calculateRem(50px);
+
+
+	section{
+		padding-bottom: calculateRem(30px);
+	}
+
+	h2{
+		color: $white;
+		font-size: calculateRem(25px);
+	}
+}
+
+
+
+
+@media (max-width: 992px){
+	#tuts-nav{
+		display: none !important;
+	}
+
+	.tutorial-content{
+		.video-preview{
+			padding-bottom: calculateRem(30px);
+		}
+	}
+
+	.active{
+			color: red;
+		}
+}
+
+
+
+
 
 @media (min-width: 992px){
 	.mobile-navbar{
 		display: none;
 	}
+
+	#tuts-nav{
+		height: 100vh;
+		width: 300px;
+
+		.active{
+			color: red;
+		}
+	}
+
+.tutorial-content{
+	height:auto;
+	position:relative;
+	margin-left: 300px;
+
+		section{
+			@include clear;
+			overflow: hidden;
+			padding-bottom: calculateRem(50px);
+		}
+
+		.video-preview{
+			float:left;
+			margin-right: calculateRem(50px);
+		}
+	}
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+

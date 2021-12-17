@@ -10,11 +10,60 @@
   font-weight: 400;
   scroll-behavior: smooth; }
 
+body {
+  background: #2A2C2D;
+  position: relative; }
+
+.tuts-container {
+  position: relative; }
+
+#tuts-nav {
+  background: #161717; }
+  #tuts-nav .nav-link {
+    padding: 15px 30px;
+    color: #999; }
+
+.tutorial-content {
+  position: relative;
+  color: #999;
+  padding: 3.125rem; }
+  .tutorial-content section {
+    padding-bottom: 1.875rem; }
+  .tutorial-content h2 {
+    color: white;
+    font-size: 1.5625rem; }
+
 @media (max-width: 992px) {
-  .tutorial-nav {
-    display: none !important; } }
+  #tuts-nav {
+    display: none !important; }
+
+  .tutorial-content .video-preview {
+    padding-bottom: 1.875rem; }
+
+  .active {
+    color: red; } }
 @media (min-width: 992px) {
   .mobile-navbar {
-    display: none; } }
+    display: none; }
+
+  #tuts-nav {
+    height: 100vh;
+    width: 300px; }
+    #tuts-nav .active {
+      color: red; }
+
+  .tutorial-content {
+    height: auto;
+    position: relative;
+    margin-left: 300px; }
+    .tutorial-content section {
+      content: "";
+      display: block;
+      clear: both;
+      overflow: hidden;
+      padding-bottom: 3.125rem; }
+    .tutorial-content .video-preview {
+      float: left;
+      margin-right: 3.125rem; } }
 
 /*# sourceMappingURL=style.css.map */
