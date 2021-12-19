@@ -14,10 +14,14 @@ body {
   background: #2A2C2D;
   position: relative; }
 
+.nav {
+  align-content: flex-start; }
+
 .tuts-container {
   position: relative; }
 
 #tuts-nav {
+  overflow-y: scroll;
   background: #161717; }
   #tuts-nav .nav-link {
     padding: 15px 30px;
@@ -25,10 +29,9 @@ body {
 
 .tutorial-content {
   position: relative;
-  color: #999;
-  padding: 3.125rem; }
+  color: #999; }
   .tutorial-content section {
-    padding-bottom: 1.875rem; }
+    padding: 50px; }
   .tutorial-content h2 {
     color: white;
     font-size: 1.5625rem; }
@@ -39,6 +42,13 @@ body {
 
   .tutorial-content .video-preview {
     padding-bottom: 1.875rem; }
+  .tutorial-content section {
+    padding: 0.9375rem;
+    padding-bottom: 3.125rem;
+    text-align: center; }
+    .tutorial-content section #video {
+      display: block;
+      margin: 0 auto; }
 
   .active {
     color: red; } }
@@ -49,8 +59,11 @@ body {
   #tuts-nav {
     height: 100vh;
     width: 300px; }
+    #tuts-nav .nav-item {
+      width: 100%; }
     #tuts-nav .active {
-      color: red; }
+      background: black;
+      color: white; }
 
   .tutorial-content {
     height: auto;
@@ -60,8 +73,7 @@ body {
       content: "";
       display: block;
       clear: both;
-      overflow: hidden;
-      padding-bottom: 3.125rem; }
+      overflow: hidden; }
     .tutorial-content .video-preview {
       float: left;
       margin-right: 3.125rem; } }

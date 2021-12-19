@@ -9,6 +9,7 @@ $text: #999;
 $bg-200: #767A7C;
 $bg-700: #2A2C2D;
 $white: white;
+$black: black;
 
 
 
@@ -51,12 +52,17 @@ body{
 }
 
 
+.nav{
+	align-content: flex-start;
+}
+
 .tuts-container{
 	position: relative;
+
 }
 
 #tuts-nav{
-	
+	overflow-y: scroll;
 	background: $surface;
 
 	 .nav-link{
@@ -69,11 +75,10 @@ body{
 .tutorial-content{
 	position: relative;
 	color: $text;
-	padding: calculateRem(50px);
 
 
 	section{
-		padding-bottom: calculateRem(30px);
+		padding: 50px;
 	}
 
 	h2{
@@ -84,7 +89,7 @@ body{
 
 
 
-
+//md 이하
 @media (max-width: 992px){
 	#tuts-nav{
 		display: none !important;
@@ -93,6 +98,17 @@ body{
 	.tutorial-content{
 		.video-preview{
 			padding-bottom: calculateRem(30px);
+		}
+
+		section{
+			padding: calculateRem(15px);
+			padding-bottom: calculateRem(50px);
+			text-align: center;
+
+			#video{
+				display: block;
+				margin: 0 auto;
+			}
 		}
 	}
 
@@ -104,7 +120,7 @@ body{
 
 
 
-
+//md 이상 
 @media (min-width: 992px){
 	.mobile-navbar{
 		display: none;
@@ -114,9 +130,16 @@ body{
 		height: 100vh;
 		width: 300px;
 
-		.active{
-			color: red;
+		
+		.nav-item{
+			width: 100%;
 		}
+
+		.active{
+			background: $black;
+			color: $white;
+		}
+
 	}
 
 .tutorial-content{
@@ -127,7 +150,6 @@ body{
 		section{
 			@include clear;
 			overflow: hidden;
-			padding-bottom: calculateRem(50px);
 		}
 
 		.video-preview{
