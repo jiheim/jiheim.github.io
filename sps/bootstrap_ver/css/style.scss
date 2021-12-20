@@ -93,9 +93,12 @@ body{
 @media (max-width: 992px){
 	#tuts-nav{
 		display: none !important;
+
 	}
 
 	.tutorial-content{
+
+		top: 56px;
 		.video-preview{
 			padding-bottom: calculateRem(30px);
 		}

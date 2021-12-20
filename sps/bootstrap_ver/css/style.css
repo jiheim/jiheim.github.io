@@ -40,15 +40,17 @@ body {
   #tuts-nav {
     display: none !important; }
 
-  .tutorial-content .video-preview {
-    padding-bottom: 1.875rem; }
-  .tutorial-content section {
-    padding: 0.9375rem;
-    padding-bottom: 3.125rem;
-    text-align: center; }
-    .tutorial-content section #video {
-      display: block;
-      margin: 0 auto; }
+  .tutorial-content {
+    top: 56px; }
+    .tutorial-content .video-preview {
+      padding-bottom: 1.875rem; }
+    .tutorial-content section {
+      padding: 0.9375rem;
+      padding-bottom: 3.125rem;
+      text-align: center; }
+      .tutorial-content section #video {
+        display: block;
+        margin: 0 auto; }
 
   .active {
     color: red; } }
