@@ -1,251 +1,324 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="SingPlay">
+    <meta name="generator" content="">
+    <title>SingPlay Tutorial</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>SingPlay Studio Tutorial</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body class="tutorial">
-
-
-<nav class="navbar-wrapper">
-  <ul>
-    <li class="menuItem active"><a href="#practice" data-toggle="collapse" data-target=".navbar-collapse">#Start Practicing</a></li>
-    <li class="menuItem"><a href="#setting">#Project Setting</a></li>
-    <li class="menuItem"><a href="#edit-lyrics">#Add & Edit Lyrics</a></li>
-    <li class="menuItem"><a href="#adjust-sync">#Adjust Lyric Sync</a></li>
-    <li class="menuItem"><a href="#fine-tune">#Fine-tune Lyric Sync</a></li>
-    <li class="menuItem"><a href="#recording">#Record Audio & Video</a></li>
-    <li class="menuItem"><a href="#clip">#Adjust Clips Precisely</a></li>
-    <li class="menuItem"><a href="#trim">#Trim</a></li>
-    <li class="menuItem"><a href="#clip-sync">#Adjust Clip Sync</a></li>
-    <li class="menuItem"><a href="#template">#Use Video Templates</a></li>
-    <li class="menuItem"><a href="#share">#Share to KineMaster</a></li>
-    <li class="menuItem"><a href="#language">#Change App Language</a></li>
-    <li class="menuItem"><a href="#search">#Search Feature</a></li>
-  </ul>
-</nav>
-
-
-<!-- container -->
-<div class="container">
-
-  <!-- practice -->
-  <section id="practice">
-
-
-    <div class="video-preview">
-      <iframe id="video" src="https://player.vimeo.com/video/571540907?loop=1&autopause=1&muted=1" width="250" height="518" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>Start Practicing</h2>
-    <p>Practice as much as you want with the song you want to cover. Adjust the sound effects before recording for practices down to the finest detail.</p>
-
-  </section>
-  <!-- //practice -->
-
-
-<!-- project setting - 텍스트 교체 -->
-  <section id="setting">
     
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/581982376?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
 
-    <h2>Project(Song) Settings</h2>
-    <p>Please make sure to edit that the song title and artist as they will be displayed in the video. If there is no video, the album art will be used. Try arranging the images as you want!</p>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/tutorial.js"></script>
+
+
+    <!-- CSS -->
+    <link href="css/tutorial.css" rel="stylesheet">
+
+  </head>
+
+
+
+
+  <body data-bs-spy="scroll" data-bs-target="#tuts-nav" data-bs-offset="0" tabindex="0">
+
+
+
+        <!-- mobile-navbar -->
+        <nav class="mobile-navbar navbar navbar-dark bg-dark fixed-top navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#practice">#Start Practicing</a>
+                <a class="nav-link" href="#setting">#Project Setting</a>
+                <a class="nav-link" href="#edit-lyrics">#Add & Edit Lyrics</a>
+                <a class="nav-link" href="#adjust-sync">#Adjust Lyric Sync</a>
+                <a class="nav-link" href="#fine-tune">#Fine-tune Lyric Sync</a>
+                <a class="nav-link" href="#recording">#Record Audio & Video</a>
+                <a class="nav-link" href="#clip">#Adjust Clips Precisely</a>
+                <a class="nav-link" href="#trim">#Trim</a>
+                <a class="nav-link" href="#clip-sync">#Adjust Clip Sync</a>
+                <a class="nav-link" href="#template">#Use Video Templates</a>
+                <a class="nav-link" href="#share">#Share to KineMaster</a>
+                <a class="nav-link" href="#language">#Change App Language</a>
+                <a class="nav-link" href="#search">#Search Feature</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- //mobile-navbar -->
+
+
+        <!-- tutorial-nav -->
+        <nav class="fixed-top flex-column">
+          <ul id="tuts-nav" class="nav">
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#practice">#Start Practicing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#setting">#Project Setting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#edit-lyrics">#Add & Edit Lyrics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#adjust-sync">#Adjust Lyric Sync</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fine-tune">#Fine-tune Lyric Sync</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recording">#Record Audio & Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clip">#Adjust Clips Precisely</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trim">#Trim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clip-sync">#Adjust Clip Sync</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#template">#Use Video Templates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#share">#Share to KineMaster</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#language">#Change App Language</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#search">#Search Feature</a>
+            </li>
+          </ul>
+          </nav>
+          <!-- //tutorial-nav -->
+
+    <div class="tuts-container container-flueid">
+      <!-- content -->
+      <div class="tutorial-content col-sm">
+          
+        <!-- practice -->
+        <section id="practice">
+        
 
-  </section>
-<!-- //project setting -->
+          <div class="video-preview">
+            <iframe id="video" src="https://player.vimeo.com/video/571540907?loop=1&autopause=1&muted=1" width="250" height="518" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+          
 
+          <div class="tuts-desc">
+            <h2>Start Practicing</h2>
+            <p>Practice as much as you want with the song you want to cover. Adjust the sound effects before recording for practices down to the finest detail.</p>
+          </div>
 
-  <!-- edit-lyrics -->
-  <section id="edit-lyrics">
+        </section>
+        <!-- //practice -->
 
-    <div class="video-preview">
-      <iframe id="video" src="https://player.vimeo.com/video/571540940?&loop=1&autopause=1&muted=1" width="250" height="525" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
 
-    <h2>Add & Edit Lyrics</h2>
-    <p>Try adding lyrics yourself. If your music has lyrics, they will be added automatically.</p>
+        <!-- project setting -->
+        <section id="setting">
+          
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/581982376?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-  </section>
-  <!-- //edit-lyrics -->
+          <div class="tuts-desc">
+            <h2>Project(Song) Settings</h2>
+            <p>Please make sure to edit that the song title and artist as they will be displayed in the video. If there is no video, the album art will be used. Try arranging the images as you want!</p>
+          </div>
 
+        </section>
+      <!-- //project setting -->
 
+        <!-- edit-lyrics -->
+        <section id="edit-lyrics">
 
-  <!-- adjust-sync -->
-  <section id="adjust-sync">
+          <div class="video-preview">
+            <iframe id="video" src="https://player.vimeo.com/video/571540940?&loop=1&autopause=1&muted=1" width="250" height="525" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-    <div class="video-preview">
-      <iframe id="video" src="https://player.vimeo.com/video/571540968?&loop=1&autopause=1&muted=1" width="250" height="531" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
+          <div class="tuts-desc">
+            <h2>Add & Edit Lyrics</h2>
+            <p>Try adding lyrics yourself. If your music has lyrics, they will be added automatically.</p>
+          </div>
 
+        </section>
+        <!-- //edit-lyrics -->
 
-    <h2>Adjust Lyric Sync</h2>
-    <p>Adjust sync to the lyrics if you want to add them to your video. You can sync the lyrics to the desired timestamp of a song. It's ok if you make mistakes! You can always re-adjust the sync by tapping the '^' button.</p>
+        
 
-  </section>
-  <!-- //adjust-sync -->
 
-  <!-- fine-ture -->
-  <section id="fine-tune">
+        <!-- adjust-sync -->
+        <section id="adjust-sync">
 
-    <div class="video-preview">
-      <iframe id="video" src="https://player.vimeo.com/video/591405681?&loop=1&autopause=1&muted=1" width="250" height="531" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
+          <div class="video-preview">
+            <iframe id="video" src="https://player.vimeo.com/video/571540968?&loop=1&autopause=1&muted=1" width="250" height="531" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
+          <div class="tuts-desc">
+            <h2>Adjust Lyric Sync</h2>
+            <p>Adjust sync to the lyrics if you want to add them to your video. You can sync the lyrics to the desired timestamp of a song. It's ok if you make mistakes! You can always re-adjust the sync by tapping the '^' button.</p>
+          </div>
+        </section>
+        <!-- //adjust-sync -->
 
-    <h2>Fine-tune Lyric Sync</h2>
-    <p>You can precisely adjust the sync to the lyrics.</p>
 
-  </section>
-  <!-- //fine-ture -->
+        <!-- fine-ture -->
+        <section id="fine-tune">
 
+          <div class="video-preview">
+            <iframe id="video" src="https://player.vimeo.com/video/591405681?&loop=1&autopause=1&muted=1" width="250" height="531" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-  <!-- recording -->
-  <section id="recording">
+          <div class="tuts-desc">
+            <h2>Fine-tune Lyric Sync</h2>
+            <p>You can precisely adjust the sync to the lyrics.</p>
+          </div>
 
-    <div class="video-preview">    
-  	 <iframe id="video" src="https://player.vimeo.com/video/571540985?&loop=1&autopause=1&muted=1" width="250" height="523" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
+        </section>
+        <!-- //fine-ture -->
+        
+        
+        <!-- recording -->
+        <section id="recording">
 
-    <h2>Record Audio & Video</h2>
-    <p>Tap '+' button to record audio and video.</p>
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/571540985?&loop=1&autopause=1&muted=1" width="250" height="523" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-  </section>
-  <!-- //recording -->
+          <div class="tuts-desc">
+            <h2>Record Audio & Video</h2>
+            <p>Tap '+' button to record audio and video.</p>
+          </div>
 
+        </section>
+        <!-- //recording -->
+  
 
-  <!-- clip -->
-  <section id="clip">
+        <!-- clip -->
+        <section id="clip">
 
-    <div class="video-preview">    
-  	 <iframe id="video" src="https://player.vimeo.com/video/571541037?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/571541037?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-    <h2>Adjust Clips Precisely</h2>
-    <p>You can adjust the settings like volume, pitch, auto-volume, EQ, and more when you select the clips.</p>
+          <div class="tuts-desc">
+            <h2>Adjust Clips Precisely</h2>
+            <p>You can adjust the settings like volume, pitch, auto-volume, EQ, and more when you select the clips.</p>
+          </div>
+        </section>
+        <!-- //clip -->
 
-  </section>
-  <!-- //clip -->
 
 
+        <!-- trim -->
+        <section id="trim">
+          
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/582038895?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-  <!-- trim- 동영상 교체 텍스트 교체 -->
-  <section id="trim">
-    
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/582038895?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
 
-    <h2>Trim Clips</h2>
-    <p>If there are repeated or unnecessary clips, try using the 'Trim' feature without having to record again! With the 'Trim' feature, you can easily remove the unwanted parts of the clips for easier recording sessions.</p>
+          <div class="tuts-desc">
+            <h2>Trim Clips</h2>
+            <p>If there are repeated or unnecessary clips, try using the 'Trim' feature without having to record again! With the 'Trim' feature, you can easily remove the unwanted parts of the clips for easier recording sessions.</p>
+          </div>
+        </section>
+        <!-- //trim -->
+        
 
-  </section>
-<!-- //trim -->
 
+        <!-- clip sync -->
+        <section id="clip-sync">
 
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/571541038?&loop=1&autopause=1&muted=1" width="250" height="524" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-  <!-- clip sync -->
-  <section id="clip-sync">
+          <div class="tuts-desc">
+            <h2>Adjust Clip Sync</h2>
+            <p>If the recorded clip is out of sync with the primary clip, you can adjust the sync precisely down to milliseconds.</p>
+          </div>
 
-    <div class="video-preview">    
-  	 <iframe id="video" src="https://player.vimeo.com/video/571541038?&loop=1&autopause=1&muted=1" width="250" height="524" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
+        </section>
+        <!-- //clip sync -->
 
-    <h2>Adjust Clip Sync</h2>
-    <p>If the recorded clip is out of sync with the primary clip, you can adjust the sync precisely down to milliseconds.</p>
+        <!-- video template -->
+        <section id="template">
 
-  </section>
-  <!-- //clip sync -->
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/571541066?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
+          <div class="tuts-desc">
+            <h2>Use Video Templates</h2>
+            <p>Select a template that fits your video. You can create awesome video with just one simple selection.</p>
+          </div>
+        </section>
+        <!-- //video template -->
 
+        <!-- Share -->
+        <section id="share">
 
-<!-- video template -->
-  <section id="template">
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/643843708?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-    <div class="video-preview">    
-  	 <iframe id="video" src="https://player.vimeo.com/video/571541066?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
+          <div class="tuts-desc">
+            <h2>Share to KineMaster</h2>
+            <p>If you want to add more edits to your SingPlay videos, tap the 'KineMaster' button to share them. You can make various edits to your videos.</p>
+          </div>
+        </section>
+        <!-- //Share -->
 
-    <h2>Use Video Templates</h2>
-    <p>Select a template that fits your video. You can create awesome video with just one simple selection.</p>
+        <!-- language -->
+        <section id="language">
 
-  </section>
-  <!-- //video template -->
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/653520401?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-<!-- Share -->
-  <section id="share">
+          <div class="tuts-desc">
+            <h2>Change App Language</h2>
+            <p>You can change the app language by going to 'About SingPlay.'</p>
+          </div>
+        </section>
+        <!-- //language -->
 
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/643843708?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
 
-    <h2>Share to KineMaster</h2>
-    <p>If you want to add more edits to your SingPlay videos, tap the 'KineMaster' button to share them. You can make various edits to your videos.</p>
+        <!-- search -->
+        <section id="search">
 
-  </section>
-  <!-- //Share -->
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/653520424?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
 
-<!-- Share -->
-  <section id="share">
+          <div class="tuts-desc">
+            <h2>Search Feature</h2>
+            <p>You can now search for the songs or videos you're looking for.</p>
+          </div>
 
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/643843708?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
+        </section>
+        <!-- //search -->
 
-    <h2>Share to KineMaster</h2>
-    <p>If you want to add more edits to your SingPlay videos, tap the 'KineMaster' button to share them. You can make various edits to your videos.</p>
 
-  </section>
-  <!-- //Share -->
+        </div>
+        <!-- //content -->
+      </div>
 
-  <!-- language -->
-  <section id="language">
 
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/653520401?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
 
-    <h2>Change App Language</h2>
-    <p>You can change the app language by going to 'About SingPlay.'</p>
+  </body>
 
-  </section>
-  <!-- //language -->
-
-    <!-- search -->
-  <section id="search">
-
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/653520424?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>Search Feature</h2>
-    <p>You can now search for the songs or videos you're looking for.</p>
-
-  </section>
-  <!-- //search -->
-
-</div>
-<!-- //container -->
-
-
-  <script src="js/jquery.js"></script>
-  <script src="js/stickUp.js"></script>
-  <script src="js/script.js"></script>
-
-
-</body>
-
-</html>
-            

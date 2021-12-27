@@ -1,234 +1,322 @@
 <!doctype html>
-<html class="no-js" lang="zh-cn">
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="SingPlay">
+    <meta name="generator" content="">
+    <title>SingPlay Tutorial</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>SingPlay Studio Tutorial</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="../../css/normalize.css">
-  <link rel="stylesheet" href="../../css/main.css">
-  <link rel="stylesheet" href="../../css/style.css">
-
-</head>
-
-<body class="tutorial">
-
-
-<nav class="navbar-wrapper">
-  <ul>
-    <li class="menuItem active"><a href="#practice">#开始练习</a></li>
-    <li class="menuItem"><a href="#setting">#项目（歌曲）设置</a></li>
-    <li class="menuItem"><a href="#edit-lyrics">#添加 & 编辑歌词</a></li>
-    <li class="menuItem"><a href="#adjust-sync">#添加歌词 & 调整同步</a></li>
-    <li class="menuItem"><a href="#fine-tune">#微调同步歌词</a></li>
-    <li class="menuItem"><a href="#recording">#录制音频 & 视频</a></li>
-    <li class="menuItem"><a href="#clip">#精确调整剪辑</a></li>
-    <li class="menuItem"><a href="#trim">#修剪剪辑</a></li>
-    <li class="menuItem"><a href="#clip-sync">#调整同步剪辑</a></li>
-    <li class="menuItem"><a href="#template">#适用视频模版</a></li>
-    <li class="menuItem"><a href="#share">#项目分享（巧影）</a></li>
-    <li class="menuItem"><a href="#language">#切換應用語言</a></li>
-    <li class="menuItem"><a href="#search">#搜索功能</a></li>
-  </ul>
-</nav>
-
-
-<!-- container -->
-<div class="tutorial container">
-
-  <!-- practice -->
-  <section id="practice">
-
-    <div class="video-preview">
-      <iframe id="video" src="https://player.vimeo.com/video/571540907?loop=1&autopause=1&muted=1" width="250" height="518" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>开始练习</h2>
-    <p>尽可能多地练习您想要覆盖的歌曲。在录制前，调整声音效果，从而让练习达到细致且最佳的效果。</p>
-
-  </section>
-  <!-- //practice -->
-
-<!-- project setting -->
-  <section id="setting">
     
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/581982376?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
 
-    <h2>项目（歌曲）设置</h2>
-    <p>请确保已编辑过歌曲标题和艺术家，因为它们将显示在视频中。 如果没有视频，将使用 专辑艺术。 尝试根据需求选择图像！</p>
-
-  </section>
-<!-- //project setting -->
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/tutorial.js"></script>
 
 
-  <!-- edit-lyrics -->
-  <section id="edit-lyrics">
+    <!-- CSS -->
+    <link href="../../css/tutorial.css" rel="stylesheet">
 
-    <div class="video-preview">
-      <iframe id="video" src="https://player.vimeo.com/video/571540940?&loop=1&autopause=1&muted=1" width="250" height="525" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>添加 & 编辑歌词</h2>
-    <p>尝试添加或直接输入歌词。如果您的音源附带歌词，将会自动完成添加。</p>
-
-  </section>
-  <!-- //edit-lyrics -->
-
-
-  <!-- adjust-sync -->
-  <section id="adjust-sync">
-
-    <div class="video-preview">
-      <iframe id="video" src="https://player.vimeo.com/video/571540968?&loop=1&autopause=1&muted=1" width="250" height="531" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-
-    <h2>添加歌词 & 调整同步</h2>
-    <p>如果要将其添加至视频，请调整同步歌词。 您可以将同步歌词指定到歌曲时间节点。 如果出现失误，没关系！ 可通过点击“^”按钮，重新调整同步。</p>
-
-  </section>
-  <!-- //adjust-sync -->
-
-  <!-- adjust-sync -->
-  <section id="fine-tune">
-
-    <div class="video-preview">
-      <iframe id="video" src="https://player.vimeo.com/video/591405681?&loop=1&autopause=1&muted=1" width="250" height="531" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-
-    <h2>微调同步歌词</h2>
-    <p>可精确调整到同步的歌词位置。</p>
-
-  </section>
-  <!-- //adjust-sync -->
+  </head>
 
 
 
-  <!-- recording -->
-  <section id="recording">
-    
-  	<div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/571540985?&loop=1&autopause=1&muted=1" width="250" height="523" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
 
-    <h2>录制音频 & 视频</h2>
-    <p>点按“+”按钮以录制音频和视频。</p>
-
-  </section>
-  <!-- //recording -->
-
-
-  <!-- clip -->
-  <section id="clip">
-    
-  	<div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/571541037?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>精确调整剪辑</h2>
-    <p>选择剪辑时，可调整音量、音高、自动音量、EQ等设置。</p>
-
-  </section>
-  <!-- //clip -->
-
-
-  <!-- trim - 동영상 교체 -->
-  <section id="trim">
-    
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/582038895?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>修剪剪辑</h2>
-    <p>如果有重复或不必要的剪辑，请尝试使用“修剪”功能，无需再次录制！ 使用“修剪”功能，您可以直接删除剪辑中不需要的部分，以便于轻松地完成录制。</p>
-
-  </section>
-<!-- //trim -->
+  <body data-bs-spy="scroll" data-bs-target="#tuts-nav" data-bs-offset="0" tabindex="0">
 
 
 
-  <!-- clip sync -->
-  <section id="clip-sync">
-    
-  	<div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/571541038?&loop=1&autopause=1&muted=1" width="250" height="524" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>调整同步剪辑</h2>
-    <p>如果录制的剪辑与主剪辑不同步，可将同步精确度调整为毫秒。</p>
-
-  </section>
-  <!-- //clip sync -->
-
-
-
-<!-- video template -->
-  <section id="template">
-    
-  	<div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/571541066?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>适用视频模版</h2>
-    <p>选择一个合适的视频模板。只需进行简单的选择，即可创建一个精彩的视频。</p>
-
-  </section>
-  <!-- //video template -->
-
-<!-- Share -->
-  <section id="share">
-
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/643843708?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>项目分享（巧影）</h2>
-    <p>如果要为SingPlay视频添加更多效果，请点按“巧影”按钮进行分享。 即可前往巧影完成更多视频编辑。</p>
-
-  </section>
-  <!-- //Share -->
-
-  <!-- language -->
-  <section id="language">
-
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/653520401?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>切换应用语言</h2>
-    <p>可在’关于SingPlay‘中切换应用语言</p>
-
-  </section>
-  <!-- //language -->
-
-    <!-- search -->
-  <section id="search">
-
-    <div class="video-preview">    
-     <iframe id="video" src="https://player.vimeo.com/video/653520424?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <h2>搜索功能</h2>
-    <p>现在，您可以快速搜索到所需的歌曲和视频。</p>
-
-  </section>
-  <!-- //search -->
-
-</div>
-<!-- //container -->
+        <!-- mobile-navbar -->
+        <nav class="mobile-navbar navbar navbar-dark bg-dark fixed-top navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#practice">#开始练习</a>
+                <a class="nav-link" href="#setting">#项目（歌曲）设置</a>
+                <a class="nav-link" href="#edit-lyrics">#添加 & 编辑歌词</a>
+                <a class="nav-link" href="#adjust-sync">#添加歌词 & 调整同步</a>
+                <a class="nav-link" href="#fine-tune">#微调同步歌词</a>
+                <a class="nav-link" href="#recording">#录制音频 & 视频</a>
+                <a class="nav-link" href="#clip">#精确调整剪辑</a>
+                <a class="nav-link" href="#trim">#修剪剪辑</a>
+                <a class="nav-link" href="#clip-sync">#调整同步剪辑</a>
+                <a class="nav-link" href="#template">#适用视频模版</a>
+                <a class="nav-link" href="#share">#项目分享（巧影）</a>
+                <a class="nav-link" href="#language">#切换应用语言</a>
+                <a class="nav-link" href="#search">#搜索功能</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- //mobile-navbar -->
 
 
-  <script src="../../js/jquery.js"></script>
-  <script src="../../js/stickUp.js"></script>
-  <script src="../../js/script.js"></script>
+        <!-- tutorial-nav -->
+        <nav class="fixed-top flex-column">
+          <ul id="tuts-nav" class="nav">
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#practice">#开始练习</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#setting">#项目（歌曲）设置</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#edit-lyrics">#添加 & 编辑歌词</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#adjust-sync">#添加歌词 & 调整同步</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fine-tune">#微调同步歌词</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recording">#录制音频 & 视频</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clip">#精确调整剪辑</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trim">#修剪剪辑</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clip-sync">#调整同步剪辑</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#template">#适用视频模版</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#share">#项目分享（巧影）</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#language">#切换应用语言</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#search">#搜索功能</a>
+            </li>
+          </ul>
+          </nav>
+          <!-- //tutorial-nav -->
+
+    <div class="tuts-container container-flueid">
+      <!-- content -->
+      <div class="tutorial-content col-sm">
+          
+        <!-- practice -->
+        <section id="practice">
+
+          <div class="video-preview">
+            <iframe id="video" src="https://player.vimeo.com/video/571540907?loop=1&autopause=1&muted=1" width="250" height="518" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>开始练习</h2>
+            <p>尽可能多地练习您想要覆盖的歌曲。在录制前，调整声音效果，从而让练习达到细致且最佳的效果。</p>
+          </div>
+
+        </section>
+        <!-- //practice -->
 
 
-</body>
+        <!-- project setting -->
+        <section id="setting">
+          
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/581982376?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
 
-</html>
-            
+          <div class="tuts-desc">
+            <h2>项目（歌曲）设置</h2>
+            <p>请确保已编辑过歌曲标题和艺术家，因为它们将显示在视频中。 如果没有视频，将使用 专辑艺术。 尝试根据需求选择图像！</p>
+          </div>
+
+        </section>
+      <!-- //project setting -->
+
+        <!-- edit-lyrics -->
+        <section id="edit-lyrics">
+
+          <div class="video-preview">
+            <iframe id="video" src="https://player.vimeo.com/video/571540940?&loop=1&autopause=1&muted=1" width="250" height="525" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>添加 & 编辑歌词</h2>
+            <p>尝试添加或直接输入歌词。如果您的音源附带歌词，将会自动完成添加。</p>
+          </div>
+
+        </section>
+        <!-- //edit-lyrics -->
+
+        
+
+
+        <!-- adjust-sync -->
+        <section id="adjust-sync">
+
+          <div class="video-preview">
+            <iframe id="video" src="https://player.vimeo.com/video/571540968?&loop=1&autopause=1&muted=1" width="250" height="531" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>添加歌词 & 调整同步</h2>
+            <p>如果要将其添加至视频，请调整同步歌词。 您可以将同步歌词指定到歌曲时间节点。 如果出现失误，没关系！ 可通过点击“^”按钮，重新调整同步。</p>
+          </div>
+        </section>
+        <!-- //adjust-sync -->
+
+
+        <!-- fine-ture -->
+        <section id="fine-tune">
+
+          <div class="video-preview">
+            <iframe id="video" src="https://player.vimeo.com/video/591405681?&loop=1&autopause=1&muted=1" width="250" height="531" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>微调同步歌词</h2>
+            <p>可精确调整到同步的歌词位置。</p>
+          </div>
+
+        </section>
+        <!-- //fine-ture -->
+        
+        
+        <!-- recording -->
+        <section id="recording">
+
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/571540985?&loop=1&autopause=1&muted=1" width="250" height="523" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>录制音频 & 视频</h2>
+            <p>点按“+”按钮以录制音频和视频。</p>
+          </div>
+
+        </section>
+        <!-- //recording -->
+  
+
+        <!-- clip -->
+        <section id="clip">
+
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/571541037?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>精确调整剪辑</h2>
+            <p>选择剪辑时，可调整音量、音高、自动音量、EQ等设置。</p>
+          </div>
+        </section>
+        <!-- //clip -->
+
+
+
+        <!-- trim -->
+        <section id="trim">
+          
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/582038895?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+
+          <div class="tuts-desc">
+            <h2>修剪剪辑</h2>
+            <p>如果有重复或不必要的剪辑，请尝试使用“修剪”功能，无需再次录制！ 使用“修剪”功能，您可以直接删除剪辑中不需要的部分，以便于轻松地完成录制。</p>
+          </div>
+        </section>
+        <!-- //trim -->
+        
+
+
+        <!-- clip sync -->
+        <section id="clip-sync">
+
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/571541038?&loop=1&autopause=1&muted=1" width="250" height="524" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>调整同步剪辑</h2>
+            <p>如果录制的剪辑与主剪辑不同步，可将同步精确度调整为毫秒。</p>
+          </div>
+
+        </section>
+        <!-- //clip sync -->
+
+        <!-- video template -->
+        <section id="template">
+
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/571541066?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>适用视频模版</h2>
+            <p>选择一个合适的视频模板。只需进行简单的选择，即可创建一个精彩的视频。</p>
+          </div>
+        </section>
+        <!-- //video template -->
+
+        <!-- Share -->
+        <section id="share">
+
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/643843708?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>项目分享（巧影）</h2>
+            <p>如果要为SingPlay视频添加更多效果，请点按“巧影”按钮进行分享。 即可前往巧影完成更多视频编辑。</p>
+          </div>
+        </section>
+        <!-- //Share -->
+
+        <!-- language -->
+        <section id="language">
+
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/653520401?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+          <div class="tuts-desc">
+            <h2>切换应用语言</h2>
+            <p>可在’关于SingPlay‘中切换应用语言</p>
+          </div>
+        </section>
+        <!-- //language -->
+
+
+        <!-- search -->
+        <section id="search">
+
+          <div class="video-preview">    
+           <iframe id="video" src="https://player.vimeo.com/video/653520424?&loop=1&autopause=1&muted=1" width="250" height="520" frameborder="0" allow="autoplay; autopause; fullscreen" allowfullscreen></iframe>
+          </div>
+
+
+          <div class="tuts-desc">
+            <h2>搜索功能</h2>
+            <p>现在，您可以快速搜索到所需的歌曲和视频。</p>
+          </div>
+
+        </section>
+        <!-- //search -->
+
+
+        </div>
+        <!-- //content -->
+      </div>
+
+
+
+  </body>
+
