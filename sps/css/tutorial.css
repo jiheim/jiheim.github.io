@@ -18,8 +18,7 @@ body {
   align-content: flex-start; }
 
 .tuts-container {
-  position: relative;
-  z-index: 5000; }
+  position: relative; }
 
 #tuts-nav {
   overflow-y: scroll;
@@ -67,6 +66,9 @@ body {
     #tuts-nav .active {
       background: black;
       color: white; }
+
+  .tuts-container {
+    z-index: 5000; }
 
   .tutorial-content {
     height: auto;
