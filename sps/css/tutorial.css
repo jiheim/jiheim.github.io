@@ -18,7 +18,8 @@ body {
   align-content: flex-start; }
 
 .tuts-container {
-  position: relative; }
+  position: relative;
+  z-index: 5000; }
 
 #tuts-nav {
   overflow-y: scroll;
@@ -70,7 +71,8 @@ body {
   .tutorial-content {
     height: auto;
     position: relative;
-    margin-left: 300px; }
+    margin-left: 300px;
+    z-index: 2000; }
     .tutorial-content section {
       content: "";
       display: block;
@@ -80,4 +82,4 @@ body {
       float: left;
       margin-right: 3.125rem; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=tutorial.css.map */
