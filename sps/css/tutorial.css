@@ -21,8 +21,7 @@ body {
   position: relative; }
 
 #tuts-nav {
-  overflow-y: scroll;
-  background: #161717; }
+  overflow-y: scroll; }
   #tuts-nav .nav-link {
     padding: 15px 30px;
     color: #999; }
@@ -58,22 +57,24 @@ body {
   .mobile-navbar {
     display: none; }
 
-  #tuts-nav {
+  .pc-nav {
     height: 100vh;
-    width: 300px; }
-    #tuts-nav .nav-item {
+    width: 300px;
+    background: #161717; }
+    .pc-nav .nav-item {
       width: 100%; }
-    #tuts-nav .active {
+    .pc-nav .active {
       background: black;
       color: white; }
 
   .tuts-container {
+    left: 300px;
+    width: calc(100% - 300px);
     z-index: 5000; }
 
   .tutorial-content {
     height: auto;
     position: relative;
-    margin-left: 300px;
     z-index: 2000; }
     .tutorial-content section {
       content: "";
