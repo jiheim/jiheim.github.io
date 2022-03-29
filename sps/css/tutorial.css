@@ -60,7 +60,8 @@ body {
   .pc-nav {
     height: 100vh;
     width: 300px;
-    background: #161717; }
+    background: #161717;
+    overflow: scroll; }
     .pc-nav .nav-item {
       width: 100%; }
     .pc-nav .active {
