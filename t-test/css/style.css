@@ -21,7 +21,8 @@ li {
 	border-radius: 3px;
 }
 
-
-.video-width{
-	max-width: 70%;
+@media (max-width:560px){
+	.video-width{
+		max-width: 70%;
+	}
 }
