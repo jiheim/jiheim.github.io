@@ -11,6 +11,11 @@ $bg-700: #2A2C2D;
 $white: white;
 $black: black;
 
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: transparent !important; 
+}
+
 
 
 /* function */
@@ -91,12 +96,12 @@ body{
 //md 이하
 @media (max-width: 992px){
 	.mobile-navbar{
-	    overflow: scroll;
 
+	    //모바일 메뉴 스크롤, height 제어
 	    .navbar-nav{
 	    	position: relative;
     		height: 300px;
-    		overflow: scroll;
+    		overflow-y: auto;
 	    }
 	}
 
@@ -143,7 +148,7 @@ body{
 		height: 100vh;
 		width: 300px;
 		background: $surface;
-		overflow: scroll;
+		overflow-y: auto;
 
 		
 		.nav-item{

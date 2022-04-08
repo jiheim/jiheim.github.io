@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
 /* colors */
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: transparent !important; }
+
 /* function */
 /* rem calculator */
 /* clear */
@@ -36,12 +40,10 @@ body {
     font-size: 1.5625rem; }
 
 @media (max-width: 992px) {
-  .mobile-navbar {
-    overflow: scroll; }
-    .mobile-navbar .navbar-nav {
-      position: relative;
-      height: 300px;
-      overflow: scroll; }
+  .mobile-navbar .navbar-nav {
+    position: relative;
+    height: 300px;
+    overflow-y: auto; }
 
   #tuts-nav {
     display: none !important; }
@@ -68,7 +70,7 @@ body {
     height: 100vh;
     width: 300px;
     background: #161717;
-    overflow: scroll; }
+    overflow-y: auto; }
     .pc-nav .nav-item {
       width: 100%; }
     .pc-nav .active {
