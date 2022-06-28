@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
+/* colors */
+* {
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  background: #6CD2FF;
+  font-family: 'Work Sans', sans-serif;
+  color: #161717;
+  margin-bottom: 140px; }
+
+h1, h2 {
+  margin-block-start: 0;
+  margin-block-end: 0; }
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0; }
+
+h1.masthead {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 238px;
+  height: 127px;
+  background: url("../img/top.png") no-repeat;
+  background-size: 238px 127px;
+  text-indent: -9999px; }
+
+.tuts-list {
+  margin: 48px 0; }
+  .tuts-list .video {
+    width: 168px;
+    height: 349px;
+    margin: 0 auto; }
+  .tuts-list section {
+    position: relative;
+    margin-top: 16px;
+    padding-right: 28px;
+    z-index: 10; }
+    .tuts-list section:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      top: 0;
+      left: 0;
+      background: #37d88c;
+      z-index: 1; }
+  .tuts-list h2 {
+    position: relative;
+    padding-top: 28px;
+    margin-left: 28px;
+    font-size: 18px;
+    z-index: 10; }
+    .tuts-list h2:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 38px;
+      left: -28px;
+      width: 18px;
+      height: 2px;
+      background-color: #6c89ff; }
+  .tuts-list p {
+    position: relative;
+    margin: 16px 0 0 28px;
+    font-size: 14px;
+    z-index: 10; }
+
+.btn_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  background: url("../img/close.png") no-repeat;
+  background-size: 26px 26px;
+  border: 0 none;
+  text-indent: -9999px;
+  cursor: pointer; }
+
+.btn_top {
+  display: block;
+  width: 120px;
+  height: 36px;
+  margin: 0 auto;
+  color: #161717;
+  border: 1px solid #161717;
+  border-radius: 18px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  font-size: 0.9rem; }
+  .btn_top:before {
+    content: "";
+    display: block;
+    display: inline-block;
+    position: relative;
+    width: 9px;
+    height: 12px;
+    margin-right: 10px;
+    background: url("../img/ic-top.png") no-repeat;
+    background-size: 9px 12px; }
+
+/*# sourceMappingURL=style.css.map */
