@@ -3,6 +3,7 @@
 
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto);
+@import url(https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap);
 @import url(notosans.css);
 
 $color-font: #333;
@@ -162,7 +163,7 @@ h1{
 
 /* layout */
 html{
-	font: 16px 'Roboto', sans-serif;
+	font: 16px 'Satoshi', sans-serif;
 	background: $color-background;
 	color: $color-font;
 }
@@ -290,16 +291,16 @@ html{
 		text-align: center !important;
 		width: calculateRem(50px);
 		height: calculateRem(50px);
-		background: $color-background;
+		backdrop-filter: blur(5px);
+		background-color: rgba(255,255,255,0.6);
 		border-radius: 50%;
 		color: $color-font;
 		border: 0;
 		z-index: 100;
-		box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.3);
 
 		i{
 			text-align: center !important;
-			font-size: calculateRem(24px);
+			font-size: calculateRem(16px);
 		}
 	}
 }
@@ -357,11 +358,11 @@ html{
 	
 	li{
 		width: 25%;
-		padding: calculateRem(4px);
+		padding: calculateRem(2px);
 		float: left;
 
 		@include respond-to(medium-screens) { 
-			padding: calculateRem(5px);
+			padding: calculateRem(2px);
 		}
 
 		@include respond-to(handhelds) { 
@@ -403,7 +404,6 @@ html{
 	position: absolute;
 	top: 100%;
 	left: 0;
-	font-family: 'Roboto',sans-serif;
 	color: #fff;
 
 	background: rgba(0,0,0,0.5);
@@ -616,7 +616,6 @@ html{
 		vertical-align: top;
 		color: $color-sub-font;
 		text-transform: uppercase;
-		font-family: 'Roboto',sans-serif;
 		font-size: calculateRem(12px);
 		line-height: calculateRem(24px);
 
@@ -817,9 +816,6 @@ x
 	overflow:hidden;
 	width:100%;
 
-	@media screen and (min-width:1400px) {
-	  width:80%;
-	}
 
 
 
@@ -829,12 +825,11 @@ x
 	}
 
 	h1{
-		margin-bottom: calculateRem(10px);
+		margin: calculateRem(45px) 0;
 
 		@include respond-to(handhelds) {
 			position: absolute;
 			z-index: 20;
-			margin: calculateRem(20px);
 			padding: calculateRem(10px) calculateRem(20px);
 			background: #fff;
 		}
@@ -850,6 +845,10 @@ x
 	margin-left: calculateRem(20px);
 	padding: 0 calculateRem(20px)  calculateRem(20px) calculateRem(20px);
 
+	p{
+				line-height: 1.5;
+	}
+
 	.resume-btns{
 		margin-top: 36px;
 
@@ -860,6 +859,7 @@ x
 			i{
 				margin-right: 10px;
 			}
+
 
 
 			@include respond-to(handhelds) {

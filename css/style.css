@@ -1,6 +1,7 @@
 /*! created by Jihe Im from June 2016 */
 /*! Modified by Jihe Im from Jan 2018 */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto);
+@import url(https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap);
 @import url(notosans.css);
 @keyframes p100 {
   0% {
@@ -72,7 +73,7 @@ h1 {
 
 /* layout */
 html {
-  font: 16px 'Roboto', sans-serif;
+  font: 16px 'Satoshi', sans-serif;
   background: #fbfbfb;
   color: #333; }
 
@@ -194,15 +195,15 @@ html {
       text-align: center !important;
       width: 3.125rem;
       height: 3.125rem;
-      background: #fbfbfb;
+      backdrop-filter: blur(5px);
+      background-color: rgba(255, 255, 255, 0.6);
       border-radius: 50%;
       color: #333;
       border: 0;
-      z-index: 100;
-      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3); }
+      z-index: 100; }
       .mobile-gnb-open i {
         text-align: center !important;
-        font-size: 1.5rem; } }
+        font-size: 1rem; } }
 
 .mobile-gnb-close {
   position: fixed;
@@ -246,11 +247,11 @@ html {
       margin-left: -0.125rem; } }
   .works-list li {
     width: 25%;
-    padding: 0.25rem;
+    padding: 0.125rem;
     float: left; }
     @media only screen and (min-width: 769px) and (max-width: 1023px) {
       .works-list li {
-        padding: 0.3125rem; } }
+        padding: 0.125rem; } }
     @media only screen and (max-width: 768px) {
       .works-list li {
         width: 50%;
@@ -287,7 +288,6 @@ html {
   position: absolute;
   top: 100%;
   left: 0;
-  font-family: 'Roboto',sans-serif;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -449,7 +449,6 @@ html {
     vertical-align: top;
     color: #646464;
     text-transform: uppercase;
-    font-family: 'Roboto',sans-serif;
     font-size: 0.75rem;
     line-height: 1.5rem; }
     @media only screen and (max-width: 768px) {
@@ -588,20 +587,16 @@ x
   position: relative;
   overflow: hidden;
   width: 100%; }
-  @media screen and (min-width: 1400px) {
-    .aboutme-frame {
-      width: 80%; } }
   @media only screen and (max-width: 768px) {
     .aboutme-frame {
       margin-top: 1.25rem;
       height: auto; } }
   .aboutme-frame h1 {
-    margin-bottom: 0.625rem; }
+    margin: 2.8125rem 0; }
     @media only screen and (max-width: 768px) {
       .aboutme-frame h1 {
         position: absolute;
         z-index: 20;
-        margin: 1.25rem;
         padding: 0.625rem 1.25rem;
         background: #fff; } }
 
@@ -610,6 +605,8 @@ x
   float: left;
   margin-left: 1.25rem;
   padding: 0 1.25rem 1.25rem 1.25rem; }
+  .aboutme-desc p {
+    line-height: 1.5; }
   .aboutme-desc .resume-btns {
     margin-top: 36px; }
     .aboutme-desc .resume-btns .btn-link {
