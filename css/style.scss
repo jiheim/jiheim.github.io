@@ -3,7 +3,7 @@
 
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto);
-@import url(https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap);
+@import url(https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap);
 @import url(notosans.css);
 
 $color-font: #333;
@@ -154,6 +154,7 @@ a{
 
 h1{
 	font-size: calculateRem(50px);
+	font-style: italic;
 
 	@include respond-to(handhelds) { 
 		font-size: calculateRem(25px);
@@ -203,6 +204,7 @@ html{
 
 	h1{
 		position: relative;
+		letter-spacing: -0.9px;
 		@include respond-to(handhelds) { 
 			width: 100%;
 		}

@@ -1,7 +1,7 @@
 /*! created by Jihe Im from June 2016 */
 /*! Modified by Jihe Im from Jan 2018 */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto);
-@import url(https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap);
+@import url(https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap);
 @import url(notosans.css);
 @keyframes p100 {
   0% {
@@ -66,7 +66,8 @@ a {
   transition-timing-function: ease; }
 
 h1 {
-  font-size: 3.125rem; }
+  font-size: 3.125rem;
+  font-style: italic; }
   @media only screen and (max-width: 768px) {
     h1 {
       font-size: 1.5625rem; } }
@@ -119,7 +120,8 @@ html {
     .intro {
       height: 80vh; } }
   .intro h1 {
-    position: relative; }
+    position: relative;
+    letter-spacing: -0.9px; }
     @media only screen and (max-width: 768px) {
       .intro h1 {
         width: 100%; } }
